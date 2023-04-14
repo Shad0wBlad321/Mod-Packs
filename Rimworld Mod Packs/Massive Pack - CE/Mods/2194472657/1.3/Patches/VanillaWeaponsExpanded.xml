@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded</li>
+    </mods>
+
+    <match Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+      <value>
+	
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_GrenadeSmokeBelt</defName>
+    <label>smoke grenade belt</label>
+    <description>Old school condensed smoke canisters that explodes into a smoke wall on impact, strapped to a belt. Can be reloaded using smoke grenades.</description>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>Weapon_GrenadeSmoke</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smoke</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+	<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+			<label>throw smoke grenade</label>
+			<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<onlyManualCast>True</onlyManualCast>
+			<warmupTime>1.8</warmupTime>
+			<range>10</range>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			<defaultProjectile>Proj_GrenadeSmoke</defaultProjectile>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</li>
+	</verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+		<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Weapon_GrenadeSmoke>5</Weapon_GrenadeSmoke>
+    </costList>
+    <graphicData>
+      <texPath>Things/Grenades/SmokeGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/SmokeGrenadeBelt/SmokeGrenadeBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeNonDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+   
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_GrenadeFlashBelt</defName>
+    <label>flash grenade belt</label>
+    <description>A belt of flash grenades. Temporarily stuns organic enemies allowing users to close the distance. Can be reloaded using flash grenades.</description>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>Weapon_GrenadeFlashbang</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>flash</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+	<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+			<label>throw flashbang grenade</label>
+			<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<onlyManualCast>True</onlyManualCast>
+			<warmupTime>1.8</warmupTime>
+			<range>10</range>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			<defaultProjectile>Proj_GrenadeFlashbang</defaultProjectile>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</li>
+	</verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+		<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Weapon_GrenadeFlashbang>5</Weapon_GrenadeFlashbang>
+    </costList>
+    <graphicData>
+      <texPath>Things/Grenades/FlashGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlashGrenadeBelt/FlashGrenadeBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeNonDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+ 
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_GrenadeToxicBelt</defName>
+    <label>toxic grenade belt</label>
+    <description>Charge powered lethal gas canister causing severe toxic buildup over a very short period of time, strapped to a belt. Can be reloaded using toxic grenades.</description>
+    <techLevel>Spacer</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>6</maxCharges>
+        <ammoDef>VWE_ToxicGrenade</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>gas</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+	<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+			<label>throw toxic grenade</label>
+			<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<onlyManualCast>True</onlyManualCast>
+			<warmupTime>1.8</warmupTime>
+			<range>12</range>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			<defaultProjectile>VWE_Projectile_ToxicGrenade</defaultProjectile>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</li>
+	</verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+	<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+				<li>FabricationBench</li>
+		</recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+    </recipeMaker>
+    <costList>
+      <VWE_ToxicGrenade>1</VWE_ToxicGrenade>
+    </costList>
+    <graphicData>
+      <texPath>Things/Item/BeltGrenades/GasGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GasGrenadeBelt/GasGrenadeBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeNonDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+	</value>
+	</match>
+	
+  <nomatch Class="PatchOperationSequence">
+	<operations>
+    <li Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+	  
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_GrenadeSmokeBelt</defName>
+    <label>smoke grenade belt</label>
+    <description>Old school condensed smoke canisters that explodes into a smoke wall on impact, strapped to a belt. Can be reloaded using smoke grenades.</description>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>VWE_SmokeGrenade</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>smoke</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>throw smoke grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>VWE_Projectile_SmokeGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+		<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <VWE_SmokeGrenade>1</VWE_SmokeGrenade>
+    </costList>
+    <graphicData>
+      <texPath>Things/Grenades/SmokeGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/SmokeGrenadeBelt/SmokeGrenadeBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeNonDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_GrenadeFlashBelt</defName>
+    <label>flash grenade belt</label>
+    <description>A belt of flash grenades. Temporarily stuns organic enemies allowing users to close the distance. Can be reloaded using flash grenades.</description>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>VWE_FlashGrenade</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>flash</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>throw flash grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>VWE_Projectile_FlashGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+		<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <VWE_FlashGrenade>1</VWE_FlashGrenade>
+    </costList>
+    <graphicData>
+      <texPath>Things/Grenades/FlashGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlashGrenadeBelt/FlashGrenadeBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeNonDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_GrenadeToxicBelt</defName>
+    <label>toxic grenade belt</label>
+    <description>Charge powered lethal gas canister causing severe toxic buildup over a very short period of time, strapped to a belt. Can be reloaded using toxic grenades.</description>
+    <techLevel>Spacer</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>6</maxCharges>
+        <ammoDef>VWE_ToxicGrenade</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>gas</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>throw toxic grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>VWE_Projectile_ToxicGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+	<researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+				<li>FabricationBench</li>
+		</recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+    </recipeMaker>
+    <costList>
+      <VWE_ToxicGrenade>1</VWE_ToxicGrenade>
+    </costList>
+    <graphicData>
+      <texPath>Things/Item/BeltGrenades/GasGrenadeBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GasGrenadeBelt/GasGrenadeBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeNonDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+      </value>
+	  </li>
+
+    <li Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VWE_SmokeGrenade"]/graphicData</xpath>
+
+    <value>
+      <graphicData>
+        <texPath>Things/Item/LooseGrenades/SmokeGrenadeLoose</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    </value>
+	</li>	  
+
+    <li Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VWE_FlashGrenade"]/graphicData</xpath>
+
+    <value>
+      <graphicData>
+        <texPath>Things/Item/LooseGrenades/FlashGrenadeLoose</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    </value>
+	</li>
+
+	</operations>	  
+    </nomatch>	  
+  
+  </match>
+  </Operation>
+
+</Patch>

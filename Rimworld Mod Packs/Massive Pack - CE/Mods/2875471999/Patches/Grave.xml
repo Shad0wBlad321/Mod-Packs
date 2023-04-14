@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!-- Patch Focus -->
+              <Operation  Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef/comps/li [@Class="CompProperties_MeditationFocus"]/offsets/li [@Class="FocusStrengthOffset_NearbyGraves"]/defs</xpath>
+              <value>
+                            <li>BasicMausoleum</li>
+                            <li>Mausoleum</li>
+                            <li>AnimalTomb</li>
+                            <li>TechTomb</li>
+                            <li>SDUTomb</li>
+              </value>
+	</Operation>
+
+    <!-- GMT Remove Designation -->
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Grave" or defName="Sarcophagus"]/designationCategory</xpath>
+    </Operation>
+
+    <!-- GMT Add Designation -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Grave" or defName="Sarcophagus"]</xpath>
+        <value>
+            <designationCategory>Mourning</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Animal Sarcophagus Remove/Add Designation -->
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Animal_Sarcophagus" or defName="Animal_Sarcophagus_Large"]/designationCategory</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Animal_Sarcophagus" or defName="Animal_Sarcophagus_Large"]</xpath>
+        <value>
+            <designationCategory>Mourning</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Halloween Graves Remove/Add Designation -->
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="HP_Grave" or defName="FlowerGrave" or defName="FlowerTabletGrave" or defName="FlowerJPstyleGrave" or defName="FlowerAncientCrossGrave" or defName="CursedGrave" or defName="CursedTabletGrave" or defName="CursedJPstyleGrave" or defName="CursedAncientCrossGrave"]/designationCategory</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="HP_Grave" or defName="FlowerGrave" or defName="FlowerTabletGrave" or defName="FlowerJPstyleGrave" or defName="FlowerAncientCrossGrave" or defName="CursedGrave" or defName="CursedTabletGrave" or defName="CursedJPstyleGrave" or defName="CursedAncientCrossGrave"]</xpath>
+        <value>
+            <designationCategory>Mourning</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Memorial Cross Remove/Add Designation -->
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Memorial"]/designationCategory</xpath>
+        </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Memorial"]</xpath>
+        <value>
+            <designationCategory>Mourning</designationCategory>
+        </value>
+        </Operation>
+
+    <!-- Burial Urns Remove/Add Designation -->
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="BurialUrn"]/designationCategory</xpath>
+        </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="BurialUrn"]</xpath>
+        <value>
+            <designationCategory>Mourning</designationCategory>
+        </value>
+        </Operation>        
+
+    <!-- Mass Grave Remove/Add Designation -->
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="MassGrave"]/designationCategory</xpath>
+        </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="MassGrave"]</xpath>
+        <value>
+            <designationCategory>Mourning</designationCategory>
+        </value>
+        </Operation>
+</Patch>	

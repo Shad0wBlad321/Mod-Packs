@@ -1,0 +1,5 @@
+RimPy: Open desired modpack, Cut/Copy the folder to your mods folder, enable it, save, and launch the game
+
+Manual with RimPy: Open desired modpack, cut/copy all folders to their respective locations (easily found through a previously set up RimPy), import the corresponding modlist xml file, save and launch the game
+
+Manual (Not Recommended): Open desired modpack, Cut/Copy all folders to respective locations, load game, enable all mods manually, hope the load order works

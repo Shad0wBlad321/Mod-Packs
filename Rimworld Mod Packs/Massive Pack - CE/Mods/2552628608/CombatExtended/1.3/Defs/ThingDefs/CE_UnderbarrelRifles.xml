@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== E15 w/ CGL2 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_E15CR_CGL2UB</defName>
+    <label>E15 charge rifle with CGL2</label>
+    <description>The E15 charge rifle is the standard-issue rifle of The Eccentric's security staff.\n\nE15 rifles are a militarized modification of the venerable R-15 charge rifle design. Based off the Aerodyne Spaceways pattern, the E15 features accessory rails, an ambidextrous charging handle and ejection port, and is equipped with a 1.5x magnified day/night combat optic by default. It is slightly heavier and takes longer to produce, but has better accuracy than the R-15.\n\nThis E15 has had a CGL2 charge grenade launcher mounted under the barrel and is capable of firing 44x52mm charge grenades in addition to its primary ammunition.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/E15_CGL2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+
+    <statBases>
+      <Mass>4.6</Mass>
+      <Bulk>10.80</Bulk>
+      <WorkToMake>68000</WorkToMake>
+      <SightsEfficiency>1.2</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.20</SwayFactor>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>EccentricRifle</li>
+    </weaponTags>
+
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>EccentricProjectiles.Verb_ShootCE_WithAlternateProjectiles</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Eccentric6x24mmCharged</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>55</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <recoilAmount>1.45</recoilAmount>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>30</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>true</aiUseBurstMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="CombatExtended.CompProperties_UnderBarrel">
+        <propsUnderBarrel>
+          <magazineSize>1</magazineSize>
+          <reloadTime>3</reloadTime>
+          <ammoSet>AmmoSet_44x52mmChargedGrenades</ammoSet>
+        </propsUnderBarrel>
+        <verbPropsUnderBarrel>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_44x52mmChargedGrenades_HE</defaultProjectile>
+          <warmupTime>0.55</warmupTime>
+          <range>35</range>
+          <soundCast>InfernoCannon_Fire</soundCast>
+          <soundCastTail>GunTail_Medium</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+          <minRange>6</minRange>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+          <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        </verbPropsUnderBarrel>
+        <propsFireModesUnderBarrel>
+          <aiUseBurstMode>false</aiUseBurstMode>
+          <aimedBurstShotCount>1</aimedBurstShotCount>
+          <aiAimMode>AimedShot</aiAimMode>
+        </propsFireModesUnderBarrel>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_AmmoAlternateProjectile">
+        <alternateProjectiles>
+          <li>
+            <ammo>Ammo_6x24mmCharged</ammo>
+            <projectile>Bullet_Eccentric6x24mmCharged</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_6x24mmCharged_AP</ammo>
+            <projectile>Bullet_Eccentric6x24mmCharged_AP</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_6x24mmCharged_Ion</ammo>
+            <projectile>Bullet_Eccentric6x24mmCharged_Ion</projectile>
+          </li>
+        </alternateProjectiles>
+      </li>
+    </modExtensions>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

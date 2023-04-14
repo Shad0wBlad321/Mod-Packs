@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>VRESaurids_SauridClaws</defName>
+		<label>saurid claws</label>
+		<description>Carriers of this gene have hands that partially resemble dinosaur claws. This has a slight impact on their ability to manipulate objects, but allows them to deal deep cuts in melee combat.</description>
+	
+		<iconPath>UI/GeneIcons/Gene_HandsSaurid</iconPath>
+		<displayOrderInCategory>320</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Causes cuts when using unarmed attacks.</li>
+		</customEffectDescriptions>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.95</postFactor>
+			</li>
+		</capMods>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>claws</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>saurid</symbol>
+				</li>
+				<li>
+					<symbol>raptor</symbol>
+				</li>
+				<li>
+					<symbol>claw</symbol>
+				</li>
+				<li>
+					<symbol>predator</symbol>
+				</li>
+				<li>
+					<symbol>hook</symbol>
+				</li>
+				<li>
+					<symbol>reptile</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>claw</symbol>
+				</li>
+				<li>
+					<symbol>sharp</symbol>
+				</li>
+				<li>
+					<symbol>hook</symbol>
+				</li>
+				<li>
+					<symbol>predator</symbol>
+				</li>
+				<li>
+					<symbol>raptor</symbol>
+				</li>
+				<li>
+					<symbol>reptile</symbol>
+				</li>
+				<li>
+					<symbol>saurus</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>VRESaurids_SauridClaws</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneCategoryDef>
+		<defName>Capacity</defName>
+		<label>Capacity</label>
+		<displayPriorityInXenotype>309</displayPriorityInXenotype>
+	</GeneCategoryDef>
+	<GeneDef Name="GeneCapacityBase" Abstract="True">
+		<displayCategory>Capacity</displayCategory>
+	</GeneDef>
+	<GeneDef ParentName="GeneCapacityBase">
+		<defName>Balanced_Capacity_Boost_Tier_1</defName>
+		<label>Nanite Capacitor Tier 1</label>
+		<labelShortAdj>Capacitor Tier 1</labelShortAdj>
+		<description>A container of nanites, programmed to increase a biotic's metabolism capacity at the cost of complexity.</description>
+		<iconPath>UI/Icons/Genes/Capacity/CBT1</iconPath>
+		<biostatArc>1</biostatArc>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+	<GeneDef ParentName="GeneCapacityBase">
+		<defName>Balanced_Capacity_Boost_Tier_2</defName>
+		<label>Nanite Capacitor Tier 2</label>
+		<labelShortAdj>Capacitor Tier 2</labelShortAdj>
+		<description>A container of nanites, programmed to increase a biotic's metabolism capacity at the cost of complexity.</description>
+		<iconPath>UI/Icons/Genes/Capacity/CBT2</iconPath>
+		<biostatArc>2</biostatArc>
+		<biostatCpx>6</biostatCpx>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+	<GeneDef ParentName="GeneCapacityBase">
+		<defName>Balanced_Capacity_Boost_Tier_3</defName>
+		<label>Nanite Capacitor Tier 3</label>
+		<labelShortAdj>Capacitor Tier 3</labelShortAdj>
+		<description>A container of nanites, programmed to increase a biotic's metabolism capacity at the cost of complexity.</description>
+		<iconPath>UI/Icons/Genes/Capacity/CBT3</iconPath>
+		<biostatArc>3</biostatArc>
+		<biostatCpx>9</biostatCpx>
+		<biostatMet>9</biostatMet>
+	</GeneDef>
+	<GeneDef ParentName="GeneCapacityBase">
+		<defName>Balanced_Capacity_Boost_Tier_4</defName>
+		<label>Nanite Capacitor Tier 4</label>
+		<labelShortAdj>Capacitor Tier 4</labelShortAdj>
+		<description>A container of nanites, programmed to increase a biotic's metabolism capacity at the cost of complexity.</description>
+		<iconPath>UI/Icons/Genes/Capacity/CBT4</iconPath>
+		<biostatArc>4</biostatArc>
+		<biostatCpx>12</biostatCpx>
+		<biostatMet>12</biostatMet>
+	</GeneDef>
+	<GeneDef ParentName="GeneCapacityBase">
+		<defName>Balanced_Capacity_Boost_Tier_5</defName>
+		<label>Nanite Capacitor Tier 5</label>
+		<labelShortAdj>Capacitor Tier 5</labelShortAdj>
+		<description>A container of nanites, programmed to increase a biotic's metabolism capacity at the cost of complexity.</description>
+		<iconPath>UI/Icons/Genes/Capacity/CBT5</iconPath>
+		<biostatArc>5</biostatArc>
+		<biostatCpx>15</biostatCpx>
+		<biostatMet>15</biostatMet>
+	</GeneDef>
+	<GeneDef ParentName="GeneCapacityBase">
+		<defName>Balanced_Capacity_Boost_Tier_6</defName>
+		<label>Archite Capacitor</label>
+		<labelShortAdj>Archon Capacitor</labelShortAdj>
+		<description>A container of nanites, programmed to increase a biotic's metabolism capacity at the cost of complexity.</description>
+		<iconPath>UI/Icons/Genes/Capacity/CBT6</iconPath>
+		<biostatArc>10</biostatArc>
+		<biostatCpx>30</biostatCpx>
+		<biostatMet>30</biostatMet>
+	</GeneDef>
+</Defs>

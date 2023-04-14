@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>VAERoy_PsychicSensitivity</defName>
+		<description>The royal peacock nuzzled me. I can feel a psychic energy flowing through my body.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>nuzzled by a peacock</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>+25%</label>
+				<statOffsets>
+					<PsychicSensitivity>0.25</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.125</minSeverity>
+				<label>+50%</label>
+				<statOffsets>
+					<PsychicSensitivity>0.5</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>+75%</label>
+				<statOffsets>
+					<PsychicSensitivity>0.75</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.375</minSeverity>
+				<label>+100%</label>
+				<statOffsets>
+					<PsychicSensitivity>1</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>+125%</label>
+				<statOffsets>
+					<PsychicSensitivity>1.25</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.625</minSeverity>
+				<label>+150%</label>
+				<statOffsets>
+					<PsychicSensitivity>1.5</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>+175%</label>
+				<statOffsets>
+					<PsychicSensitivity>1.75</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.875</minSeverity>
+				<label>+200%</label>
+				<statOffsets>
+					<PsychicSensitivity>2</PsychicSensitivity>				
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VAERoy_AngoraRabbitBonded</defName>
+		<description>This angora rabbit has bonded with a colonist. It will provide a psychic connection to that colonist increasing psychic entropy recovery rate, but the rabbit will die if the bonded colonist dies.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>angora rabbit bonded</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VAERoy_AngoraRabbitBondedPawn</defName>
+		<description>Psychic connection with an angora rabbit that helps with neural heat dissipation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>angora bond</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+
+				<statOffsets>
+					<PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>		
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VAERoy_PsychicInvisibility</defName>
+		<label>psychic invisibility</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Psychically-induced invisibility. This actually affects others nearby, making their brains unable to perceive the sight of this individual, even if the eyes are unaffected.</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties">
+				<compClass>HediffComp_Invisibility</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2000~3000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+
+
+</Defs>

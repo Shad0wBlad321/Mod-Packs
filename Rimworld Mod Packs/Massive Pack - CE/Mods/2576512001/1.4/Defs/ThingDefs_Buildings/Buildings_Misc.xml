@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VAECaves_Cocoon</defName>
+		<label>spider cocoon</label>
+		<description>A spider cocoon. It might contain prey. If the cocoon isn't opened soon its ocupant will surely suffocate and perish.</description>
+		<thingClass>VAECaves.Building_Cocoon</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_WebCocoon</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
+
+		</graphicData>
+		<size>(1,1)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<preventDeteriorationInside>false</preventDeteriorationInside>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>0</Beauty>
+		</statBases>
+		<comps>
+			
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>120000</lifespanTicks>
+			</li>
+		</comps>
+
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VAECaves_EmptyCocoon</defName>
+		<label>empty spider cocoon</label>
+		<description>An empty spider cocoon.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_WebCocoon</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
+
+		</graphicData>
+		<size>(1,1)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<preventDeteriorationInside>false</preventDeteriorationInside>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>0</Beauty>
+		</statBases>
+
+		<comps>
+			
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>120000</lifespanTicks>
+			</li>
+		</comps>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VAECaves_SpiderLair</defName>
+		<label>spider lair</label>
+		<description>A spider lair.</description>
+		<thingClass>VAECaves.Building_SpiderLair</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_AncientSpiderLair</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+
+		</graphicData>
+		<size>(3,3)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>    
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>2500</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>0</Beauty>
+		</statBases>
+
+		<comps>
+			<li Class="VAECaves.CompProperties_ConditionalSpawner">
+				<thingToSpawn>InsectJelly</thingToSpawn>
+				<spawnCount>20</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>80</spawnMaxAdjacent>
+				<spawnForbidden>true</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>VAECaves_Filth_Webs</filthDef>
+				<spawnCountOnSpawn>75</spawnCountOnSpawn>
+				<spawnMtbHours>4</spawnMtbHours>
+				<spawnRadius>7</spawnRadius>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal>
+				<!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<filthLeaving>VAECaves_Filth_Webs</filthLeaving>
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VAECaves_SpiderEggs</defName>
+		<label>spider eggs</label>
+		<description>Spider eggs.</description>
+		<thingClass>VAECaves.Building_SpiderEggs</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_SpiderEggs</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+
+		</graphicData>
+		<size>(1,1)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>    
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>-10</Beauty>
+		</statBases>
+
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+
+
+	</ThingDef>
+
+
+
+</Defs>

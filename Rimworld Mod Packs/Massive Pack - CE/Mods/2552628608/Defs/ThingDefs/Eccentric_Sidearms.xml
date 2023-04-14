@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== S8 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_S8P</defName>
+    <label>S8 charge pistol</label>
+    <description>The S8 charge pistol is the standard-issue sidearm of the Eccentric's staff.\n\nUtilizing the compact 6x18mm charged cartridge, it is heavier than a conventional pistol but far more powerful.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/S8</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <Eccentric_HexCell>1</Eccentric_HexCell>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>Eccentric_MiniCharge</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <weaponTags>
+      <li>EccentricSidearm</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EccentricLightCharge</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>22.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- ==================== P12 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_P12PDW</defName>
+    <label>P12 charge PDW</label>
+    <description>The P12 personal defense weapon is a compact but powerful firearm generally issued to The Eccentric's pilots and vehicle drivers, as well as rear-echelon staff in hostile environments.\n\nUtilizing compact 6x18mm charged cartridges, the P12 is short-ranged but capable of fully automatic fire.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/P12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>2.8</Mass>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>35</Plasteel>
+      <Eccentric_HexCell>1</Eccentric_HexCell>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>Eccentric_MiniCharge</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <weaponTags>
+      <li>EccentricLightGun</li>
+    </weaponTags>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EccentricLightCharge</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>19.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

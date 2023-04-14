@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ProjectRimFactory.Common.ProjectRimFactory_ModSettings">
+		<set.range.recipe.db>2</set.range.recipe.db>
+		<turn.off.dsu.limit>768</turn.off.dsu.limit>
+	</ModSettings>
+</SettingsBlock>

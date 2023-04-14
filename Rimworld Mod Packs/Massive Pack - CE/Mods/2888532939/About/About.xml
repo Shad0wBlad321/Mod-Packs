@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Cargo waste container</name>
+  	<author>AobaKuma</author>
+    <supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+	<li>
+		<packageId>Ludeon.RimWorld.Biotech</packageId>
+		<displayName>RimWorld - Biotech</displayName>
+		<steamWorkshopUrl>steam://https://store.steampowered.com/app/1826140/RimWorld__Biotech//</steamWorkshopUrl>
+	</li>
+	</modDependencies>
+   <loadAfter>
+    <li>Ludeon.RimWorld.Biotech</li>
+   </loadAfter>
+		<packageId>Aoba.CargoContainer.Waste</packageId>
+	<description>
+	a simple mod that makes a building that can hold waste. and degrade them at a fairly slow rate.
+	</description>
+</ModMetaData>

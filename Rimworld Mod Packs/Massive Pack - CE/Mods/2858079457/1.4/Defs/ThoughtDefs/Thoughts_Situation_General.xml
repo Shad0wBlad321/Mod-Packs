@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThoughtDef>
+    <defName>VAERoy_CraneThought</defName>
+    <workerClass>VanillaAnimalsExpandedRoyal.ThoughtWorker_CraneThought</workerClass>
+    
+    <stages>
+      <li>
+        <label>beautiful cranes</label>
+        <description>My royal gardens are full of the most noble of birds.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>VHGE_HelixienPump</defName>
+    <label>helixien pump</label>
+    <description>An extractor machine mounted on a pocket of helixien gas. This machine pumps out valuable gas and needs to be connected to other gas-based utilities using the pipe network.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/HelixienPump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(4,4)</size>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <placeWorkers>
+      <li>PipeSystem.PlaceWorker_DeepExtractor</li>
+      <li>VHelixienGasE.PlaceWorker_AlwaysShowDeepResources</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(90,140,90,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="PipeSystem.CompProperties_DeepExtractor">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <deepThing>VHGE_Helixien</deepThing>
+        <ticksPerPortion>250</ticksPerPortion>
+        <onlyExtractToNet>true</onlyExtractToNet>
+        <showDeepCountLeft>false</showDeepCountLeft>
+      </li>
+      <!-- <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li> -->
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <deepResourcesOnGUI>true</deepResourcesOnGUI>
+        <deepResourcesOnGUIRequireScanner>false</deepResourcesOnGUIRequireScanner>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

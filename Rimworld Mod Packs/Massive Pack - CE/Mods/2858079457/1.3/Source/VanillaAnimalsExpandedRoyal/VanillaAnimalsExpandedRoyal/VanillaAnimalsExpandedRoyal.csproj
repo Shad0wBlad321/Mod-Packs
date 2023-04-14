@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8281E4EE-FE39-4FAD-BA55-326503AE9284}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VanillaAnimalsExpandedRoyal</RootNamespace>
+    <AssemblyName>VanillaAnimalsExpandedRoyal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI\JobDrivers\JobDriver_Peacock.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Peacock.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Talk.cs" />
+    <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Harmony\GenRecipe_MakeRecipeProducts.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\Graphic_Random_GetColoredVersion.cs" />
+    <Compile Include="Harmony\Thing_ButcherProducts.cs" />
+    <Compile Include="InteractionWorkers\InteractionWorker_AnimalSpeak.cs" />
+    <Compile Include="InteractionWorkers\InteractionWorker_Peacock.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_Cranes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Orangutan.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Peacock.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_CraneThought.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.3.3389</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.2.2</Version>
+	   <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

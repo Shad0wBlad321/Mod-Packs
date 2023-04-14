@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>VHGE_GasCooler</defName>
+    <label>gas cooler</label>
+    <description>An air-cooling machine that releases cooled air around itself. Can be used to create a walk-in freezer. Cannot be adjusted and will automatically lower temperature slightly below zero.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/GasCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceTrader">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <consumptionPerTick>0.4</consumptionPerTick>
+      </li>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>PipeSystem.CompHeatPusherNeedResource</compClass>
+        <heatPerSecond>-11</heatPerSecond>
+        <heatPushMinTemperature>-5</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <researchPrerequisites>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>VHGE_GasHeater</defName>
+    <label>gas heater</label>
+    <description>A device that converts helixien gas into radiated heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
+    <thingClass>PipeSystem.Building_ResourceHeater</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/GasHeater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <thingCategories>
+      <li>BuildingsTemperature</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceTrader">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <consumptionPerTick>0.2</consumptionPerTick>
+      </li>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>21</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

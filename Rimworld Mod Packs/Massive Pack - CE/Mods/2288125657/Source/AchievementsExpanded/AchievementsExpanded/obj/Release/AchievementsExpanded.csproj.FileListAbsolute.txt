@@ -1,0 +1,6 @@
+D:\Steam\steamapps\common\RimWorld\Mods\Achievements\Source\AchievementsExpanded\AchievementsExpanded\bin\Release\AchievementsExpanded.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Achievements\Source\AchievementsExpanded\AchievementsExpanded\bin\Release\AchievementsExpanded.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\Achievements\Source\AchievementsExpanded\AchievementsExpanded\obj\Release\AchievementsExpanded.csprojAssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Achievements\Source\AchievementsExpanded\AchievementsExpanded\obj\Release\AchievementsExpanded.csproj.CoreCompileInputs.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Achievements\Source\AchievementsExpanded\AchievementsExpanded\obj\Release\AchievementsExpanded.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Achievements\Source\AchievementsExpanded\AchievementsExpanded\obj\Release\AchievementsExpanded.pdb

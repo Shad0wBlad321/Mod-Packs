@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<HediffDef>
+		<defName>VCE_ConsumedSoySauce</defName>
+		<label>consumed soy sauce (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>A fermented paste of soybeans, roasted grain, brine, and Aspergillus bacteria. Soy sauce can be added directly to food, and is used as a dip or salt flavor in cooking, as well as providing a rich umami taste. Soy sauce contains 10 times the antioxidants of red wine, and can help prevent cardiovascular diseases (increases blood pumping and filtration).</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_ConsumedSoySauce</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VCE_ConsumedWasabi</defName>
+		<label>consumed wasabi (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>A paste made from ground wasabi rhizomes and used as a pungent condiment for sushi and other foods. It is similar in taste to hot mustard rather than chili peppers in that it stimulates the nose more than the tongue. Wasabi clears your breathing and makes you feel warmer for a while.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_ConsumedWasabi</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.05</offset>
+					</li>
+					
+				</capMods>
+				<statOffsets>
+					<ComfyTemperatureMin>-10</ComfyTemperatureMin>	
+									
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VCE_AteSimpleSushi</defName>
+		<label>consumed simple sushi (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling sushi meal.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VCE_AteSimpleSushi</li>							
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   				
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_AteFineSushi</defName>
+		<label>consumed fine sushi (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling sushi meal.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>					
+					<li>VCE_AteFineSushi</li>						
+				</thoughtDefs>
+				<removeThoughtDefs>					
+					<li>AteFineMeal</li>						
+				</removeThoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_AteLavishSushi</defName>
+		<label>consumed lavish sushi (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling sushi meal.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>					
+					<li>VCE_AteLavishSushi</li>						
+				</thoughtDefs>
+				<removeThoughtDefs>					
+					<li>AteLavishMeal</li>						
+				</removeThoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+			
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VCE_AteGourmetSushi</defName>
+		<label>consumed gourmet sushi (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>I have eaten a delicious and filling sushi meal.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>					
+					<li>VCE_AteGourmetSushi</li>						
+				</thoughtDefs>
+				<removeThoughtDefs>		
+					<li>AteLavishMeal</li>	
+					<li>VCE_AteLavishSushi</li>	
+					<li>VCE_AteGourmetMeal</li>						
+				</removeThoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				
+			</li>
+		</stages>
+	</HediffDef>
+
+	
+
+
+
+
+
+</Defs>

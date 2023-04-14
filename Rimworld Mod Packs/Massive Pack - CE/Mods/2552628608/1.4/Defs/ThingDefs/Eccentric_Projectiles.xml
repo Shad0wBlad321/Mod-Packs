@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- bullets -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EccentricChargeRifle</defName>
+    <label>charge shot</label>
+    <thingClass>EccentricProjectiles.Bullet_WithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/ChargeProjectile_Medium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_ChargeMuzzleFlash</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EccentricLightCharge</defName>
+    <label>charge shot</label>
+    <thingClass>EccentricProjectiles.Bullet_WithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/ChargeProjectile_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_ChargeMuzzleFlashSmall</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EccentricChargeLMG</defName>
+    <label>charge shot</label>
+    <thingClass>EccentricProjectiles.Bullet_WithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/ChargeProjectile_Medium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>90</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_LightChargeTrail</li>
+          <li>Eccentric_ChargeMuzzleFlash</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EccentricMarksmanCharge</defName>
+    <label>charge shot</label>
+    <thingClass>EccentricProjectiles.Bullet_WithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/ChargeProjectile_Medium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>1.25</stoppingPower>
+      <speed>110</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_MediumChargeTrail</li>
+          <li>Eccentric_ChargeMuzzleFlash</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EccentricSniperCharge</defName>
+    <label>charge shot</label>
+    <thingClass>EccentricProjectiles.Bullet_WithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/ChargeProjectile_Medium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>42</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>130</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_HeavyChargeTrail</li>
+          <li>Eccentric_ChargeMuzzleFlash</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EccentricAntiMaterialCharge</defName>
+    <label>charge shot</label>
+    <thingClass>EccentricProjectiles.Bullet_WithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/ChargeProjectile_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>55</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+      <speed>130</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_HeavyPulseTrail</li>
+          <li>Eccentric_ChargeMuzzleFlashLarge</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- explosives -->
+  <ThingDef Name="BaseEccentricChargeGrenade" ParentName="BaseBullet" Abstract="True">
+    <thingClass>EccentricProjectiles.Projectile_ExplosiveWithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/CGL1Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <projectile>
+      <speed>50</speed>
+      <shadowSize>0.5</shadowSize>
+      <arcHeightFactor>1.0</arcHeightFactor>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_ChargeGrenadeTrail</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="BaseEccentricChargeGrenade">
+    <defName>Bullet_EccentricChargeGrenade</defName>
+    <label>charge grenade (HE)</label>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <explosionRadius>1.8</explosionRadius>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseEccentricChargeGrenade">
+    <defName>Bullet_EccentricChargeGrenade_EMP</defName>
+    <label>charge grenade (EMP)</label>
+    <projectile>
+      <damageDef>EMP</damageDef>
+      <explosionRadius>3.5</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EccentricChargedRocket</defName>
+    <label>charged assault projectile</label>
+    <thingClass>EccentricProjectiles.Projectile_ExplosiveWithEffects</thingClass>
+    <graphicData>
+      <texPath>Things/Eccentric/Projectile/CAW5Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>65</damageAmountBase>
+      <explosionRadius>4.8</explosionRadius>
+      <speed>60</speed>
+      <shadowSize>1.0</shadowSize>
+      <arcHeightFactor>0.5</arcHeightFactor>
+    </projectile>
+    <modExtensions>
+      <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+        <effects>
+          <li>Eccentric_PulseRocketTrail</li>
+        </effects>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

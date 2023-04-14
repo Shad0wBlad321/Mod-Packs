@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThinkTreeDef>
+		<defName>VRE_CleaningDryadBehaviour</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				
+						<li Class="VanillaRacesExpandedPhytokin.ThinkNode_CleaningDryad">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>2</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="VanillaRacesExpandedPhytokin.JobGiver_Clean"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+				
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+
+
+
+</Defs>

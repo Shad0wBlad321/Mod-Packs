@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--============ Wall Flame Turret ===========-->
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>WallFlameTurret</defName>
+    <label>wall flame turret</label>
+    <description>A couple of canisters full of chemfuel strapped to a wall turret, with an added torch at the end of the barrel to ignite the chemfuel coated bullets. It's also been given a red paintjob to show the change. It uses more materials to protect it from being blown up when a bullet hits it.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/WallFlameTurretBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/WallTurretFlameUI</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-15</Beauty>
+      <ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>60</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Chemfuel left until tanks require refueling</fuelLabel>
+        <fuelGizmoLabel>Chemfuel remaining</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>300</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>3</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot fire: Tanks need refueling</outOfFuelMessage>
+        <fuelIconPath>Things/UI/Overlay/NoFuel</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <coversFloor>false</coversFloor>
+    <tickerType>Normal</tickerType>
+    <neverMultiSelect>true</neverMultiSelect>
+    <holdsRoof>false</holdsRoof>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>120</Chemfuel>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>20</specialDisplayRadius>
+    <!-- Range when building -->
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_WallTurretFlame</turretGunDef>
+      <turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_NextToWall_Turret</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>GunTurrets</li>
+    </researchPrerequisites>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <destroyable>true</destroyable>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>FIRE</defName>
+    <label>fire</label>
+    <graphicData>
+      <texPath>Things/Bullet/Fire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_WallTurretFlame</defName>
+    <label>Wall Flame turret</label>
+    <description>A simple automatic gun made to be mounted on a wall turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/WallTurretFlameNew</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FIRE</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>10</range>
+        <!-- Actual range of the turret -->
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  <modExtensions>
+    <li Class="TurretExtensions.TurretFrameworkExtension">
+      <gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+      <useMannerShootingAccuracy>false</useMannerShootingAccuracy>
+      <useMannerAimingDelayFactor>false</useMannerAimingDelayFactor>
+      <mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+      <canForceAttack>false</canForceAttack>
+    </li>
+  </modExtensions>
+</Defs>

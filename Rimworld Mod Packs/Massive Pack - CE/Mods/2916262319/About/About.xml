@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Bill Doors' sten guns</name>
+	<author>3HST Limited</author>
+	<packageId>3HSTltd.sten.turrets</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>CETeam.CombatExtended</li>
+	</loadAfter>
+	<modDependencies>
+		<li>
+			<packageId>3HSTltd.Framework</packageId>
+			<displayName>Bill Door's Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2897160312</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description>Sten gun and sten turret.</description>
+</ModMetaData>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Ancients</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Darklight stuff <glowColor>(78, 226, 229, 0)</glowColor> -->
+        <!-- VFEM_DarkCandle -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="VFEA_WallLampBaseA" Name="VFEA_WallLampBase">
+              <defName>VFEA_WallDarkLamp</defName>
+              <label>wall lamp</label>
+              <description>An electrical wall lamp, producing darklight. Ideal to light up corridors in a vault.</description>
+              <graphicData>
+                <texPath>Things/VFE_WallDarkLamp/VFE_WallDarkLamp</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+              </graphicData>
+              <uiIconPath>Things/VFE_WallDarkLamp/VFE_WallDarkLamp_MenuIcon</uiIconPath>
+              <rotatable>true</rotatable>
+              <comps>
+                <li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+                  <spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+                  <colorOptions>
+                    <li>
+                      <glowRadius>12</glowRadius>
+                      <glowColor>(78, 226, 229, 0)</glowColor>
+                    </li>
+                  </colorOptions>
+                </li>
+                <li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall" />
+              </comps>
+              <building>
+                <isInert>true</isInert>
+                <isEdifice>false</isEdifice>
+                <canPlaceOverWall>true</canPlaceOverWall>
+              </building>
+              <altitudeLayer>BuildingOnTop</altitudeLayer>
+              <placeWorkers>
+                <li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+              </placeWorkers>
+              <defaultPlacingRot>South</defaultPlacingRot>
+            </ThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

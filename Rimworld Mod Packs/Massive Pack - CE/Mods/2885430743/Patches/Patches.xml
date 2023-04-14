@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Heavy Mech Gestation Recipe Patches -->
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs</xpath>
+  <value>
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>Logistic</defName>
+    <label>gestate logistics mech</label>
+    <description>Gestate a logistics mechanoid.</description>
+    <gestationCycles>5</gestationCycles>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>140</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Logistic>1</Mech_Logistic>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Logistic</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+	  </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
+  <order>Prepend</order>
+  <value>
+      <li>Logistic</li>
+  </value>
+</Operation>
+
+<!-- Heavy Mech Ressurection Recipe Patches -->
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/RecipeDef[defName="ResurrectHeavyMech"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<value>
+			<li>Corpse_Mech_Logistic</li>
+		</value>
+	</Operation>
+</Patch>

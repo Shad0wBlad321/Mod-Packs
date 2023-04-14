@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  
+   <PawnRelationDef>
+    <defName>VAERoy_TutorRelation</defName>
+    <label>tutoring</label>
+    <importance>85</importance>
+    <diedThought>VAERoy_TutorDied</diedThought>
+    
+    <lostThought>VAERoy_TutorLost</lostThought>
+    <killedThought>VAERoy_TutorKilled</killedThought>
+    <opinionOffset>50</opinionOffset>
+    <implied>false</implied>
+    <reflexive>true</reflexive>
+  </PawnRelationDef>
+
+</Defs>

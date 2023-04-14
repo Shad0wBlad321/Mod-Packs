@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialAB_AlcyoniteChunk</defName>
+							<thingDef>AB_AlcyoniteChunk</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								
+								<li>VCEF_BiomeAlienJungly</li>	
+								
+							</allowedBiomes>  	
+							<commonality>0.5</commonality>		
+							<baseFishingYield>10</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialAB_CrystalWood</defName>
+							<thingDef>AB_CrystalWood</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								
+								<li>VCEF_BiomeAlienCold</li>									
+							</allowedBiomes>  	
+							<commonality>0.75</commonality>		
+							<baseFishingYield>15</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialAB_MushroomWoodLog</defName>
+							<thingDef>AB_MushroomWoodLog</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>								
+								
+								<li>VCEF_BiomeAlienJungly</li>									
+							</allowedBiomes>  	
+							<commonality>0.75</commonality>		
+							<baseFishingYield>15</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialAB_CrystallineMatrix</defName>
+							<thingDef>AB_CrystallineMatrix</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								
+								<li>VCEF_BiomeAlienCold</li>			
+							</allowedBiomes>  	
+							<commonality>0.2</commonality>			
+							<baseFishingYield>2</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialAB_Shell_Tar</defName>
+							<thingDef>AB_Shell_Tar</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>	
+								<li>VCEF_BiomeAlienJungly</li>	
+								<li>VCEF_BiomeAlienHot</li>	
+								<li>VCEF_BiomeAlienCold</li>	
+							</allowedBiomes>  	
+							<commonality>0.1</commonality>			
+							<baseFishingYield>1</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						
+
+
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

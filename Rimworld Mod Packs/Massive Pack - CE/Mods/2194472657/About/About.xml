@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Vanilla Weapons Expanded - Grenades</name>
+	<author>Oskar Potocki</author>
+	<supportedVersions>
+		<li>1.2</li>
+		<li>1.3</li>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>VanillaExpanded.VWEG</packageId>
+	<description>With a brand new utility item code introduced in RimWorld 1.2 update, I saw it as a perfect fit to make grenades be actually useful instead of forcing you to choose between a grenade and a rifle. By crafting grenade belts, you can now equip all vanilla and vanilla expanded grenade types on your pawn alongside any weapon you wish, and use them manually by selecting a special “throw grenade” button on the menu, next to the draft button.
+
+You heard it right, now you can launch grenades and continue to fire your assault carbine at your enemies! No need to call out that single useless colonist that always carries just grenades.
+
+What’s the drawback? Grenades on the belt are limited, much like the ammo for the Grenadier suit in Royalty DLC, you now need to refill the grenades after the charges deplete. You refill them using the grenade type they are made out of - Frag grenade belt gets refilled with frag grenades etc.
+
+Vanilla Weapons Expanded is part of a series of mods expanding on everyday life on the Rimworld. When paired together with a brand new Vanilla Apparel Expanded and Vanilla Armours Expanded, you can bring something to your game that will keep you interested in it for days. This mod has built in support for other Vanilla Expanded grenades - VWE smoke, flash and gas grenades as well as dynamite from VFE - Settlers!</description>
+	<url/>
+</ModMetaData>

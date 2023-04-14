@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanilla Furniture Expanded Pack</name>
+  <packageId>Farxmai2.VanillaFurnitureExpandedPack</packageId>
+  <author>Farxmai2</author>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>This mod adds extended furniture pack based on other mods from Vanilla Expanded series.</description>
+  <url>https://steamcommunity.com/sharedfiles/filedetails/?id=2915484451</url>
+  <modDependencies>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>VanillaExpanded.VTEXVariations</packageId>
+      <displayName>Vanilla Textures Expanded - Variations</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2493234474</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>
+    <li>OskarPotocki.VFE.Mechanoid</li>
+    <li>OskarPotocki.VFE.Insectoid</li>
+    <li>OskarPotocki.VFE.Vikings</li>
+    <li>VanillaExpanded.VWE</li>
+    <li>VanillaExpanded.VFECore</li>
+    <li>VanillaExpanded.VFEMedical</li>
+    <li>VanillaExpanded.VFEProduction</li>
+    <li>VanillaExpanded.VTEXVariations</li>
+    <li>VanillaExpanded.VCookE</li>
+    <li>VanillaExpanded.VBrewE</li>
+    <li>VanillaExpanded.VBrewECandT</li>
+    <li>VanillaExpanded.VPsycastsE</li>
+    <li>LWM.DeepStorage</li>
+    <li>rimfridge.kv.rw</li>
+    <li>Owlchemist.FridgeUtilities</li>
+    <li>dismarzero.VGP.VGPVegetableGarden</li>
+    <li>Dubwise.DubsBadHygiene</li>
+    <li>sarg.alphaanimals</li>
+    <li>skikohi.jewelry</li>
+  </loadAfter>
+</ModMetaData>

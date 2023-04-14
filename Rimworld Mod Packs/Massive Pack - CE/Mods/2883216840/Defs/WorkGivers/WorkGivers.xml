@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>BTEMy_Warden_DeliverAurum</defName>
+    <label>deliver aurum</label>
+    <giverClass>BTE_MY.WorkGiver_Warden_DeliverAurum</giverClass>
+    <workType>Warden</workType>
+    <verb>deliver aurum</verb>
+    <gerund>delivering aurum</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  <WorkGiverDef>
+    <defName>BTEMy_Warden_DeliverReverence</defName>
+    <label>deliver reverence</label>
+    <giverClass>BTE_MY.WorkGiver_Warden_DeliverReverence</giverClass>
+    <workType>Warden</workType>
+    <verb>deliver reverence</verb>
+    <gerund>delivering reverence</gerund>
+    <priorityInType>91</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>BTEMy_FeedAurum</defName>
+    <label>administer aurum</label>
+    <giverClass>BTE_MY.Workgiver_AdministerAurum</giverClass>
+    <workType>Doctor</workType>
+    <verb>administer aurum to</verb>
+    <gerund>administering aurum to</gerund>
+    <priorityInType>66</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  <WorkGiverDef>
+    <defName>BTEMy_FeedReverence</defName>
+    <label>administer reverence</label>
+    <giverClass>BTE_MY.Workgiver_AdministerReverence</giverClass>
+    <workType>Doctor</workType>
+    <verb>administer reverence to</verb>
+    <gerund>administering reverence to</gerund>
+    <priorityInType>67</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+ 
+</Defs>

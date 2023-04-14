@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<VRESaurids_Saurid>0.025</VRESaurids_Saurid>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<VRESaurids_Saurid>0.05</VRESaurids_Saurid>
+		</value>
+	</Operation>
+
+</Patch>

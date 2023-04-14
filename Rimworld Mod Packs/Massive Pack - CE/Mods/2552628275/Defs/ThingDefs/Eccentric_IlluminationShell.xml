@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Illumination mortar round -->
+  <ThingDef>
+    <category>Projectile</category>
+    <defName>EccentricSkyFlareMortar</defName>
+    <label>illumination shell</label>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Gas</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>false</coversFloor>
+    <holdsRoof>false</holdsRoof>
+    <blockLight>false</blockLight>
+    <mineable>false</mineable>
+    <selectable>false</selectable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="EccentricFlares.CompProperties_FlareOverlay">
+        <duration>4500</duration>
+        <expandInDuration>60</expandInDuration>
+        <heightOffset>8.0</heightOffset>
+        <heightDelta>-6.0</heightDelta>
+        <baseSize>3.0</baseSize>
+        <sizeVariance>0.25</sizeVariance>
+        <sizeDelta>-1.5</sizeDelta>
+        <baseAlpha>1.0</baseAlpha>
+        <alphaDelta>-0.3</alphaDelta>
+        <glowFleck>Eccentric_BlueFireGlow</glowFleck>
+        <texturePaths>
+          <li>Things/Special/Eccentric/SkyFlareBlue_0</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_1</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_2</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_3</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_4</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_5</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_6</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_7</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_8</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_9</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_10</li>
+          <li>Things/Special/Eccentric/SkyFlareBlue_11</li>
+        </texturePaths>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(99,136,230,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>4500</lifespanTicks>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Things/Special/Eccentric/Placeholder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <deconstructible>false</deconstructible>
+    </building>
+    <useHitPoints>false</useHitPoints>
+  </ThingDef>
+
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Eccentric_IlluminationShell</defName>
+    <label>illumination shell</label>
+    <description>A shell loaded with a parachute flare. Illuminates a large area when fired from a mortar.</description>
+    <graphicData>
+      <texPath>Things/Ammo/Eccentric/IlluminationShell</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_Illumination</projectileWhenLoaded>
+    <costList>
+      <Steel>5</Steel>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_Illumination</defName>
+    <label>illumination shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Eccentric/Flare_Shadow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <explosionRadius>.5</explosionRadius>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <explosionDelay>0</explosionDelay>
+      <speed>20</speed>
+      <flyOverhead>true</flyOverhead>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Eccentric_FlareHit</soundExplode>
+      <preExplosionSpawnThingDef>EccentricSkyFlareMortar</preExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+
+</Defs>

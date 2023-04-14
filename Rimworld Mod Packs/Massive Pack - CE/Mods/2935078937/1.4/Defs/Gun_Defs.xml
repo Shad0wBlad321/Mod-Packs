@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>Laser</defName>
+    <label>laser</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been lasered to death.</deathMessage>
+    <hediff>Burn</hediff>
+     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+  <additionalHediffs>
+    <li>
+      <hediff>MeltedArmor_Hediff</hediff>
+      <severityPerDamageDealt>0.01</severityPerDamageDealt>
+    </li>
+  </additionalHediffs>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <defaultDamage>10</defaultDamage>
+	<explosionCellFleck>BlastEMP</explosionCellFleck>
+    <defaultArmorPenetration>0.1</defaultArmorPenetration>
+	<defaultStoppingPower>2</defaultStoppingPower>
+    <buildingDamageFactorImpassable>0.4</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0.2</buildingDamageFactorPassable>
+	<soundExplosion>Explosion_Stun</soundExplosion>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <techLevel>Ultra</techLevel>
+    <defName>Laser_Handcannon</defName>
+    <label>laser handcannon</label>
+    <description>A sidearm of advanced design, originating from a glitterworld's manufacturing foundry. The core that powers it utilizes electromagnetism to accumulate and compress photons into blazing-hot bolts of energy capable of melting through steel.</description>
+    <graphicData>
+      <texPath>Things/Guns/LaserHandcannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+	<weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>Ultratech</li>
+    </weaponClasses>
+    <statBases>
+	  <MarketValue>2100</MarketValue> 
+	  <DeteriorationRate>0</DeteriorationRate>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>LaserBoltSmall</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>22</range>
+        <soundCast>Laser_Woop</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGunWithQuality">
+    <techLevel>Ultra</techLevel>
+    <defName>Laser_Carbine</defName>
+    <label>laser carbine</label>
+    <description>A rifle designed for professionals by glitterworld engineers. By adjusting the core's electromagnetic field, the weapon accelerates photons into a precise burst of laser bolts. In exchange, the reduced energy compression prevents the armament from turning steel walls into swiss cheese in one fell swoop.</description>
+    <graphicData>
+      <texPath>Things/Guns/LaserCarbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+	<weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>Ultratech</li>
+    </weaponClasses>
+    <statBases>
+	  <MarketValue>2400</MarketValue> 
+	  <DeteriorationRate>0</DeteriorationRate>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>95</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+	  <Gold>10</Gold>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>LaserBolt</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>35</range>
+		<burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Laser_Woop</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>7</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGunWithQuality">
+    <techLevel>Ultra</techLevel>
+    <defName>Laser_Scatterer</defName>
+    <label>laser scatterer</label>
+    <description>A glitterworld shotgun built for breaching operations. The core primes each laser shot with additional photon compression, sacrificing bolt accuracy and range. In exchange, the weapon achieves a buckshot effect, each "pellet" capable of reducing most metals to slag.</description>
+    <graphicData>
+      <texPath>Things/Guns/LaserScattergun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+	<weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+	  <li>Ultratech</li>
+    </weaponClasses>
+    <statBases>
+	  <MarketValue>2400</MarketValue> 
+	  <DeteriorationRate>0</DeteriorationRate>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>85</Plasteel>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>AthenaFramework.Verb_ShootAngularShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>LaserBolt</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <soundCast>Laser_Woop</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	 <modExtensions>
+      <li Class="AthenaFramework.AngularShotgunExtension">
+        <pelletCount>6</pelletCount>
+        <pelletAngle>3</pelletAngle>
+        <downedHitChance>0.2</downedHitChance>
+      </li>
+    </modExtensions>
+  </ThingDef>
+    
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <techLevel>Ultra</techLevel>
+    <defName>Laser_Saber</defName>
+    <label>laser saber</label>
+    <description>A glitterworld-designed blade built for tidy close-quarter engagements. The immense heat of its edge, formed from magnetically-contained photons, cleaves through steel as easily as a hot knife cuts butter.</description>
+    <graphicData>
+      <texPath>Things/Guns/LaserSaber</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <recipeMaker Inherit="False" />
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+	<weaponTags>
+      <li>MeleePiercer</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Melee</li>
+	  <li>Ultratech</li>
+    </weaponClasses>
+    <statBases>
+	  <MarketValue>2000</MarketValue> 
+	  <DeteriorationRate>0</DeteriorationRate>
+      <Mass>1.2</Mass>
+    </statBases>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+      <Steel>45</Steel>
+	  <Plasteel>55</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2.2</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+        <extraMeleeDamages>
+          <li>
+            <def>Laser</def>
+            <amount>10</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- Bullet -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>LaserBolt</defName>
+    <label>laser bolt</label>
+    <graphicData>
+      <texPath>Things/LaserBolt</texPath>
+	  <shaderType>TransparentPostLight</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Laser</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+	  <armorPenetrationBase>0.28</armorPenetrationBase>
+      <speed>125</speed>
+    </projectile>
+    <comps>      
+      <li Class="AthenaFramework.CompProperties_ProjectileImpactEffect">
+      <fleck>Fleck_Burn</fleck>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>LaserBoltSmall</defName>
+    <label>small laser bolt</label>
+    <graphicData>
+      <texPath>Things/LaserBolt</texPath>
+	  <shaderType>TransparentPostLight</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Laser</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>0.24</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+    <comps>      
+      <li Class="AthenaFramework.CompProperties_ProjectileImpactEffect">
+      <fleck>Fleck_Burn</fleck>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBullet">
+    <defName>DestructorLaser</defName>
+    <label>destructor laser</label>
+    <graphicData>
+      <!-- Texture that your bullet will look like and its path -->
+      <texPath>Things/LaserBig</texPath>
+	  <shaderType>TransparentPostLight</shaderType>
+     
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Laser</damageDef>   
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>95</speed>
+	  <explosionRadius>1.8</explosionRadius>
+      <explosionEffect>LaserBlast</explosionEffect>  
+      <preExplosionSpawnThingDef>Filth_Ash</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.27</preExplosionSpawnChance>
+      <screenShakeFactor>0.5</screenShakeFactor>
+    </projectile>
+    <comps>      
+      <li Class="AthenaFramework.CompProperties_ProjectileImpactEffect">
+      <fleck>Fleck_Burn</fleck>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<!-- Effect -->
+
+  <EffecterDef>
+    <defName>LaserBlast</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>LaserExplosion</moteDef>
+        <scale>2</scale>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>LaserExplosionGlow</moteDef>
+        <scale>3</scale>
+		<color>(1, 1, 1, 0.5)</color>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>LaserExplosionGlow</moteDef>
+        <scale>0.6</scale>
+		<color>(1, 1, 1, 1)</color>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>LaserExplosion</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <thingClass>MoteAttached</thingClass>
+    <mote>
+      <fadeInTime>0.06</fadeInTime>
+      <solidTime>0.08</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+	  <growthRate>5</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Laserwave</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>LaserExplosionGlow</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <thingClass>MoteAttached</thingClass>
+    <mote>
+      <fadeInTime>0.04</fadeInTime>
+      <solidTime>0.08</solidTime>
+      <fadeOutTime>0.4</fadeOutTime>
+	  <growthRate>9</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/LaserExplosionGlow</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+  </ThingDef>
+
+  <FleckDef ParentName="FleckBase_RandomGraphic_Thrown">
+    <defName>Fleck_Burn</defName>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <fadeOutTime>2</fadeOutTime>
+    <solidTime>8</solidTime>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Burn/Burn_a</texPath>
+        <shaderType>Transparent</shaderType>
+        <drawSize>1</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Burn/Burn_b</texPath>
+        <shaderType>Transparent</shaderType>
+        <drawSize>1</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Burn/Burn_c</texPath>
+        <shaderType>Transparent</shaderType>
+        <drawSize>1</drawSize>
+      </li>
+    </randomGraphics>
+  </FleckDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Large Machining Table -->
+
+  <VFE_TableMachiningLarge.label>大型 精密工作機械</VFE_TableMachiningLarge.label>
+  <VFE_TableMachiningLarge.description>高度な道具類と十分な作業スペースを備えた大きな作業台でより簡単な材料から短時間で技術の高い製品を作り出すことができます。電動式の作業場です。</VFE_TableMachiningLarge.description>
+  <Blueprint_VFE_TableMachiningLarge.label>大型 精密工作機械(設計)</Blueprint_VFE_TableMachiningLarge.label>
+  <Frame_VFE_TableMachiningLarge.label>大型 精密工作機械(施行)</Frame_VFE_TableMachiningLarge.label>
+  <Frame_VFE_TableMachiningLarge.description>高度な道具類と十分な作業スペースを備えた大きな作業台でより簡単な材料から短時間で技術の高い製品を作り出すことができます。電動式の作業場です。</Frame_VFE_TableMachiningLarge.description>
+
+
+  <!-- Large Electric Smithy -->
+
+  <VFE_TableSmithyLarge.label>大型 電動工作台</VFE_TableSmithyLarge.label>
+  <VFE_TableSmithyLarge.description>機械式ではない武器や道具を製造するための電動式作業台です。大量の電力を消費します。</VFE_TableSmithyLarge.description>
+  <Blueprint_VFE_TableSmithyLarge.label>大型 電動工作台(設計)</Blueprint_VFE_TableSmithyLarge.label>
+  <Frame_VFE_TableSmithyLarge.label>大型 電動工作台(施行)</Frame_VFE_TableSmithyLarge.label>
+  <Frame_VFE_TableSmithyLarge.description>機械式ではない武器や道具を製造するための電動式作業台です。大量の電力を消費します。</Frame_VFE_TableSmithyLarge.description>
+
+
+  <!-- Large Stove Table -->
+
+  <VFE_TableStoveLarge.label>大型コンロ</VFE_TableStoveLarge.label>
+  <VFE_TableStoveLarge.description>大型の調理用コンロと、複数のカマドを使って食事を用意して、調理時間を大幅に短縮して調理できます。</VFE_TableStoveLarge.description>
+  <Blueprint_VFE_TableStoveLarge.label>大型コンロ(設計)</Blueprint_VFE_TableStoveLarge.label>
+  <Frame_VFE_TableStoveLarge.label>大型コンロ(施行)</Frame_VFE_TableStoveLarge.label>
+  <Frame_VFE_TableStoveLarge.description>大型の調理用コンロと、複数のカマドを使って食事を用意して、調理時間を大幅に短縮して調理できます。</Frame_VFE_TableStoveLarge.description>
+
+
+  <!-- Large Tailoring Table -->
+
+  <VFE_TableTailorLarge.label>大型ミシン台</VFE_TableTailorLarge.label>
+  <VFE_TableTailorLarge.description>裁縫職人向けのいくつかの道具と衣服の素早く仕立てるためのミシンが取り付けられた大型の裁縫作業台です。電気なしでも通常の33％に当たる速度で作業できます。</VFE_TableTailorLarge.description>
+  <Blueprint_VFE_TableTailorLarge.label>大型ミシン台(設計)</Blueprint_VFE_TableTailorLarge.label>
+  <Frame_VFE_TableTailorLarge.label>大型ミシン台(施行)</Frame_VFE_TableTailorLarge.label>
+  <Frame_VFE_TableTailorLarge.description>裁縫職人向けのいくつかの道具と衣服の素早く仕立てるためのミシンが取り付けられた大型の裁縫作業台です。電気なしでも通常の33％に当たる速度で作業できます。</Frame_VFE_TableTailorLarge.description>
+
+</LanguageData>

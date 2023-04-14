@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- ==================== Flare ==================== -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef ParentName="GrenadeRecipeBase">
+              <defName>MakeFlares</defName>
+              <label>make flares x10</label>
+              <description>Craft 10 flares.</description>
+              <jobString>Making flares.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>WoodLog</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>5</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>WoodLog</li>
+                  <li>Chemfuel</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <workAmount>5000</workAmount>
+              <products>
+                <Eccentric_Flare>10</Eccentric_Flare>
+              </products>
+            </RecipeDef>
+
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Proj_EccentricFlare"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Proj_EccentricFlare</defName>
+              <label>flare</label>
+              <thingClass>CombatExtended.Projectile_FireTrail</thingClass>
+              <graphicData>
+                <texPath>Things/Special/Eccentric/Flare</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <explosionRadius>.1</explosionRadius>
+                <damageDef>Flame</damageDef>
+                <damageAmountBase>5</damageAmountBase>
+                <explosionDelay>0</explosionDelay>
+                <speed>12</speed>
+                <flyOverhead>false</flyOverhead>
+                <ai_IsIncendiary>true</ai_IsIncendiary>
+                <soundExplode>Eccentric_FlareHit</soundExplode>
+                <preExplosionSpawnThingDef>EccentricBurningFlare</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <dropsCasings>false</dropsCasings>
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Eccentric_Flare"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeEquipment" Class="CombatExtended.AmmoDef">
+              <defName>Eccentric_Flare</defName>
+              <label>flare</label>
+              <description>A pyrotechnic tube that, when lit, provides illumination in an area for a while.</description>
+              <thingClass>CombatExtended.AmmoThing</thingClass>
+              <stackLimit>75</stackLimit>
+              <resourceReadoutPriority>First</resourceReadoutPriority>
+              <tickerType>Normal</tickerType>
+              <graphicData>
+                <texPath>Things/Ammo/Eccentric/RoadFlares</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <soundInteract>Interact_MolotovCocktail</soundInteract>
+              <techLevel>Industrial</techLevel>
+              <statBases>
+                <Mass>0.5</Mass>
+                <MarketValue>3</MarketValue>
+                <SightsEfficiency>1</SightsEfficiency>
+                <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+              </statBases>
+              <weaponTags Inherit="False">
+                <li>EccentricFlare</li>
+              </weaponTags>
+              <equippedAngleOffset>-45</equippedAngleOffset>
+              <thingCategories>
+                <li>Grenades</li>
+              </thingCategories>
+              <verbs>
+                <li Class="CombatExtended.VerbPropertiesCE">
+                  <label>throw flare</label>
+                  <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <range>10</range>
+                  <warmupTime>1.0</warmupTime>
+                  <noiseRadius>4</noiseRadius>
+                  <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                  <soundCast>Eccentric_FlareIgnite</soundCast>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <defaultProjectile>Proj_EccentricFlare</defaultProjectile>
+                  <onlyManualCast>true</onlyManualCast>
+                  <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                  <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+                </li>
+              </verbs>
+              <comps>
+                <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                  <explosiveDamageType>Flame</explosiveDamageType>
+                  <damageAmountBase>1</damageAmountBase>
+                  <explosiveRadius>0.5</explosiveRadius>
+                  <explosionSound>Eccentric_FlareHit</explosionSound>
+                </li>
+              </comps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <!-- ==================== Flare Gun ==================== -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <CombatExtended.AmmoCategoryDef>
+              <defName>Illumination</defName>
+              <label>illumination</label>
+              <labelShort>Illum</labelShort>
+              <description>Emits bright light to illuminate an area.</description>
+            </CombatExtended.AmmoCategoryDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingCategoryDef>
+              <defName>AmmoFlares</defName>
+              <label>flare</label>
+              <parent>Ammo</parent>
+              <iconPath>UI/Icons/ThingCategories/AmmoGrenades</iconPath>
+            </ThingCategoryDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingCategoryDef>
+              <defName>Ammo265Flare</defName>
+              <label>26.5mm Flare</label>
+              <parent>AmmoFlares</parent>
+              <iconPath>UI/Icons/ThingCategories/CaliberGrenade</iconPath>
+            </ThingCategoryDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <CombatExtended.AmmoSetDef>
+              <defName>AmmoSet_265Flare</defName>
+              <label>26.5mm Flare</label>
+              <ammoTypes>
+                <Ammo_265Flare_Illumination>Proj_EccentricSkyFlare</Ammo_265Flare_Illumination>
+              </ammoTypes>
+            </CombatExtended.AmmoSetDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
+              <thingClass>CombatExtended.AmmoThing</thingClass>
+              <defName>Ammo_265Flare_Illumination</defName>
+              <label>26.5mm Flare (Illumination)</label>
+              <description>A small, lightweight parachute flare round for illumination.</description>
+              <graphicData>
+                <texPath>Things/Ammo/Eccentric/FlareRounds</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <statBases>
+                <Mass>0.05</Mass>
+                <Bulk>0.07</Bulk>
+                <MarketValue>0.15</MarketValue>
+              </statBases>
+              <tradeTags>
+                <li>CE_AutoEnableTrade</li>
+                <li>CE_AutoEnableCrafting</li>
+              </tradeTags>
+              <thingCategories>
+                <li>Ammo265Flare</li>
+              </thingCategories>
+              <stackLimit>75</stackLimit>
+              <ammoClass>Illumination</ammoClass>
+              <cookOffProjectile>Proj_EccentricSkyFlare</cookOffProjectile>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef ParentName="AmmoRecipeBase">
+              <defName>MakeAmmo_265Flare_Illumination</defName>
+              <label>make 26.5mm Flare (Illumination) x50</label>
+              <description>Craft 50 26.5mm illumination flares.</description>
+              <jobString>Making illumination flare rounds.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Steel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>8</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Cloth</li>
+                    </thingDefs>
+                  </filter>
+                  <count>5</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>12</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Steel</li>
+                  <li>Cloth</li>
+                  <li>Chemfuel</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <Ammo_265Flare_Illumination>50</Ammo_265Flare_Illumination>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Proj_EccentricSkyFlare"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Proj_EccentricSkyFlare</defName>
+              <label>flare</label>
+              <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+              <graphicData>
+                <texPath>Things/Projectile/Eccentric/Flare_Shadow</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <explosionRadius>.1</explosionRadius>
+                <damageDef>Burn</damageDef>
+                <damageAmountBase>0</damageAmountBase>
+                <explosionDelay>0</explosionDelay>
+                <speed>20</speed>
+                <flyOverhead>false</flyOverhead>
+                <ai_IsIncendiary>true</ai_IsIncendiary>
+                <soundExplode>Eccentric_FlareHit</soundExplode>
+                <preExplosionSpawnThingDef>EccentricSkyFlare</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <dropsCasings>false</dropsCasings>
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Eccentric_FlareGun"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseHumanMakeableGun">
+              <defName>Eccentric_FlareGun</defName>
+              <label>flare gun</label>
+              <description>A flare gun that fires illumination flares.</description>
+              <graphicData>
+                <texPath>Things/Weapons/Eccentric/FlareGun</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <soundInteract>Interact_Revolver</soundInteract>
+              <techLevel>Industrial</techLevel>
+              <statBases>
+                <WorkToMake>4000</WorkToMake>
+                <Mass>1.4</Mass>
+                <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+                <SightsEfficiency>0.7</SightsEfficiency>
+                <ShotSpread>0.16</ShotSpread>
+                <SwayFactor>1.46</SwayFactor>
+                <Bulk>2.5</Bulk>
+              </statBases>
+              <costList>
+                <Steel>20</Steel>
+                <Chemfuel>10</Chemfuel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+              </costList>
+              <recipeMaker>
+                <skillRequirements>
+                  <Crafting>3</Crafting>
+                </skillRequirements>
+                <researchPrerequisite>Gunsmithing</researchPrerequisite>
+              </recipeMaker>
+              <verbs>
+                <li Class="CombatExtended.VerbPropertiesCE">
+                  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                  <recoilAmount>0.85</recoilAmount>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <defaultProjectile>Proj_EccentricSkyFlare</defaultProjectile>
+                  <warmupTime>1.0</warmupTime>
+                  <range>31</range>
+                  <soundCast>Eccentric_FlareGunFire</soundCast>
+                  <soundCastTail>GunTail_Medium</soundCastTail>
+                  <onlyManualCast>true</onlyManualCast>
+                  <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <muzzleFlashScale>14</muzzleFlashScale>
+                </li>
+              </verbs>
+              <comps>
+                <li Class="CombatExtended.CompProperties_AmmoUser">
+                  <magazineSize>1</magazineSize>
+                  <reloadTime>2</reloadTime>
+                  <ammoSet>AmmoSet_265Flare</ammoSet>
+                </li>
+                <li Class="CombatExtended.CompProperties_FireModes">
+                  <aiUseBurstMode>FALSE</aiUseBurstMode>
+                </li>
+              </comps>
+              <weaponTags Inherit="False">
+                <li>EccentricFlare</li>
+                <li>CE_Sidearm</li>
+                <li>CE_OneHandedWeapon</li>
+              </weaponTags>
+              <tools>
+                <li Class="CombatExtended.ToolCE">
+                  <label>grip</label>
+                  <capacities>
+                    <li>Blunt</li>
+                  </capacities>
+                  <power>6</power>
+                  <cooldownTime>1.6</cooldownTime>
+                  <chanceFactor>1.5</chanceFactor>
+                  <armorPenetration>0.102</armorPenetration>
+                  <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                  <label>barrel</label>
+                  <capacities>
+                    <li>Blunt</li>
+                  </capacities>
+                  <power>6</power>
+                  <cooldownTime>1.6</cooldownTime>
+                  <armorPenetration>0.102</armorPenetration>
+                  <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                  <label>muzzle</label>
+                  <capacities>
+                    <li>Poke</li>
+                  </capacities>
+                  <power>6</power>
+                  <cooldownTime>1.6</cooldownTime>
+                  <armorPenetration>0.075</armorPenetration>
+                  <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                </li>
+              </tools>
+            </ThingDef>
+          </value>
+        </li>
+
+        <!-- ==================== Illumination Round ==================== -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Eccentric_IlluminationShell"]</xpath>
+          <value>
+            <ThingDef Class="CombatExtended.AmmoDef" ParentName="81mmMortarShellBaseCraftableBase">
+              <defName>Shell_Illumination</defName>
+              <label>81mm mortar shell (Illumination)</label>
+              <graphicData>
+                <texPath>Things/Ammo/Eccentric/CEIlluminationShell</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <statBases>
+                <MarketValue>30.00</MarketValue>
+                <Mass>5.00</Mass>
+                <Bulk>9</Bulk>
+              </statBases>
+              <ammoClass>Illumination</ammoClass>
+              <comps>
+                <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                  <explosiveDamageType>Burn</explosiveDamageType>
+                  <damageAmountBase>0</damageAmountBase>
+                  <explosiveRadius>.5</explosiveRadius>
+                  <preExplosionSpawnThingDef>EccentricSkyFlareMortar</preExplosionSpawnThingDef>
+                  <explosionSound>Eccentric_FlareHit</explosionSound>
+                </li>
+              </comps>
+            </ThingDef>
+
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_81mmMortarShell"]/ammoTypes</xpath>
+          <value>
+            <Shell_Illumination>Bullet_Shell_Illumination</Shell_Illumination>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef ParentName="AmmoRecipeBase">
+              <defName>MakeShell_Illumination</defName>
+              <label>make 81mm illumination mortar shells x5</label>
+              <description>Craft 5 81mm illumination mortar shells.</description>
+              <jobString>Making 81mm illumination mortar shells.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Steel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>30</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>30</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>ComponentIndustrial</li>
+                    </thingDefs>
+                  </filter>
+                  <count>2</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Steel</li>
+                  <li>Chemfuel</li>
+                  <li>ComponentIndustrial</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <Shell_Illumination>5</Shell_Illumination>
+              </products>
+              <workAmount>9000</workAmount>
+            </RecipeDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Bullet_Shell_Illumination"]</xpath>
+          <value>
+            <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeProjectile">
+              <defName>Bullet_Shell_Illumination</defName>
+              <label>illumination shell</label>
+              <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+              <graphicData>
+                <texPath>Things/Projectile/Eccentric/Flare_Shadow</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <explosionRadius>.1</explosionRadius>
+                <damageDef>Burn</damageDef>
+                <damageAmountBase>0</damageAmountBase>
+                <flyOverhead>true</flyOverhead>
+                <explosionDelay>0</explosionDelay>
+                <soundExplode>Eccentric_FlareHit</soundExplode>
+                <preExplosionSpawnThingDef>EccentricSkyFlareMortar</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <dropsCasings>false</dropsCasings>
+                <gravityFactor>10</gravityFactor>
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+
+        <!-- ==================== Chemlight ==================== -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef ParentName="GrenadeRecipeBase">
+              <defName>MakeChemlightRed</defName>
+              <label>make red chemlights x10</label>
+              <description>Craft 10 red chemlights.</description>
+              <jobString>Making red chemlights.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Chemfuel</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <workAmount>5000</workAmount>
+              <products>
+                <EccentricChemlightRed>10</EccentricChemlightRed>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef ParentName="GrenadeRecipeBase">
+              <defName>MakeChemlightGreen</defName>
+              <label>make green chemlights x10</label>
+              <description>Craft 10 green chemlights.</description>
+              <jobString>Making green chemlights.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Chemfuel</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <workAmount>5000</workAmount>
+              <products>
+                <EccentricChemlightGreen>10</EccentricChemlightGreen>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef ParentName="GrenadeRecipeBase">
+              <defName>MakeChemlightBlue</defName>
+              <label>make blue chemlights x10</label>
+              <description>Craft 10 blue chemlights.</description>
+              <jobString>Making blue chemlights.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Chemfuel</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <workAmount>5000</workAmount>
+              <products>
+                <EccentricChemlightBlue>10</EccentricChemlightBlue>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef ParentName="GrenadeRecipeBase">
+              <defName>MakeChemlightYellow</defName>
+              <label>make yellow chemlights x10</label>
+              <description>Craft 10 yellow chemlights.</description>
+              <jobString>Making yellow chemlights.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Chemfuel</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <workAmount>5000</workAmount>
+              <products>
+                <EccentricChemlightYellow>10</EccentricChemlightYellow>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Proj_EccentricChemlightRed"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Proj_EccentricChemlightRed</defName>
+              <label>flare</label>
+              <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+              <graphicData>
+                <texPath>Things/Projectile/Eccentric/Chemlight_Red</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <explosionRadius>.1</explosionRadius>
+                <damageDef>Stun</damageDef>
+                <damageAmountBase>0</damageAmountBase>
+                <explosionDelay>0</explosionDelay>
+                <speed>12</speed>
+                <flyOverhead>false</flyOverhead>
+                <ai_IsIncendiary>true</ai_IsIncendiary>
+                <soundExplode>Interact_BeatFire</soundExplode>
+                <preExplosionSpawnThingDef>EccentricGlowingChemlightRed</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <dropsCasings>false</dropsCasings>
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Proj_EccentricChemlightGreen"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Proj_EccentricChemlightGreen</defName>
+              <label>flare</label>
+              <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+              <graphicData>
+                <texPath>Things/Projectile/Eccentric/Chemlight_Green</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <explosionRadius>.1</explosionRadius>
+                <damageDef>Stun</damageDef>
+                <damageAmountBase>0</damageAmountBase>
+                <explosionDelay>0</explosionDelay>
+                <speed>12</speed>
+                <flyOverhead>false</flyOverhead>
+                <ai_IsIncendiary>true</ai_IsIncendiary>
+                <soundExplode>Interact_BeatFire</soundExplode>
+                <preExplosionSpawnThingDef>EccentricGlowingChemlightGreen</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <dropsCasings>false</dropsCasings>
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Proj_EccentricChemlightBlue"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Proj_EccentricChemlightBlue</defName>
+              <label>flare</label>
+              <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+              <graphicData>
+                <texPath>Things/Projectile/Eccentric/Chemlight_Blue</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <explosionRadius>.1</explosionRadius>
+                <damageDef>Stun</damageDef>
+                <damageAmountBase>0</damageAmountBase>
+                <explosionDelay>0</explosionDelay>
+                <speed>12</speed>
+                <flyOverhead>false</flyOverhead>
+                <ai_IsIncendiary>true</ai_IsIncendiary>
+                <soundExplode>Interact_BeatFire</soundExplode>
+                <preExplosionSpawnThingDef>EccentricGlowingChemlightBlue</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <dropsCasings>false</dropsCasings>
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Proj_EccentricChemlightYellow"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Proj_EccentricChemlightYellow</defName>
+              <label>flare</label>
+              <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+              <graphicData>
+                <texPath>Things/Projectile/Eccentric/Chemlight_Yellow</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <explosionRadius>.1</explosionRadius>
+                <damageDef>Stun</damageDef>
+                <damageAmountBase>0</damageAmountBase>
+                <explosionDelay>0</explosionDelay>
+                <speed>12</speed>
+                <flyOverhead>false</flyOverhead>
+                <ai_IsIncendiary>true</ai_IsIncendiary>
+                <soundExplode>Interact_BeatFire</soundExplode>
+                <preExplosionSpawnThingDef>EccentricGlowingChemlightYellow</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <dropsCasings>false</dropsCasings>
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EccentricChemlightRed"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeEquipment" Class="CombatExtended.AmmoDef">
+              <defName>EccentricChemlightRed</defName>
+              <label>red chemlight</label>
+              <description>A plastic tube filled with luminescent chemicals that produce a dim but steady red light when used.</description>
+              <thingClass>CombatExtended.AmmoThing</thingClass>
+              <stackLimit>75</stackLimit>
+              <resourceReadoutPriority>First</resourceReadoutPriority>
+              <tickerType>Normal</tickerType>
+              <graphicData>
+                <texPath>Things/Ammo/Eccentric/Chemlight/Red</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <soundInteract>Interact_BeatFire</soundInteract>
+              <techLevel>Industrial</techLevel>
+              <statBases>
+                <Mass>0.5</Mass>
+                <MarketValue>3</MarketValue>
+                <SightsEfficiency>1</SightsEfficiency>
+                <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+              </statBases>
+              <weaponTags Inherit="False">
+                <li>EccentricChemlight</li>
+              </weaponTags>
+              <equippedAngleOffset>-45</equippedAngleOffset>
+              <thingCategories>
+                <li>Grenades</li>
+              </thingCategories>
+              <verbs>
+                <li Class="CombatExtended.VerbPropertiesCE">
+                  <label>throw chemlight</label>
+                  <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <range>10</range>
+                  <warmupTime>1.0</warmupTime>
+                  <noiseRadius>4</noiseRadius>
+                  <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                  <soundCast>Interact_BeatFire</soundCast>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <defaultProjectile>Proj_EccentricChemlightRed</defaultProjectile>
+                  <onlyManualCast>true</onlyManualCast>
+                  <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                  <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+                </li>
+              </verbs>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EccentricChemlightGreen"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeEquipment" Class="CombatExtended.AmmoDef">
+              <defName>EccentricChemlightGreen</defName>
+              <label>green chemlight</label>
+              <description>A plastic tube filled with luminescent chemicals that produce a dim but steady green light when used.</description>
+              <thingClass>CombatExtended.AmmoThing</thingClass>
+              <stackLimit>75</stackLimit>
+              <resourceReadoutPriority>First</resourceReadoutPriority>
+              <tickerType>Normal</tickerType>
+              <graphicData>
+                <texPath>Things/Ammo/Eccentric/Chemlight/Green</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <soundInteract>Interact_BeatFire</soundInteract>
+              <techLevel>Industrial</techLevel>
+              <statBases>
+                <Mass>0.5</Mass>
+                <MarketValue>3</MarketValue>
+                <SightsEfficiency>1</SightsEfficiency>
+                <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+              </statBases>
+              <weaponTags Inherit="False">
+                <li>EccentricChemlight</li>
+              </weaponTags>
+              <equippedAngleOffset>-45</equippedAngleOffset>
+              <thingCategories>
+                <li>Grenades</li>
+              </thingCategories>
+              <verbs>
+                <li Class="CombatExtended.VerbPropertiesCE">
+                  <label>throw chemlight</label>
+                  <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <range>10</range>
+                  <warmupTime>1.0</warmupTime>
+                  <noiseRadius>4</noiseRadius>
+                  <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                  <soundCast>Interact_BeatFire</soundCast>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <defaultProjectile>Proj_EccentricChemlightGreen</defaultProjectile>
+                  <onlyManualCast>true</onlyManualCast>
+                  <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                  <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+                </li>
+              </verbs>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EccentricChemlightBlue"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeEquipment" Class="CombatExtended.AmmoDef">
+              <defName>EccentricChemlightBlue</defName>
+              <label>blue chemlight</label>
+              <description>A plastic tube filled with luminescent chemicals that produce a dim but steady blue light when used.</description>
+              <thingClass>CombatExtended.AmmoThing</thingClass>
+              <stackLimit>75</stackLimit>
+              <resourceReadoutPriority>First</resourceReadoutPriority>
+              <tickerType>Normal</tickerType>
+              <graphicData>
+                <texPath>Things/Ammo/Eccentric/Chemlight/Blue</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <soundInteract>Interact_BeatFire</soundInteract>
+              <techLevel>Industrial</techLevel>
+              <statBases>
+                <Mass>0.5</Mass>
+                <MarketValue>3</MarketValue>
+                <SightsEfficiency>1</SightsEfficiency>
+                <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+              </statBases>
+              <weaponTags Inherit="False">
+                <li>EccentricChemlight</li>
+              </weaponTags>
+              <equippedAngleOffset>-45</equippedAngleOffset>
+              <thingCategories>
+                <li>Grenades</li>
+              </thingCategories>
+              <verbs>
+                <li Class="CombatExtended.VerbPropertiesCE">
+                  <label>throw chemlight</label>
+                  <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <range>10</range>
+                  <warmupTime>1.0</warmupTime>
+                  <noiseRadius>4</noiseRadius>
+                  <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                  <soundCast>Interact_BeatFire</soundCast>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <defaultProjectile>Proj_EccentricChemlightBlue</defaultProjectile>
+                  <onlyManualCast>true</onlyManualCast>
+                  <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                  <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+                </li>
+              </verbs>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EccentricChemlightYellow"]</xpath>
+          <value>
+            <ThingDef ParentName="BaseGrenadeEquipment" Class="CombatExtended.AmmoDef">
+              <defName>EccentricChemlightYellow</defName>
+              <label>yellow chemlight</label>
+              <description>A plastic tube filled with luminescent chemicals that produce a dim but steady yellow light when used.</description>
+              <thingClass>CombatExtended.AmmoThing</thingClass>
+              <stackLimit>75</stackLimit>
+              <resourceReadoutPriority>First</resourceReadoutPriority>
+              <tickerType>Normal</tickerType>
+              <graphicData>
+                <texPath>Things/Ammo/Eccentric/Chemlight/Yellow</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <soundInteract>Interact_BeatFire</soundInteract>
+              <techLevel>Industrial</techLevel>
+              <statBases>
+                <Mass>0.5</Mass>
+                <MarketValue>3</MarketValue>
+                <SightsEfficiency>1</SightsEfficiency>
+                <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+              </statBases>
+              <weaponTags Inherit="False">
+                <li>EccentricChemlight</li>
+              </weaponTags>
+              <equippedAngleOffset>-45</equippedAngleOffset>
+              <thingCategories>
+                <li>Grenades</li>
+              </thingCategories>
+              <verbs>
+                <li Class="CombatExtended.VerbPropertiesCE">
+                  <label>throw chemlight</label>
+                  <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <range>10</range>
+                  <warmupTime>1.0</warmupTime>
+                  <noiseRadius>4</noiseRadius>
+                  <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                  <soundCast>Interact_BeatFire</soundCast>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <defaultProjectile>Proj_EccentricChemlightYellow</defaultProjectile>
+                  <onlyManualCast>true</onlyManualCast>
+                  <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                  <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+                </li>
+              </verbs>
+            </ThingDef>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+
+  </Operation>
+</Patch>

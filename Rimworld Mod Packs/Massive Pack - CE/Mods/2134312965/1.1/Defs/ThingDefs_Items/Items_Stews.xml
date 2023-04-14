@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_UncookedStewSimple</defName>
+		<label>uncooked simple stew</label>
+		<description>An uncooked simple stew. This needs to be cooked in a stew pot to be edible.</description>
+		<graphicData>
+			<texPath>Things/Items/UncookedStew/VCE_UncookedStewSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<Flammability>1.3</Flammability>
+			<WorkToMake>300</WorkToMake>
+		</statBases>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />			
+		</comps>
+		<thingCategories>
+			<li>VCE_UncookedStews</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>			
+		</ingestible>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_CookedStewSimple</defName>
+		<label>simple stew</label>
+		<description>A simple stew slow cooked from a few ingredients.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_StewSimple</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>14</MarketValue>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Ingest_Drink</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_UncookedStewFine</defName>
+		<label>uncooked fine stew</label>
+		<description>An uncooked fine stew. This needs to be cooked in a stew pot to be edible.</description>
+		<graphicData>
+			<texPath>Things/Items/UncookedStew/VCE_UncookedStewFine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>240</MarketValue>
+			<Flammability>1.3</Flammability>
+			<WorkToMake>450</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+
+		</comps>
+		<thingCategories>
+			<li>VCE_UncookedStews</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>			
+		</ingestible>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_CookedStewFine</defName>
+		<label>fine stew</label>
+		<description>A complex stew assembled with care from a wide selection of ingredients.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_StewFine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>18</MarketValue>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<tasteThought>AteFineMeal</tasteThought>
+			<ingestSound>Ingest_Drink</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_UncookedStewLavish</defName>
+		<label>uncooked lavish stew</label>
+		<description>An uncooked lavish stew. This needs to be cooked in a stew pot to be edible.</description>
+		<graphicData>
+			<texPath>Things/Items/UncookedStew/VCE_UncookedStewLavish</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Flammability>1.3</Flammability>
+			<WorkToMake>800</WorkToMake>
+
+		</statBases>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+
+		</comps>
+		<thingCategories>
+			<li>VCE_UncookedStews</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>			
+		</ingestible>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_CookedStewLavish</defName>
+		<label>lavish stew</label>
+		<description>A masterpiece of the culinary arts, this stew nourishes the body, mind, and soul.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_StewLavish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>38</MarketValue>
+			
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<ingestSound>Ingest_Drink</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+	
+	
+
+	
+
+
+
+
+
+
+
+
+</Defs>

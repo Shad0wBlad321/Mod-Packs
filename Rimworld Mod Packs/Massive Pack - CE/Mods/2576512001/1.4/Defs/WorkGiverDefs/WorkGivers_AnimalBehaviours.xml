@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+	
+	<WorkGiverDef>
+		<defName>VAE_DestroyCocoons</defName>
+		<label>destroy cocoons</label>
+		<giverClass>VAECaves.WorkGiver_OpenCocoon</giverClass>
+		<workType>Hauling</workType>
+		<verb>destroy cocoons</verb>
+		<gerund>destroying cocoons</gerund>
+		<priorityInType>85</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+    </WorkGiverDef>
+	
+
+
+
+
+</Defs>

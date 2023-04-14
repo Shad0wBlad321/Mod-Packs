@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Add CE Launcher tech as prereq to Charged Launchers -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="Eccentric_ChargedLaunchers"]/prerequisites</xpath>
+    <value>
+      <li>CE_Launchers</li>
+    </value>
+  </Operation>
+
+</Patch>
+

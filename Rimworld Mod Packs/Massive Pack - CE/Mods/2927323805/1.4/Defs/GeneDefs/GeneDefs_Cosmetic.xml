@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef  ParentName="GeneHairStyleBase">
+		<defName>VRE_FoliageHair</defName>
+		<label>foliage hair</label>
+		<displayCategory>Cosmetic</displayCategory>
+		<description>Carriers of this gene have natural-looking, leafy hair.</description>
+		<iconPath>UI/Icons/Genes/Gene_HairStyleFoliageOnly</iconPath>
+		
+		<biostatCpx>1</biostatCpx>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>VRE_FoliageHair</li>
+			</tags>
+		</hairTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>foliage</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>flower</symbol>
+				</li>
+				<li>
+					<symbol>plant</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>VRE_HairColor_Anima</defName>
+		<label>anima hair</label>
+		<iconPath>UI/Icons/Genes/Gene_HairColorPhytokin</iconPath>
+		<hairColorOverride>(172,207,194)</hairColorOverride>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>2200</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>VRE_HairColor_Gauranlen</defName>
+		<label>gauranlen hair</label>
+		<iconPath>UI/Icons/Genes/Gene_HairColorPhytokin</iconPath>
+		<hairColorOverride>(189,111,57)</hairColorOverride>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>2201</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>VRE_HairColor_Pollux</defName>
+		<label>pollux hair</label>
+		<iconPath>UI/Icons/Genes/Gene_HairColorPhytokin</iconPath>
+		<hairColorOverride>(128,108,131)</hairColorOverride>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>2202</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+</Defs>

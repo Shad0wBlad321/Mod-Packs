@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef>
+		<defName>VRE_PlantPoluxTree</defName>
+		<label>plant polux bush</label>
+		<description>Plants a polux bush in the designated spot.</description>
+		<iconPath>UI/Abilities/PlantPoluxTree</iconPath>
+		<cooldownTicksRange>1800000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>1.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>PsychicInsanityLanceCast</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="VanillaRacesExpandedPhytokin.CompProperties_PlantPoluxTree">
+				
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>

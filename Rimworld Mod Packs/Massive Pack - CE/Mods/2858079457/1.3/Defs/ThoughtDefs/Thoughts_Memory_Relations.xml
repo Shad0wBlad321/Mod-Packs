@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+  <ThoughtDef ParentName="DeathMemory">
+    <defName>VAERoy_TutorDied</defName>
+    <showBubble>true</showBubble>
+    <durationDays>20</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>tutoring animal {0} died</label>
+        <description>That lovely orungatun taught me a lot. This universe is evil!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="LostMemory">
+    <defName>VAERoy_TutorLost</defName>
+    <showBubble>true</showBubble>
+    <durationDays>20</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>tutoring animal {0} lost</label>
+        <description>That lovely orungatun taught me a lot. This universe is evil!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>VAERoy_TutorKilled</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>60</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>killed my tutoring animal</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+  
+</Defs>

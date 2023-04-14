@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="FFE_Minibar"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>GardenDrinks</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="FFE_Minibar"]/building/defaultStorageSettings/filter/categories</xpath>
+					<value>
+						<li>GardenDrinks</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="FFE_AnimalTrough"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>AnimalFeed</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="FFE_AnimalTrough"]/building/defaultStorageSettings/filter</xpath>
+					<value>
+						<categories>
+							<li>AnimalFeed</li>
+						</categories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

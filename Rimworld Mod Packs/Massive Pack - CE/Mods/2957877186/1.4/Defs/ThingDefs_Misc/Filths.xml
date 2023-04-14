@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseFilth">
+		<defName>BrainPieces</defName>
+		<label>brain piece</label>
+		<statBases>
+			<Beauty>-50</Beauty>
+			<Cleanliness>-20</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/BrainParts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(225, 225, 225, 100)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>GoreFilth</defName>
+		<label>brain piece</label>
+		<statBases>
+			<Beauty>-50</Beauty>
+			<Cleanliness>-20</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Gore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(225, 225, 225, 100)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>GutsFilth</defName>
+		<label>guts</label>
+		<statBases>
+			<Beauty>-50</Beauty>
+			<Cleanliness>-20</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Guts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(225, 225, 225, 150)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+</Defs>

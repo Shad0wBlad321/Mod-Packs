@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded - Quickdraw</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- RangedLight -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_PDW" or defName="VWE_Gun_BullpupRifle" or defName="VWE_Gun_AutomaticPistol"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedLight</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <!-- LongShots > 35 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWE_Gun_BullpupDMR"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>LongShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef Name="GeneBloodColorBase" Abstract="True">
+    <biostatCpx>0</biostatCpx>
+	<randomChosen>true</randomChosen>
+    <exclusionTags>
+	  <li>BloodColor</li>
+    </exclusionTags>
+ </GeneDef>
+  <!--=================== RED =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodRed</defName>
+	<label>red blood</label>
+	<description>Holders of this gene have red colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodRedGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>0</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Red</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/RedBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitRedFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>RedFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+<GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodSangria</defName>
+	<label>sangria blood</label>
+	<description>Holders of this gene have sangria colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodSangriaGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>1</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Sangria</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/SangriaBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitSangriaFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>SangriaFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodMaroon</defName>
+	<label>maroon blood</label>
+	<description>Holders of this gene have maroon colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodMaroonGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>2</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Maroon</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/MaroonBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitMaroonFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>MaroonFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <!--=================== Orange =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodOrange</defName>
+	<label>orange blood</label>
+	<description>Holders of this gene have orange colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodOrangeGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>3</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Orange</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/OrangeBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitOrangeFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>OrangeFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodTenne</defName>
+	<label>tenne blood</label>
+	<description>Holders of this gene have tenne colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodTenneGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>4</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Tenne</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/TenneBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitTenneFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>TenneFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodBrown</defName>
+	<label>brown blood</label>
+	<description>Holders of this gene have brown colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodBrownGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>5</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Brown</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/BrownBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitBrownFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>BrownFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+   <!--=================== Yellow =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodYellow</defName>
+	<label>yellow blood</label>
+	<description>Holders of this gene have yellow colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodYellowGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>6</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Yellow</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/YellowBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitYellowFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>YellowFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodCitrus</defName>
+	<label>citrus blood</label>
+	<description>Holders of this gene have citrus colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodCitrusGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>7</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Citrus</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/CitrusBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitCitrusFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>CitrusFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodDarkOlive</defName>
+	<label>dark olive blood</label>
+	<description>Holders of this gene have dark olive colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodDarkOliveGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>8</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_DarkOlive</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/DarkOliveBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitDarkOliveFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>DarkOliveFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+    <!--=================== Green =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodLime</defName>
+	<label>lime blood</label>
+	<description>Holders of this gene have lime colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodLimeGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>9</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Lime</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/LimeBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitLimeFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>LimeFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodOlive</defName>
+	<label>olive blood</label>
+	<description>Holders of this gene have olive colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodOliveGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Olive</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/OliveBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitOliveFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>OliveFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodGreen</defName>
+	<label>green blood</label>
+	<description>Holders of this gene have green colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodGreenGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>11</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Green</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/GreenBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitGreenFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>GreenFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+     <!--=================== Jade =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodSpringGreen</defName>
+	<label>spring green blood</label>
+	<description>Holders of this gene have spring green colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodSpringGreenGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>12</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_SpringGreen</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/SpringGreenBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitSpringGreenFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>SpringGreenFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodJade</defName>
+	<label>jade blood</label>
+	<description>Holders of this gene have jade colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodJadeGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>13</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Jade</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/JadeBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitJadeFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>JadeFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodDarkGreen</defName>
+	<label>dark green blood</label>
+	<description>Holders of this gene have dark green colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodDarkGreenGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>14</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_DarkGreen</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/DarkGreenBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitDarkGreenFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>DarkGreenFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+      <!--=================== Cyan =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodAqua</defName>
+	<label>aqua blood</label>
+	<description>Holders of this gene have aqua colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodAquaGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>15</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Aqua</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/AquaBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitAquaFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>AquaFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodTeal</defName>
+	<label>teal blood</label>
+	<description>Holders of this gene have teal colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodTealGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>16</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Teal</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/TealBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitTealFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>TealFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodSherpaBlue</defName>
+	<label>sherpa blue blood</label>
+	<description>Holders of this gene have sherpa blue colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodSherpaBlueGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>17</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_SherpaBlue</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/SherpaBlueBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitSherpaBlueFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>SherpaBlueFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Cerulean =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodDodgerBlue</defName>
+	<label>dodger blue blood</label>
+	<description>Holders of this gene have dodger blue colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodDodgerBlueGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>18</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_DodgerBlue</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/DodgerBlueBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitDodgerBlueFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>DodgerBlueFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodSmalt</defName>
+	<label>smalt blood</label>
+	<description>Holders of this gene have smalt colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodSmaltGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>19</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Smalt</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/SmaltBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitSmaltFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>SmaltFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodPrussianBlue</defName>
+	<label>prussian blue blood</label>
+	<description>Holders of this gene have prussian blue colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodPrussianBlueGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>20</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_PrussianBlue</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/PrussianBlueBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitPrussianBlueFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>PrussianBlueFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Blue =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodBlue</defName>
+	<label>blue blood</label>
+	<description>Holders of this gene have blue colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodBlueGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>21</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Blue</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/BlueBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitBlueFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>BlueFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodMediumBlue</defName>
+	<label>medium blue blood</label>
+	<description>Holders of this gene have medium blue colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodMediumBlueGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>22</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_MediumBlue</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/MediumBlueBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitMediumBlueFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>MediumBlueFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodNavy</defName>
+	<label>navy blood</label>
+	<description>Holders of this gene have navy colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodNavyGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>23</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Navy</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/NavyBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitNavyFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>NavyFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Purple =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodElectricIndigo</defName>
+	<label>electric indigo blood</label>
+	<description>Holders of this gene have electric indigo colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodElectricIndigoGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>24</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_ElectricIndigo</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/ElectricIndigoBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitElectricIndigoFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>ElectricIndigoFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodPurple</defName>
+	<label>purple blood</label>
+	<description>Holders of this gene have purple colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodPurpleGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>25</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Purple</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/PurpleBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitPurpleFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>PurpleFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodIndigo</defName>
+	<label>indigo blood</label>
+	<description>Holders of this gene have indigo colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodIndigoGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>26</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Indigo</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/IndigoBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitIndigoFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>IndigoFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Violet =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodMagenta</defName>
+	<label>magenta blood</label>
+	<description>Holders of this gene have magenta colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodMagentaGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>27</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Magenta</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/MagentaBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitMagentaFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>MagentaFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodDeepMagenta</defName>
+	<label>deep magenta blood</label>
+	<description>Holders of this gene have deep magenta colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodDeepMagentaGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>28</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_DeepMagenta</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/DeepMagentaBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitDeepMagentaFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>DeepMagentaFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodPlum</defName>
+	<label>plum blood</label>
+	<description>Holders of this gene have plum colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodPlumGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>29</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Plum</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/PlumBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitPlumFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>PlumFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Fuchsia =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodPink</defName>
+	<label>pink blood</label>
+	<description>Holders of this gene have pink colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodPinkGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>30</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Pink</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/PinkBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitPinkFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>PinkFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodEggplant</defName>
+	<label>eggplant blood</label>
+	<description>Holders of this gene have eggplant colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodEggplantGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>31</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Eggplant</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/EggplantBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitEggplantFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>EggplantFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodTyrianPurple</defName>
+	<label>tyrian purple blood</label>
+	<description>Holders of this gene have tyrian purple colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodTyrianPurpleGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>32</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_TyrianPurple</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/TyrianPurpleBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitTyrianPurpleFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>TyrianPurpleFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Gray =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodBlack</defName>
+	<label>black blood</label>
+	<description>Holders of this gene have black colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodBlackGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>33</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Black</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/BlackBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitBlackFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>BlackFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodGrey</defName>
+	<label>grey blood</label>
+	<description>Holders of this gene have grey colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodGreyGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>34</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Grey</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/GreyBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitGreyFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>GreyFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodWhite</defName>
+	<label>white blood</label>
+	<description>Holders of this gene have white colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodWhiteGene</iconPath>
+	<displayCategory>Blood_Color</displayCategory>
+    <displayOrderInCategory>35</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_White</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/WhiteBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitWhiteFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>WhiteFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Metal =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodGold</defName>
+	<label>gold blood</label>
+	<description>Holders of this gene have gold colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodGoldGene</iconPath>
+	<displayCategory>Extra_Blood_Color</displayCategory>
+    <displayOrderInCategory>1</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Gold</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/GoldBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitGoldFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>GoldFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodSilver</defName>
+	<label>silver blood</label>
+	<description>Holders of this gene have silver colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodSilverGene</iconPath>
+	<displayCategory>Extra_Blood_Color</displayCategory>
+    <displayOrderInCategory>2</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Silver</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/SilverBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitSilverFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>SilverFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodCopper</defName>
+	<label>copper blood</label>
+	<description>Holders of this gene have copper colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodCopperGene</iconPath>
+	<displayCategory>Extra_Blood_Color</displayCategory>
+    <displayOrderInCategory>3</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Copper</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/CopperBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitCopperFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>CopperFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+       <!--=================== Misc =================-->
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodPeriwinkle</defName>
+	<label>periwinkle blood</label>
+	<description>Holders of this gene have periwinkle colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodPeriwinkleGene</iconPath>
+	<displayCategory>Extra_Blood_Color</displayCategory>
+    <displayOrderInCategory>0</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_Periwinkle</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/PeriwinkleBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitPeriwinkleFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>PeriwinkleFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+  <GeneDef ParentName="GeneBloodColorBase">
+	<defName>BloodShamrockGreen</defName>
+	<label>shamrock green blood</label>
+	<description>Holders of this gene have shamrock green colored blood.</description>
+	<iconPath>UI/Icons/Genes/BloodShamrockGreenGene</iconPath>
+	<displayCategory>Extra_Blood_Color</displayCategory>
+    <displayOrderInCategory>-1</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">		               
+				<customBloodThingDef>Filth_Blood_ShamrockGreen</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/ShamrockGreenBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>Damage_HitShamrockGreenFlesh</customBloodEffect>
+				<customWoundsFromFleshtype>ShamrockGreenFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+</GeneDef>
+</Defs>

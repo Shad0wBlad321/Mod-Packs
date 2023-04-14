@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>  
+  <!-- STUN NADE -->
+  
+    <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>RNThrown_M84Stun_Grenade</defName>
+    <label>M84 stun grenade</label>
+    <description>The M84 is the currently-issued stun grenade ("flashbang") of the United States Armed Forces and SWAT teams throughout the United States. Upon detonation, it emits an intensely loud "bang" of 170–180 decibels and a blinding flash of more than one million candela within five feet of initiation, sufficient to cause immediate flash blindness, deafness, tinnitus, and inner ear disturbance.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Grenade/M84_StunGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <weaponTags>
+      <li>GrenadeEMP</li>
+	  <li>RN_M84Stun</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw m84 stun grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>15</range>
+        <forcedMissRadius>2.0</forcedMissRadius>
+        <warmupTime>3</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>RNProjectile_M84Stun_Grenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.5</explosiveRadius>
+        <explosiveDamageType>Stun</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>RNProjectile_M84Stun_Grenade</defName>
+		<label>M84 stun grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/M84Stun_Thrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<projectile>
+			<explosionRadius>3.5</explosionRadius>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<explosionDelay>75</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+</Defs>

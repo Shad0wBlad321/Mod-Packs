@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+
+  <nomatch Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Weapon_GrenadeFrag"]/graphicData</xpath>
+
+    <value>
+      <graphicData>
+        <texPath>Things/Item/LooseGrenades/GrenadesLoose</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    </value>
+  </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+  
+  <nomatch Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Weapon_GrenadeEMP"]/graphicData</xpath>
+
+    <value>
+      <graphicData>
+        <texPath>Things/Item/LooseGrenades/GrenadesEMPLoose</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    </value>
+  </nomatch>	
+  </Operation>
+
+</Patch>

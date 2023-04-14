@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- ==================== S8 ==================== -->
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Eccentric_Gun_S8P</defName>
+    <statBases>
+      <Mass>1.05</Mass>
+      <Bulk>2.20</Bulk>
+      <WorkToMake>11000</WorkToMake>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.91</SwayFactor>
+      <RangedWeapon_Cooldown>0.43</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Eccentric_HexCell>1</Eccentric_HexCell>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <Properties>
+      <verbClass>EccentricProjectiles.Verb_ShootCE_WithAlternateProjectiles</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_Eccentric6x18mmCharged</defaultProjectile>
+      <warmupTime>0.5</warmupTime>
+      <range>15</range>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <soundCastTail>GunTail_Light</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>12</magazineSize>
+      <reloadTime>3</reloadTime>
+      <ammoSet>AmmoSet_6x18mmCharged</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+      <aiAimMode>Snapshot</aiAimMode>
+    </FireModes>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8P" or defName="Eccentric_Gun_P12PDW"]</xpath>
+    <value>
+      <li Class="EccentricProjectiles.ModExtension_AmmoAlternateProjectile">
+        <alternateProjectiles>
+          <li>
+            <ammo>Ammo_6x18mmCharged</ammo>
+            <projectile>Bullet_Eccentric6x18mmCharged</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_6x18mmCharged_AP</ammo>
+            <projectile>Bullet_Eccentric6x18mmCharged_AP</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_6x18mmCharged_Ion</ammo>
+            <projectile>Bullet_Eccentric6x18mmCharged_Ion</projectile>
+          </li>
+        </alternateProjectiles>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- ==================== P12 ==================== -->
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Eccentric_Gun_P12PDW</defName>
+    <statBases>
+      <Mass>2.00</Mass>
+      <Bulk>3.30</Bulk>
+      <WorkToMake>36000</WorkToMake>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <ShotSpread>0.12</ShotSpread>
+      <SwayFactor>0.81</SwayFactor>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>15</Steel>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <Properties>
+      <verbClass>EccentricProjectiles.Verb_ShootCE_WithAlternateProjectiles</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_6x18mmCharged</defaultProjectile>
+      <burstShotCount>5</burstShotCount>
+      <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+      <warmupTime>0.5</warmupTime>
+      <range>31</range>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <recoilAmount>1.40</recoilAmount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>30</magazineSize>
+      <reloadTime>3.6</reloadTime>
+      <ammoSet>AmmoSet_6x18mmCharged</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aimedBurstShotCount>3</aimedBurstShotCount>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+    </FireModes>
+  </Operation>
+
+</Patch>

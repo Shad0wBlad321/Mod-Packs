@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef>
+    <category>Projectile</category>
+    <defName>EccentricSkyFlare</defName>
+    <label>parachute flare</label>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Gas</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>false</coversFloor>
+    <holdsRoof>false</holdsRoof>
+    <blockLight>false</blockLight>
+    <mineable>false</mineable>
+    <selectable>false</selectable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="EccentricFlares.CompProperties_FlareOverlay">
+        <duration>3600</duration>
+        <expandInDuration>60</expandInDuration>
+        <heightOffset>6.0</heightOffset>
+        <heightDelta>-4.0</heightDelta>
+        <baseSize>2.0</baseSize>
+        <sizeVariance>0.25</sizeVariance>
+        <sizeDelta>-1.0</sizeDelta>
+        <baseAlpha>1.0</baseAlpha>
+        <alphaDelta>-0.3</alphaDelta>
+        <texturePaths>
+          <li>Things/Special/Eccentric/SkyFlare_0</li>
+          <li>Things/Special/Eccentric/SkyFlare_1</li>
+          <li>Things/Special/Eccentric/SkyFlare_2</li>
+          <li>Things/Special/Eccentric/SkyFlare_3</li>
+          <li>Things/Special/Eccentric/SkyFlare_4</li>
+          <li>Things/Special/Eccentric/SkyFlare_5</li>
+          <li>Things/Special/Eccentric/SkyFlare_6</li>
+          <li>Things/Special/Eccentric/SkyFlare_7</li>
+          <li>Things/Special/Eccentric/SkyFlare_8</li>
+          <li>Things/Special/Eccentric/SkyFlare_9</li>
+          <li>Things/Special/Eccentric/SkyFlare_10</li>
+          <li>Things/Special/Eccentric/SkyFlare_11</li>
+        </texturePaths>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>16</glowRadius>
+        <glowColor>(230,150,100,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>3600</lifespanTicks>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Things/Special/Eccentric/Placeholder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <deconstructible>false</deconstructible>
+    </building>
+    <useHitPoints>false</useHitPoints>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_EccentricSkyFlare</defName>
+    <label>flare</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Eccentric/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>.5</explosionRadius>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <explosionDelay>0</explosionDelay>
+      <speed>20</speed>
+      <flyOverhead>false</flyOverhead>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <soundExplode>Eccentric_FlareHit</soundExplode>
+      <preExplosionSpawnThingDef>EccentricSkyFlare</preExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Eccentric_FlareGun</defName>
+    <label>flare gun</label>
+    <description>A flare gun that fires illumination flares.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Eccentric/FlareGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags Inherit="False">
+      <li>EccentricFlare</li>
+    </weaponTags>
+    <costList>
+      <Steel>20</Steel>
+      <Chemfuel>40</Chemfuel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Proj_EccentricSkyFlare</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>25.9</range>
+        <forcedMissRadius>0.9</forcedMissRadius>
+        <soundCast>Eccentric_FlareGunFire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

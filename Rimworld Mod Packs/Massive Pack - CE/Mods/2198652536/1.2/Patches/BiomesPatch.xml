@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Temperate Biomes -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
+		<value>
+			<VCE_Plant_AloeVera>0.01</VCE_Plant_AloeVera>
+			<VCE_Plant_BunnyEarsCactus>0.01</VCE_Plant_BunnyEarsCactus>
+			<VCE_Plant_Echeveria>0.01</VCE_Plant_Echeveria>
+			<VCE_Plant_FairyWashboard>0.01</VCE_Plant_FairyWashboard>
+			<VCE_Plant_JadePlant>0.01</VCE_Plant_JadePlant>
+			<VCE_Plant_PeyotePlant>0.01</VCE_Plant_PeyotePlant>
+			<VCE_Plant_PincushionPlant>0.01</VCE_Plant_PincushionPlant>
+			<VCE_Plant_SnakePlant>0.01</VCE_Plant_SnakePlant>
+			
+		</value>
+	</Operation>
+
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants</xpath>
+		<value>
+			<VCE_Plant_AloeVera>0.01</VCE_Plant_AloeVera>
+			<VCE_Plant_BunnyEarsCactus>0.01</VCE_Plant_BunnyEarsCactus>
+			<VCE_Plant_Echeveria>0.01</VCE_Plant_Echeveria>
+			<VCE_Plant_FairyWashboard>0.01</VCE_Plant_FairyWashboard>
+			<VCE_Plant_JadePlant>0.01</VCE_Plant_JadePlant>
+			<VCE_Plant_PeyotePlant>0.01</VCE_Plant_PeyotePlant>
+			<VCE_Plant_PincushionPlant>0.01</VCE_Plant_PincushionPlant>
+			<VCE_Plant_SnakePlant>0.01</VCE_Plant_SnakePlant>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
+		<value>
+			<VCE_Plant_AloeVera>0.01</VCE_Plant_AloeVera>
+			<VCE_Plant_BunnyEarsCactus>0.01</VCE_Plant_BunnyEarsCactus>
+			<VCE_Plant_Echeveria>0.01</VCE_Plant_Echeveria>
+			<VCE_Plant_FairyWashboard>0.01</VCE_Plant_FairyWashboard>
+			<VCE_Plant_JadePlant>0.01</VCE_Plant_JadePlant>
+			<VCE_Plant_PeyotePlant>0.01</VCE_Plant_PeyotePlant>
+			<VCE_Plant_PincushionPlant>0.01</VCE_Plant_PincushionPlant>
+			<VCE_Plant_SnakePlant>0.01</VCE_Plant_SnakePlant>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+		<value>
+			<VCE_Plant_AloeVera>0.01</VCE_Plant_AloeVera>
+			<VCE_Plant_Echeveria>0.01</VCE_Plant_Echeveria>
+			<VCE_Plant_JadePlant>0.01</VCE_Plant_JadePlant>
+			<VCE_Plant_SnakePlant>0.01</VCE_Plant_SnakePlant>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+		<value>
+			<VCE_Plant_AloeVera>0.01</VCE_Plant_AloeVera>
+			<VCE_Plant_Echeveria>0.01</VCE_Plant_Echeveria>
+			<VCE_Plant_JadePlant>0.01</VCE_Plant_JadePlant>
+			<VCE_Plant_SnakePlant>0.01</VCE_Plant_SnakePlant>
+			
+		</value>
+	</Operation>	
+
+<!--	
+
+	
+	
+	
+	
+	
+
+	
+		
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
+		<value>
+			<RB_Plant_Hive_Desert>500</RB_Plant_Hive_Desert>
+			<RB_Plant_Hive_Arid>500</RB_Plant_Hive_Arid>
+		</value>
+	</Operation>
+	
+
+
+	
+
+
+-->
+
+	
+	
+</Patch>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[UEM] More Mechanitor Mechs</name>
+	<packageId>UltraEmailMan.MoreMechanitorMechs</packageId>
+	<author>UltraEmailMan</author>
+	<supportedVersions>
+    	     <li>1.4</li>
+	</supportedVersions>
+	<description>
+Adds more mechanoids to fill in the missing skill areas. No longer will your evil robot overlord have to cook his own meals.
+	</description>
+	<loadAfter>
+		<li>Ludeon.Rimworld.Biotech</li>
+		<li>FrozenSnowFox.ComplexJobs</li>
+		<li>FrozenSnowFox.ComplexJobsLegacy</li>
+	</loadAfter>
+</ModMetaData>

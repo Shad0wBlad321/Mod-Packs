@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Genie</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<!-- Elongated -->
+						<HeadTypeDef ParentName="AverageBase">
+							<defName>VRE_BarkElongated</defName>
+							<graphicPath>Things/Pawn/Humanlike/Heads/BarkSkin_ElongatedHead</graphicPath>
+							<randomChosen>false</randomChosen>
+							<gender>Male</gender>
+							<selectionWeight>99999</selectionWeight>
+							<requiredGenes>
+								<li>VRE_BarkSkin</li>
+								<li>VRE_ElongatedHead</li>
+							</requiredGenes>
+						</HeadTypeDef>
+						<HeadTypeDef ParentName="AverageBase">
+							<defName>VRE_BarkElongated_Female</defName>
+							<graphicPath>Things/Pawn/Humanlike/Heads/BarkSkinFemale_ElongatedHead</graphicPath>
+							<randomChosen>false</randomChosen>
+							<gender>Female</gender>
+							<selectionWeight>99999</selectionWeight>
+							<requiredGenes>
+								<li>VRE_BarkSkin</li>
+								<li>VRE_ElongatedHead</li>
+							</requiredGenes>
+						</HeadTypeDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/GeneDef[defName="VRE_BarkSkin"]/forcedHeadTypes</xpath>
+					<value>
+						<li>VRE_BarkElongated</li>
+						<li>VRE_BarkElongated_Female</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/GeneDef[defName="VRE_ElongatedHead"]/forcedHeadTypes</xpath>
+					<value>
+						<li>VRE_BarkElongated</li>
+						<li>VRE_BarkElongated_Female</li>
+						
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

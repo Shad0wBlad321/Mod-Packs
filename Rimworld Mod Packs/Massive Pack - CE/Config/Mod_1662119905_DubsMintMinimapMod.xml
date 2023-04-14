@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DubsMintMinimap.Settings">
+		<Animals>
+			<show>True</show>
+			<col>RGBA(0.216, 0.969, 0.216, 1.000)</col>
+		</Animals>
+		<Colonist>
+			<show>True</show>
+			<col>RGBA(0.000, 1.000, 1.000, 1.000)</col>
+		</Colonist>
+		<Prisoner>
+			<show>True</show>
+			<col>RGBA(1.000, 0.922, 0.016, 1.000)</col>
+		</Prisoner>
+		<Friendly>
+			<show>True</show>
+			<col>RGBA(0.000, 0.000, 1.000, 1.000)</col>
+		</Friendly>
+		<ColonyAnimals>
+			<show>True</show>
+			<col>RGBA(0.000, 0.608, 0.000, 1.000)</col>
+		</ColonyAnimals>
+		<Hostiles>
+			<show>True</show>
+			<col>RGBA(1.000, 0.000, 0.000, 1.000)</col>
+		</Hostiles>
+		<StaticRectPos>(1330.0, 0.0)</StaticRectPos>
+		<Greenify>True</Greenify>
+		<ShowPredators>False</ShowPredators>
+		<PrereqMode>2</PrereqMode>
+		<NaturalTerrain>True</NaturalTerrain>
+		<IcoScaleColonist>1.165593</IcoScaleColonist>
+		<IcoScale>1.131182</IcoScale>
+		<NaturalPlantCol>True</NaturalPlantCol>
+		<RealBuildings>True</RealBuildings>
+		<ShowAnimals>True</ShowAnimals>
+		<ShowCorpses>True</ShowCorpses>
+		<multi21>105</multi21>
+		<LastVersion>Dubs Mint Minimap 1.3.787</LastVersion>
+	</ModSettings>
+</SettingsBlock>

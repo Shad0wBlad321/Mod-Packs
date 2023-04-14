@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>BDT_Shot_Sten</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>3</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>BDT_SMG</clipPath>
+					</li>
+				</grains>
+				<volumeRange>10~15</volumeRange>
+				<pitchRange>1.5~2</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>BDT_Sten</defName>
+		<label>sten</label>
+		<description>An ancient gun of unbelievable crudity and simplicity. Designed for minimize cost and production speed, its reliability was sacrificed as a result. It may occationally fail to fire or unable to stop firing, but at least it's more dangerous to be pointed by a sten than wielding one.</description>
+		<graphicData>
+			<texPath>Things/Weapons/BDT_Sten</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>0.34</ShotSpread>
+			<SwayFactor>1.48</SwayFactor>
+			<Bulk>7.62</Bulk>
+			<Mass>3.2</Mass>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+		</statBases>
+
+		<weaponTags>
+			<li>Gun</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_BROOM</li>
+			<li>ShortShots</li>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.29</recoilAmount>
+				<verbClass>BillDoorsFramework.Verb_ShootCustomCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>19.9</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>BDT_Shot_Sten</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>32</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>SuppressFire</aiAimMode>
+				<noSingleShot>true</noSingleShot>
+			</li>
+		</comps>
+
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+				<li MayRequire="Aoba.Fortress.Industrial">FT_TableLathe</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_RandomBurstBreak">
+				<chance>0.06</chance>
+				<randomBurst>0~24</randomBurst>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.2,1.2</DrawSize>
+				<DrawOffset>0,0</DrawOffset>
+			</li>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.56,0)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+	<ThingDef ParentName="TurretAutoBase">
+		<defName>BD_Turret_Sten</defName>
+		<label>sten auto-turret</label>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/MachineGunBase</texPath>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>UI/Icons/BDT_StenTurretIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>10000</WorkToBuild>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Mass>10</Mass>
+			<Bulk>35</Bulk>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<ShootingAccuracyTurret>0.75</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+			</li>
+		</comps>
+		<techLevel>Industrial</techLevel>
+		<description>A fragile auto turret mounted with a pair of sten gun. Thanks to the vibration from twin-linked weapon and the gun's crudity, it may keep firing until magazine run dry, jam after the first shot, or anything in between.</description>
+		<costList>
+			<Steel>25</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<BDT_Sten>2</BDT_Sten>
+		</costList>
+		<building>
+			<turretGunDef>Gun_BDstenTurret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>1</turretTopDrawSize>
+			<combatPower>30</combatPower>
+		</building>
+		<placeWorkers Inherit="false">
+			<li>PlaceWorker_TurretTop</li>
+			<li>BillDoorsFramework.PlaceWorker_ShowVerbRadius</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>GunTurrets</li>
+		</researchPrerequisites>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_BDstenTurret</defName>
+		<label>sten turret gun</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/BDT_StenTurret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>A simple automatic gun made to be mounted on a turret.</description>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>0.44</ShotSpread>
+			<SwayFactor>1.49</SwayFactor>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<Mass>6.6</Mass>
+			<Bulk>15</Bulk>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.83</recoilAmount>
+				<verbClass>BillDoorsFramework.Verb_ShootCustomCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>19.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>BDT_Shot_Sten</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>64</magazineSize>
+				<reloadTime>6.8</reloadTime>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+		</comps>
+
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_RandomBurstBreak">
+				<chance>0.06</chance>
+				<randomBurst>0~60</randomBurst>
+			</li>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<isAlternately>true</isAlternately>
+				<offsets>
+					<li>(0.42,0.07)</li>
+					<li>(0.42,-0.07)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>VRESaurids_Saurid</defName>
+		<label>saurid</label>
+		<description>Genetically spliced with synthesized reptile genetic material for improved compatibility with arid environments, saurids are cold-blooded isolationists with harsh voices and extremely low metabolisms. Their sharp claws and hardened scales make them particularly suited to melee encounters.\n\nFor workers looking for higher-wage jobs, saurid xenogerms are offered alongside employment packages to particularly arid and hot planets. As conditions are quite harsh, they experience an attitude shift to be less social and consume fewer calories which allows them to be more profitable. As they are not excluded from starting families, saurids can communicate with each other using pheromones and are oviparous to reduce medical complications caused by lack of proper social infrastructure.</description>
+		<descriptionShort>Genetically engineered to survive on extremely low nutrition in the most arid environments, saurids adapt very well to hostile environments thanks to the oviparous nature of their reproduction as well as lizard-like genetic features. They prefer isolation and prefer to mate with other saurids.</descriptionShort>
+		<iconPath>UI/XenotypeIcons/Saurid</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>NamerPersonWaster</nameMaker>
+		<chanceToUseNameMaker>0.75</chanceToUseNameMaker>
+		<genes>
+			<li>VRESaurids_ScaleSkin</li>
+			<li>VRESaurids_Oviparous</li>
+			<li>VRESaurids_ColdBlooded</li>
+			<li>VRESaurids_CenterFrill</li>
+			<li>VRESaurids_FrilledEars</li>
+			<li>VRESaurids_GeckoTail</li>
+			<li>VRESaurids_LizardVoice</li>
+			<li>VRESaurids_SauridClaws</li>
+			<li>VRESaurids_Pheromones</li>
+			<li>Ears_Human</li>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Body_Hulk</li>
+			<li>StrongStomach</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Skin_Blue</li>
+			<li>Skin_Green</li>
+			<li>Skin_LightGray</li>
+			<li>ToxResist_Partial</li>
+			<li>Aggression_Aggressive</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

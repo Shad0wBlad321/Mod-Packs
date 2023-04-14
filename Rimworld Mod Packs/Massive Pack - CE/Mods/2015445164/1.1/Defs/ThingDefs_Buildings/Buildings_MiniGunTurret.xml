@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--============ Wall MiniGun Turret ===========-->
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>WallTurretMiniGun</defName>
+    <label>wall minigun turret</label>
+    <description>A couple of miniguns strapped onto a wall turret, these things are ridiculously fast, and have high HP compared to the rest of the turrets, but burn through barrels quickly due to the fact that they fire non stop until the target is dead.
+	
+	They require more power to keep the barrels spinning at all times.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/WallTurretMiniGunBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/WallTurretMiniGunUI</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-15</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>200</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>3</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <coversFloor>false</coversFloor>
+    <tickerType>Normal</tickerType>
+    <neverMultiSelect>true</neverMultiSelect>
+    <holdsRoof>false</holdsRoof>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>20</specialDisplayRadius>
+    <!-- Range when building -->
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_WallTurretMiniGun</turretGunDef>
+      <turretBurstCooldownTime>0</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_NextToWall_Turret</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>HeavyTurrets</li>
+    </researchPrerequisites>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <destroyable>true</destroyable>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MiniGunTurret</defName>
+    <label>mini-turret bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_WallTurretMiniGun</defName>
+    <label>wall turret minigun</label>
+    <description>A couple of miniguns strapped onto a wall turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/WallTurretMiniGunANew</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <menuHidden>true</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MiniGunTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>20</range>
+        <!-- Actual range of the turret -->
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>0</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  <modExtensions>
+    <li Class="TurretExtensions.TurretFrameworkExtension">
+      <gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+      <useMannerShootingAccuracy>false</useMannerShootingAccuracy>
+      <useMannerAimingDelayFactor>false</useMannerAimingDelayFactor>
+      <mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+      <canForceAttack>false</canForceAttack>
+    </li>
+  </modExtensions>
+  <Gunplay.GunPropDef>
+    <defName>Gun_WallTurretMiniGun</defName>
+    <spinner>
+      <!-- this is a list of GraphicData frames of the spinning animation -->
+      <frames>
+        <li>
+          <texPath>Things/Building/Security/Minigun/WallTurretMiniGunA</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </li>
+        <li>
+          <texPath>Things/Building/Security/Minigun/WallTurretMiniGunB</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </li>
+      </frames>
+      <!-- this is how fast barrels will spin when firing at full speed -->
+      <rotationSpeed>1.2</rotationSpeed>
+    </spinner>
+  </Gunplay.GunPropDef>
+</Defs>

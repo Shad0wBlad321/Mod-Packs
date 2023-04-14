@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Athena Framework</name>
+	<author>SmArtKar</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>smartkar.athenaframework</packageId>
+	<modDependencies>
+
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+
+	</modDependencies>
+    
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>ludeon.rimworld.core</li>
+		<li>ludeon.rimworld.royalty</li>
+		<li>ludeon.rimworld.ideology</li>
+		<li>ludeon.rimworld.biotech</li>
+	</loadAfter>
+
+	<loadBefore>
+		<li>ogliss.admech.armoury</li>
+		<li>uuugggg.thickarmor</li>
+	</loadBefore>
+
+	<description>Athena is an advanced framework that contains multiple tools and features for both XML and C# modders. It also has a couple of code fixes that don't affect players directly but allow modders to use some of the game's features to their full potential.</description>
+</ModMetaData>

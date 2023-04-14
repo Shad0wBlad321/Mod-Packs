@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--=================== RED =================-->
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Red</defName>
+    <label>red blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 0, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Sangria</defName>
+    <label>sangria blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(161, 0, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Maroon</defName>
+    <label>maroon blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(80, 0, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+  <!--=================== Orange =================-->
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Orange</defName>
+    <label>orange blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 126, 3, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Tenne</defName>
+    <label>tenne blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(161, 82, 3, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Brown</defName>
+    <label>brown blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(80, 40, 3, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <!--=================== Yellow =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Yellow</defName>
+    <label>yellow blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 253, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Citrus</defName>
+    <label>citrus blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(161, 161, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_DarkOlive</defName>
+    <label>dark olive blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(80, 80, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <!--=================== Green =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Lime</defName>
+    <label>lime blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(196, 255, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Olive</defName>
+    <label>olive blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(101, 130, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Green</defName>
+    <label>green blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(65, 102, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+     <!--=================== Jade =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_SpringGreen</defName>
+    <label>spring green blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(21, 255, 141, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Jade</defName>
+    <label>jade blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(7, 132, 70, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_DarkGreen</defName>
+    <label>dark green blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(7, 65, 36, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+      <!--=================== Cyan =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Aqua</defName>
+    <label>aqua blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 251, 255, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Teal</defName>
+    <label>teal blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 130, 130, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_SherpaBlue</defName>
+    <label>sherpa blue blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 65, 67, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Cerulean =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_DodgerBlue</defName>
+    <label>dodger blue blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 131, 255, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Smalt</defName>
+    <label>smalt blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 65, 130, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_PrussianBlue</defName>
+    <label>prussian blue blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 33, 65, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Blue =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Blue</defName>
+    <label>blue blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 42, 255, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_MediumBlue</defName>
+    <label>medium blue blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 33, 203, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Navy</defName>
+    <label>navy blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 0, 86, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Purple =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_ElectricIndigo</defName>
+    <label>electric indigo blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(143, 43, 255, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Purple</defName>
+    <label>purple blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(99, 29, 180, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Indigo</defName>
+    <label>indigo blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(43, 0, 87, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Violet =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Magenta</defName>
+    <label>magenta blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 0, 253, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_DeepMagenta</defName>
+    <label>deep magenta blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(202, 0, 200, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Plum</defName>
+    <label>plum blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(106, 0, 106, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Fuchsia =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Pink</defName>
+    <label>pink blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 0, 126, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Eggplant</defName>
+    <label>eggplant blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(153, 0, 77, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_TyrianPurple</defName>
+    <label>tyrian purple blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(75, 0, 37, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Gray =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Black</defName>
+    <label>black blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 0, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Grey</defName>
+    <label>grey blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(128, 128, 128, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_White</defName>
+    <label>white blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 255, 255, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Metal =================-->
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Gold</defName>
+    <label>gold blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 215, 0, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Silver</defName>
+    <label>silver blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(192, 192, 192, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Copper</defName>
+    <label>copper blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(184, 115, 51, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+       <!--=================== Misc =================-->
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Periwinkle</defName>
+    <label>periwinkle blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(204, 204, 255, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+    <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_ShamrockGreen</defName>
+    <label>shamrock green blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(0, 158, 96, 180)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+</Defs>

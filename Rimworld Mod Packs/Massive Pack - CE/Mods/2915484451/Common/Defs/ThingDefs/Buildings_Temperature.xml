@@ -1,0 +1,88 @@
+<Defs>
+
+	<!-- Wood-fired Heater -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>FFE_WoodFiredHeater</defName>
+		<label>wood-fired heater</label>
+		<description>Simple steal wood-fired heater with chimney for space heating. Heats the room to a comfortable temperature, but the power cannot be changed.</description>
+		<thingClass>Building_Heater</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<drawSize>1.2</drawSize>
+			<drawOffset>(0,1,0.15)</drawOffset>
+			<texPath>Things/Building/Heater/WoodFiredHeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<thingCategories>
+			<li>BuildingsTemperature</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>4.5</fuelConsumptionRate>
+				<fuelConsumptionPerTickInRain>0.0003</fuelConsumptionPerTickInRain>
+				<fuelCapacity>30.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>21</heatPerSecond>
+				<heatPushMaxTemperature>21</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>1</fireSize>
+			</li>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<designationHotKey>Misc2</designationHotKey>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>

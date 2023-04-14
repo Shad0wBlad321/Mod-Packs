@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- ==================== CGL1 ==================== -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Eccentric_Gun_M1CGL"]/verbs/li</xpath>
+  </Operation>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Eccentric_Gun_M1CGL</defName>
+    <statBases>
+      <Mass>5.50</Mass>
+      <Bulk>6.10</Bulk>
+      <WorkToMake>75000</WorkToMake>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>1.25</SwayFactor>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <recoilAmount>2.85</recoilAmount>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_44x52mmChargedGrenades_HE</defaultProjectile>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+      <warmupTime>1</warmupTime>
+      <range>45</range>
+      <minRange>8</minRange>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <soundCast>InfernoCannon_Fire</soundCast>
+      <muzzleFlashScale>14</muzzleFlashScale>
+      <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>6</magazineSize>
+      <reloadOneAtATime>true</reloadOneAtATime>
+      <reloadTime>1.1</reloadTime>
+      <ammoSet>AmmoSet_44x52mmChargedGrenades</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiUseBurstMode>false</aiUseBurstMode>
+      <aiAimMode>SuppressFire</aiAimMode>
+    </FireModes>
+  </Operation>
+
+  <!-- ==================== CAW5 ==================== -->
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Eccentric_Gun_M5CAW</defName>
+    <statBases>
+      <Mass>8.00</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <SightsEfficiency>2.0</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>2.6</SwayFactor>
+      <Bulk>10.0</Bulk>
+      <WorkToMake>55000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <FSX>8</FSX>
+    </costList>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_EccentricChargedRocket</defaultProjectile>
+      <warmupTime>2.5</warmupTime>
+      <range>55</range>
+      <burstShotCount>1</burstShotCount>
+      <soundCast>InfernoCannon_Fire</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+      <onlyManualCast>true</onlyManualCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <muzzleFlashScale>14</muzzleFlashScale>
+    </Properties>
+    <FireModes>
+      <aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+  </Operation>
+
+  <!-- ==================== CAW5 Projectile ==================== -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Bullet_EccentricChargedRocket"]/thingClass</xpath>
+    <value>
+      <thingClass>CombatExtended.BulletCE</thingClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Bullet_EccentricChargedRocket"]/projectile</xpath>
+    <value>
+      <projectile Class="CombatExtended.ProjectilePropertiesCE">
+        <damageDef>Bullet</damageDef>
+        <damageAmountBase>258</damageAmountBase>
+        <armorPenetrationSharp>420</armorPenetrationSharp>
+        <armorPenetrationBlunt>30</armorPenetrationBlunt>
+        <speed>60</speed>
+        <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+      </projectile>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bullet_EccentricChargedRocket"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Bullet_EccentricChargedRocket"]</xpath>
+      <value>
+        <comps/>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Bullet_EccentricChargedRocket"]/comps</xpath>
+    <value>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>120</damageAmountBase>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>2.8</explosiveRadius>
+        <explosionSound>MortarBomb_Explode</explosionSound>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragSpeedFactor>1</fragSpeedFactor>
+        <fragments>
+          <Fragment_Large>3</Fragment_Large>
+          <Fragment_Small>27</Fragment_Small>
+        </fragments>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

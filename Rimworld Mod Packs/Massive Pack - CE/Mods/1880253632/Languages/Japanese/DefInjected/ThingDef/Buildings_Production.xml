@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Component Fabrication Bench -->
+
+  <VFE_ComponentFabricationBench.label>組立工作機械</VFE_ComponentFabricationBench.label>
+  <VFE_ComponentFabricationBench.description>コンポーネント類を製造するための複雑で高度な道具を備えた組立工作台です。</VFE_ComponentFabricationBench.description>
+  <Blueprint_VFE_ComponentFabricationBench.label>組立工作機械(設計)</Blueprint_VFE_ComponentFabricationBench.label>
+  <Frame_VFE_ComponentFabricationBench.label>組立工作機械(施行)</Frame_VFE_ComponentFabricationBench.label>
+  <Frame_VFE_ComponentFabricationBench.description>コンポーネント類を製造するための複雑で高度な道具を備えた組立工作台です。</Frame_VFE_ComponentFabricationBench.description>
+
+
+  <!-- Electric Butcher -->
+
+  <VFE_TableButcherElectric.label>電動 食肉加工台</VFE_TableButcherElectric.label>
+  <VFE_TableButcherElectric.description>電気モーターで回転するのこぎり刃が取り付けられた電動式の作業テーブルで、死んだ動物の身体を素早く正確に生肉に切り分けることができます。大量の電力を消費します。</VFE_TableButcherElectric.description>
+  <Blueprint_VFE_TableButcherElectric.label>電動 食肉加工台(設計)</Blueprint_VFE_TableButcherElectric.label>
+  <Blueprint_Install_VFE_TableButcherElectric.label>電動 食肉加工台(移動先)</Blueprint_Install_VFE_TableButcherElectric.label>
+  <Frame_VFE_TableButcherElectric.label>電動 食肉加工台(施行)</Frame_VFE_TableButcherElectric.label>
+  <Frame_VFE_TableButcherElectric.description>電気モーターで回転するのこぎり刃が取り付けられた電動式の作業テーブルで、死んだ動物の身体を素早く正確に生肉に切り分けることができます。大量の電力を消費します。</Frame_VFE_TableButcherElectric.description>
+
+
+  <!-- Electric Drug Lab -->
+
+  <VFE_TableDrugLabElectric.label>電動 薬品作業台</VFE_TableDrugLabElectric.label>
+  <VFE_TableDrugLabElectric.description>様々な種類の医薬品やドラッグをより効率的に製造するための容器や加熱器、測定装置を備えた先進的な薬品作業台です。大量の電力を消費します。</VFE_TableDrugLabElectric.description>
+  <Blueprint_VFE_TableDrugLabElectric.label>電動 薬品作業台(設計)</Blueprint_VFE_TableDrugLabElectric.label>
+  <Blueprint_Install_VFE_TableDrugLabElectric.label>電動 薬品作業台(移動先)</Blueprint_Install_VFE_TableDrugLabElectric.label>
+  <Frame_VFE_TableDrugLabElectric.label>電動 薬品作業台(施行)</Frame_VFE_TableDrugLabElectric.label>
+  <Frame_VFE_TableDrugLabElectric.description>様々な種類の医薬品やドラッグをより効率的に製造するための容器や加熱器、測定装置を備えた先進的な薬品作業台です。大量の電力を消費します。</Frame_VFE_TableDrugLabElectric.description>
+
+
+  <!-- Fueled Smelter -->
+
+  <VFE_FueledSmelter.label>薪式溶鉱炉</VFE_FueledSmelter.label>
+  <VFE_FueledSmelter.description>材木を燃料に使う溶鉱炉です。鉄屑の塊や他の混ざり合った金属の塊から利用可能な金属を精錬します。</VFE_FueledSmelter.description>
+  <Blueprint_VFE_FueledSmelter.label>薪式溶鉱炉(設計)</Blueprint_VFE_FueledSmelter.label>
+  <Blueprint_Install_VFE_FueledSmelter.label>薪式溶鉱炉(移動先)</Blueprint_Install_VFE_FueledSmelter.label>
+  <Frame_VFE_FueledSmelter.label>薪式溶鉱炉(施行)</Frame_VFE_FueledSmelter.label>
+  <Frame_VFE_FueledSmelter.description>材木を燃料に使う溶鉱炉です。鉄屑の塊や他の混ざり合った金属の塊から利用可能な金属を精錬します。</Frame_VFE_FueledSmelter.description>
+
+
+  <!-- Electric Stone Cutter -->
+
+  <VFE_TableStonecutterElectric.label>電動ストーン カッター</VFE_TableStonecutterElectric.label>
+  <VFE_TableStonecutterElectric.description>作業ラインで石の塊を短時間で利用可能な石材ブロックに切断できる電気のこぎりと抑え装置を備えた高度な作業テーブルです。大量の電力を消費します。</VFE_TableStonecutterElectric.description>
+  <Blueprint_VFE_TableStonecutterElectric.label>電動ストーン カッター(設計)</Blueprint_VFE_TableStonecutterElectric.label>
+  <Blueprint_Install_VFE_TableStonecutterElectric.label>電動ストーン カッター(移動先)</Blueprint_Install_VFE_TableStonecutterElectric.label>
+  <Frame_VFE_TableStonecutterElectric.label>電動ストーン カッター(施行)</Frame_VFE_TableStonecutterElectric.label>
+  <Frame_VFE_TableStonecutterElectric.description>作業ラインで石の塊を短時間で利用可能な石材ブロックに切断できる電気のこぎりと抑え装置を備えた高度な作業テーブルです。大量の電力を消費します。</Frame_VFE_TableStonecutterElectric.description>
+
+</LanguageData>

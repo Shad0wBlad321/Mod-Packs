@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>VHGE_GasPoweredCrematorium</defName>
+    <label>gas-powered crematorium</label>
+    <description>A huge stone crematorium which vaporizes corpses with extremely high temperatures. Operates on helixien gas.</description>
+    <thingClass>PipeSystem.Building_ResourceWorkTable_HeatPush</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/GasCrematorium</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,2)</drawSize>
+      <shadowData>
+        <volume>(1.95,0.5,1.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.1,2.4,1.8)</rect>
+      </damageData>
+    </graphicData>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Cleanliness>-20</Cleanliness>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <size>(3,2)</size>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <fillPercent>1</fillPercent>
+    <passability>Impassable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <interactionCellIcon>DiningChair</interactionCellIcon>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceTrader">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <consumptionPerTick>1</consumptionPerTick>
+        <idleConsumptionPerTick>0</idleConsumptionPerTick>
+      </li>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
+      <forceShowRoomStats>true</forceShowRoomStats>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>ElectricCrematorium</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>VHGE_GasPoweredSmelter</defName>
+    <description>Extracts usable metal from slag chunks and other mixed metal items. Operates on helixien gas.</description>
+    <label>gas-powered smelter</label>
+    <thingClass>PipeSystem.Building_ResourceWorkTable_HeatPush</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/GasSmelter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Steel>170</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceTrader">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <consumptionPerTick>2</consumptionPerTick>
+        <idleConsumptionPerTick>0</idleConsumptionPerTick>
+      </li>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
+    </building>
+    <designationHotKey>Misc10</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>ElectricSmelter</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>VHGE_GasPoweredStove</defName>
+    <label>gas-powered stove</label>
+    <description>A gas-powered stove with an attached countertop for preparing meals.</description>
+    <thingClass>PipeSystem.Building_ResourceWorkTable_HeatPush</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/TableStoveGas</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceTrader">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <consumptionPerTick>1</consumptionPerTick>
+        <idleConsumptionPerTick>0</idleConsumptionPerTick>
+      </li>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <building>
+      <isMealSource>true</isMealSource>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
+    </building>
+    <designationHotKey>Misc8</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>FueledStove</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>VHGE_GasPoweredSmithy</defName>
+    <label>gas-powered smithy</label>
+    <description>A gas-powered station for smithing non-mechanical weapons and tools.</description>
+    <thingClass>PipeSystem.Building_ResourceWorkTable_HeatPush</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/GasSmithy</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(2.8, 0.35, 0.59)</volume>
+        <offset>(0, 0, 0.08)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceTrader">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <consumptionPerTick>1</consumptionPerTick>
+        <idleConsumptionPerTick>0</idleConsumptionPerTick>
+      </li>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>ElectricSmithy</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>VHGE_GasPoweredRefinery</defName>
+    <label>gas-powered refinery</label>
+    <description>Refines biological matter like wood or plant matter into chemfuel. Needs to be connected to the helixien gas network.</description>
+    <thingClass>PipeSystem.Building_ResourceWorkTable_HeatPush</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <minifiedDef />
+    <thingCategories Inherit="false" />
+    <size>(3,2)</size>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceTrader">
+        <pipeNet>VHGE_HelixienNet</pipeNet>
+        <consumptionPerTick>2</consumptionPerTick>
+        <idleConsumptionPerTick>0</idleConsumptionPerTick>
+      </li>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+        <commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+        <commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <graphicData>
+      <texPath>Things/Building/GasMachines/GasPoweredRefinery</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,2)</drawSize>
+      <shadowData>
+        <volume>(2.22, 0.8, 0.62)</volume>
+        <offset>(0, 0, -0.13)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.1,2.4,1.8)</rect>
+      </damageData>
+    </graphicData>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>BiofuelRefining</li>
+      <li>VHGE_GasExtraction</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>BiofuelRefinery</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

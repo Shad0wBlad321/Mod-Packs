@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+				<ThingCategoryDef>
+					<defName>Ammo9M133</defName>
+					<label>9M133 Kornet Missile</label>
+					<parent>AmmoRockets</parent>
+				</ThingCategoryDef>
+
+				<!-- ==================== AmmoSet ========================== -->
+
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_9M133</defName>
+					<label>9M133 Kornet Missiles</label>
+					<ammoTypes>
+						<Ammo_9M133_HEAT>Bullet_9M133_HEAT</Ammo_9M133_HEAT>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+
+				<!-- ==================== Ammo ========================== -->
+
+				<ThingDef Class="CombatExtended.AmmoDef" Name="9M133Base" ParentName="HeavyAmmoBase" Abstract="True">
+					<description>The 9M133 Kornet is a Russian man-portable anti-tank guided missile (ATGM) intended for use against main battle tanks. It was first introduced into service with the Russian army in 1998</description>
+					<statBases>
+						<MaxHitPoints>200</MaxHitPoints>
+					</statBases>
+					<tradeTags>
+      					<li>CE_AutoEnableTrade_Sellable</li>
+						<li>CE_AutoEnableCrafting_TableMachining</li>
+					</tradeTags>
+					<thingCategories>
+						<li>Ammo9M133</li>
+					</thingCategories>
+					<stackLimit>10</stackLimit>
+					<cookOffFlashScale>30</cookOffFlashScale>
+					<cookOffSound>MortarBomb_Explode</cookOffSound>
+				</ThingDef>
+
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="9M133Base">
+					<defName>Ammo_9M133_HEAT</defName>
+					<label>9M133 Kornet Missile (HEAT)</label>
+					<graphicData>
+						<texPath>Things/Ammo/RPG/RPG32_HEAT</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+						<drawSize>1</drawSize>
+					</graphicData>
+					<statBases>
+						<MarketValue>248.27</MarketValue>
+						<Mass>27</Mass>
+						<Bulk>39</Bulk>
+					</statBases>
+					<ammoClass>RocketHEAT</ammoClass>
+					<detonateProjectile>Bullet_9M133_HEAT</detonateProjectile>
+				</ThingDef>
+
+				<!-- ================== Projectiles ================== -->
+
+				<ThingDef ParentName="BaseRPG7Grenade">
+					<defName>Bullet_9M133_HEAT</defName>
+					<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+					<label>9M133 Kornet Missile (HEAT)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Rocket/132mmM13</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+      						<shaderType>TransparentPostLight</shaderType>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<speed>63</speed>
+						<damageDef>Bullet</damageDef>
+						<damageAmountBase>420</damageAmountBase>
+						<armorPenetrationSharp>1100</armorPenetrationSharp>
+						<armorPenetrationBlunt>164.324</armorPenetrationBlunt>
+						<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+					</projectile>
+					<comps>
+		  				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>320</damageAmountBase>
+							<explosiveDamageType>Bomb</explosiveDamageType>
+							<explosiveRadius>2.5</explosiveRadius>
+							<explosionSound>MortarBomb_Explode</explosionSound>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		  				</li>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>20</Fragment_Large>
+								<Fragment_Small>50</Fragment_Small>
+							</fragments>
+						</li>
+					</comps>
+				</ThingDef>
+
+				<!-- ==================== Recipes ========================== -->
+
+				<RecipeDef ParentName="AmmoRecipeBase">
+					<defName>MakeAmmo_9M133_HEAT</defName>
+					<label>make 9M133 HEAT Missile</label>
+					<description>Craft 1 9M133 HEAT Missiles.</description>
+					<jobString>Making 9M133 HEAT Missiles.</jobString>
+					<workAmount>11000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>75</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>2</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<thingDefs>
+							<li>Steel</li>
+							<li>ComponentIndustrial</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_9M133_HEAT>1</Ammo_9M133_HEAT>
+					</products>
+				</RecipeDef>
+
+
+</Defs>

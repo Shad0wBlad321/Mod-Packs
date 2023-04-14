@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/GeneDef[defName="Head_Gaunt"]/forcedHeadTypes</xpath>
+		<value>
+			<li>VRE_BarkGaunt</li>
+			<li>VRE_BarkGaunt_Female</li>
+		
+		</value>
+	</Operation>
+
+
+
+
+</Patch>

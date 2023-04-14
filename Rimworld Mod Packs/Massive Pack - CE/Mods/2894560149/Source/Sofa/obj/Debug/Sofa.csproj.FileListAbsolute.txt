@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YourModName\Assemblies\Sofa.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YourModName\Source\Sofa\obj\Debug\Sofa.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YourModName\Source\Sofa\obj\Debug\Sofa.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\YourModName\Source\Sofa\obj\Debug\Sofa.dll

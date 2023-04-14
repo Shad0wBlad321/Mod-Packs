@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName="Cleansweeper"]/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>BasicMechtech</researchPrerequisite>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/RecipeDef[defName="Cleansweeper"]/ingredients</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+<!--
+<Patch>
+
+    <Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThinkTreeDef[defName = "Humanlike"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalColonist"]/subNodes/li[@Class="ThinkNode_ConditionalWantsLookChange"]/subNodes/li[@Class="JobGiver_UseStylingStationAutomatic"]</xpath>
+    </Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="LookChangeDesired"]/stages/li[label="look change desired"]/baseMoodEffect</xpath>
+        <value>
+			<baseMoodEffect>0</baseMoodEffect>
+        </value>
+    </Operation>
+
+</Patch>
+-->

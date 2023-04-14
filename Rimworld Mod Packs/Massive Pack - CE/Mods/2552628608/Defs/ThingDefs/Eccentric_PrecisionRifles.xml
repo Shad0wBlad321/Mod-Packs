@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== E16 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_E16PR</defName>
+    <label>E16 precision charge rifle</label>
+    <description>The E16 is a bolt-action charge rifle that fires powerful 8x35mm charge rounds with deadly precision.\n\nEquipped with a variable-zoom hybrid optic, the E16 is expensive and slow to build, but adds accurate, long-range fire to The Eccentric's arsenal.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/E16</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+
+    <statBases>
+      <WorkToMake>56000</WorkToMake>
+      <Mass>6.4</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>70</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+    </costList>
+
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <weaponTags Inherit="False">
+      <li>EccentricRifle</li>
+      <li>EccentricSniperRifle</li>
+      <!-- The weaponTag method of adding bipods to CE doesn't currently work because of custom verbs. -->
+      <!--<li>Bipod_DMR</li>-->
+    </weaponTags>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EccentricSniperCharge</defaultProjectile>
+        <warmupTime>3.4</warmupTime>
+        <range>42.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps />
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- ==================== E18 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_E18DMR</defName>
+    <label>E18 designated marksman rifle</label>
+    <description>The E18 is a powerful semi-automatic charge rifle that fires the full-sized 8x35mm charge round.\n\nWith a longer range than the standard E16 charge rifle and a faster rate of fire than the E16 precision rifle, the E18 DMR is a potent support weapon for The Eccentric's security staff.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/E18</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+
+    <statBases>
+      <WorkToMake>56000</WorkToMake>
+      <Mass>6.0</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>65</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>Eccentric_HighCaliberCharge</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <weaponTags>
+      <li>EccentricRifle</li>
+      <li>EccentricSniperRifle</li>
+      <!-- The weaponTag method of adding bipods to CE doesn't currently work because of custom verbs. -->
+      <!--<li>Bipod_DMR</li>-->
+    </weaponTags>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EccentricMarksmanCharge</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>33.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps />
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- ==================== E21 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_E21AMR</defName>
+    <label>E21 anti-material rifle</label>
+    <description>The E21 is a heavy anti-material rifle firing 12x72mm high-caliber charge rounds with deadly precision. Designed and built by Fiona 'Foxy' Knight of Angel's Rest, the E21 was created in response to an increase in incursions of heavily armored belligerent forces.\n\nThe E21 is exceptionally heavy and slow-firing, intended for taking out heavily armored Spacer or Mechanoid threats.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/E21</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+
+    <statBases>
+      <WorkToMake>68000</WorkToMake>
+      <Mass>14.8</Mass>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>70</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>Eccentric_HighCaliberCharge</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <weaponTags>
+      <li>EccentricRifle</li>
+      <li>EccentricSniperRifle</li>
+      <!-- The weaponTag method of adding bipods to CE doesn't currently work because of custom verbs. -->
+      <!--<li>Bipod_DMR</li>-->
+    </weaponTags>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EccentricAntiMaterialCharge</defaultProjectile>
+        <warmupTime>4.2</warmupTime>
+        <range>44.9</range>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps />
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

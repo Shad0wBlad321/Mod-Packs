@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<DamageDef ParentName="Bite">
+		<defName>VAE_PlagueBite</defName>
+		<label>plagued bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>Plague</hediff>
+				<severityPerDamageDealt>0.005</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+
+			</li>
+			<li>
+				<hediff>VEF_ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.005</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>VAE_VeryToxicBite</defName>
+		<label>virulent toxic bite</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} died after getting bitten by a poisonous creature.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.03</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>VAE_ToxicSting</defName>
+		<label>bleeding wound</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has bled to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_BleedingWound</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>VAE_UncontrollableBleeding</defName>
+		<label>uncontrollable bleeding</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has bled to death.</deathMessage>
+		<hediff>VAE_OpenWound</hediff>
+
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	
+
+	<DamageDef ParentName="CutBase">
+		<defName>VAE_HulkAttack</defName>
+		<label>arm smash</label>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_StunnedByViciousAttack</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="CutBase">
+		<defName>VAE_HulkDualAttack</defName>
+		<label>two arm slam</label>
+		<workerClass>VAECaves.DamageWorker_TwoArmSlam</workerClass>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_StunnedByViciousAttack</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="Bite">
+		<defName>VAE_CocoonBite</defName>
+		<label>cocoon bite</label>
+		<workerClass>VAECaves.DamageWorker_CocoonBite</workerClass>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_SilkCovered</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+
+	</DamageDef>
+
+	<DamageDef>
+		<defName>VAE_CocoonRanged</defName>
+		<label>silk projectile</label>
+		<workerClass>VAECaves.DamageWorker_CocoonRanged</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has suffocated due to being covered in sticky silk.</deathMessage>
+		<hediff>Crush</hediff>
+		<hediffSkin>Bruise</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_SilkCovered</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+
+	</DamageDef>
+
+
+
+
+
+	<DamageDef ParentName="Bite">
+		<defName>VAE_InfectedMandibles</defName>
+		<label>infected mandibles</label>
+		<workerClass>AnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
+
+	</DamageDef>
+
+
+
+
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+<!-- Polyamory Beds (Vanilla Edition) -->	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="TripleSleepingSpot"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics/li[1]</xpath> 
+				<value>
+
+					<li>Things/Building/Mods/pbve/dspots_Spot3/dspots_Spot3</li>
+
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="QuadSleepingSpot"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics/li[1]</xpath> 
+				<value>
+
+					<li>Things/Building/Mods/pbve/dspots_Spot4/dspots_Spot4</li>
+
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>

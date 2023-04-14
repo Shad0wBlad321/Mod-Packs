@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: cook classic flavor InstaNoodle x4 -->
+	<CookMeal_BDsInstantNoodle.label>烹饪经典风味方便面 x4</CookMeal_BDsInstantNoodle.label>
+	<!-- EN: Cook 4 instant noodle serves from a combination of meat and plant ingredients. -->
+	<CookMeal_BDsInstantNoodle.description>将多种食材组合，烹饪四份经典风味方便面。</CookMeal_BDsInstantNoodle.description>
+	<!-- EN: Cooking classic flavor InstaNoodle. -->
+	<CookMeal_BDsInstantNoodle.jobString>正在烹饪四份经典风味方便面。</CookMeal_BDsInstantNoodle.jobString>
+
+	<!-- EN: cook extra protein InstaNoodle x4 -->
+	<CookMeal_BDsInstantNoodle_Meat.label>烹饪蛋白加倍方便面 x4</CookMeal_BDsInstantNoodle_Meat.label>
+	<!-- EN: Cook 4 instant noodle serves from only meat ingredients, it's a mystery how your cooks recreate noodle with meat. -->
+	<CookMeal_BDsInstantNoodle_Meat.description>只用肉类原料烹饪四份蛋白加倍方便面，至于怎么把肉类做成面条......商业机密。</CookMeal_BDsInstantNoodle_Meat.description>
+	<!-- EN: Cooking extra protein InstaNoodle. -->
+	<CookMeal_BDsInstantNoodle_Meat.jobString>正在烹饪四份蛋白加倍方便面。</CookMeal_BDsInstantNoodle_Meat.jobString>
+
+	<!-- EN: cook vegetarian friendly InstaNoodle x4 -->
+	<CookMeal_BDsInstantNoodle_Veg.label>烹饪素食主义方便面 x4</CookMeal_BDsInstantNoodle_Veg.label>
+	<!-- EN: Cook 4 instant noodle serves from only plant ingredients. -->
+	<CookMeal_BDsInstantNoodle_Veg.description>只用植物原料烹饪四份素食主义方便面。</CookMeal_BDsInstantNoodle_Veg.description>
+	<!-- EN: Cooking vegetarian friendly InstaNoodle. -->
+	<CookMeal_BDsInstantNoodle_Veg.jobString>正在烹饪四份素食主义方便面。</CookMeal_BDsInstantNoodle_Veg.jobString>
+
+	<!-- EN: cook classic flavor InstaNoodle x10 -->
+	<CookMeal_BDsInstantNoodleBulk.label>烹饪经典风味方便面 x10</CookMeal_BDsInstantNoodleBulk.label>
+	<!-- EN: Cook 10 instant noodle serves from a combination of meat and plant ingredients. -->
+	<CookMeal_BDsInstantNoodleBulk.description>将多种食材组合，烹饪十份经典风味方便面。</CookMeal_BDsInstantNoodleBulk.description>
+	<!-- EN: Cooking classic flavor InstaNoodle. -->
+	<CookMeal_BDsInstantNoodleBulk.jobString>正在烹饪十份经典风味方便面。</CookMeal_BDsInstantNoodleBulk.jobString>
+
+	<!-- EN: cook extra protein InstaNoodle x10 -->
+	<CookMeal_BDsInstantNoodleBulk_Meat.label>烹饪蛋白加倍方便面 x10</CookMeal_BDsInstantNoodleBulk_Meat.label>
+	<!-- EN: Cook 10 instant noodle serves from only meat ingredients, it's a mystery how your cooks recreate noodle with meat. -->
+	<CookMeal_BDsInstantNoodleBulk_Meat.description>只用肉类原料烹饪十份蛋白加倍方便面，至于怎么把肉类做成面条......商业机密。</CookMeal_BDsInstantNoodleBulk_Meat.description>
+	<!-- EN: Cooking extra protein InstaNoodle. -->
+	<CookMeal_BDsInstantNoodleBulk_Meat.jobString>正在烹饪十份蛋白加倍方便面。</CookMeal_BDsInstantNoodleBulk_Meat.jobString>
+
+	<!-- EN: cook vegetarian friendly InstaNoodle x10 -->
+	<CookMeal_BDsInstantNoodleBulk_Veg.label>烹饪素食主义方便面 x10</CookMeal_BDsInstantNoodleBulk_Veg.label>
+	<!-- EN: Cook 10 instant noodle serves from only plant ingredients. -->
+	<CookMeal_BDsInstantNoodleBulk_Veg.description>只用植物原料烹饪十份素食主义方便面。</CookMeal_BDsInstantNoodleBulk_Veg.description>
+	<!-- EN: Cooking vegetarian friendly InstaNoodle. -->
+	<CookMeal_BDsInstantNoodleBulk_Veg.jobString>正在烹饪十份素食主义方便面。</CookMeal_BDsInstantNoodleBulk_Veg.jobString>
+
+	<CookMeal_BDsInstantNoodle_Fish.label>烹饪鲜虾鱼极方便面 x4</CookMeal_BDsInstantNoodle_Fish.label>
+	<CookMeal_BDsInstantNoodle_Fish.description>将多种食材组合,烹饪四份鲜虾鱼极方便面。</CookMeal_BDsInstantNoodle_Fish.description>
+	<CookMeal_BDsInstantNoodle_Fish.jobString>正在烹饪四份鲜虾鱼极方便面。</CookMeal_BDsInstantNoodle_Fish.jobString>
+
+	<CookMeal_BDsInstantNoodleBulk_Fish.label>烹饪鲜虾鱼极方便面 x10</CookMeal_BDsInstantNoodleBulk_Fish.label>
+	<CookMeal_BDsInstantNoodleBulk_Fish.description>将多种食材组合，烹饪十份鲜虾鱼极方便面。</CookMeal_BDsInstantNoodleBulk_Fish.description>
+	<CookMeal_BDsInstantNoodleBulk_Fish.jobString>正在烹饪十份鲜虾鱼极方便面。</CookMeal_BDsInstantNoodleBulk_Fish.jobString>
+
+	<CookMeal_BDsInstantNoodle_Prickle.label>烹饪老坛酸菜方便面 x4</CookMeal_BDsInstantNoodle_Prickle.label>
+	<CookMeal_BDsInstantNoodle_Prickle.description>将多种食材，特别是一味神奇妙妙食材组合,烹饪四份老坛酸菜方便面。</CookMeal_BDsInstantNoodle_Prickle.description>
+	<CookMeal_BDsInstantNoodle_Prickle.jobString>正在烹饪四份老坛酸菜方便面。</CookMeal_BDsInstantNoodle_Prickle.jobString>
+
+	<CookMeal_BDsInstantNoodleBulk_Prickle.label>烹饪老坛酸菜方便面 x10</CookMeal_BDsInstantNoodleBulk_Prickle.label>
+	<CookMeal_BDsInstantNoodleBulk_Prickle.description>将多种食材，特别是一味神奇妙妙食材组合，烹饪十份老坛酸菜方便面。</CookMeal_BDsInstantNoodleBulk_Prickle.description>
+	<CookMeal_BDsInstantNoodleBulk_Prickle.jobString>正在烹饪十份老坛酸菜方便面。</CookMeal_BDsInstantNoodleBulk_Prickle.jobString>
+
+
+
+
+
+</LanguageData>

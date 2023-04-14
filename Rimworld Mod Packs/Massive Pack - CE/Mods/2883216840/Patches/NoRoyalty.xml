@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ========== BlazingClaws ========== -->
+
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Royalty</li>
+  </mods>
+	<nomatch Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="BTEMy_WrathfulTotem"]/comps</xpath>
+			<value>
+			  <li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				<thingToSpawn>BTEMy_ReverenceFuel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>30000</min><max>30000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="BTEMy_SimpleReveredTotem"]/comps</xpath>
+			<value>
+			  <li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				<thingToSpawn>BTEMy_ReverenceFuel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>30000</min><max>30000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="BTEMy_LifeFilledTotem"]/comps</xpath>
+			<value>
+			  <li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				<thingToSpawn>BTEMy_ReverenceFuel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>30000</min><max>30000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			  </li>
+			</value>
+		</li>
+	  </operations>
+	</nomatch>
+</Operation>
+</Patch>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<TaleDef>
+		<defName>VRESaurids_HypothermicReveal</defName>
+		<label>hypothic slowdown revealed</label>
+		<taleClass>Tale_SinglePawnAndDef</taleClass>
+		<defSymbol>ILLNESS</defSymbol>
+		<type>Volatile</type>
+		<baseInterest>4</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef] freezing to death</li>
+				<li>image->[PAWN_nameFull] trudging through snow [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] huddled beside a [TerrainFeature] [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] searching for a warm [Apparel] [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] crouching next to a fire [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] trying to light a fire [circumstance_group]</li>
+				<li>circumstance_phrase->while [PAWN_possessive] face slowly turns blue</li>
+				<li>circumstance_phrase->and shivering uncontrollably</li>
+				<li>circumstance_phrase->while covered in frost</li>
+				<li>circumstance_phrase->while exhaling clouds of fog</li>
+				<li>desc_sentence->[Quantity_adjphrase] frozen [Animal] corpses surround the area.</li>
+				<li>desc_sentence->[PAWN_nameDef]'s clothes are tattered and worn.</li>
+				<li>desc_sentence->A cold blue moon looms in the background.</li>
+				<li>desc_sentence->The scene takes place inside a snow-covered [TreeType] forest.</li>
+				<li>desc_sentence->The scene appears to take place inside a freezer.</li>
+				<li>desc_sentence->[Quantity_adjphrase] shivering [Animal]s surround the scene.</li>
+				<li>desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+
+	<TaleDef>
+		<defName>VRESaurids_HyperthermicReveal</defName>
+		<label>hyperthermic slowdown revealed</label>
+		<taleClass>Tale_SinglePawnAndDef</taleClass>
+		<defSymbol>ILLNESS</defSymbol>
+		<type>Volatile</type>
+		<baseInterest>4</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef] overheating</li>
+				<li>image->[PAWN_nameFull] trudging through sand [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] huddled in the shade of a [TerrainFeature] [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] searching for water [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] searching for shade [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] crawling across sun-baked dirt [circumstance_group]</li>
+				<li>circumstance_phrase->and covered in sweat</li>
+				<li>circumstance_phrase->with cracked dry lips</li>
+				<li>circumstance_phrase->while vomiting</li>
+				<li>desc_sentence->[Quantity_adjphrase] dessicated [Animal] corpses surround the area.</li>
+				<li>desc_sentence->[PAWN_nameDef]'s clothes are tattered and torn.</li>
+				<li>desc_sentence->A blazing sun looms in the background.</li>
+				<li>desc_sentence->The scene takes place inside a blazing desert.</li>
+				<li>desc_sentence->The scene appears to take place inside, next to a heater.</li>
+				<li>desc_sentence->[Quantity_adjphrase] unmoving [Animal]s surround the scene.</li>
+				<li>desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+
+</Defs>

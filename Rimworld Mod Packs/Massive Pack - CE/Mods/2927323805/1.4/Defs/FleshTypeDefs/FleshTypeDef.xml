@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FleshTypeDef>
+        <defName>VRE_WoundsSap</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>VRE_Damage_HitSap</damageEffecter>
+        <genericWounds>
+            <li>
+                <texture>Things/Pawn/Humanlike/Wounds/VRE_WoundSapA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Humanlike/Wounds/VRE_WoundSapB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Humanlike/Wounds/VRE_WoundSapC</texture>
+            </li>
+        </genericWounds>
+    </FleshTypeDef>
+	
+
+</Defs>

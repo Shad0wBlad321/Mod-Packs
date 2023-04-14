@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>VFEF_Mote_SprinklerWater</defName>
+		<graphicData>
+		  <texPath>Things/Mote/AirPuff</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+		  <fadeInTime>0.04</fadeInTime>
+		  <solidTime>1.8</solidTime>
+		  <fadeOutTime>0.2</fadeOutTime>
+		</mote>
+	</ThingDef>
+</Defs>

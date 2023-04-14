@@ -1,0 +1,17 @@
+<ModMetaData>
+	<packageId>Pal5k.LogisticsMechanoid</packageId>
+	<name>Logistics_Mechanoid</name>
+	<author>Pal 5k</author>
+	<supportedVersions>
+		<li>1.4</li>
+		</supportedVersions>
+	<modDependencies>
+	<li>
+		<packageId>Ludeon.RimWorld.Biotech</packageId>
+		<displayName>RimWorld - Biotech</displayName>
+		<steamWorkshopUrl>steam://https://store.steampowered.com/app/1826140/RimWorld__Biotech//</steamWorkshopUrl>
+	</li>
+	</modDependencies>
+	<description>Adds a new mechanoid that is designed to transport items. Acts as a slower yet beefier Lifter mech when not travelling.
+		</description>
+</ModMetaData>

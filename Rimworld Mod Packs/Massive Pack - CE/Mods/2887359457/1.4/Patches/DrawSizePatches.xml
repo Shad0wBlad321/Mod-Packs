@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="LWM_FabricHamper"]/graphicData/drawSize</xpath>
+    		<value><drawSize>(2,1)</drawSize></value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="LWM_Meat_Hook"]/graphicData/drawSize</xpath>
+    		<value><drawSize>(2.5,2.5)</drawSize></value>
+	</Operation>
+</Patch>

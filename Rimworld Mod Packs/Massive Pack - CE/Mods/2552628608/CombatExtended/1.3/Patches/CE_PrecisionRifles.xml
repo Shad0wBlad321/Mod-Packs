@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- ==================== E16 ==================== -->
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Eccentric_Gun_E16PR</defName>
+    <statBases>
+      <Mass>5.50</Mass>
+      <Bulk>11.60</Bulk>
+      <WorkToMake>60000</WorkToMake>
+      <SightsEfficiency>2.6</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.90</SwayFactor>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <BipodStats>0</BipodStats>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <Properties>
+      <verbClass>EccentricProjectiles.Verb_ShootCE_WithAlternateProjectiles</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_8x35mmCharged</defaultProjectile>
+      <warmupTime>1.6</warmupTime>
+      <range>75</range>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>10</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_8x35mmCharged</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR" or defName="Eccentric_Gun_E18DMR"]</xpath>
+    <value>
+      <li Class="EccentricProjectiles.ModExtension_AmmoAlternateProjectile">
+        <alternateProjectiles>
+          <li>
+            <ammo>Ammo_8x35mmCharged</ammo>
+            <projectile>Bullet_Eccentric8x35mmCharged</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_8x35mmCharged_AP</ammo>
+            <projectile>Bullet_Eccentric8x35mmCharged_AP</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_8x35mmCharged_Ion</ammo>
+            <projectile>Bullet_Eccentric8x35mmCharged_Ion</projectile>
+          </li>
+        </alternateProjectiles>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR" or defName="Eccentric_Gun_E18DMR" or defName="Eccentric_Gun_E21AMR"]/comps</xpath>
+    <value>
+      <li Class="CombatExtended.CompProperties_BipodComp">
+        <catDef>bipodDMR</catDef>
+        <additionalrange>15</additionalrange>
+        <ticksToSetUp>180</ticksToSetUp>
+        <recoilMulton>0.7</recoilMulton>
+        <recoilMultoff>1.0</recoilMultoff>
+        <warmupMult>0.75</warmupMult>
+        <warmupPenalty>1.0</warmupPenalty>
+        <swayMult>0.5</swayMult>
+        <swayPenalty>1.0</swayPenalty>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- ==================== E18 ==================== -->
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Eccentric_Gun_E18DMR</defName>
+    <statBases>
+      <Mass>5.00</Mass>
+      <Bulk>10.80</Bulk>
+      <WorkToMake>60000</WorkToMake>
+      <SightsEfficiency>2.0</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>1.80</SwayFactor>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <BipodStats>0</BipodStats>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+      <Chemfuel>15</Chemfuel>
+    </costList>
+    <Properties>
+      <verbClass>EccentricProjectiles.Verb_ShootCE_WithAlternateProjectiles</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_8x35mmCharged</defaultProjectile>
+      <warmupTime>1.2</warmupTime>
+      <range>62</range>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>20</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_8x35mmCharged</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+  </Operation>
+
+  <!-- ==================== E21 ==================== -->
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Eccentric_Gun_E21AMR</defName>
+    <statBases>
+      <Mass>12.60</Mass>
+      <Bulk>16.80</Bulk>
+      <WorkToMake>80000</WorkToMake>
+      <SightsEfficiency>2.6</SightsEfficiency>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>1.90</SwayFactor>
+      <RangedWeapon_Cooldown>0.60</RangedWeapon_Cooldown>
+      <BipodStats>0</BipodStats>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Eccentric_HexCell>4</Eccentric_HexCell>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <Properties>
+      <verbClass>EccentricProjectiles.Verb_ShootCE_WithAlternateProjectiles</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_12x72mmCharged</defaultProjectile>
+      <warmupTime>1.8</warmupTime>
+      <range>86</range>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+      <muzzleFlashScale>14</muzzleFlashScale>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>5</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_12x72mmCharged</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]/equippedStatOffsets/MoveSpeed</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]</xpath>
+    <value>
+      <li Class="EccentricProjectiles.ModExtension_AmmoAlternateProjectile">
+        <alternateProjectiles>
+          <li>
+            <ammo>Ammo_12x72mmCharged</ammo>
+            <projectile>Bullet_Eccentric12x72mmCharged</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_12x72mmCharged_AP</ammo>
+            <projectile>Bullet_Eccentric12x72mmCharged_AP</projectile>
+          </li>
+          <li>
+            <ammo>Ammo_12x72mmCharged_Ion</ammo>
+            <projectile>Bullet_Eccentric12x72mmCharged_Ion</projectile>
+          </li>
+        </alternateProjectiles>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

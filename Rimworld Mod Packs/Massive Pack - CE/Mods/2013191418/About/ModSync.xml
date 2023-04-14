@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>f88cdd8c-6bd9-47f5-90dd-6017874a6cf8</ID>
+  <ModName>Realistic Human Sounds (Continued)</ModName>
+  <Version>1.4.2</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>emipa606</Owner>
+    <Project>RealisticHumanSounds</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>

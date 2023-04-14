@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <STF.VerboseLogging>Verbose Logging</STF.VerboseLogging>
+  <STF.VerboseLoggingTT>For debugging</STF.VerboseLoggingTT>
+  <STF.ForbidWhenMoving>Forbid when leaving stockpile</STF.ForbidWhenMoving>
+  <STF.ForbidWhenMovingTT>Will forbid any item that floats away from a stockpile that allows the item. This will stop pawns from constantly try to return items that float away.</STF.ForbidWhenMovingTT>
+  <STF.RelativeFloatSpeed>Relative floating-speed {0}</STF.RelativeFloatSpeed>
+  <STF.RelativeFloatSpeedTT>A slower floating speed will cause item positions to change less frequently and lower the performance need for the mod.</STF.RelativeFloatSpeedTT>
+  <STF.FloatUnderBridges>Things can float under bridges</STF.FloatUnderBridges>
+  <STF.FloatUnderBridgesTT>Things will float under bridges, their texture being hidden during the path</STF.FloatUnderBridgesTT>
+  <STF.DownedPawnsFloat>Downed pawns float</STF.DownedPawnsFloat>
+  <STF.DownedPawnsFloatTT>Pawns that are downed will also float, but at a slower rate than corpses.</STF.DownedPawnsFloatTT>
+  <STF.DownedPawnsDrown>Downed pawns in water can drown</STF.DownedPawnsDrown>
+  <STF.DownedPawnsDrownTT>Pawns that are downed in water can drown. Helmets with the EVA-tag will prevent this.</STF.DownedPawnsDrownTT>
+  <STF.PawnsCanFall>Pawns can loose footing in moving water</STF.PawnsCanFall>
+  <STF.PawnsCanFallTT>There is a chance that pawns can slip in moving water and become downed for a little while. This scales with their manipulation-skill</STF.PawnsCanFallTT>
+  <STF.AllowOnStuck>Allow caught items</STF.AllowOnStuck>
+  <STF.AllowOnStuckTT>Will automatically allow items that gets stuck in a net or blocked by bars</STF.AllowOnStuckTT>
+  <STF.DespawnAtMapEdge>Despawn at map-edge</STF.DespawnAtMapEdge>
+  <STF.DespawnAtMapEdgeTT>Floating things will despawn instead of being stopped by the map edge.</STF.DespawnAtMapEdgeTT>
+  <STF.SpawnNewItems>Spawn items at river map-edge</STF.SpawnNewItems>
+  <STF.SpawnNewItemsTT>Things can spawn at the edge of the map if there is a river flowing.</STF.SpawnNewItemsTT>
+  <STF.MaxSpawnValue>Maximum value of spawned items: {0}</STF.MaxSpawnValue>
+  <STF.MaxSpawnValueTT>The maximum value of each stack of items spawned in rivers.</STF.MaxSpawnValueTT>
+  <STF.MinTimeBetweenItems>Minimum time between items spawning: {0}</STF.MinTimeBetweenItems>
+  <STF.MinTimeBetweenItemsTT>The minimum time between things spawning in the river.</STF.MinTimeBetweenItemsTT>
+  <STF.ForbidSpawningItems>Forbid spawning items</STF.ForbidSpawningItems>
+  <STF.ForbidSpawningItemsTT>Items spawning in the river will by default be forbidden</STF.ForbidSpawningItemsTT>
+  <STF.HaulUrgently>Mark spawning items to be hauled urgently</STF.HaulUrgently>
+  <STF.HaulUrgentlyTT>Items spawning in the river will by default be marked to be hauled urgently</STF.HaulUrgentlyTT>
+  <STF.SpawnLivingPawns>Allow living (downed) pawns to spawn in rivers.</STF.SpawnLivingPawns>
+  <STF.SpawnLivingPawnsTT>Living, but downed, pawns can spawn in the river, you can choose to rescue them if you want.</STF.SpawnLivingPawnsTT>
+  <STF.SpawnInOceanTiles>Allow spawning in on ocean-tiles</STF.SpawnInOceanTiles>
+  <STF.SpawnInOceanTilesTT>Things can also spawn in on edge-tiles of ocean type, no guarantees for it to stay on the map.</STF.SpawnInOceanTilesTT>
+  <STF.NotifyOfSpawningItems>Notify on all spawning items</STF.NotifyOfSpawningItems>
+  <STF.NotifyOfSpawningItemsTT>Will show a message about anything spawning in the river</STF.NotifyOfSpawningItemsTT>
+  <STF.ReservedItemsWillNotMove>Reserved items will not move</STF.ReservedItemsWillNotMove>
+  <STF.ReservedItemsWillNotMoveTT>Will make items that are reserved to be used in a toil to stay still to not cause issues when working</STF.ReservedItemsWillNotMoveTT>
+  <STF.WarnForAllFriendlyPawns>Warn about any drowning non-enemy</STF.WarnForAllFriendlyPawns>
+  <STF.WarnForAllFriendlyPawnsTT>Will notify about any non-enemy drowning</STF.WarnForAllFriendlyPawnsTT>
+  <STF.PawnIsFloatingAway>Pawns floating away</STF.PawnIsFloatingAway>
+  <STF.PawnIsFloatingAwayTT>{0} is downed and floating away in the water.</STF.PawnIsFloatingAwayTT>
+  <STF.ThingsUnderBridge>Things floating under bridges</STF.ThingsUnderBridge>
+  <STF.ThingsUnderBridgeTT>Things that are currently floating under bridges: {0}</STF.ThingsUnderBridgeTT>
+  <STF.ThingsFloatedIntoTheMap>{0} appeared floating down the river</STF.ThingsFloatedIntoTheMap>
+  <STF.ThingsFloatedInFromTheOcean>{0} appeared floating in the ocean</STF.ThingsFloatedInFromTheOcean>
+  <STF.PawnIsDrowning>{0} is downed in the water and drowning, they are in desperate need of rescue!</STF.PawnIsDrowning>
+  <STF.PawnHasFallen>{0} has lost their footing in the flowing water!</STF.PawnHasFallen>
+  <STF.PawnHasFallenAndFloats>{0} has lost their footing in the flowing water and is now floating away!</STF.PawnHasFallenAndFloats>
+  <STF.PawnIsLostTitle>{0} has floated away</STF.PawnIsLostTitle>
+  <STF.PawnIsLostMessage>You failed to rescue {0} from the flowing water and they have now floated out of sight. Hopefully they can save themselved but you may never see them again.</STF.PawnIsLostMessage>
+  <STF.PawnSpawnedTitle>Someone is struggeling in the river</STF.PawnSpawnedTitle>
+  <STF.PawnSpawnedMessage>You notice someone in the water, they signal you for help</STF.PawnSpawnedMessage>
+  <STF.CurrentModVersion>Installed mod-version: {0}</STF.CurrentModVersion>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<!-- <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+	<success>Always</success>
+        <xpath>/Defs/HediffDef[defName="WCE2_Lobotomized"]/disablesNeeds</xpath>
+        <value>
+            <li>
+				<li>Suppression</li>
+			</li>
+        </value>
+    </match>
+	</Operation> -->
+
+	
+	
+</Patch>
+

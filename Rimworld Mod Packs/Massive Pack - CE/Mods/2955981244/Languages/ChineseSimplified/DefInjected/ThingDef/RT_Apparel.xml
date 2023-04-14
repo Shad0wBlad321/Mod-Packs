@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RTMI_MobileSuit.label>机动步兵外骨骼</RTMI_MobileSuit.label>
+  <RTMI_MobileSuit.description>一种重型装甲外骨骼,搭载了多种武器设备并对穿戴者提供全面的战场保护与机动性保障.</RTMI_MobileSuit.description>
+  <RTMI_MobileSuit.comps.0.verbProps.0.label>充能跳跃</RTMI_MobileSuit.comps.0.verbProps.0.label>
+  <RTMI_MobileSuit.comps.0.verbProps.0.description>能够跳高将近五层楼的恐怖爆发力...但主要用于跨越栏杆</RTMI_MobileSuit.comps.0.verbProps.0.description>
+  <RTMI_MobileSuit.comps.0.verbProps.1.label>导弹发射器</RTMI_MobileSuit.comps.0.verbProps.1.label>
+  <RTMI_MobileSuit.comps.0.verbProps.1.description>发射反坦克制导导弹</RTMI_MobileSuit.comps.0.verbProps.1.description>
+  <RTMI_MobileSuit.comps.0.verbProps.2.description>发射烟幕装置</RTMI_MobileSuit.comps.0.verbProps.2.description>
+  <RTMI_MobileSuit.comps.0.verbProps.2.label>烟幕发射器</RTMI_MobileSuit.comps.0.verbProps.2.label>
+
+  <RTMI_Bullet_SmokeLauncher.label>烟雾榴弹</RTMI_Bullet_SmokeLauncher.label>
+
+  <RTMI_MobileSuitHelmet.label>机动步兵防弹盔</RTMI_MobileSuitHelmet.label>
+  <RTMI_MobileSuitHelmet.description>一种重型装甲外骨骼,搭载了多种武器设备并对穿戴者提供全面的战场保护与机动性保障.</RTMI_MobileSuitHelmet.description>
+
+
+</LanguageData>

@@ -1,0 +1,140 @@
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\AOBAUtilities.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\AOBAUtilities.pdb
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Assembly-CSharp.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.CoreModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\NAudio.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\NVorbis.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AudioModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.IMGUIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\com.rlabrecque.steamworks.net.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Assembly-CSharp-firstpass.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AssetBundleModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TextRenderingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.PhysicsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Unity.TextMeshPro.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\ISharpZipLib.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.InputLegacyModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ImageConversionModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UI.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.DSPGraphModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AndroidJNIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AccessibilityModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityConnectModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.Physics2DModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AnimationModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SharedInternalsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ClothModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ClusterInputModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ClusterRendererModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.CrashReportingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TilemapModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TerrainModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VFXModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VideoModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VRModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.GridModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SubsystemsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.JSONSerializeModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.LocalizationModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UNETModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ParticleSystemModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.DirectorModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.GameCenterModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SpriteMaskModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.StreamingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TextCoreModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SpriteShapeModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UIElementsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VehiclesModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.WindModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ARModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.XRModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.InputModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.csproj.CopyComplete
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.pdb
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial -Citadel\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Fortification.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\AOBAUtilities.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\AOBAUtilities.pdb
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Assembly-CSharp.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Fortification.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.CoreModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\NAudio.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\NVorbis.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AudioModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.IMGUIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\com.rlabrecque.steamworks.net.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Assembly-CSharp-firstpass.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AssetBundleModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TextRenderingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.PhysicsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\Unity.TextMeshPro.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\ISharpZipLib.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.InputLegacyModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ImageConversionModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UI.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.DSPGraphModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AndroidJNIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AccessibilityModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityConnectModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AIModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.Physics2DModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.AnimationModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SharedInternalsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ClothModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ClusterInputModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ClusterRendererModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.CrashReportingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TilemapModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TerrainModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VFXModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VideoModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VRModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.GridModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SubsystemsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.JSONSerializeModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.LocalizationModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UNETModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ParticleSystemModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.DirectorModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.GameCenterModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SpriteMaskModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.StreamingModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.TextCoreModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.SpriteShapeModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.UIElementsModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.VehiclesModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.WindModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.ARModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.XRModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\bin\Debug\UnityEngine.InputModule.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.csproj.CopyComplete
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Sources\AOBAUtilities\AOBAUtilities\obj\Debug\AOBAUtilities.pdb

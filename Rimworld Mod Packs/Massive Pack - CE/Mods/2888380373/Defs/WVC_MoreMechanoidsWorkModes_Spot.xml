@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+	<defName>WVC_IOMSS_Spots</defName>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef ParentName="BuildingBase" Name="WVC_IdleOptimization_MechanoidShutdownSpot">
+	<defName>WVC_IdleOptimization_MechanoidShutdownSpot</defName>
+	<label>mechanoid shutdown spot</label>
+	<description>Mechanoids will return here before shutting down.\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Mechanoids will return here if there are no other spots. Except ambush.</description>
+	<descriptionHyperlinks>
+	  <ConceptDef>WVC_MMWM_BehaviorsGuide</ConceptDef>
+	</descriptionHyperlinks>
+	<graphicData>
+	  <texPath>WVC/Spots/MechanoidShutdownSpot</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <!-- <tickerType>Normal</tickerType> -->
+    <!-- <altitudeLayer>Building</altitudeLayer> -->
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
+	<!-- <altitudeLayer>Zone</altitudeLayer> -->
+	<statBases>
+	  <WorkToBuild>0</WorkToBuild>
+	</statBases>
+	<rotatable>false</rotatable>
+	<scatterableOnMapGen>false</scatterableOnMapGen>
+	<useHitPoints>False</useHitPoints>
+	<uiOrder>0</uiOrder>
+	<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+	<passability>Standable</passability>
+	<!-- <hasInteractionCell>true</hasInteractionCell> -->
+	<!-- <interactionCellOffset>(0,0,0)</interactionCellOffset> -->
+	<drawGUIOverlay>false</drawGUIOverlay>
+	<designationCategory>Biotech</designationCategory>
+	<specialDisplayRadius>8.9</specialDisplayRadius>
+	<designatorDropdown>WVC_IOMSS_Spots</designatorDropdown>
+	<building>
+	  <!-- <spawnedConceptLearnOpportunity>WVC_MMWM_BehaviorsGuide</spawnedConceptLearnOpportunity> -->
+	  <isEdifice>false</isEdifice>
+	  <!-- <sowTag>SupportPlantsOnly</sowTag> -->
+	  <!-- <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant> -->
+	  <!-- <ai_chillDestination>false</ai_chillDestination> -->
+	  <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+	</building>
+  </ThingDef>
+
+  <ThingDef ParentName="WVC_IdleOptimization_MechanoidShutdownSpot">
+	<defName>WVC_IOMSS_WorkAndRecharge</defName>
+	<label>worker spot</label>
+	<description>Mechanoids with the &lt;color=#f5ffa2&gt;"Work and recharge"&lt;/color&gt; mode will return here.</description>
+	<descriptionHyperlinks>
+	  <MechWorkModeDef>WVC_WorkAndRecharge</MechWorkModeDef>
+	  <MechWorkModeDef>WVC_SafeWorkAndRecharge</MechWorkModeDef>
+	</descriptionHyperlinks>
+	<graphicData>
+	  <texPath>WVC/Spots/WorkerMechanoidShutdownSpot</texPath>
+	</graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="WVC_IdleOptimization_MechanoidShutdownSpot">
+	<defName>WVC_IOMSS_TotallySafeSpot</defName>
+	<label>safe spot</label>
+	<description>Mechanoids with a &lt;color=#f5ffa2&gt;"Safe"&lt;/color&gt; job will return here in case of danger.</description>
+	<descriptionHyperlinks>
+	  <MechWorkModeDef>WVC_SafeWorkAndRecharge</MechWorkModeDef>
+	</descriptionHyperlinks>
+	<graphicData>
+	  <texPath>WVC/Spots/EscapeMechanoidShutdownSpot</texPath>
+	</graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="WVC_IdleOptimization_MechanoidShutdownSpot">
+	<defName>WVC_IOMSS_Ambush</defName>
+	<label>ambush spot</label>
+	<description>Mechanoids with the &lt;color=#f5ffa2&gt;"Ambush"&lt;/color&gt; mode will return here.</description>
+	<descriptionHyperlinks>
+	  <MechWorkModeDef>WVC_Ambush</MechWorkModeDef>
+	</descriptionHyperlinks>
+	<graphicData>
+	  <texPath>WVC/Spots/AmbushMechanoidShutdownSpot</texPath>
+	</graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="WVC_IdleOptimization_MechanoidShutdownSpot">
+	<defName>WVC_IOMSS_WaitEnemy</defName>
+	<label>waiting spot</label>
+	<description>Mechanoids with the &lt;color=#f5ffa2&gt;"Wait enemy"&lt;/color&gt; or &lt;color=#f5ffa2&gt;"Work and wait"&lt;/color&gt; or &lt;color=#f5ffa2&gt;"Escort if enemy"&lt;/color&gt; mode will return here.</description>
+	<descriptionHyperlinks>
+	  <MechWorkModeDef>WVC_WaitEnemy</MechWorkModeDef>
+	  <MechWorkModeDef>WVC_WorkAndWaitEnemy</MechWorkModeDef>
+	  <MechWorkModeDef>WVC_EscortIfEnemyOnMap</MechWorkModeDef>
+	</descriptionHyperlinks>
+	<graphicData>
+	  <texPath>WVC/Spots/WaitMechanoidShutdownSpot</texPath>
+	</graphicData>
+  </ThingDef>
+
+</Defs>

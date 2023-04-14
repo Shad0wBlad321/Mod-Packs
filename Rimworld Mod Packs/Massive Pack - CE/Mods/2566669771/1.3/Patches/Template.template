@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded - Frontier</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- RangedHeavy-->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName=""]/weaponClasses</xpath>
+          <value>
+            <li>RangedHeavy</li>
+          </value>
+        </li>
+        <!-- RangedLight -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName=""]/weaponClasses</xpath>
+          <value>
+            <li>RangedLight</li>
+          </value>
+        </li>
+        <!-- ShortShots < 19.9 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName=""]/weaponClasses</xpath>
+          <value>
+            <li>ShortShots</li>
+          </value>
+        </li>
+        <!-- LongShots > 35 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName=""]/weaponClasses</xpath>
+          <value>
+            <li>LongShots</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

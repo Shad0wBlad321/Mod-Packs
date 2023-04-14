@@ -1,0 +1,3898 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--=================== RED =================-->
+  <FleshTypeDef>
+    <defName>RedFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitRedFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(255, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(255, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(255, 0, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(255, 0, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>SangriaFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitSangriaFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(161, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(161, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(161, 0, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(161, 0, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>MaroonFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitMaroonFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(80, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(80, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(80, 0, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(80, 0, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <!--=================== Orange =================-->
+  <FleshTypeDef>
+    <defName>OrangeFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitOrangeFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(255, 126, 3)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(255, 126, 3)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(255, 126, 3)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(255, 126, 3)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>TenneFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitTenneFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(161, 82, 3)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(161, 82, 3)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(161, 82, 3)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(161, 82, 3)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>BrownFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitBrownFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(80, 40, 3)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(80, 40, 3)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(80, 40, 3)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(80, 40, 3)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+   <!--=================== Yellow =================-->
+  <FleshTypeDef>
+    <defName>YellowFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitYellowFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(255, 253, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(255, 253, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(255, 253, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(255, 253, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>CitrusFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitCitrusFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(161, 161, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(161, 161, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(161, 161, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(161, 161, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>DarkOliveFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitDarkOliveFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(80, 80, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(80, 80, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(80, 80, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(80, 80, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+    <!--=================== Green =================-->
+  <FleshTypeDef>
+    <defName>LimeFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitLimeFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(196, 255, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(196, 255, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(196, 255, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(196, 255, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>OliveFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitOliveFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(101, 130, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(101, 130, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(101, 130, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(101, 130, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>GreenFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitGreenFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(65, 102, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(65, 102, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(65, 102, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(65, 102, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+     <!--=================== Jade =================-->
+  <FleshTypeDef>
+    <defName>SpringGreenFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitSpringGreenFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(21, 255, 141)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(21, 255, 141)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(21, 255, 141)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(21, 255, 141)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>JadeFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitJadeFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(7, 132, 70)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(7, 132, 70)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(7, 132, 70)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(7, 132, 70)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>DarkGreenFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitDarkGreenFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(7, 65, 36)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(7, 65, 36)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(7, 65, 36)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(7, 65, 36)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+      <!--=================== Cyan =================-->
+  <FleshTypeDef>
+    <defName>AquaFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitAquaFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 251, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 251, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 251, 255)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 251, 255)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>TealFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitTealFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 130, 130)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 130, 130)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 130, 130)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 130, 130)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>SherpaBlueFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitSherpaBlueFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 65, 67)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 65, 67)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 65, 67)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 65, 67)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+       <!--=================== Cerulean =================-->
+  <FleshTypeDef>
+    <defName>DodgerBlueFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitDodgerBlueFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 131, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 131, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 131, 255)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 131, 255)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>SmaltFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitSmaltFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 65, 130)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 65, 130)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 65, 130)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 65, 130)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>PrussianBlueFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitPrussianBlueFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 33, 65)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 33, 65)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 33, 65)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 33, 65)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+       <!--=================== Blue =================-->
+  <FleshTypeDef>
+    <defName>BlueFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitBlueFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 42, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 42, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 42, 255)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 42, 255)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>MediumBlueFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitMediumBlueFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 33, 203)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 33, 203)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 33, 203)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 33, 203)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>NavyFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitNavyFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 0, 86)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 0, 86)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 0, 86)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 0, 86)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+       <!--=================== Purple =================-->
+  <FleshTypeDef>
+    <defName>ElectricIndigoFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitElectricIndigoFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(143, 43, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(143, 43, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(143, 43, 255)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(143, 43, 255)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>PurpleFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitPurpleFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(99, 29, 180)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(99, 29, 180)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(99, 29, 180)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(99, 29, 180)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>IndigoFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitIndigoFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(43, 0, 87)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(43, 0, 87)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(43, 0, 87)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(43, 0, 87)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+       <!--=================== Violet =================-->
+  <FleshTypeDef>
+    <defName>MagentaFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitMagentaFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(255, 0, 253)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(255, 0, 253)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(255, 0, 253)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(255, 0, 253)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>DeepMagentaFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitDeepMagentaFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(202, 0, 200)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(202, 0, 200)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(202, 0, 200)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(202, 0, 200)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>PlumFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitPlumFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(106, 0, 106)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(106, 0, 106)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(106, 0, 106)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(106, 0, 106)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+       <!--=================== Fuchsia =================-->
+  <FleshTypeDef>
+    <defName>PinkFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitPinkFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(255, 0, 126)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(255, 0, 126)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(255, 0, 126)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(255, 0, 126)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>EggplantFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitEggplantFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(153, 0, 77)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(153, 0, 77)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(153, 0, 77)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(153, 0, 77)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>TyrianPurpleFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitTyrianPurpleFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(75, 0, 37)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(75, 0, 37)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(75, 0, 37)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(75, 0, 37)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+       <!--=================== Gray =================-->
+  <FleshTypeDef>
+    <defName>BlackFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitBlackFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 0, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 0, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 0, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>GreyFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitGreyFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(128, 128, 128)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(128, 128, 128)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(128, 128, 128)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(128, 128, 128)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>WhiteFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitWhiteFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(255, 255, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(255, 255, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(255, 255, 255)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(255, 255, 255)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+       <!--=================== Metal =================-->
+  <FleshTypeDef>
+    <defName>GoldFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitGoldFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(255, 215, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(255, 215, 0)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(255, 215, 0)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(255, 215, 0)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>SilverFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitSilverFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(192, 192, 192)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(192, 192, 192)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(192, 192, 192)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(192, 192, 192)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>CopperFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitCopperFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(184, 115, 51)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(184, 115, 51)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(184, 115, 51)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(184, 115, 51)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <!--=================== MISC =================-->
+  <FleshTypeDef>
+    <defName>PeriwinkleFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitPeriwinkleFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(204, 204, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(204, 204, 255)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(204, 204, 255)</color>
+      </li>
+    </genericWounds>
+    <bandagedWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/BandagedC</texture>
+      </li>
+    </bandagedWounds>
+    <hediffWounds>
+      <li  MayRequire="Ludeon.RimWorld.Ideology">
+        <hediff>Scarification</hediff>
+        <wounds>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationA</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationB</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <texture>Things/Pawn/Wounds/ScarificationC</texture>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <displayOverApparel>false</displayOverApparel>
+            <displayPermanent>false</displayPermanent>
+            <drawOffsetSouth>(0, 0.001, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0.001, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <tintWithSkinColor>true</tintWithSkinColor>
+            <missingBodyPartFresh>false</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(204, 204, 255)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+  <FleshTypeDef>
+    <defName>ShamrockGreenFlesh</defName>
+    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <damageEffecter>Damage_HitShamrockGreenFlesh</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA_Color</texture>
+		<color>(0, 158, 96)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB_Color</texture>
+		<color>(0, 158, 96)</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC_Color</texture>
+		<color>(0, 158, 96)</color>
+      </li>
+    </genericWounds>
+    <hediffWounds>
+      <li>
+        <hediff>MissingBodyPart</hediff>
+        <wounds>
+          <li>
+            <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureSouth>
+            <textureNorth>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureNorth>
+            <textureEast>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureEast>
+            <textureWest>Things/Pawn/Wounds/MissingEye_Fresh_Color</textureWest>
+			<color>(0, 158, 96)</color>
+            <flipWest>true</flipWest>
+            <onlyOnPart>Eye</onlyOnPart>
+            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+            <flipOnRotation>South</flipOnRotation>
+            <missingBodyPartFresh>true</missingBodyPartFresh>
+            <scale>0.7</scale>
+            <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+            <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+          </li>
+        </wounds>
+      </li>
+    </hediffWounds>
+  </FleshTypeDef>
+</Defs>

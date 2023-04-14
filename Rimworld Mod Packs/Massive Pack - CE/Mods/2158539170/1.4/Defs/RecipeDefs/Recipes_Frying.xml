@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+
+	<RecipeDef>
+		<defName>VCE_DeepFrySushi</defName>
+		<label>deep fry sushi x20</label>
+		<description>Deep fry sushi. Deep fried food is very tasty, but not very good for your health.</description>
+		<jobString>Deep frying sushi.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>VCE_DeepFrier</li>					
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Norimaki</li>
+						<li>VCE_Uramaki</li>
+						<li>VCE_Nigiri</li>
+						<li>VCE_Temaki</li>
+						<li>VCE_Futomaki</li>
+						<li>VCE_Gunkanmaki</li>
+						<li>VCE_Oshizushi</li>				
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VCE_Norimaki</li>
+				<li>VCE_Uramaki</li>
+				<li>VCE_Nigiri</li>
+				<li>VCE_Temaki</li>
+				<li>VCE_Futomaki</li>
+				<li>VCE_Gunkanmaki</li>
+				<li>VCE_Oshizushi</li>							
+			</thingDefs>			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>VCE_Norimaki</li>
+				<li>VCE_Uramaki</li>
+				<li>VCE_Nigiri</li>
+				<li>VCE_Temaki</li>
+				<li>VCE_Futomaki</li>
+				<li>VCE_Gunkanmaki</li>
+				<li>VCE_Oshizushi</li>							
+			</thingDefs>
+
+		</defaultIngredientFilter>
+		<products>
+			<VCE_DeepFriedSushi>20</VCE_DeepFriedSushi>
+		</products>
+
+	</RecipeDef>
+
+
+
+
+
+
+
+
+
+</Defs>

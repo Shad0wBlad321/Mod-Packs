@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded - Non-Lethal</li>
+    </mods>
+    <!-- If Vanilla Weapons Expanded is found -->
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Add tear gas grenade belt -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="ApparelNoQualityBase">
+              <defName>VWE_Apparel_GrenadeTearGasBelt</defName>
+              <label>tear gas grenade belt</label>
+              <description>Modern canister containing a special compound commonly referred to as tear gas, strapped to a belt. Can be reloaded using tear gas grenades.</description>
+              <techLevel>Industrial</techLevel>
+              <graphicData>
+                <texPath>Things/Item/Equipment/WeaponRanged/TearGasGrenades</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <tickerType>Normal</tickerType>
+              <statBases>
+                <WorkToMake>500</WorkToMake>
+                <Mass>3</Mass>
+                <Flammability>0.4</Flammability>
+                <EquipDelay>2</EquipDelay>
+              </statBases>
+              <comps>
+                <li Class="CompProperties_Reloadable">
+                  <maxCharges>5</maxCharges>
+                  <ammoDef>VWE_TearGasGrenade</ammoDef>
+					<ammoCountToRefill>1</ammoCountToRefill>
+                  <baseReloadTicks>60</baseReloadTicks>
+                  <soundReload>Standard_Reload</soundReload>
+                  <hotKey>Misc4</hotKey>
+                  <chargeNoun>tear gas</chargeNoun>
+                  <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+                </li>
+              </comps>
+              <verbs>
+                <li>
+                  <label>throw tear gas grenade</label>
+                  <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <onlyManualCast>True</onlyManualCast>
+                  <range>15.9</range>
+                  <forcedMissRadius>1.9</forcedMissRadius>
+                  <warmupTime>1.5</warmupTime>
+                  <noiseRadius>4</noiseRadius>
+                  <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                  <soundCast>ThrowGrenade</soundCast>
+                  <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <defaultProjectile>VWENL_Projectile_TearGasGrenade</defaultProjectile>
+                  <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                </li>
+              </verbs>
+              <recipeMaker>
+                <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+                <recipeUsers>
+                  <li>TableMachining</li>
+                </recipeUsers>
+                <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+                <useIngredientsForColor>false</useIngredientsForColor>
+                <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Smith</soundWorking>
+                <skillRequirements>
+                  <Crafting>4</Crafting>
+                </skillRequirements>
+              </recipeMaker>
+              <costList>
+                <VWE_TearGasGrenade>1</VWE_TearGasGrenade>
+              </costList>
+              <thingCategories>
+                <li>ApparelUtility</li>
+              </thingCategories>
+              <generateAllowChance>0.15</generateAllowChance>
+              <apparel>
+                <wornGraphicPath>Things/Pawn/Humanlike/Apparel/TearGasGrenadeBelt/TearGasGrenadesBelt</wornGraphicPath>
+                <wornGraphicData>
+                  <renderUtilityAsPack>true</renderUtilityAsPack>
+                  <north>
+                    <offset>(-0.30,-0.25)</offset>
+                    <hulk>
+                      <offset>(-0.0,-0.15)</offset>
+                    </hulk>
+                    <fat>
+                      <offset>(-0.0,-0.0)</offset>
+                    </fat>
+                    <thin>
+                      <offset>(0.10,-0.0)</offset>
+                    </thin>
+                  </north>
+                  <south>
+                    <offset>(0.25,-0.20)</offset>
+                    <hulk>
+                      <offset>(-0.0,-0.10)</offset>
+                    </hulk>
+                    <fat>
+                      <offset>(-0.0,-0.0)</offset>
+                    </fat>
+                    <thin>
+                      <offset>(-0.10,-0.0)</offset>
+                    </thin>
+                  </south>
+                  <east>
+                    <offset>(-0.15,-0.25)</offset>
+                    <hulk>
+                      <offset>(-0.0,-0.15)</offset>
+                    </hulk>
+                    <fat>
+                      <offset>(-0.10,-0.10)</offset>
+                    </fat>
+                  </east>
+                  <west>
+                    <offset>(0.15,-0.25)</offset>
+                    <hulk>
+                      <offset>(-0.0,-0.15)</offset>
+                    </hulk>
+                    <fat>
+                      <offset>(-0.0,-0.10)</offset>
+                    </fat>
+                  </west>
+                  <male>
+                    <scale>(0.75,0.75)</scale>
+                  </male>
+                  <female>
+                    <scale>(0.75,0.75)</scale>
+                  </female>
+                  <thin>
+                    <scale>(0.7,0.7)</scale>
+                  </thin>
+                  <hulk>
+                    <scale>(0.9,0.9)</scale>
+                  </hulk>
+                  <fat>
+                    <scale>(0.9,0.9)</scale>
+                  </fat>
+                </wornGraphicData>
+                <careIfWornByCorpse>false</careIfWornByCorpse>
+                <careIfDamaged>false</careIfDamaged>
+                <wearPerDay>0</wearPerDay>
+                <bodyPartGroups>
+                  <li>Waist</li>
+                </bodyPartGroups>
+                <layers>
+                  <li>Belt</li>
+                </layers>
+                <tags>
+                  <li>GrenadeNonDestructiveBelt</li>
+                </tags>
+              </apparel>
+            </ThingDef>
+          </value>
+        </li>
+        <!-- Change the tear gas grenade graphic -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VWE_TearGasGrenade"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/LooseGrenades/TearGasGrenadesLoose</texPath>
+              <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

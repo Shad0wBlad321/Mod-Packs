@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BaseEccentricGun" ParentName="BaseMakeableGun" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <weaponTags Inherit="False">
+      <li>EccentricGun</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>
+    <recipeMaker>
+      <researchPrerequisite>Eccentric_ChargedShot</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EccentricNanoassembler</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

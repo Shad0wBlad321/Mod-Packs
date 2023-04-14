@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>MeleeWeapon_HydraulicClaw</defName>
+    <label>hydraulic claw</label>
+    <description>A set of hydraulic loading claws mounted on articulated manipulator arms, normally used for hauling, but also capable of squeezing and bashing.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/HydraulicClaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <tradeability>None</tradeability>
+    <smeltable>false</smeltable>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <Mass>5</Mass>
+    </statBases>
+    <destroyOnDrop>true</destroyOnDrop>
+    <weaponTags>
+      <li>MechanoidMeleeLogistic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>3.1</cooldownTime>
+      </li>
+      <li>
+        <label>pincer</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>3.1</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+
+</Defs>

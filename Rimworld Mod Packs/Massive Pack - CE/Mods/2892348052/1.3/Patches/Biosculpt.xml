@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Default Organ Replacement -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>/Defs/ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_HealingCycle"]/bodyPartsToRestore</xpath>
+		<value>
+			<li>Heart</li>	
+			<li>Lung</li>	
+			<li>Kidney</li>	
+			<li>Liver</li>	
+		</value>
+	</Operation>
+
+	<!-- Rattle condition removal -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Death Rattle [1.4]</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_HealingCycle"]/conditionsToPossiblyCure</xpath>
+					<value>
+						<li>IntestinalFailure</li>	
+						<li>LiverFailure</li>	
+						<li>KidneyFailure</li>	
+						<li>ClinicalDeathNoHeartbeat</li>	
+						<li>ClinicalDeathAsphyxiation</li>	
+						<li>Coma</li>	
+						<li>BrainDamage</li>	
+						<li>SevereBrainDamage</li>	
+						<li>VegetativeState</li>	
+						<li>ArtificialComa</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

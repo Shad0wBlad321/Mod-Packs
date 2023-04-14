@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Biotech Capacitor Genes - Balanced</name>
+	<author>Petre27</author>
+	<!--<url></url>-->
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>Petre27.BiotechBalancedCapacitorGenes</packageId>
+	<description>Adds Balanced Biotech Capacitor Genes.</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+</ModMetaData>

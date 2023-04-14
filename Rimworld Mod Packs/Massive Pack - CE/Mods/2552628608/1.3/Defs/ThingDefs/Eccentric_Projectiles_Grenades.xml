@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- charge smoke grenade -->
+  <ThingDef ParentName="BaseEccentricChargeGrenade">
+    <defName>Bullet_EccentricChargeGrenade_Smoke</defName>
+    <label>charge grenade (Smoke)</label>
+    <projectile>
+      <damageDef>Smoke</damageDef>
+      <explosionRadius>2.4</explosionRadius>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
+</Defs>

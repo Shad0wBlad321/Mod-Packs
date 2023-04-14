@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase" Name="VFE_TilableHydroponics_Base" Abstract="True">
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(1,1)</drawSize>
+		  <linkType>Basic</linkType>
+		  <linkFlags>
+			<li>Custom3</li>
+		  </linkFlags>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<!--defaultPlacingRot>East</defaultPlacingRot-->
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(1,1)</size>
+		<building>
+		  <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+		  <sowTag>Hydroponic</sowTag>
+		  <blueprintGraphicData>
+			<texPath>Things/Building/Linked/Hydroponics_Blueprint_Atlas</texPath>
+		  </blueprintGraphicData>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+	</ThingDef>
+	<ThingDef ParentName="VFE_TilableHydroponics_Base">
+		<defName>VFE_PlanterBox_Tilable</defName>
+		<label>tilable planter box</label>
+		<!-- This class fixes the "empty lines in inspect string" error. Note that it does so by ignoring the contents of the base inspect string method, so change it back to Building_PlantGrower 
+			 if you give this comps which add inspect lines. -->
+		<thingClass>VFEF.Building_PlantGrower_NoEmptyLines</thingClass>
+		<description>Grows plants in a box of soil. Does not require power to work.\n\nCan be constructed in any desired shape.</description>		
+		<graphicData>
+		  <texPath>Things/Building/Linked/PlanterBox_Atlas</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>		
+		<uiIconPath>Things/Building/Linked/PlanterBox_MenuIcon</uiIconPath>
+		<statBases>
+		  <WorkToBuild>350</WorkToBuild> <!-- 50% of 2800/4 -->
+		  <MaxHitPoints>25</MaxHitPoints> <!-- ~50% of 180/4 -->
+		  <Flammability>0.5</Flammability>
+		  <Cleanliness>-3</Cleanliness>
+		</statBases>		
+		<building>
+			<defaultPlantToGrow>Plant_Potato</defaultPlantToGrow> <!-- Rice would be an objectively bad choice -->
+		</building>
+		<costStuffCount>4</costStuffCount>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<constructEffect Inherit="False"/>
+		<fertility>0.95</fertility>	<!-- a little less fertile than normal soil for balance. Could be explained by saying the roots can't fully grow out or something -->	
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>	
+	</ThingDef>
+	<ThingDef ParentName="VFE_TilableHydroponics_Base">
+		<defName>VFE_Hydroponics_Tilable</defName>
+		<label>tilable hydroponics basin</label>
+		<description>An artificial nutrient bath for growing plants. The nutrients pumps must work continuously; the plants will die if power is cut.\n\nThis version is modular and can be assembled in any shape necessary.</description>		
+		<graphicData>
+		  <texPath>Things/Building/Linked/Hydroponics_Atlas</texPath>
+		</graphicData>		
+		<uiIconPath>Things/Building/Linked/Hydroponics_MenuIcon</uiIconPath>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<statBases>
+		  <WorkToBuild>700</WorkToBuild> <!-- 2800/4 -->
+		  <MaxHitPoints>45</MaxHitPoints> <!-- 180/4; done so it doesn't take 4x as much damage to destroy compared to a normal hydroponic -->
+		  <Flammability>0.5</Flammability>
+		  <Cleanliness>-3</Cleanliness>
+		</statBases>		
+		<costList>
+		  <Steel>25</Steel>
+		  <ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<fertility>2.8</fertility>		
+		<comps>		  
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>18</basePowerConsumption>
+		  </li>		  
+		</comps>
+		<researchPrerequisites>
+		  <li>Hydroponics</li>
+		</researchPrerequisites>		
+	</ThingDef>
+	<ThingDef ParentName="VFE_TilableHydroponics_Base">
+		<defName>VFE_Ecosystem_Tilable</defName>
+		<label>tilable artificial ecosystem</label>
+		<description>Grows plants quickly in an artificial, sealed ecosystem which can be configured to effectively grow even picky plants. Requires a high amount of power to work; plants will die if power is cut. Contains a built-in sun lamp to provide light for the plants.\n\nThis version is modular and can be assembled in any shape necessary.</description>		
+		<graphicData>
+		  <texPath>Things/Building/Linked/AdvancedHydroponics_Atlas</texPath>
+		</graphicData>		
+		<uiIconPath>Things/Building/Linked/AdvancedHydroponics_MenuIcon</uiIconPath>
+		<!-- TODO: construction stats and cost -->
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+		<statBases>
+		  <WorkToBuild>1050</WorkToBuild> <!-- 1.5(2800/4) -->
+		  <MaxHitPoints>90</MaxHitPoints> <!-- 2(180/4) -->
+		  <Flammability>0.5</Flammability>
+		  <Cleanliness>0</Cleanliness> <!-- it's sealed, so it's not getting dirt anywhere -->
+		</statBases>		
+		<costList>
+		  <Steel>25</Steel>
+		  <Plasteel>5</Plasteel>
+		  <ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<fertility>3.5</fertility> <!-- not rediculous, it's more valuable as an optimizing concept for very rich colonies -->
+		<comps>		  
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>50</basePowerConsumption>
+		  </li>		  
+		  <li Class="CompProperties_Glower">
+			<overlightRadius>1.5</overlightRadius>
+			<glowRadius>1.5</glowRadius>
+			<glowColor>(370,370,370,0)</glowColor>
+		  </li>
+		</comps>
+		<researchPrerequisites>
+		  <li>VFE_Res_AdvancedHydroponics</li>
+		</researchPrerequisites>		
+		<building>
+			<sowTag>Ground</sowTag>
+		</building>
+	</ThingDef>
+</Defs>

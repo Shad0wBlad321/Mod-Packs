@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>VRE_DisabledAnimalFromQuests</defName>
+		<disabledFromQuestsPawns>			
+			
+			<li>VRE_CompanionDryad</li>
+						
+		</disabledFromQuestsPawns>							
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+
+
+
+
+
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName = "DoBillsCremate"]/fixedBillGiverDefs</xpath>
+    <value>
+      <li>VHGE_GasPoweredCrematorium</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName = "DoBillsSmelter"]/fixedBillGiverDefs</xpath>
+    <value>
+      <li>VHGE_GasPoweredSmelter</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs</xpath>
+    <value>
+      <li>VHGE_GasPoweredStove</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName = "DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+    <value>
+      <li>VHGE_GasPoweredSmithy</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName = "DoBillsRefinery"]/fixedBillGiverDefs</xpath>
+    <value>
+      <li>VHGE_GasPoweredRefinery</li>
+    </value>
+  </Operation>
+</Patch>

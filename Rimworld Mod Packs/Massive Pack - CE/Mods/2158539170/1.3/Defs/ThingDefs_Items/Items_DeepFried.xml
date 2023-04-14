@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+	
+
+	<ThingDef ParentName="MealBase">
+		<defName>VCE_DeepFriedSushi</defName>
+		<label>deep fried sushi</label>
+		<description>Sushi is one of the healthiest foods about. So sooner or later someone was going to deep fry it and make it the opposite. The end result is a crunchy, unhealthy yet tasty soul food - Not quite as filling as a meal, but very pleasing to eat. Deep frying sushi reduces shelf life as well unless frozen.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_FriedSushi</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		 <tradeability>None</tradeability>
+		  <stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.10</Nutrition>
+			<Mass>0.04</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>VCE_JunkFood</li>
+		</tradeTags>
+		<ingestible>
+			<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+			<foodType>Processed</foodType>
+			<preferability>DesperateOnly</preferability>
+			
+			<tasteThought>VCE_AteFriedSushi</tasteThought>
+			<specialThoughtAsIngredient>VCE_AteFriedSushi</specialThoughtAsIngredient>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<joy>0.18</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>VCE_HealthEffects</li>			
+				</statToAdd>
+				<statValues>
+					
+					<li>VCE_CholesterolEffect</li>				
+				</statValues>
+				<statDescriptions>
+					
+					<li>VCE_CholesterolDescDeepFried</li>
+				</statDescriptions>
+				
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+
+	
+
+
+</Defs>

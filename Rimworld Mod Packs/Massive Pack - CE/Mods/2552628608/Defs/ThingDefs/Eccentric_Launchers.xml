@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== CGL1 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_M1CGL</defName>
+    <label>CGL1 grenade launcher</label>
+    <tickerType>Normal</tickerType>
+    <description>Designed by Fiona 'Foxy' Knight of the Eccentric's engineering staff, the CGL1 is a powerful multi-grenade launcher utilizing proprietary 44mm charged grenade rounds.\n\nUtilizing similar technology to the electrothermal ignition charges used in charge rifles, the CGL1 can launch powerful tandem high-explosive and charged plasma projectiles with devastating effect.\n\nProhibitively expensive to produce and arm, these weapons are only issued to Eccentric security staff requiring overwhelming firepower in extremely dangerous environments.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/CGL1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <Mass>5.0</Mass>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Eccentric_HexCell>2</Eccentric_HexCell>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>Eccentric_ChargedLaunchers</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EccentricNanoassembler</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <weaponTags Inherit="False">
+      <li>EccentricGun</li>
+      <li>EccentricLauncher</li>
+    </weaponTags>
+
+    <verbs>
+      <li>
+        <verbClass>EccentricProjectiles.Verb_ShootSelectableProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EccentricChargeGrenade</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="EccentricProjectiles.CompProperties_SelectableProjectile">
+        <options>
+          <li>
+            <label>HE</label>
+            <labelLong>HE</labelLong>
+            <description>Load high explosive rounds that deal damage to anything within the blast radius.</description>
+            <uiIconPath>Things/Eccentric/Ammo/CGL/HE/HE_c</uiIconPath>
+            <projectile>Bullet_EccentricChargeGrenade</projectile>
+          </li>
+          <li>
+            <label>EMP</label>
+            <labelLong>EMP</labelLong>
+            <description>Load electromagnetic pulse rounds that stun mechanoids and break shields.</description>
+            <uiIconPath>Things/Eccentric/Ammo/CGL/EMP/EMP_c</uiIconPath>
+            <projectile>Bullet_EccentricChargeGrenade_EMP</projectile>
+          </li>
+          <li>
+            <label>Smoke</label>
+            <labelLong>Smoke</labelLong>
+            <description>Load smoke rounds that obscures targets and prevents turrets from locking onto targets.</description>
+            <uiIconPath>Things/Eccentric/Ammo/CGL/Smoke/Smoke_c</uiIconPath>
+            <projectile>Bullet_EccentricChargeGrenade_Smoke</projectile>
+          </li>
+        </options>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- ==================== CAW5 ==================== -->
+  <ThingDef ParentName="BaseEccentricGun">
+    <defName>Eccentric_Gun_M5CAW</defName>
+    <label>CAW5 HEDP</label>
+    <tickerType>Normal</tickerType>
+    <description>The Mark 5 Charged Assault Weapon (High Explosive Dual-Purpose) is a heavy weapon used by Eccentric security personnel in extremely dangerous environments on industrialized worlds.\n\nUtilizing similar technology to the electrothermal ignition charges used in charge rifles, the CAW5 fires a powerful missile with a tandem conventional and charged plasma warhead that is effective against both light armored vehicles and structures.\n\nCompared to conventional rocket launchers, the CAW5 is faster, more accurate, and harder-hitting, but with a smaller blast radius and higher per-unit cost.</description>
+    <graphicData>
+      <texPath>Things/Eccentric/Weapons/CAW5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <Mass>8</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>Eccentric_ChargedLaunchers</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>EccentricNanoassembler</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <weaponTags Inherit="False">
+      <li>EccentricGun</li>
+      <li>EccentricLauncher</li>
+    </weaponTags>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EccentricChargedRocket</defaultProjectile>
+        <forcedMissRadius>0.9</forcedMissRadius>
+        <warmupTime>4.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.8</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

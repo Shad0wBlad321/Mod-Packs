@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- UPDATED OLD -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="WaterButt"]/graphicData</xpath>
+			<value>
+				<graphicData>
+					<texPath>Things/Building/BarellWatter</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="PrimitiveWell"]/graphicData</xpath>
+			<value>
+				<shaderType>CutoutComplex</shaderType>
+			</value>
+		</match>
+	</Operation>
+
+
+</Patch>

@@ -1,0 +1,10 @@
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\Assemblies\NepSmallerTurbines.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\Assemblies\Microsoft.CSharp.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\Assemblies\System.Data.DataSetExtensions.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\Assemblies\System.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\Assemblies\System.Xml.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\Assemblies\System.Xml.Linq.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\obj\Debug\NepSmallerTurbines.csproj.AssemblyReference.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\obj\Debug\NepSmallerTurbines.csproj.CoreCompileInputs.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Source\NepSmallerTurbines\obj\Debug\NepSmallerTurbines.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\NEP SmallerTurbines\Assemblies\NepSmallerTurbines.dll

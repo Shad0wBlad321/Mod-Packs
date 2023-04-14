@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/FactionDef[defName = "Empire"]/caravanTraderKinds</xpath>
+	  <value>
+		<li>VAERoy_Empire_Caravan_ImperialAnimalTrader</li>
+	  </value>
+	</Operation> 
+
+</Patch>

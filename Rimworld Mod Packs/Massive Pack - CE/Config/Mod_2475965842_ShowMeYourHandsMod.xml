@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ShowMeYourHands.ShowMeYourHandsModSettings">
+		<ManualMainHandPositions>
+			<keys>
+				<li>RNMeleeWeapon_Baseball_Bat</li>
+				<li>RNMeleeWeapon_BrooklynSmasher_Bat</li>
+				<li>MYDE_AF_UniversalWeapon_BaseGun</li>
+				<li>VWE_MeleeWeapon_Baton</li>
+				<li>RNGun_ColtCobra_Revolver</li>
+				<li>RNGun_ColtPython_Revolver</li>
+				<li>RNMeleeWeapon_M3Trench_Knife</li>
+				<li>RNMeleeWeapon_EickhornRecondoIV_Knife</li>
+				<li>RNMeleeWeapon_KABAR_Knife</li>
+				<li>RNMeleeWeapon_M9Bayonet_Knife</li>
+				<li>RNGun_Glock17_Pistol</li>
+				<li>RNGun_Glock18_Pistol</li>
+				<li>RNGun_Glock34CombatMaster_Pistol</li>
+			</keys>
+			<values>
+				<li>(-0.282, 0.100, -0.282)</li>
+				<li>(-0.250, 0.100, -0.242)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(-0.181, 0.100, 0.000)</li>
+				<li>(-0.135, 0.100, -0.113)</li>
+				<li>(-0.278, 0.100, -0.117)</li>
+				<li>(-0.121, 0.100, -0.168)</li>
+				<li>(-0.113, 0.100, -0.128)</li>
+				<li>(-0.113, 0.100, -0.154)</li>
+				<li>(-0.121, 0.100, -0.150)</li>
+				<li>(-0.095, 0.100, -0.080)</li>
+				<li>(-0.080, 0.100, -0.073)</li>
+				<li>(-0.095, 0.100, -0.073)</li>
+			</values>
+		</ManualMainHandPositions>
+		<ManualOffHandPositions>
+			<keys>
+				<li>RNMeleeWeapon_Baseball_Bat</li>
+				<li>RNMeleeWeapon_BrooklynSmasher_Bat</li>
+				<li>MYDE_AF_UniversalWeapon_BaseGun</li>
+				<li>VWE_MeleeWeapon_Baton</li>
+				<li>RNGun_ColtCobra_Revolver</li>
+				<li>RNGun_ColtPython_Revolver</li>
+				<li>RNMeleeWeapon_M3Trench_Knife</li>
+				<li>RNMeleeWeapon_EickhornRecondoIV_Knife</li>
+				<li>RNMeleeWeapon_KABAR_Knife</li>
+				<li>RNMeleeWeapon_M9Bayonet_Knife</li>
+				<li>RNGun_Glock17_Pistol</li>
+				<li>RNGun_Glock18_Pistol</li>
+				<li>RNGun_Glock34CombatMaster_Pistol</li>
+			</keys>
+			<values>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+				<li>(0.000, 0.000, 0.000)</li>
+			</values>
+		</ManualOffHandPositions>
+	</ModSettings>
+</SettingsBlock>

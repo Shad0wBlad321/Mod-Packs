@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======= Ingredient based thoughts ========= -->
+
+
+
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_ConsumedSoySauce</defName>
+		<hediff>VCE_ConsumedSoySauce</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>consumed soy sauce</label>
+				<description>Saltiness, moderate umami, sweet taste, and a very slight bitterness. Perfection.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
+				<partToAffect>Body</partToAffect>
+				<percentage>0.0075</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VCE_ConsumedWasabi</hediff>
+		<defName>VCE_ConsumedWasabi</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>breath of the dragon</label>
+				<description>My whole nose burns! Please give me more.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+	
+		<!-- ======= Sushi based thoughts ========= -->	
+
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteSimpleSushi</defName>
+		<hediff>VCE_AteSimpleSushi</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate simple sushi</label>
+				<description>Even the most basic sushi is a delicacy.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFineSushi</defName>
+		<hediff>VCE_AteFineSushi</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate fine sushi</label>
+				<description>I ate a very fine sushi with some vegetables. Super tasty.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteLavishSushi</defName>
+		<hediff>VCE_AteLavishSushi</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate lavish sushi</label>
+				<description>I ate an incredible sushi dish. Delicious!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteGourmetSushi</defName>
+		<hediff>VCE_AteGourmetSushi</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate gourmet sushi</label>
+				<description>That... that was out of this world. The fish slices melted in my mouth. Just incredible.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+		<!-- ======= Fried food based thoughts ========= -->	
+
+
+	<ThoughtDef>	
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFriedSushi</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate deep fried sushi</label>
+				<description>Greasy food. So delicious.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>	
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<hediffToAffect>VCE_Cholesterol</hediffToAffect>
+				<partToAffect>Heart</partToAffect>
+				<percentage>0.015</percentage>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+
+
+
+
+
+</Defs>

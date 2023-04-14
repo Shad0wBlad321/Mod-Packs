@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>VFEV_PlayerClan</defName>
+        <label>New Clan</label>
+        <description>A small clan.</description>
+        <isPlayer>true</isPlayer>
+        <pawnSingular>member</pawnSingular>
+        <pawnsPlural>members</pawnsPlural>
+        <basicMemberKind>VFEV_Member</basicMemberKind>
+        <techLevel>Medieval</techLevel>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <factionIconPath>World/WorldObjects/Expanding/VikingsClan</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <playerInitialSettlementNameMaker>NamerSettlementViking</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionViking</factionNameMaker>
+        <settlementNameMaker>NamerSettlementViking</settlementNameMaker>
+        <geneticVariance>1</geneticVariance>
+        <pawnNameMaker>NamerPersonViking</pawnNameMaker>
+        <startingResearchTags>
+            <li>TribalStart</li>
+        </startingResearchTags>
+        <hairTags>
+            <li>Tribal</li>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </FactionDef>
+
+</Defs>

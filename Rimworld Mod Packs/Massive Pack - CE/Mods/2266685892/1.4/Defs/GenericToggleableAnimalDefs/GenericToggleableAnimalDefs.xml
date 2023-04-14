@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.GenericToggleableAnimalDef>
+		<defName>RG_ToggleableExtinctAnimals</defName>
+		<toggleablePawns>
+			<li>RG_WoollyMammoth</li>
+			<li>RG_WoollyRhinoceros</li>
+			<li>RG_WoollyStegosaurus</li>
+			<li>RG_SabertoothSquirrel</li>
+			<li>RG_Synthetion</li>
+			<li>RG_Dodo</li>
+			<li>RG_ArcticDrak</li>
+			<li>RG_TerrorBird</li>
+			<li>RG_Megalenhydris</li>
+			<li>RG_Thrinaxodon</li>
+			<li>RG_Velociraptor</li>
+		</toggleablePawns>
+	</AnimalBehaviours.GenericToggleableAnimalDef>
+</Defs>

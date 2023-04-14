@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- MG Bunker -->
+
+  <FTC_Bunker_Turret.label>聯裝機槍碉堡</FTC_Bunker_Turret.label>
+  <FTC_Bunker_Turret.description>安裝四聯機槍的混凝土碉堡,能夠持續的輸出密集火力\n\n 作為一種永備工事設施,操作者可以在安全的設施內部操作武器直到設施被摧毀,這類工事需要電力來運作,並且有聯通電網的有線通訊能夠收到外部的直接命令.</FTC_Bunker_Turret.description>
+
+  <FTC_Bunker_Gun.label>聯裝機槍</FTC_Bunker_Gun.label>
+  <FTC_Bunker_Gun.description>四聯機槍</FTC_Bunker_Gun.description>
+
+
+  <!-- Anti Tank Turret Bunker -->
+
+  <FTC_AntiTank_Turret.label>戰車砲塔工事</FTC_AntiTank_Turret.label>
+  <FTC_AntiTank_Turret.description>將戰車砲塔安裝在碉堡上的永備工事,能發射具有高貫穿性的大口徑砲彈.\n\n 作為一種永備工事設施,操作者可以在安全的設施內部操作武器直到設施被摧毀,這類工事需要電力來運作,並且有聯通電網的有線通訊能夠收到外部的直接命令.</FTC_AntiTank_Turret.description>
+
+  <FTC_AntiTank_Gun.label>反坦克炮塔</FTC_AntiTank_Gun.label>
+  <FTC_AntiTank_Gun.description>裝載於砲塔上的反坦克加農砲.</FTC_AntiTank_Gun.description>
+
+
+  <!-- 原版打大口徑砲彈,CE打155 -->
+
+  <FTC_Batterey_Turret.label>岸防砲台</FTC_Batterey_Turret.label>
+  <FTC_Batterey_Turret.description>固定於大型混凝土砲台的海軍驅逐艦砲塔\n\n 作為一種永備工事設施,操作者可以在安全的設施內部操作武器直到設施被摧毀,這類工事需要電力來運作,並且有聯通電網的有線通訊能夠收到外部的直接命令.</FTC_Batterey_Turret.description>
+
+  <FTC_Batterey_Gun.label>海軍艦砲</FTC_Batterey_Gun.label>
+  <FTC_Batterey_Gun.description>一門海軍的輕型加農砲...當然是相對海軍而言的輕</FTC_Batterey_Gun.description>
+
+  <FT_Bullet_BatteryShell.label>高爆彈</FT_Bullet_BatteryShell.label>
+
+
+</LanguageData>

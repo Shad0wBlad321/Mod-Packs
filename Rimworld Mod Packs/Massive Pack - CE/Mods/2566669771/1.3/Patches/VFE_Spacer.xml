@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Spacer Module</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Darklight stuff <glowColor>(78, 226, 229, 0)</glowColor> -->
+        <!-- Table_DarkIlluminatedEndTable -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="TableBase">
+              <defName>Table_DarkIlluminatedEndTable</defName>
+              <label>dark illuminated end table</label>
+              <description>A small illuminated bedside table adorned with darklight strips which makes nearby beds a little bit more comfortable, whilst lighting the room. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+              <surfaceType>Item</surfaceType>
+              <graphicData>
+                <texPath>Things/DarkIlluminatedEndTable/DarkIlluminatedEndTable</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(1,1)</drawSize>
+                <shadowData>
+                  <volume>(0.3, 0.6, 0.3)</volume>
+                </shadowData>
+              </graphicData>
+              <statBases>
+                <MaxHitPoints>85</MaxHitPoints>
+                <WorkToBuild>4000</WorkToBuild>
+                <Mass>8</Mass>
+                <Flammability>1.0</Flammability>
+                <Beauty>8</Beauty>
+              </statBases>
+              <pathCost>60</pathCost>
+              <defaultPlacingRot>South</defaultPlacingRot>
+              <costStuffCount>50</costStuffCount>
+              <costList>
+                <Steel>30</Steel>
+              </costList>
+              <placeWorkers>
+                <li>PlaceWorker_ShowFacilitiesConnections</li>
+              </placeWorkers>
+              <researchPrerequisites>
+                <li>SpacerFurniture</li>
+              </researchPrerequisites>
+              <comps>
+                <li Class="CompProperties_Facility">
+                  <statOffsets>
+                    <Comfort>0.07</Comfort>
+                    <BedRestEffectiveness>0.07</BedRestEffectiveness>
+                  </statOffsets>
+                  <maxSimultaneous>1</maxSimultaneous>
+                  <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+                </li>
+                <li Class="CompProperties_Power">
+                  <compClass>CompPowerTrader</compClass>
+                  <shortCircuitInRain>true</shortCircuitInRain>
+                  <basePowerConsumption>30</basePowerConsumption>
+                </li>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Glower">
+                  <glowRadius>8</glowRadius>
+                  <glowColor>(78, 226, 229, 0)</glowColor>
+                </li>
+              </comps>
+              <staticSunShadowHeight>0</staticSunShadowHeight>
+              <castEdgeShadows>false</castEdgeShadows>
+              <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+              <designationCategory>AOMorefurniture</designationCategory>
+            </ThingDef>
+          </value>
+        </li>
+        <!-- Table_DarkIlluminatedDresser -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="ArtableFurnitureBase">
+              <defName>Table_DarkIlluminatedDresser</defName>
+              <label>dark illuminated dresser</label>
+              <description>An illuminated dresser, adorned with darklight strips. Gives a small comfort bonus to all nearby beds, whilst lighting up the room. Placing more than one dresser near the same bed has no effect.</description>
+              <graphicData>
+                <texPath>Things/DarkIlluminatedDresser/DarkIlluminatedDresser</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>(2,1)</drawSize>
+                <damageData>
+                  <cornerTL>Damage/Corner</cornerTL>
+                  <cornerTR>Damage/Corner</cornerTR>
+                  <cornerBL>Damage/Corner</cornerBL>
+                  <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+              </graphicData>
+              <altitudeLayer>Building</altitudeLayer>
+              <passability>PassThroughOnly</passability>
+              <fillPercent>0.4</fillPercent>
+              <castEdgeShadows>true</castEdgeShadows>
+              <pathCost>60</pathCost>
+              <stuffCategories>
+                <li>Metallic</li>
+                <li>Woody</li>
+                <li>Stony</li>
+              </stuffCategories>
+              <defaultPlacingRot>South</defaultPlacingRot>
+              <costStuffCount>70</costStuffCount>
+              <costList>
+                <Steel>30</Steel>
+              </costList>
+              <statBases>
+                <MaxHitPoints>100</MaxHitPoints>
+                <Mass>20</Mass>
+                <WorkToBuild>6000</WorkToBuild>
+                <Flammability>1.0</Flammability>
+                <Beauty>10</Beauty>
+              </statBases>
+              <size>(2,1)</size>
+              <designationHotKey>Misc12</designationHotKey>
+              <staticSunShadowHeight>0.5</staticSunShadowHeight>
+              <surfaceType>Item</surfaceType>
+              <canOverlapZones>false</canOverlapZones>
+              <placeWorkers>
+                <li>PlaceWorker_ShowFacilitiesConnections</li>
+              </placeWorkers>
+              <researchPrerequisites>
+                <li>SpacerFurniture</li>
+              </researchPrerequisites>
+              <comps>
+                <li Class="CompProperties_Facility">
+                  <statOffsets>
+                    <Comfort>0.07</Comfort>
+                    <BedRestEffectiveness>0.07</BedRestEffectiveness>
+                  </statOffsets>
+                  <maxSimultaneous>1</maxSimultaneous>
+                  <maxDistance>6</maxDistance>
+                </li>
+                <li Class="CompProperties_Power">
+                  <compClass>CompPowerTrader</compClass>
+                  <shortCircuitInRain>true</shortCircuitInRain>
+                  <basePowerConsumption>30</basePowerConsumption>
+                </li>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Glower">
+                  <glowRadius>8</glowRadius>
+                  <glowColor>(78, 226, 229, 0)</glowColor>
+                </li>
+              </comps>
+              <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+              <designationCategory>AOMorefurniture</designationCategory>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="HospitalBed" or defName="RoyalBed" or defName="Bedroll" or defName="BedrollDouble" or defName="Bed_AdvBed" or defName="Bed_AdvDoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+          <value>
+            <li>Table_DarkIlluminatedEndTable</li>
+            <li>Table_DarkIlluminatedDresser</li>
+          </value>
+        </li>
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Vanilla Furniture Expanded</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Bed_Kingsize" or defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic" or defName="Bed_StoneSlab" or defName="Bed_Simple"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <value>
+                  <li>Table_DarkIlluminatedEndTable</li>
+                  <li>Table_DarkIlluminatedDresser</li>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
+        <!-- Light_SpacerDarkLamp -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="LampBase">
+              <defName>Light_SpacerDarkLamp</defName>
+              <label>spacer darklamp</label>
+              <description>A powerful advanced darklamp for lighting up rooms effectively whilst utilising an integrated temperature regulation module to keep rooms warmer to a maximum temperature of 15C. Will not short circuit in rain.</description>
+              <fillPercent>0.20</fillPercent>
+              <graphicData>
+                <texPath>Things/SpacerDarkLamp_south</texPath>
+                <drawSize>(1.1,1.1)</drawSize>
+              </graphicData>
+              <tickerType>Rare</tickerType>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+              </costList>
+              <size>(1,1)</size>
+              <comps>
+                <li Class="CompProperties_Power">
+                  <compClass>CompPowerTrader</compClass>
+                  <shortCircuitInRain>false</shortCircuitInRain>
+                  <basePowerConsumption>15</basePowerConsumption>
+                </li>
+                <li Class="CompProperties_HeatPusher">
+                  <compClass>CompHeatPusherPowered</compClass>
+                  <heatPerSecond>15</heatPerSecond>
+                  <heatPushMaxTemperature>15</heatPushMaxTemperature>
+                </li>
+                <li Class="CompProperties_Flickable" />
+                <li Class="CompProperties_Glower">
+                  <glowRadius>18</glowRadius>
+                  <glowColor>(78, 226, 229, 0)</glowColor>
+                </li>
+              </comps>
+              <statBases>
+                <WorkToBuild>600</WorkToBuild>
+                <Mass>3</Mass>
+              </statBases>
+              <researchPrerequisites>
+                <li>SpacerElectronics</li>
+              </researchPrerequisites>
+              <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+              <designationCategory>AOMorefurniture</designationCategory>
+            </ThingDef>
+          </value>
+        </li>
+        <!-- Spacer_OutdoorDarkLamp -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="LampBase">
+              <defName>Spacer_OutdoorDarkLamp</defName>
+              <label>outdoor solar darklamp</label>
+              <description>A self sustained darklamp for outdoor use, weaker than a normal industrial darklamp but does not require any power, storing energy during the day to power itself 24/7. Will not short circuit in rain.</description>
+              <graphicData>
+                <texPath>Things/SolarDarkLamp_south</texPath>
+                <drawSize>(1,1)</drawSize>
+              </graphicData>
+              <blockWind>true</blockWind>
+              <tickerType>Rare</tickerType>
+              <statBases>
+                <WorkToBuild>600</WorkToBuild>
+                <Mass>3</Mass>
+              </statBases>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+              </costList>
+              <size>(1,1)</size>
+              <comps>
+                <li Class="CompProperties_Glower">
+                  <glowRadius>8</glowRadius>
+                  <glowColor>(78, 226, 229, 0)</glowColor>
+                </li>
+                <li Class="CompProperties_Breakdownable" />
+                <li Class="CompProperties_Flickable" />
+              </comps>
+              <placeWorkers>
+                <li>PlaceWorker_NotUnderRoof</li>
+              </placeWorkers>
+              <researchPrerequisites>
+                <li>SpacerElectronics</li>
+              </researchPrerequisites>
+              <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+              <designationCategory>AOMorefurniture</designationCategory>
+              <building>
+                <allowAutoroof>false</allowAutoroof>
+              </building>
+            </ThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

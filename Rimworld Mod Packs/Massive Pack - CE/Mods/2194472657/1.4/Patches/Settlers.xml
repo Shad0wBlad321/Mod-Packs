@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Settlers</li>
+    </mods>
+
+    <match Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+	  <value>
+	
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_DynamiteBelt</defName>
+    <label>dynamite belt</label>
+    <description>Makeshift explosive sticks of chemfuel strapped to a belt. They can be thrown a short distance, where they will explode after a random amount of time. Can be reloaded using dynamite.</description>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>6</maxCharges>
+        <ammoDef>VFES_Weapon_GrenadeDynamite</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>dynamite</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+	<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+			<label>throw dynamite</label>
+			<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<onlyManualCast>True</onlyManualCast>
+			<warmupTime>1.8</warmupTime>
+			<range>12</range>
+			<minRange>3</minRange>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			<defaultProjectile>VFES_Proj_Dynamite</defaultProjectile>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</li>
+	</verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <VFES_Weapon_GrenadeDynamite>6</VFES_Weapon_GrenadeDynamite>
+    </costList>
+    <graphicData>
+      <texPath>Things/Item/BeltGrenades/DynamiteBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/DynamiteBelt/DynamiteBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+	</value>
+	</match>
+	
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+
+      <value>
+	  
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_DynamiteBelt</defName>
+    <label>dynamite belt</label>
+    <description>Makeshift explosive sticks of chemfuel strapped to a belt. They can be thrown a short distance, where they will explode after a random amount of time. Can be reloaded using dynamite.</description>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>6</maxCharges>
+        <ammoDef>VFES_Weapon_GrenadeDynamite</ammoDef>
+        <ammoCountToRefill>1</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>dynamite</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>throw dynamite</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>VFES_Proj_Dynamite</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <VFES_Weapon_GrenadeDynamite>1</VFES_Weapon_GrenadeDynamite>
+    </costList>
+    <graphicData>
+      <texPath>Things/Item/BeltGrenades/DynamiteBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0.15</generateAllowChance>
+    <apparel>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/DynamiteBelt/DynamiteBelt</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(-0.30,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(0.10,-0.0)</offset></thin>
+        </north>
+        <south>
+          <offset>(0.25,-0.20)</offset>
+		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
+		  <fat><offset>(-0.0,-0.0)</offset></fat>
+		  <thin><offset>(-0.10,-0.0)</offset></thin>
+        </south>
+        <east>
+          <offset>(-0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.10,-0.10)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.15,-0.25)</offset>
+		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+		  <fat><offset>(-0.0,-0.10)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>GrenadeDestructiveBelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+      </value> 
+    </nomatch>	  
+    </match>
+  </Operation>
+
+</Patch>

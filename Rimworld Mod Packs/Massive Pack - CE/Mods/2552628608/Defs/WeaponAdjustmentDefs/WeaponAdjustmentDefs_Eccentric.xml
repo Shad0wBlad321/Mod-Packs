@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Compatibility Defs for Weapon Racks -->
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>Eccentric_Gun_S8P</defName>
+    <thingDef>Eccentric_Gun_S8P</thingDef>
+    <sizeFactor>0.75</sizeFactor>
+  </WeaponRacks.WeaponAdjustmentDef>
+
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>Eccentric_Gun_M5CAW</defName>
+    <thingDef>Eccentric_Gun_M5CAW</thingDef>
+    <horizontalOffset>0.06</horizontalOffset>
+  </WeaponRacks.WeaponAdjustmentDef>
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>Eccentric_Gun_M1CGL</defName>
+    <thingDef>Eccentric_Gun_M1CGL</thingDef>
+    <horizontalOffset>0.03</horizontalOffset>
+  </WeaponRacks.WeaponAdjustmentDef>
+
+  <WeaponRacks.WeaponAdjustmentDef MayRequire="Aelanna.WeaponRacks">
+    <defName>Eccentric_Gun_E21AMR</defName>
+    <thingDef>Eccentric_Gun_E21AMR</thingDef>
+    <rotationHorizontal>45</rotationHorizontal>
+    <rotationVertical>45</rotationVertical>
+  </WeaponRacks.WeaponAdjustmentDef>
+
+</Defs>

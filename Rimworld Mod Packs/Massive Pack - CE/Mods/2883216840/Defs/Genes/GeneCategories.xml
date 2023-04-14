@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <GeneCategoryDef>
+    <defName>BTEMy_Glintscale</defName>
+    <label>Biotech Expansion - Mythic - Glintscale</label>
+    <displayPriorityInXenotype>534</displayPriorityInXenotype>
+  </GeneCategoryDef>
+    <GeneCategoryDef>
+    <defName>BTEMy_Ashfeather</defName>
+    <label>Biotech Expansion - Mythic - Ashfeather</label>
+    <displayPriorityInXenotype>535</displayPriorityInXenotype>
+  </GeneCategoryDef>
+    <GeneCategoryDef>
+    <defName>BTEMy_Tailbinder</defName>
+    <label>Biotech Expansion - Mythic - Tailbinder</label>
+    <displayPriorityInXenotype>536</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+</Defs>

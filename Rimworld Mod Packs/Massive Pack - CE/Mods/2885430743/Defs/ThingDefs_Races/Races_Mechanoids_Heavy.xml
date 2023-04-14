@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- lifestage to make it rideable -->
+  <LifeStageDef>
+    <defName>LogisticMechanoidFullyFormed</defName>
+    <label>fully-formed</label>
+    <caravanRideable>true</caravanRideable>
+    <visible>false</visible>
+  </LifeStageDef>
+
+  <!-- logistic mech -->
+  <ThingDef ParentName="HeavyMechanoid">
+    <defName>Mech_Logistic</defName>
+    <label>logistic</label>
+    <description>A heavy yet impressively nimble six legged mechanoid designed for logistics and hauling work, Borrowing elements of the Termite and Lifter mechs in construction, they are responsible for transporting both specialized and bulk assets that are too notable or risky to send via drop pod. Acting as the unseen backbone of many Mechanoid hives, and when in human hands, the faithful steeds of great Mechinators.\n\nThe upper plating encloses the large internal storage compartment of the mech, sliding up and rotating to allow access when needed. The head features enhanced recon sensors that allow easier threat avoidance when traversing the wilds, and extra storage canisters are mounted on the back plating for both solid and fluid contents.\n\nFor defense the logistical mech is equipped with slightly thicker armor plating. And in a P I N C H the hydraulic loading claws allow for on the spot work hazards, making semi-decent weapons, built up smoke can also be exhausted from venting ports as well to provide a smokescreen. Its still not a dedicated fighter, but with proper positioning it can do a bit of damage.</description>
+    <statBases>
+      <MoveSpeed>2.70</MoveSpeed>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <BandwidthCost>2</BandwidthCost>
+      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+    </statBases>
+    <race>
+      <body>Mech_Logistic</body>
+      <baseBodySize>4</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>LogisticMechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Lifter_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Lifter_Death</soundDeath>
+          <soundCall>Pawn_Mech_Lifter_Call</soundCall>
+        </li>
+        <li>
+          <def>LogisticMechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Lifter_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Lifter_Death</soundDeath>
+          <soundCall>Pawn_Mech_Lifter_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <bulletStaggerIgnoreBodySize>true</bulletStaggerIgnoreBodySize>
+      <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
+    <tools>
+      <li>
+        <label>Mechanical Head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.1</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>Mech_Logistic</defName>
+    <label>logistic</label>
+    <race>Mech_Logistic</race>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Logistics</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Logistics</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/LogisticsAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Logistics</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidMeleeLogistic</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>      
+    <abilities>
+      <li>SmokepopMech</li>
+    </abilities>
+    <controlGroupPortraitZoom>0.5</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+</Defs>

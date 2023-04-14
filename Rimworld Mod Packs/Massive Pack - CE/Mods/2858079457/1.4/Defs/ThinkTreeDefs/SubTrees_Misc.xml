@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThinkTreeDef>
+		<defName>VAERoy_PeacockNuzzle</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="VanillaAnimalsExpandedRoyal.ThinkNode_Peacock">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>24</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="VanillaAnimalsExpandedRoyal.JobGiver_Peacock"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						
+
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+	<ThinkTreeDef>
+		<defName>VAERoy_OrangutanTalking</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="VanillaAnimalsExpandedRoyal.ThinkNode_Orangutan">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>5</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="VanillaAnimalsExpandedRoyal.JobGiver_Talk"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						
+
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+
+
+
+</Defs>

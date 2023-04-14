@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimBees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VFEV_MeadFermentingBarrel"]/label</xpath>
+					<value>
+						<label>honey-wine fermenting barrel</label>		
+					</value>
+				</li>
+							
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VFEV_Mead"]/label</xpath>
+					<value>
+						<label>honey-wine</label>		
+					</value>
+				</li>
+				
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+
