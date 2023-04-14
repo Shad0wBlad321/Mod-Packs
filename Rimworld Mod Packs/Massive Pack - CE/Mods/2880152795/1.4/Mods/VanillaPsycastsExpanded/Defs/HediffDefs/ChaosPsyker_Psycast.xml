@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Warptime -->
+
+	<HediffDef ParentName="PsycastHediffBase">
+		<defName>BEWH_Warptime</defName>
+		<label>warptime</label>
+		<description>Psychically induced agility reflexes, greatly increasing ranged hit, melee hit and melee dodge chance.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeHitChance>2</MeleeHitChance>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Shattertime -->
+
+	<HediffDef ParentName="PsycastHediffBase">
+		<defName>BEWH_Shattertime</defName>
+		<label>shattertime</label>
+		<description>Psychically induced hyper agility reflexes and linear time defiance, greatly reducing ranged cooldown, melee cooldown and increasing move speed.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>2</MoveSpeed>
+					<RangedCooldownFactor>0.5</RangedCooldownFactor>
+					<MeleeWeapon_CooldownMultiplier>0.5</MeleeWeapon_CooldownMultiplier>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded - Sushi</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef>
+							<defName>VCE_MilkFromSoybeans</defName>
+							<label>extract milk from soybeans</label>
+							<description>Extract vegetable milk from oats. This milk can be used in any recipe that asks for milk.\n\nVegetable milks are generally inefficient, as a lot of nutrition is lost in the process. Soybeans are more efficient than other recipes.</description>
+							<jobString>Extracting milk from soybeans.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_CookMeal</soundWorking>
+							<workAmount>1000</workAmount>
+							<recipeUsers>
+								<li>VCE_VegMilkExtractor</li>	
+
+							</recipeUsers>
+
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>VCE_RawSoybean</li>
+										</thingDefs>
+									</filter>
+									<count>50</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>VCE_RawSoybean</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<Milk>25</Milk>
+							</products>
+							<researchPrerequisite>
+								<li>VCE_VegMilkExtraction</li>
+							</researchPrerequisite>
+
+						</RecipeDef>
+					</value>
+				</li>
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

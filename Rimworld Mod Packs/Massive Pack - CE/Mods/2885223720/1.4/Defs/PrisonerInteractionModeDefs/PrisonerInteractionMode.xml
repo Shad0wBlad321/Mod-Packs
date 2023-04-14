@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PrisonerInteractionModeDef>
+    <defName>RedHorse_Brainwash</defName>
+    <label>brainwash recruit</label>
+    <listOrder>23</listOrder>
+    <description>Wardens will lead them to a brainwash chair with a television for brainwashing.</description>
+  </PrisonerInteractionModeDef>
+
+</Defs>

@@ -1,0 +1,16 @@
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>TM_AncientTribalMedicine</defName>
+        <label>ancient tribal medicine</label>
+        <description>Cultivate special plants and use them to brew teas which have huge health benefits.</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <tags>
+            <li>TribalStart</li>
+        </tags>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

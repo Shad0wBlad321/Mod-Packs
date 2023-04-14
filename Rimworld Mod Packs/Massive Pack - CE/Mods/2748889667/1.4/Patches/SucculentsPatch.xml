@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded - Succulents</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<!-- VPE Aloe to Tiger Tooth Aloe -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Plant_AloeVera"]/label</xpath>
+					<value>
+						<label>tiger tooth Aloe plant</label>		
+					</value>
+				</li>
+				
+			
+			
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

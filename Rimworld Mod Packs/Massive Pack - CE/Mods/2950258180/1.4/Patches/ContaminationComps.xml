@@ -1,0 +1,49 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [@Name = "OrganicProductBase"]</xpath>
+        <value>
+            <comps>
+                <li Class="ArgonicCore.Comps.CompProperties_Contaminable">
+                    <contaminesProducts>true</contaminesProducts>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [@Name = "MealBaseIngredientless"]/comps</xpath>
+        <value>
+            <li Class="ArgonicCore.Comps.CompProperties_Contaminable">
+                <contaminesProducts>false</contaminesProducts>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [@Name = "MealBaseIngredientless"]/ingestible</xpath>
+        <value>
+            <outcomeDoers>
+                <li Class="ArgonicCore.IngestionOutcomes.IngestionOutcomeDoer_GiveHediffIfContaminated" />
+            </outcomeDoers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [@Name = "PlantFoodRawBase"]/ingestible</xpath>
+        <value>
+            <outcomeDoers>
+                <li Class="ArgonicCore.IngestionOutcomes.IngestionOutcomeDoer_GiveHediffIfContaminated" />
+            </outcomeDoers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [@Name = "RoughPlantBase"]/ingestible</xpath>
+        <value>
+            <outcomeDoers>
+                <li Class="ArgonicCore.IngestionOutcomes.IngestionOutcomeDoer_GiveHediffIfContaminated" />
+            </outcomeDoers>
+        </value>
+    </Operation>
+
+</Patch>

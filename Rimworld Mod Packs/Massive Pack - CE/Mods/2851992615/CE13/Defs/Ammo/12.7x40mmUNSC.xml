@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo127x40mmUNSC</defName>
+		<label>12.7x40mm UNSC</label>
+		<parent>AmmoPistols</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPistol</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_127x40mmUNSC</defName>
+		<label>12.7x40mm UNSC</label>
+		<ammoTypes>
+			<Ammo_127x40mmUNSC_FMJ>Bullet_127x40mmUNSC_FMJ</Ammo_127x40mmUNSC_FMJ>
+			<Ammo_127x40mmUNSC_AP>Bullet_127x40mmUNSC_AP</Ammo_127x40mmUNSC_AP>
+			<Ammo_127x40mmUNSC_HP>Bullet_127x40mmUNSC_HP</Ammo_127x40mmUNSC_HP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="127x40mmUNSCBase" ParentName="AmmoBase" Abstract="True">
+		<description>This high-powered cartridge is one of the largest calibers found in handguns. Commonly used by UNSC magnum pistols.</description>
+		<statBases>
+			<Mass>0.029</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+			<li>UNSC_TradeTag_Ammo_Small</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo127x40mmUNSC</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="127x40mmUNSCBase">
+		<defName>Ammo_127x40mmUNSC_FMJ</defName>
+		<label>12.7x40mm UNSC cartridge (FMJ)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/FMJ</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.12</MarketValue>
+		</statBases>
+		<ammoClass>FullMetalJacket</ammoClass>
+		<cookOffProjectile>Bullet_127x40mmUNSC_FMJ</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="127x40mmUNSCBase">
+		<defName>Ammo_127x40mmUNSC_AP</defName>
+		<label>12.7x40mm UNSC cartridge (AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.12</MarketValue>
+		</statBases>
+		<ammoClass>ArmorPiercing</ammoClass>
+		<cookOffProjectile>Bullet_127x40mmUNSC_AP</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="127x40mmUNSCBase">
+		<defName>Ammo_127x40mmUNSC_HP</defName>
+		<label>12.7x40mm UNSC cartridge (HP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/HP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.12</MarketValue>
+		</statBases>
+		<ammoClass>HollowPoint</ammoClass>
+		<cookOffProjectile>Bullet_127x40mmUNSC_HP</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="Base127x40mmUNSCBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>99</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base127x40mmUNSCBullet">
+		<defName>Bullet_127x40mmUNSC_FMJ</defName>
+		<label>12.7x40mm UNSC bullet (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>19</damageAmountBase>
+			<armorPenetrationSharp>9</armorPenetrationSharp>
+			<armorPenetrationBlunt>38.480</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base127x40mmUNSCBullet">
+		<defName>Bullet_127x40mmUNSC_AP</defName>
+		<label>12.7x40mm UNSC bullet (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationSharp>18</armorPenetrationSharp>
+			<armorPenetrationBlunt>38.480</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base127x40mmUNSCBullet">
+		<defName>Bullet_127x40mmUNSC_HP</defName>
+		<label>12.7x40mm UNSC bullet (HP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>38.480</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="HALO_UNSC_AmmoRecipeBase">
+		<defName>MakeAmmo_127x40mmUNSC_FMJ</defName>
+		<label>make 12.7x40mm UNSC (FMJ) cartridge x500</label>
+		<description>Craft 500 12.7x40mm UNSC (FMJ) cartridges.</description>
+		<jobString>Making 12.7x40mm UNSC (FMJ) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_127x40mmUNSC_FMJ>500</Ammo_127x40mmUNSC_FMJ>
+		</products>
+		<workAmount>3000</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HALO_UNSC_AmmoRecipeBase">
+		<defName>MakeAmmo_127x40mmUNSC_HP</defName>
+		<label>make 12.7x40mm UNSC (HP) cartridge x500</label>
+		<description>Craft 500 12.7x40mm UNSC (HP) cartridges.</description>
+		<jobString>Making 12.7x40mm UNSC (HP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_127x40mmUNSC_HP>500</Ammo_127x40mmUNSC_HP>
+		</products>
+		<workAmount>3000</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HALO_UNSC_AmmoRecipeBase">
+		<defName>MakeAmmo_127x40mmUNSC_AP</defName>
+		<label>make 12.7x40mm UNSC (AP) cartridge x500</label>
+		<description>Craft 500 12.7x40mm UNSC (AP) cartridges.</description>
+		<jobString>Making 12.7x40mm UNSC (AP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_127x40mmUNSC_AP>500</Ammo_127x40mmUNSC_AP>
+		</products>
+		<workAmount>3000</workAmount>
+	</RecipeDef>
+
+</Defs>

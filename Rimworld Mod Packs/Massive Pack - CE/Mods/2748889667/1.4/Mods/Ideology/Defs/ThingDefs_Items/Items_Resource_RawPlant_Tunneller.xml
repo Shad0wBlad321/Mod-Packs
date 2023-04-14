@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	 <ThingDef ParentName="RoughPlantBase">
+    <defName>VCE_RawMoss</defName>
+    <label>cave moss</label>
+    <description>A nutrient-rich moss that can be used to feed cave animals, but not humans.</description>
+    <stackLimit>200</stackLimit>
+    <graphicData>
+      <texPath>Things/Items/Raw/VCE_Moss</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.014</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>400</allowedArchonexusCount>
+  </ThingDef>
+
+
+
+</Defs>

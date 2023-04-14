@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=========================== Food crops ==============================-->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Blueberry</defName>
+		<label>blueberry plant</label>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_BenefitsFromApiary</thingClass>
+		<description>A shrub prized for its sweet edible fruits. Hailed as a "superfood", blueberries are commonly eaten fresh as a dessert fruit and can be baked in a variety of pastries.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Blueberries are pollinated by bees: they will receive a growth boost if an apiary is found in a radius of 6 tiles. To avoid lag this is only calculated once, when the plant is sown, so apiaries placed after sowing it will have no effect. If there are no apiaries it will behave as a slower strawberry plant.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Blueberry</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BlueberryImmature</immatureGraphicPath>
+			<harvestedThingDef>VCE_RawBlueberries</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.5</growDays>
+			<visualSizeRange>0.7~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	
+</Defs>

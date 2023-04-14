@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Laser</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef Abstract="True" Name="HALO_UNSC_Bullet_LaserGeneric" ParentName="BaseBullet">
+                            <thingClass>VanillaWeaponsExpandedLaser.LaserBeam</thingClass>
+                            <drawOffscreen>true</drawOffscreen>
+                            <beamGraphic>VWELBeamGraphic</beamGraphic>
+
+                            <graphicData>
+                                <graphicClass>Graphic_Single</graphicClass>
+                                <texPath>Things/Projectile/Charge_Small</texPath>
+                                <shaderType>TransparentPostLight</shaderType>
+                                <drawSize>1.5</drawSize>
+                            </graphicData>
+
+                            <explosionEffect>VWELLaserImpact</explosionEffect>
+                            <hitLivingEffect>VWELLaserLivingImpact</hitLivingEffect>
+
+                            <projectile>
+                                <damageDef>Bomb</damageDef>
+                                <speed>10000</speed>
+                            </projectile>
+
+                            <seam>0.25</seam>
+                        </ThingDef>
+                    </value>
+                </li>
+
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="HALO_UNSC_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+                            <defName>HALO_UNSC_Bullet_SpartanLaser</defName>
+                            <label>Spartan Laser shot</label>
+                            <description>Spartan Laser shot</description>
+                            <textures>
+                                <li>Things/Projectile/Shot_SalvagedLaserRifle</li>
+                            </textures>
+                            <seam>0.15</seam>
+                            <causefireChance>0.8</causefireChance>
+                            <beamWidth>1.6</beamWidth>
+                            <lifetime>240</lifetime>
+                            <projectile>
+                                <damageDef>Burn</damageDef>
+                                <damageAmountBase>500</damageAmountBase>
+                                <armorPenetrationBase>1</armorPenetrationBase>
+                                <stoppingPower>6</stoppingPower>
+                            </projectile>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="BaseLaserGun">
+                            <defName>HALO_UNSC_SpartanLaser</defName>
+                            <thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+                            <label>Spartan Laser</label>
+                            <description>The Weapon/Anti-Vehicle Model 6 Grindell/Galilean Nonlinear Rifle (W/AV M6 G/GNR), colloquially known as the Spartan Laser, is a man-portable and vehicle-mounted solid-state directed-energy anti-vehicle weapon used by the United Nations Space Command. It is one of the few directed energy weapons fielded by UNSC forces, aside from the pulse lasers used by Office of Naval Intelligence prowlers and the X23 NNEMP Cannon used by Gremlin Combat Support Vehicles.</description>
+                            <graphicData>
+                                <texPath>Things/Weapons/HALO_UNSC_SpartanLaser</texPath>
+                                <graphicClass>Graphic_Single</graphicClass>
+                                <drawSize>1.2</drawSize>
+                            </graphicData>
+                            <equippedAngleOffset>45</equippedAngleOffset>
+                            <soundInteract>HALO_UNSC_Interact_SpartanLaser</soundInteract>
+                            <statBases>
+                                <MarketValue>2500</MarketValue>
+                                <WorkToMake>110000</WorkToMake>
+                                <Mass>3.7</Mass>
+                                <AccuracyTouch>0.63</AccuracyTouch>
+                                <AccuracyShort>0.86</AccuracyShort>
+                                <AccuracyMedium>0.93</AccuracyMedium>
+                                <AccuracyLong>0.92</AccuracyLong>
+                                <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+                            </statBases>
+                            <costList Inherit="False">
+                                <Steel>1</Steel>
+                            </costList>
+                            <recipeMaker Inherit="False">
+                            </recipeMaker>
+                            <techLevel>Spacer</techLevel>
+                            <weaponTags Inherit="False">
+                                <li>HALO_UNSC_SpartanLaser</li>
+                            </weaponTags>
+                            <generateCommonality>0.1</generateCommonality>
+                            <equippedStatOffsets>
+                                <MoveSpeed>-0.15</MoveSpeed>
+                            </equippedStatOffsets>
+                            <verbs>
+                                <li>
+                                    <verbClass>Verb_ShootOneUse</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>HALO_UNSC_Bullet_SpartanLaser</defaultProjectile>
+                                    <warmupTime>2.2</warmupTime>
+                                    <range>48</range>
+                                    <burstShotCount>1</burstShotCount>
+                                    <soundCast>HALO_UNSC_Shot_SpartanLaser</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <onlyManualCast>true</onlyManualCast>
+                                    <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                                    <muzzleFlashScale>14</muzzleFlashScale>
+                                    <targetParams>
+                                        <canTargetLocations>true</canTargetLocations>
+                                    </targetParams>
+                                </li>
+                            </verbs>
+                            <comps>
+                                <li>
+                                    <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+                                </li>
+                            </comps>
+                            <tools>
+                                <li>
+                                    <label>barrel</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>5</power>
+                                    <cooldownTime>1.8</cooldownTime>
+                                </li>
+                                <li>
+                                    <label>grip</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>6</power>
+                                    <cooldownTime>1.9</cooldownTime>
+                                </li>
+                            </tools>
+                            <thingCategories Inherit="False">
+                                <li>HALO_Category_UNSC_Weapons</li>
+                            </thingCategories>
+                            <thingSetMakerTags Inherit="False">
+                            </thingSetMakerTags>
+                            <tradeTags Inherit="False">
+                                <li>HALO_UNSC_Weapon</li>
+                            </tradeTags>
+                        </ThingDef>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

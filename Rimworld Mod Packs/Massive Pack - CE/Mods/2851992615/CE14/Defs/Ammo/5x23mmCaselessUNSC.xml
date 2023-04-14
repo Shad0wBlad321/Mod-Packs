@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo5x23mmCaselessUNSC</defName>
+		<label>5x23mm caseless UNSC</label>
+		<parent>AmmoRifles</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_5x23mmCaselessUNSC</defName>
+		<label>5x23mm caseless UNSC</label>
+		<ammoTypes>
+			<Ammo_5x23mmCaselessUNSC_FMJ>Bullet_5x23mmCaselessUNSC_FMJ</Ammo_5x23mmCaselessUNSC_FMJ>
+			<Ammo_5x23mmCaselessUNSC_AP>Bullet_5x23mmCaselessUNSC_AP</Ammo_5x23mmCaselessUNSC_AP>
+			<Ammo_5x23mmCaselessUNSC_Incendiary>Bullet_5x23mmCaselessUNSC_Incendiary</Ammo_5x23mmCaselessUNSC_Incendiary>
+			<Ammo_5x23mmCaselessUNSC_HE>Bullet_5x23mmCaselessUNSC_HE</Ammo_5x23mmCaselessUNSC_HE>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="5x23mmCaselessUNSCBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Caseless bullet with a solid propellant enveloping the projectile. It is used by UNSC SMGs.</description>
+		<statBases>
+			<Mass>0.008</Mass>
+			<Bulk>0.009</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+			<li>UNSC_TradeTag_Ammo_Small</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo5x23mmCaselessUNSC</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="5x23mmCaselessUNSCBase">
+		<defName>Ammo_5x23mmCaselessUNSC_FMJ</defName>
+		<label>5x23mm caseless UNSC cartridge (FMJ)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/FMJ</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.08</MarketValue>
+		</statBases>
+		<ammoClass>FullMetalJacket</ammoClass>
+		<cookOffProjectile>Bullet_5x23mmCaselessUNSC_FMJ</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="5x23mmCaselessUNSCBase">
+		<defName>Ammo_5x23mmCaselessUNSC_AP</defName>
+		<label>5x23mm caseless UNSC cartridge (AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.08</MarketValue>
+		</statBases>
+		<ammoClass>ArmorPiercing</ammoClass>
+		<cookOffProjectile>Bullet_5x23mmCaselessUNSC_AP</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="5x23mmCaselessUNSCBase">
+		<defName>Ammo_5x23mmCaselessUNSC_Incendiary</defName>
+		<label>5x23mm caseless UNSC cartridge (AP-I)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/Incendiary</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.08</MarketValue>
+		</statBases>
+		<ammoClass>ArmorPiercing</ammoClass>
+		<cookOffProjectile>Bullet_5x23mmCaselessUNSC_Incendiary</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="5x23mmCaselessUNSCBase">
+		<defName>Ammo_5x23mmCaselessUNSC_HE</defName>
+		<label>5x23mm caseless UNSC cartridge (HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/HE</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.08</MarketValue>
+		</statBases>
+		<ammoClass>FullMetalJacket</ammoClass>
+		<cookOffProjectile>Bullet_5x23mmCaselessUNSC_HE</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="Base5x23mmCaselessUNSCBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>130</speed>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base5x23mmCaselessUNSCBullet">
+		<defName>Bullet_5x23mmCaselessUNSC_FMJ</defName>
+		<label>5mm caseless bullet (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationSharp>7</armorPenetrationSharp>
+			<armorPenetrationBlunt>24.5</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base5x23mmCaselessUNSCBullet">
+		<defName>Bullet_5x23mmCaselessUNSC_AP</defName>
+		<label>5mm caseless bullet (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<armorPenetrationBlunt>24.5</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base5x23mmCaselessUNSCBullet">
+		<defName>Bullet_5x23mmCaselessUNSC_Incendiary</defName>
+		<label>5mm caseless bullet (AP-I)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<armorPenetrationBlunt>24.5</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Flame_Secondary</def>
+					<amount>3</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base5x23mmCaselessUNSCBullet">
+		<defName>Bullet_5x23mmCaselessUNSC_HE</defName>
+		<label>5mm caseless bullet (HE)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationSharp>7</armorPenetrationSharp>
+			<armorPenetrationBlunt>24.5</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>5</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="HALO_UNSC_AmmoRecipeBase">
+		<defName>MakeAmmo_5x23mmCaselessUNSC_FMJ</defName>
+		<label>make 5x23mm caseless UNSC (FMJ) cartridge x500</label>
+		<description>Craft 500 5x23mm caseless UNSC (FMJ) cartridges.</description>
+		<jobString>Making 5x23mm caseless UNSC (FMJ) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_5x23mmCaselessUNSC_FMJ>500</Ammo_5x23mmCaselessUNSC_FMJ>
+		</products>
+		<workAmount>1500</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HALO_UNSC_AmmoRecipeBase">
+		<defName>MakeAmmo_5x23mmCaselessUNSC_AP</defName>
+		<label>make 5x23mm caseless UNSC (AP) cartridge x500</label>
+		<description>Craft 500 5x23mm caseless UNSC (AP) cartridges.</description>
+		<jobString>Making 5x23mm caseless UNSC (AP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_5x23mmCaselessUNSC_AP>500</Ammo_5x23mmCaselessUNSC_AP>
+		</products>
+		<workAmount>1500</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HALO_UNSC_AmmoRecipeBase">
+		<defName>MakeAmmo_5x23mmCaselessUNSC_Incendiary</defName>
+		<label>make 5x23mm caseless UNSC (AP-I) cartridge x500</label>
+		<description>Craft 500 5x23mm caseless UNSC (AP-I) cartridges.</description>
+		<jobString>Making 5x23mm caseless UNSC (AP-I) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_5x23mmCaselessUNSC_Incendiary>500</Ammo_5x23mmCaselessUNSC_Incendiary>
+		</products>
+		<workAmount>1500</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HALO_UNSC_AmmoRecipeBase">
+		<defName>MakeAmmo_5x23mmCaselessUNSC_HE</defName>
+		<label>make 5x23mm caseless UNSC (HE) cartridge x500</label>
+		<description>Craft 500 5x23mm caseless UNSC (HE) cartridges.</description>
+		<jobString>Making 5x23mm caseless UNSC (HE) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_5x23mmCaselessUNSC_HE>500</Ammo_5x23mmCaselessUNSC_HE>
+		</products>
+		<workAmount>1500</workAmount>
+	</RecipeDef>
+
+</Defs>

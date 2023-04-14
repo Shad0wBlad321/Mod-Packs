@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef Name="HALO_UNSC_BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>HALO_Category_UNSC_Weapons</li>
+        </thingCategories>
+        <thingSetMakerTags Inherit="False">
+        </thingSetMakerTags>
+        <weaponTags Inherit="False">
+        </weaponTags>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>HALO_UNSC_Assembler</li>
+            </recipeUsers>
+        </recipeMaker>
+        <tradeTags Inherit="False">
+            <li>HALO_UNSC_Weapon</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>

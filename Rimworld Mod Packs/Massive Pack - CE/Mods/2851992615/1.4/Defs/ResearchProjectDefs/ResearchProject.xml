@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!--UNSC Contact-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_UNSCContact</defName>
+        <label>UNSC Contact</label>
+        <description>_</description>
+        <baseCost>500</baseCost>
+        <prerequisites>
+            <li>Fabrication</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>0.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+    </ResearchProjectDef>
+
+    <!--Marine armor-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_MarineArmor</defName>
+        <label>UNSC Marine Armor</label>
+        <description>Learn to craft you own UNSC's Marine armor, the basic armor used by the UNSC armed forces.</description>
+        <baseCost>5000</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_UNSCContact</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>ComplexClothing</li>
+        </hiddenPrerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>0.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+    </ResearchProjectDef>
+
+    <!--ODSTArmor-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_ODSTArmor</defName>
+        <label>UNSC ODST Armor</label>
+        <description>Learn to craft you own ODST armor, a strong armor used by UNSC's shock troopers.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_MarineArmor</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>ComplexClothing</li>
+        </hiddenPrerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>0.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+        <techprintCount>1</techprintCount>
+        <techprintCommonality>3</techprintCommonality>
+        <techprintMarketValue>3000</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>HALO_UNSC_FactionTag</li>
+        </heldByFactionCategoryTags>
+    </ResearchProjectDef>
+
+    <!--MjolnirArmor-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_MjolnirArmor</defName>
+        <label>UNSC Mjolnir Armor</label>
+        <description>Learn to craft you own Mjolnir armor, the strongest armor the UNSC has to offer, part of the SPARTAN program.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_ODSTArmor</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>ComplexClothing</li>
+        </hiddenPrerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>0.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+        <techprintCount>2</techprintCount>
+        <techprintCommonality>3</techprintCommonality>
+        <techprintMarketValue>3000</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>HALO_UNSC_FactionTag</li>
+        </heldByFactionCategoryTags>
+    </ResearchProjectDef>
+
+    <!--Pistola, Escopeta, SMG , Old AR-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_BasicFirearms</defName>
+        <label>UNSC Basic Firearms</label>
+        <description>Learn to craft basic firearms used by the UNSC armed forces.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_UNSCContact</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>PrecisionRifling</li>
+        </hiddenPrerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+    </ResearchProjectDef>
+
+    <!--Supressed SMG, Commando (DMR Carbine), Adv AR (yellow thingy)-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_AdvancedFirearms</defName>
+        <label>UNSC Advanced Firearms</label>
+        <description>Learn to craft advanced firearms used by the UNSC armed forces.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_BasicFirearms</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>1.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+    </ResearchProjectDef>
+
+    <!--Scoped AR, BR, Sniper-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_PrecisionFirearms</defName>
+        <label>UNSC Precision Firearms</label>
+        <description>Learn to craft precision firearms used by the UNSC armed forces.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_AdvancedFirearms</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>1.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+    </ResearchProjectDef>
+
+    <!--Magnum,RL, GL, SAW-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_HeavyFirearms</defName>
+        <label>UNSC Heavy Firearms</label>
+        <description>Learn to craft high caliber, heavy and explosive firearms used by the UNSC armed forces.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_AdvancedFirearms</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>1.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+    </ResearchProjectDef>
+
+    <!--Turrets-->
+    <ResearchProjectDef>
+        <defName>HALO_Research_UNSC_Emplacements</defName>
+        <label>UNSC Emplacements</label>
+        <description>Learn to build basic manned emplacements used by the UNSC armed forces.</description>
+        <baseCost>1000</baseCost>
+        <prerequisites>
+            <li>HALO_Research_UNSC_AdvancedFirearms</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+            <li>HALO_UNSC_ResearchTerminal</li>
+        </requiredResearchFacilities>
+        <techLevel>Industrial</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>2.15</researchViewY>
+        <tab>HALO_ResearchTab_HALO</tab>
+    </ResearchProjectDef>
+
+</Defs>

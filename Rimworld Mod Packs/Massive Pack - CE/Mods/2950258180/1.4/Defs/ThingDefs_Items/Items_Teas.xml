@@ -1,0 +1,794 @@
+<Defs>
+
+    <!-- Base Hediff -->
+    <HediffDef Abstract="True" Name="TM_TeaEffectBase">
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+    </HediffDef>
+
+    <!-- ============================ Teas ============================ -->
+
+    <ThingDef Name="TM_TeaBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <selectable>true</selectable>
+        <statBases>
+            <Mass>0.02</Mass>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Beauty>-4</Beauty>
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+            <workSkill>Medicine</workSkill>
+            <effectWorking>Cook</effectWorking>
+            <soundWorking>Recipe_CookMeal</soundWorking>
+            <bulkRecipeCount>2</bulkRecipeCount>
+            <researchPrerequisite>TM_AncientTribalMedicine</researchPrerequisite>
+            <recipeUsers>
+                <li>Campfire</li>
+                <li>FueledStove</li>
+                <li>ElectricStove</li>
+            </recipeUsers>
+        </recipeMaker>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>5</stackLimit>
+        <thingCategories> <!-- TODO: Category -->
+            <li>Drugs</li>
+        </thingCategories>
+        <!-- <tradeTags>
+            <li>Drugs</li>
+        </tradeTags> -->
+        <alwaysHaulable>true</alwaysHaulable>
+        <tickerType>Rare</tickerType>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Drug">
+                <listOrder>1000</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+            <li Class="ArgonicCore.Comps.CompProperties_RuinOverTime">
+                <daysToRotStart>0.25</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <pathCost>5</pathCost>
+        <burnableByRecipe>false</burnableByRecipe>
+        <resourceReadoutPriority>Last</resourceReadoutPriority>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <allowedArchonexusCount>-1</allowedArchonexusCount>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <preferability>NeverForNutrition</preferability>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <chairSearchRadius>0</chairSearchRadius>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+        </ingestible>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <orderedTakeGroup>Drug</orderedTakeGroup>
+    </ThingDef>
+
+    <!-- Health tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_RedTea</defName>
+        <label>health tea</label>
+        <description>A sweet-smelling, bubbling tea that combines the strong medical effects of red petals with the impact of the nervous system that shroom spores have. Native tribes from the rimworlds used to consume this tea on a daily basis to toughen their bodies and improve their general health.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Similar to a mixture of plants and raw bug shells combined with a slight resemblance to raw lettuce.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Red</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>150</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_RedTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_RedPetals>10</TM_RedPetals>
+            <TM_Shrooms>5</TM_Shrooms>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_RedTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>health enhancement</label>
+        <description>Enhanced healing and body functioning.</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <naturalHealingFactor>1.02</naturalHealingFactor>
+                <statFactors>
+                    <InjuryHealingFactor>1.1</InjuryHealingFactor>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.02</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Hibernation tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_OrangeTea</defName>
+        <label>hibernation tea</label>
+        <description>An ancient tribal tea brewed from a high amount of shrooms and some carefully boiled broots to add intensity to the mix. These two plants react chemically under a specific temperature and form a strong sedative substance that attacks the nervous system at its core. Consumers become drowsy and slow, but their internal organs remain in what could be best described as an hibernation status, needing just the minimum amount of food to survive. This tea was crucial to the survival of native tribes during harsh winters and periods of very scarce food.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Hot and bland, with a resemblance to dirt hidden behind the oily texture.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Orange</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_OrangeTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_Broots>5</TM_Broots>
+            <TM_Shrooms>15</TM_Shrooms>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_OrangeTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>chemical hibernation</label>
+        <description>Reduced energy consumption and body functionality.</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <hungerRateFactor>0.15</hungerRateFactor>
+                <restFallFactor>3.2</restFallFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.6</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Purifying tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_YellowTea</defName>
+        <label>purifying tea</label>
+        <description>A strong-smelling, hot, acid tea made with highly boiled broots and dark berries. The aggressive effects of the broot acids combined with the natural antibodies of dark berries result in a tea that serves as an organism purger. The broot acids attack every inch of the human body and remove any invasive, external agents, then the tea is properly absorbed by the body and the waste is eliminated through feces. However, this tea is very dangerous to consume, as the almost pure broot acids can sometimes still contain poison, and thus cause broot poisoning to the consumer. Tribespeople usually trusted only their best shaman to brew these teas, as a correct boiling process is required to reduce the chance of getting poisoned.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Sweet, yet acid enough to cause a natural rejection to swallowing it.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Yellow</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="TribalMedicineRevamped.IngestionOutcomeDoer_PurgeOrganism" />
+                <li Class="ArgonicCore.IngestionOutcomes.IngestionOutcomeDoer_CanGiveHediff">
+                    <hediff>TM_BrootPoisoning</hediff>
+                    <dependsOnQuality>true</dependsOnQuality>
+                    <baseChance>0.4</baseChance>
+
+                    <qualityFactorAwful>1.95</qualityFactorAwful>
+                    <qualityFactorPoor>1.3</qualityFactorPoor>
+                    <qualityFactorNormal>1</qualityFactorNormal>
+                    <qualityFactorGood>0.75</qualityFactorGood>
+                    <qualityFactorExcellent>0.52</qualityFactorExcellent>
+                    <qualityFactorMasterwork>0.27</qualityFactorMasterwork>
+                    <qualityFactorLegendary>0.11</qualityFactorLegendary>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_Broots>12</TM_Broots>
+            <TM_DarkBerries>10</TM_DarkBerries>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_BrootPoisoning</defName>
+        <hediffClass>ArgonicCore.Hediffs.Hediff_Poison</hediffClass>
+        <label>broot poisoning</label>
+        <description>Blood poisoning caused by consuming broots. Will cause generalized nervous collapse and death. Tending is not gauranteed to work all the time.</description>
+        <makesSickThought>true</makesSickThought>
+        <defaultLabelColor>(0.9,0.6,0.55)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <initialSeverity>0.033</initialSeverity>
+        <maxSeverity>1.0</maxSeverity>
+        <lethalSeverity>1</lethalSeverity>
+        <isBad>true</isBad>
+        <tendable>true</tendable>
+        <comps>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>mild</label>
+                <vomitMtbDays>0.7</vomitMtbDays>
+                <painOffset>0.4</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.75</setMax>
+                    </li>
+                    <li>
+                        <capacity>Eating</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.333</minSeverity>
+                <label>strong</label>
+                <vomitMtbDays>0.5</vomitMtbDays>
+                <painOffset>0.6</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.6</setMax>
+                    </li>
+                    <li>
+                        <capacity>Eating</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.35</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>HeartAttack</hediff>
+                        <allowOnLodgers>true</allowOnLodgers>
+                        <allowOnQuestRewardPawns>false</allowOnQuestRewardPawns>
+                        <allowOnQuestReservedPawns>false</allowOnQuestReservedPawns>
+                        <allowOnBeggars>true</allowOnBeggars>
+                        <mtbDays>25</mtbDays>
+                        <partsToAffect>
+                            <li>Heart</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <minSeverity>0.733</minSeverity>
+                <label>lethal</label>
+                <lifeThreatening>true</lifeThreatening>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <painOffset>0.9</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.75</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.25</setMax>
+                    </li>
+                    <li>
+                        <capacity>Eating</capacity>
+                        <offset>-0.7</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.6</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>HeartAttack</hediff>
+                        <allowOnLodgers>true</allowOnLodgers>
+                        <allowOnQuestRewardPawns>false</allowOnQuestRewardPawns>
+                        <allowOnQuestReservedPawns>false</allowOnQuestReservedPawns>
+                        <allowOnBeggars>true</allowOnBeggars>
+                        <mtbDays>5</mtbDays>
+                        <partsToAffect>
+                            <li>Heart</li>
+                        </partsToAffect>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Immunity tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_BlackTea</defName>
+        <label>immunity tea</label>
+        <description>A dark, thick, bitter tea made of a concentration of boiled dark berries and shrooms spores. This beverage has great antibiotic properties and is widely used among tribespeople to treat infections and diseases, effectively reducing their severity and boosting the immunity gain speed of the consumer.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Like a fine, tasty mud and dry berry pudding flavored with a slight touch of cobweb.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Black</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="TribalMedicineRevamped.IngestionOutcomeDoer_ReduceIllnessPercentage" />
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_BlackTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_Shrooms>5</TM_Shrooms>
+            <TM_DarkBerries>20</TM_DarkBerries>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_BlackTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>enhanced immunity</label>
+        <description>Enhanced immunity gain speed.</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <ImmunityGainSpeed>1.12</ImmunityGainSpeed>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Digestive tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_GreenTea</defName>
+        <label>digestive tea</label>
+        <description>A thick, bitter tea that has an atrociously bad flavor. It combines the properties of dark berries with the natural healing benefits from healroot in order to create a tea that is capable of cleansing the body from several types of contaminations, this includes food poisoning, gut worms, drunkenness and even toxic buildup.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Bitter as a dry apricot delicately spiced with burnt oregano and dried parsley.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Green</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="TribalMedicineRevamped.IngestionOutcomeDoer_CureFoodPoisoning" />
+                <li Class="TribalMedicineRevamped.IngestionOutcomeDoer_EndureDrunkeness" />
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_GreenTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_Shrooms>5</TM_Shrooms>
+            <TM_DarkBerries>20</TM_DarkBerries>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_GreenTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>enhanced digestion</label>
+        <description>Enhanced foor processing and resistance to gut worms.</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li>
+                <compClass>TribalMedicineRevamped.HediffComp_EndureGutWorms</compClass>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <ToxicEnvironmentResistance>1.05</ToxicEnvironmentResistance>
+                    <ToxicResistance>1.05</ToxicResistance>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <offset>0.35</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_HiddenHediff_GutWormsEndurance</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>gut worms endurance</label>
+        <description>text.todo</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <!-- <label>debug</label> -->
+                <becomeVisible>false</becomeVisible>
+                <painOffset>-0.12</painOffset>
+                <hungerRateFactorOffset>-0.35</hungerRateFactorOffset>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Warmth tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_RedYellowTea</defName>
+        <label>warmth tea</label>
+        <description>An oily beverage that combines broots and red petals to create a tea high in proteins and heat producers, which effectively raises the average temperature of the human body upon consumption. The effect makes the user a little more hungry, but it is worth the trade during harsh winters where not even the best diet could keep one away from hypothermia. Be aware though, as the temperature produced is constant, so the consumer will be also rendered less resistant to hot temperatures.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Sweet like honey, carefully seasoned with dried garlic, soy sauce and a tiny bit of white vinegar.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_RedYellow</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_RedYellowTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_RedPetals>15</TM_RedPetals>
+            <TM_Broots>5</TM_Broots>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_RedYellowTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>chemical warmth</label>
+        <description>Augmented cold resistance. Reduced heat resistance.</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <hungerRateFactor>1.05</hungerRateFactor>
+                <statOffsets>
+                    <ComfyTemperatureMin>-12</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>-10</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Rage tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_LilacTea</defName>
+        <label>rage tea</label>
+        <description>A thick, slimy beverage with a high concentration of psychite, which in combination with the aggressive chemicals of broots, generates a strong effect in the human nervous system. Native tribes all across the rimworlds used to brew these teas during war times, providing their warriors with sometimes high doses of it. It causes a strong rage that negates pain and enhances mobility, though it comes with a slight counter-effect once it starts wearing off.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Bitter, dry, thick and spicy for some reason. Many believe the true cause of the rage it produces.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Lilac</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>120</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_LilacTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <PsychoidLeaves>25</PsychoidLeaves>
+            <TM_Broots>10</TM_Broots>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_LilacTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>chemical rage</label>
+        <description>Chemical-induced state of rage for focusing in battle.</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>wearing off</label>
+                <painFactor>1.15</painFactor>
+                <statFactors>
+                    <MentalBreakThreshold>1.53</MentalBreakThreshold>
+                    <RestFallRateFactor>1.66</RestFallRateFactor>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>high</label>
+                <minSeverity>0.333</minSeverity>
+                <painFactor>0.45</painFactor>
+                <statFactors>
+                    <MeleeHitChance>1.25</MeleeHitChance>
+                    <MeleeDodgeChance>1.25</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>0.92</ShootingAccuracyPawn>
+                    <AimingDelayFactor>1.12</AimingDelayFactor>
+                    <MentalBreakThreshold>0.53</MentalBreakThreshold>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.22</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Circulatory tea -->
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_PurpleTea</defName>
+        <label>circulatory tea</label>
+        <description>A healthy, difficult to brew tea that is widely appreciated among tribespeople, in particular those who value the lives of their oldest members. This tea enhances the circulatory system and can prevent heart attacks, the cause of death of many elders. However, the complexity of the brewing process requires an experienced shaman to avoid wasting the resources.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Like mint-flavored cake with blueberries and orange juice. This tea actually tastes nice.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Purple</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>350</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_PurpleTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_RedPetals>15</TM_RedPetals>
+            <TM_DarkBerries>20</TM_DarkBerries>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_BotchableOnMake">
+                <botchProducts>
+                    <TM_RedPetals>7</TM_RedPetals>
+                    <TM_DarkBerries>4</TM_DarkBerries>
+                </botchProducts>
+                <skillRequirement>Medicine</skillRequirement>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_PurpleTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>circulatory enhancemet</label>
+        <description>Improved blood pumping and cardio.</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+            <li>
+                <compClass>TribalMedicineRevamped.HediffComp_SurviveHeartAttack</compClass>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

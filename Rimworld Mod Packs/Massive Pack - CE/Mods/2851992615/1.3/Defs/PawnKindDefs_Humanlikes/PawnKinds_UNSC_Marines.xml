@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <PawnKindDef ParentName="HALO_UNSC_PawnBase" Name="HALO_UNSC_MarineBase" Abstract="True">
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <biocodeWeaponChance>0.2</biocodeWeaponChance>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelRequired>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+      <li>HALO_UNSC_MarineArmor</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_MarineBase" Name="HALO_UNSC_MarineGunnerBase" Abstract="True">
+    <label>UNSC marine gunner</label>
+    <labelPlural>UNSC marine gunners</labelPlural>
+    <combatPower>85</combatPower>
+    <gearHealthRange>0.7~3.2</gearHealthRange>
+    <apparelTags>
+      <li>HALO_UNSC_MarineHelmet</li>
+      <li>HALO_UNSC_MarineArmor</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <weaponMoney>1200~1500</weaponMoney>
+    <weaponTags>
+      <li>HALO_UNSC_AR</li>
+      <li>HALO_UNSC_SMG</li>
+      <li>HALO_UNSC_Pistol</li>
+      <li>HALO_UNSC_Shotgun</li>
+    </weaponTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~20</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_MarineGunnerBase">
+    <defName>HALO_UNSC_MarineGunner</defName>
+    <initialResistanceRange>6~10</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_MarineGunnerBase">
+    <defName>HALO_UNSC_MarineGunner_Acidifier</defName>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>
+    <initialResistanceRange>10~16</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef Abstract="True" Name="HALO_UNSC_MarineHeavyBase" ParentName="HALO_UNSC_MarineBase">
+    <label>UNSC marine heavy</label>
+    <labelPlural>UNSC marine heavies</labelPlural>
+    <combatPower>140</combatPower>
+    <gearHealthRange>0.7~3.2</gearHealthRange>
+    <apparelTags>
+      <li>HALO_UNSC_MarineHelmet</li>
+      <li>HALO_UNSC_MarineArmor</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <weaponMoney>1200~1500</weaponMoney>
+    <weaponTags>
+      <li>HALO_UNSC_RL</li>
+      <li>HALO_UNSC_LMG</li>
+      <li>HALO_UNSC_GL</li>
+    </weaponTags>
+    <initialResistanceRange>14~23</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_MarineHeavyBase">
+    <defName>HALO_UNSC_MarineHeavy</defName>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_MarineHeavyBase">
+    <defName>HALO_UNSC_MarineHeavy_Acidifier</defName>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>
+  </PawnKindDef>
+
+  <PawnKindDef Abstract="True" Name="HALO_UNSC_EliteMarineBase" ParentName="HALO_UNSC_PawnBase">
+    <combatPower>130</combatPower>
+    <maxGenerationAge>45</maxGenerationAge>
+    <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+    <gearHealthRange>1~1</gearHealthRange>
+    <apparelTags>
+      <li>HALO_UNSC_MarineHelmet</li>
+      <li>HALO_UNSC_MarineArmor</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+    <weaponMoney>1200~1500</weaponMoney>
+    <weaponTags>
+      <li>HALO_UNSC_LMG</li>
+      <li>HALO_UNSC_AR</li>
+    </weaponTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <techHediffsMoney>1000~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsChance>0.35</techHediffsChance>
+    <combatEnhancingDrugsChance>0.80</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <biocodeWeaponChance>0.3</biocodeWeaponChance>
+    <initialWillRange>3~5</initialWillRange>
+    <apparelRequired>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+      <li>HALO_UNSC_MarineArmor</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_EliteMarineBase" Name="HALO_UNSC_EliteTierMarineBase" Abstract="True">
+    <label>elite UNSC marine</label>
+    <labelPlural>elite UNSC marines</labelPlural>
+    <itemQuality>Good</itemQuality>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_EliteTierMarineBase">
+    <defName>HALO_UNSC_MarineElite</defName>
+    <initialResistanceRange>15~23</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_EliteTierMarineBase">
+    <defName>HALO_UNSC_MarineElite_Acidifier</defName>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>
+    <initialResistanceRange>12~20</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

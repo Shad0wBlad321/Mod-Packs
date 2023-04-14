@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "H/rlmZBeMjt06lly8g0Za1i+WmYf7UhGQsl6TBfdD6odGnMMmEbaXtfiGK5VurBpRz+HoIZPkyF21yHV2IdhHw==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\-RH2-Rimmu-Nation---Security\\1.3\\Source\\ChickenClaymores\\ChickenClaymores.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3059-beta\\krafs.rimworld.ref.1.3.3059-beta.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=========================== Flower crops ==============================-->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Canola</defName>
+		<label>canola plant</label>
+		<description>A bright-yellow flowering variety of the rapeseed, cultivated mainly for its oil-rich seed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Canola, though not directly edible, can be very efficiently converted into chemfuel at a refinery.</description>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Nutrition>0.05</Nutrition>
+			<Beauty>10</Beauty>
+			<BeautyOutdoors>10</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Canola</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<sowMinSkill>6</sowMinSkill>
+			<harvestedThingDef>VCE_RawCanola</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<harvestWork>300</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				  <li>Decorative</li>
+			</sowTags>
+			<harvestFailable>true</harvestFailable>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>8.4</growDays>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_CanolaImmature</immatureGraphicPath>
+			<visualSizeRange>0.5~1.25</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			
+		</plant>
+	</ThingDef>
+	
+</Defs>

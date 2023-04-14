@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+   <name>Bill Manager</name>
+   <author>N1TAXE</author>
+   <supportedVersions>
+		<li>1.4</li>
+   </supportedVersions>
+   <packageId>N1TAXE.billmanager</packageId>
+   <description>The Bill Manager gives you access to create bills from all available work tables in one window.
+   
+   &lt;size=28&gt;Roadmap&lt;/size&gt;
+   If this mod finds enough popularity, I will update it.
+   In the plans:
+   - Implement a more user-friendly interface
+   - Make convenient prioritization for tasks
+   - Implement interesting ideas from you
+   </description>
+</ModMetaData>

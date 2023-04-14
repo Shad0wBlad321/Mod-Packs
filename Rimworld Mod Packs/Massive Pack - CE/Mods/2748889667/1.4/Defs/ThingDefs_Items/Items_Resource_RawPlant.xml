@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawCelery</defName>
+		<label>celery</label>
+		<description>A vegetable consisting of a long fibrous stalk tapering into leaves. The leaves are strongly flavored and are used less often, either as a flavoring in soups and stews or as a dried herb. Celery is a staple in many soups.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Celery</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawLettuce</defName>
+		<label>lettuce</label>
+		<description>A leaf vegetable commonly eaten fresh and served as the base of green salads. Lettuce is generally a rich source of vitamins K and A.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Lettuce</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>8</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawRadish</defName>
+		<label>radishes</label>
+		<description>An edible root vegetable that is very easy to grow and quick to harvest. Radishes are often planted by novice gardeners.</description>
+	
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Radish</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBuckwheat</defName>
+		<label>buckwheat</label>
+		<description>A pseudocereal cultivated for its grain-like seeds. Its white flowers are produced in terminal clusters and after pòllination turn into triangular-shaped seeds that are enclosed by a tough dark brown or gray rind.</description>
+	
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Buckwheat</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawPeanut</defName>
+		<label>peanuts</label>
+		<description>Seeds with an oblong shape and a papery seed coat. Similar in taste and nutritional profile to tree nuts such as walnuts and almonds, but technically a legume.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Peanuts</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+
+	
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawSunflower</defName>
+		<label>sunflower seeds</label>
+		<description>The seeds of the sunflower plant are more commonly eaten as a snack than as part of a meal. They can also be used as garnishes or ingredients in various recipes.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_SunflowerSeeds</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawOkra</defName>
+		<label>okra</label>
+		<description>Edible green seed pods, famously known for their slimy or sticky texture when cut open. Okra is a powerhouse of valuable nutrients.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Okra</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawGarlic</defName>
+		<label>garlic cloves</label>
+		<description>A very old crop which is cultivated for its bulb, formed in the base of the leaves. It is highly appreciated in cooking for its pungent and characteristic taste.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Garlic</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>140</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawCarrot</defName>
+		<label>carrots</label>
+		<description>A root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist. A versatile food that can be chopped and boiled, fried or steamed, cooked in soups and stews, as well as used for baby and pet foods.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Carrots</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBrusselsSprouts</defName>
+		<label>brussels sprouts</label>
+		<description>A form of cabbage grown for its edible buds called "sprouts". Brussels sprouts usually are eaten cooked, and the small young sprouts have a more delicate flavour than older ones.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_BrusselsSprouts</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawOlives</defName>
+		<label>olives</label>
+		<description>A small, egg-shaped black or green fruit that is used as food or for making oil. Olives freshly picked from the tree contain oleuropein, which makes the fruit unpalatable for immediate consumption. They must be brined or fermented to be used.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Olives</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawSweetPotatoes</defName>
+		<label>sweet potatoes</label>
+		<description>Large, starchy, sweet-tasting (tasting similar to pumpkin), tuberous roots that are used as a root vegetable. The sweet potato is distantly related to the common potato.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_SweetPotatoes</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawCassava</defName>
+		<label>cassavas</label>
+		<description>A tuberous edible plant also called manioc, mandioca, or yuca. They have a mild nutty taste and are commonly eaten as root vegetables in stews or as side dishes. Cassava roots are a versatile vegetable that can be used to produce flour, breads, tapioca, a laundry starch, and an alcoholic beverage.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Cassavas</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBeans</defName>
+		<label>green beans</label>
+		<description>Young, unripe fruits of a cultivar of the common bean. They can be steamed, boiled, stir-fried, or baked. They are commonly cooked in other dishes such as soups, stews, and casseroles. Green beans can also be pickled, much like cucumbers are.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Beans</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawBellPeppers</defName>
+		<label>red bell peppers</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_BellPeppers</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawYellowBellPeppers</defName>
+		<label>yellow bell peppers</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_YellowBellPeppers</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.06</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawChickpeas</defName>
+		<label>chickpeas</label>
+		<description>One of the earliest cultivated legumes. Chickpeas are high in fibre and protein and are a good source of iron, phosphorus, and folic acid.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Chickpeas</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>0.275</MarketValue>
+			<Nutrition>0.0125</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+
+	
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawTaro</defName>
+		<label>taro roots</label>
+		<description>A starchy root vegetable. It has a brown outer skin and white flesh with purple specks throughout. When cooked, it has a mildly sweet taste and a texture similar to potato.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Taro</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawWatercress</defName>
+		<label>watercress leaves</label>
+		<description>A green leaf vegetable rich in vitamins and minerals and from the same family as kale and broccoli.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Watercress</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawLotus</defName>
+		<label>lotus seeds</label>
+		<description>The seeds of the lotus plant. They are packed with nutritional elements which make them an excellent choice for a healthy diet, with a high content of proteins, carbohydrates, and vitamins.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Lotus</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawWaterChestnut</defName>
+		<label>water chestnuts</label>
+		<description>Small, rounded corms with a crisp, white flesh that may be eaten raw, slightly boiled, or grilled.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_WaterChestnuts</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawCucumber</defName>
+		<label>cucumbers</label>
+		<description>A long thin vegetable with hard green skin and wet transparent flesh. Can be eaten raw.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Cucumbers</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawButternutSquash</defName>
+		<label>butternut squashes</label>
+		<description>A vegetable with a sweet, nutty taste similar to that of a pumpkin. It has tan-yellow skin and orange fleshy pulp with a compartment of seeds in the blossom end.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_ButternutSquash</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>45</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+
+
+
+</Defs>

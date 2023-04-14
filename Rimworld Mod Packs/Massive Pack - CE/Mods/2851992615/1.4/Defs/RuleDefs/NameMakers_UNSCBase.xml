@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>HALO_UNSC_NamerFactionBases</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[nameB] military outpost</li>
+				<li>nameB->alfa</li>
+				<li>nameB->bravo</li>
+				<li>nameB->charlie</li>
+				<li>nameB->delta</li>
+				<li>nameB->echo</li>
+				<li>nameB->foxtrot</li>
+				<li>nameB->golf</li>
+				<li>nameB->hotel</li>
+				<li>nameB->india</li>
+				<li>nameB->juliett</li>
+				<li>nameB->kilo</li>
+				<li>nameB->lima</li>
+				<li>nameB->mike</li>
+				<li>nameB->november</li>
+				<li>nameB->oscar</li>
+				<li>nameB->papa</li>
+				<li>nameB->quebec</li>
+				<li>nameB->romeo</li>
+				<li>nameB->sierra</li>
+				<li>nameB->tango</li>
+				<li>nameB->uniform</li>
+				<li>nameB->victor</li>
+				<li>nameB->whiskey</li>
+				<li>nameB->xray</li>
+				<li>nameB->yankee</li>
+				<li>nameB->zulu</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>HALO_UNSC_Insurgents_NamerFactionBases</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->Eridanus Secundus</li>
+				<li>name->Camp New Hope</li>
+				<li>name->The Rubble</li>
+				<li>name->Venezia</li>
+				<li>name->[nameB] insurgent cell</li>
+				<li>nameB->alfa</li>
+				<li>nameB->bravo</li>
+				<li>nameB->charlie</li>
+				<li>nameB->delta</li>
+				<li>nameB->echo</li>
+				<li>nameB->foxtrot</li>
+				<li>nameB->golf</li>
+				<li>nameB->hotel</li>
+				<li>nameB->india</li>
+				<li>nameB->juliett</li>
+				<li>nameB->kilo</li>
+				<li>nameB->lima</li>
+				<li>nameB->mike</li>
+				<li>nameB->november</li>
+				<li>nameB->oscar</li>
+				<li>nameB->papa</li>
+				<li>nameB->quebec</li>
+				<li>nameB->romeo</li>
+				<li>nameB->sierra</li>
+				<li>nameB->tango</li>
+				<li>nameB->uniform</li>
+				<li>nameB->victor</li>
+				<li>nameB->whiskey</li>
+				<li>nameB->xray</li>
+				<li>nameB->yankee</li>
+				<li>nameB->zulu</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+
+</Defs>

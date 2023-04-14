@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>RD_PawnTrader</defName>
+    <stockGenerators>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000000~2500000</countRange>
+      </li>
+      <li Class="Rimdeed.StockGenerator_Pawns">
+	    <price>Expensive</price>
+        <countRange>8~20</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  
+</Defs>

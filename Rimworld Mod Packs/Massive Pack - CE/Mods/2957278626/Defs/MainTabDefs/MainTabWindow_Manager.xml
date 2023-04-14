@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <MainButtonDef>
+        <defName>n1_ui_exp</defName>
+        <label>billmanager</label>
+        <description>View Bill Manager</description>
+        <tabWindowClass>n1uiexp.BillTabButton</tabWindowClass>
+        <order>12</order>
+    </MainButtonDef>
+
+</Defs>

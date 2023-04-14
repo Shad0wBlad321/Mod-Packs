@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<RimDeed.OpenRimdeed>Use Rimdeed® recruitment website</RimDeed.OpenRimdeed>
+	<RimDeed.MainPageText>Welcome to Rimdeed!
+We have over 1000+ applicants available for service</RimDeed.MainPageText>
+	<RimDeed.SeekJobApplications>HIRE NOW!
+Go to service packages page</RimDeed.SeekJobApplications>
+	<RimDeed.SeekJobApplicationsNoEnoughCost>not enough silver near orbital trader beacon</RimDeed.SeekJobApplicationsNoEnoughCost>
+	<RimDeed.SeekJobApplicationsNoTradeBeacon>orbital trader beacon required</RimDeed.SeekJobApplicationsNoTradeBeacon>
+	<RimDeed.Accept>Accept</RimDeed.Accept>
+	<RimDeed.Cancel>Cancel</RimDeed.Cancel>
+	<RimDeed.Exit>Exit</RimDeed.Exit>
+	<RimDeed.ThankForRequest>Thank you for your request. You may receive an applicant the next day.</RimDeed.ThankForRequest>
+	
+	<RimDeed.RimDeedPaymentTitle>Rimdeed: Confirmation</RimDeed.RimDeedPaymentTitle>
+	<RimDeed.RimDeedPaymentText>Thank you for using Rimdeed, you may receive applicant CVs within 1-3 working days.</RimDeed.RimDeedPaymentText>
+	
+	<RimDeed.RimdeedApplicants>Rimdeed: Applicants</RimDeed.RimdeedApplicants>
+	<RimDeed.RimdeedApplicantsText>Jobseeker applications from Rimdeed.</RimDeed.RimdeedApplicantsText>
+	
+	<RimDeed.JobApplications>Job applications:</RimDeed.JobApplications>
+	<RimDeed.VeryPassionateWith>I am very passionate with:</RimDeed.VeryPassionateWith>
+	
+	<RimDeed.RimdeedConfirmation>Rimdeed: Confirmation</RimDeed.RimdeedConfirmation>
+	<RimDeed.RimdeedConfirmationText>Confirmation: Your new hire will arrive within 1-3 working days</RimDeed.RimdeedConfirmationText>
+
+	<RimDeed.RimdeedGoldConfirmation>Rimdeed: GOLD Package Hire</RimDeed.RimdeedGoldConfirmation>
+	<RimDeed.RimdeedGoldConfirmationText>Thank you for purchasing the GOLD package! Your new hire is guaranteed to arrive the same day.</RimDeed.RimdeedGoldConfirmationText>
+
+	<RimDeed.RimdeedGoldPackagePurchase>Rimdeed: GOLD Confirmation</RimDeed.RimdeedGoldPackagePurchase>
+	<RimDeed.RimdeedGoldPackagePurchaseText>Thank you for purchasing the GOLD package! Applications are guaranteed the next day.</RimDeed.RimdeedGoldPackagePurchaseText>
+	
+	<RimDeed.LinkExpired>Sorry! This link has expired. Applications are withdrawn after 30 days.</RimDeed.LinkExpired>
+	<RimDeed.Error>All job applications accepted.</RimDeed.Error>
+	<RimDeed.FreeTrial>FREE Trial: Try one application, on us!</RimDeed.FreeTrial>
+
+	<RimDeed.ContactSupport>Contact customer support</RimDeed.ContactSupport>
+	<RimDeed.CustomerService>Customer service</RimDeed.CustomerService>
+	<RimDeed.HowCanWeHelpYou>How can we help you?</RimDeed.HowCanWeHelpYou>
+	
+	<RimDeed.SendComplaint>Send a written complaint</RimDeed.SendComplaint>
+	<RimDeed.ThankYouWeWillLookIntoIt>Thank you! We will look into it.</RimDeed.ThankYouWeWillLookIntoIt>
+	<RimDeed.Back>Back</RimDeed.Back>
+	<RimDeed.InvestigationPending>Investigation pending</RimDeed.InvestigationPending>
+	<RimDeed.ServicePackages>Service packages:</RimDeed.ServicePackages>
+	
+	<RimDeed.Woodlog>WOODLOG package: 1 applicant ({0})</RimDeed.Woodlog>
+	<RimDeed.Silver>SILVER package: 2-5 applicants ({0})</RimDeed.Silver>
+	<RimDeed.Gold>GOLD package: 5 VIP applicants, express delivery ({0})</RimDeed.Gold>
+	<RimDeed.NotEnoughMoney>not enough $</RimDeed.NotEnoughMoney>
+	
+	<RimDeed.AdjustWoodlogCost>Adjust woodlog package cost: </RimDeed.AdjustWoodlogCost>
+	<RimDeed.AdjustSilverCost>Adjust silver package cost: </RimDeed.AdjustSilverCost>
+	<RimDeed.AdjustGoldCost>Adjust gold package cost: </RimDeed.AdjustGoldCost>
+	
+	<RimDeed.AdjustAgeRestrictionForApplicants>Adjust age restriction for applicants: </RimDeed.AdjustAgeRestrictionForApplicants>
+	
+	<RimDeed.DisallowNeolithicFaction>Disallow applicants from a neolithic faction: </RimDeed.DisallowNeolithicFaction>
+	<RimDeed.DisallowUltraFaction>Disallow applicants from an ultra faction: </RimDeed.DisallowUltraFaction>
+	<RimDeed.DisallowSpacerFaction>Disallow applicants from a spacer faction: </RimDeed.DisallowSpacerFaction>
+	
+	<RimDeed.Banhammer>Rimdeed: Banhammer</RimDeed.Banhammer>
+	<RimDeed.BanhammerText>You are banned for {0}. {1}</RimDeed.BanhammerText>
+	
+	<RimDeed.YouAreBanned>YOU ARE BANNED</RimDeed.YouAreBanned>
+	<RimDeed.BanDuration>{0} till ban is lifted</RimDeed.BanDuration>
+	
+	<RimDeed.TraderName>Rimdeed®
+Corporate Hubworld</RimDeed.TraderName>
+	<RimDeed.TradeInEmployees>Trade-in employees</RimDeed.TradeInEmployees>
+	
+	<RimDeed.RestrictRacesOfApplicants>Restrict races of applicants</RimDeed.RestrictRacesOfApplicants>
+	<RimDeed.ResetBan>Reset ban</RimDeed.ResetBan>
+</LanguageData>

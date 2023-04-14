@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <PawnKindDef ParentName="HALO_UNSC_EliteTierMjolnirBase">
+        <defName>HALO_UNSC_Leader</defName>
+        <label>UNSC Leader</label>
+        <initialResistanceRange>100</initialResistanceRange>
+        <itemQuality>Good</itemQuality>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="HALO_UNSC_PawnBase">
+        <defName>HALO_UNSC_Trader</defName>
+        <label>UNSC Trader</label>
+        <trader>true</trader>
+        <combatPower>45</combatPower>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Normal</itemQuality>
+        <weaponTags>
+            <li>HALO_UNSC_Pistol</li>
+        </weaponTags>
+        <weaponMoney>1000~1200</weaponMoney>
+        <apparelMoney>2000~3600</apparelMoney>
+        <apparelTags>
+            <li>HALO_UNSC_ODSTArmor</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>HALO_UNSC_ODSTArmor</li>
+        </apparelRequired>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>600~1500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>12~20</initialResistanceRange>
+    </PawnKindDef>
+
+</Defs>

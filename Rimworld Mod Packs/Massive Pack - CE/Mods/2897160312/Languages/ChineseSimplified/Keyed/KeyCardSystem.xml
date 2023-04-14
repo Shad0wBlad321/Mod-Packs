@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BDkeycard_UsesRemaining>剩余{0}: </BDkeycard_UsesRemaining>
+
+  <BDF_NoReachableKeycard>无可用钥匙</BDF_NoReachableKeycard>
+  <BDF_ConsumeKeyCardWarning>该操作将会消耗一个 {0}。是否继续？</BDF_ConsumeKeyCardWarning>
+  <BDF_ConsumeHighValueKeyCardWarning>\n可用物品中价值最低的 {0} 仍然拥有较高市场价值。确认要使用 {0}？</BDF_ConsumeHighValueKeyCardWarning>
+
+  <BDsConsumeKeyCardStatExp>该物品将会消耗钥匙</BDsConsumeKeyCardStatExp>
+  <BDsRequiredKeys>可用物品：</BDsRequiredKeys>
+
+</LanguageData>

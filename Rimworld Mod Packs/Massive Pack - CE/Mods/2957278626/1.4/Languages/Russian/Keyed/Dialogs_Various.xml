@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <N1.Rename>Переименовать</N1.Rename>
+    <N1.RenameDesc>*Оставьте поле пустым чтобы вернуть стандартное название задачи.</N1.RenameDesc>
+</LanguageData>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingCategoryDef>
+        <defName>HALO_Category_UNSC_Weapons</defName>
+        <label>UNSC</label>
+        <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+
+     <ThingCategoryDef>
+        <defName>HALO_Category_UNSC_Armor</defName>
+        <label>UNSC</label>
+        <parent>ApparelArmor</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>HALO_Category_UNSC_Headgear</defName>
+        <label>UNSC</label>
+        <parent>ArmorHeadgear</parent>
+    </ThingCategoryDef>
+</Defs>

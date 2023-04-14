@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <!--AIE486H-->
+    <ThingDef ParentName="BuildingBase">
+        <defName>HALO_UNSC_Turret_AIE486H</defName>
+        <label>AIE486H</label>
+        <description>The AIE-486H Heavy Machine Gun is a standard gatling-style heavy machine gun, generally used on a tripod mount by UNSC forces, notably during latter stages of the Battle for Earth and the Battle of Installation 00.</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/Turrets/AIE486H/HALO_UNSC_TurretBase_AIE486H</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.27,0.25,0.27)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <uiIconPath>Things/Building/Turrets/AIE486H/HALO_UNSC_TurretIcon_AIE486H</uiIconPath>
+        <uiIconScale>0.9</uiIconScale>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>true</rotatable>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>450</MaxHitPoints>
+            <Flammability>0.7</Flammability>
+            <WorkToBuild>3300</WorkToBuild>
+            <Mass>12</Mass>
+            <Beauty>-20</Beauty>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Mannable">
+                <manWorkType>Violent</manWorkType>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>Shots until barrel change</fuelLabel>
+                <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelCapacity>200</fuelCapacity>                <!-- 8 bursts -->
+                <initialFuelPercent>1</initialFuelPercent>
+                <autoRefuelPercent>2</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <minimumFueledThreshold>1</minimumFueledThreshold>
+                <factorByDifficulty>true</factorByDifficulty>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
+                <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+            </li>
+        </comps>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>30</Plasteel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <designationCategory>Security</designationCategory>
+        <building>
+            <ai_combatDangerous>false</ai_combatDangerous>
+            <turretGunDef>HALO_UNSC_TurretGun_AIE486H</turretGunDef>
+            <turretBurstCooldownTime>2.0</turretBurstCooldownTime>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>HALO_Research_UNSC_Emplacements</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>HALO_UNSC_Bullet_AIE486H</defName>
+        <label>AIE-486H bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>HALO_UNSC_TurretGun_AIE486H</defName>
+        <label>AIE-486H Gun</label>
+        <description>The AIE-486H Heavy Machine Gun is a standard gatling-style heavy machine gun, generally used on a tripod mount by UNSC forces, notably during latter stages of the Battle for Earth and the Battle of Installation 00.</description>
+        <graphicData>
+            <texPath>Things/Building/Turrets/AIE486H/HALO_UNSC_TurretGun_AIE486H</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <AccuracyTouch>0.25</AccuracyTouch>
+            <AccuracyShort>0.35</AccuracyShort>
+            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyLong>0.28</AccuracyLong>
+            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>HALO_UNSC_Bullet_AIE486H</defaultProjectile>
+                <warmupTime>2.5</warmupTime>
+                <range>35</range>
+                <burstShotCount>25</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>HALO_UNSC_Shot_AIE486H</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <consumeFuelPerShot>1</consumeFuelPerShot>
+            </li>
+        </verbs>
+    </ThingDef>
+
+    <!--M46 Vulcan-->
+    <ThingDef ParentName="BuildingBase">
+        <defName>HALO_UNSC_Turret_M46Vulcan</defName>
+        <label>M46 Vulcan</label>
+        <description>The M46 LAAG maintains most of the M41 LAAG profile; it is a triple-barreled, electric-powered, linkless, belt-fed weapon. Two major improvements over the M41 are the replacement of the cooling system and a larger gas chamber.[4] Most M46 LAAGs are belt-fed like their M41 counterparts, but the weapon is also compatible with a drum magazine.</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/Turrets/M46Vulcan/HALO_UNSC_TurretBase_M46Vulcan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.27,0.25,0.27)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <uiIconPath>Things/Building/Turrets/M46Vulcan/HALO_UNSC_TurretIcon_M46Vulcan</uiIconPath>
+        <uiIconScale>0.9</uiIconScale>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>true</rotatable>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>600</MaxHitPoints>
+            <Flammability>0.7</Flammability>
+            <WorkToBuild>3300</WorkToBuild>
+            <Mass>12</Mass>
+            <Beauty>-20</Beauty>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Mannable">
+                <manWorkType>Violent</manWorkType>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>Shots until barrel change</fuelLabel>
+                <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+                <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelCapacity>90</fuelCapacity>
+                <fuelMultiplier>0.5</fuelMultiplier>
+                <initialFuelPercent>1</initialFuelPercent>
+                <autoRefuelPercent>0.5</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <minimumFueledThreshold>1</minimumFueledThreshold>
+                <factorByDifficulty>false</factorByDifficulty>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+            </li>
+        </comps>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <costList>
+            <Steel>150</Steel>
+            <Plasteel>40</Plasteel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <designationCategory>Security</designationCategory>
+        <building>
+            <ai_combatDangerous>false</ai_combatDangerous>
+            <turretGunDef>HALO_UNSC_TurretGun_M46Vulcan</turretGunDef>
+            <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>HALO_Research_UNSC_Emplacements</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>HALO_UNSC_Bullet_M46Vulcan</defName>
+        <label>M46 Vulcan bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>22</damageAmountBase>
+            <speed>88</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>HALO_UNSC_TurretGun_M46Vulcan</defName>
+        <label>M46 Vulcan Gun</label>
+        <description>The M46 LAAG maintains most of the M41 LAAG profile; it is a triple-barreled, electric-powered, linkless, belt-fed weapon. Two major improvements over the M41 are the replacement of the cooling system and a larger gas chamber.[4] Most M46 LAAGs are belt-fed like their M41 counterparts, but the weapon is also compatible with a drum magazine.</description>
+        <graphicData>
+            <texPath>Things/Building/Turrets/M46Vulcan/HALO_UNSC_TurretGun_M46Vulcan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <AccuracyTouch>0.38</AccuracyTouch>
+            <AccuracyShort>0.82</AccuracyShort>
+            <AccuracyMedium>0.76</AccuracyMedium>
+            <AccuracyLong>0.6</AccuracyLong>
+            <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>40</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>HALO_UNSC_Bullet_M46Vulcan</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>34</range>
+                <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>HALO_UNSC_Shot_M46Vulcan</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+                <consumeFuelPerShot>1</consumeFuelPerShot>
+            </li>
+        </verbs>
+    </ThingDef>
+
+</Defs>

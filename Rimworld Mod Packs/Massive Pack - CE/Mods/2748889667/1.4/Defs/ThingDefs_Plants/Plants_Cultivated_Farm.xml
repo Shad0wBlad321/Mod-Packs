@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=========================== Food crops ==============================-->
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Celery</defName>
+		<label>celery plant</label>
+		<description>A vegetable consisting of a long fibrous stalk tapering into leaves. The leaves are strongly flavored and are used less often, either as a flavoring in soups and stews or as a dried herb. Celery is a staple in many soups.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Celery has a very long growth period (almost a full year!). If it can be kept alive all that time, it produces greater yield than corn.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Celery</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawCelery</harvestedThingDef>
+			<harvestYield>62</harvestYield>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>29.5</growDays>
+			<visualSizeRange>0.3~1.4</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Pineapple</defName>
+		<label>pineapple plant</label>
+		<description>A sweet tropical fruit with a tough leathery skin and spiky leaves on top. The word pineapple was first used to mean "pine cone," and the fruit was given this name because of its resemblance to a large pine cone.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Pineapples have a very long growth period, but they are very nutritive, taking up less space in stockpiles.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Pineapple</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>18</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_PineappleImmature</immatureGraphicPath>
+			<harvestedThingDef>VCE_RawPineapple</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>20</growDays>
+			<visualSizeRange>0.7~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Lettuce</defName>
+		<label>lettuce plant</label>
+		<description>A leaf vegetable commonly eaten fresh and served as the base of green salads. Lettuce is generally a rich source of vitamins K and A.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Lettuce can be eaten raw like strawberries, but needs to be grown in shade: outside, but under roof. It won't grow inside.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_NeedsOutside</thingClass>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Lettuce</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawLettuce</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_LettuceImmature</immatureGraphicPath>
+			<harvestYield>8</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.2</growDays>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_BrusselsSprout</defName>
+		<label>brussels sprout plant</label>
+		<description>A form of cabbage grown for its edible buds called "sprouts". Brussels sprouts usually are eaten cooked, and the small young sprouts have a more delicate flavour than older ones.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Contrary to other plants, brussels sprouts thrive in snow, and receive a considerable boost to growth if snowing, AS LONG AS it is also growth season (they won't grow or be able to be planted otherwise). They won't die due to cold.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_AffectedBySnow</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_BrusselsSprout</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawBrusselsSprouts</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BrusselsSproutImmature</immatureGraphicPath>
+			<harvestYield>12</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>7</growDays>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Cassava</defName>
+		<label>cassava plant</label>
+		<description>A tuberous edible plant also called manioc, mandioca, or yuca. They have a mild nutty taste and are commonly eaten as root vegetables in stews or as side dishes. Cassava roots are a versatile vegetable that can be used to produce flour, breads, tapioca, a laundry starch, and an alcoholic beverage.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Cassava grows best in tropical, warm and humid climates. As such, it will receive a considerable growth bonus if the weather is foggy.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_AffectedByFog</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Cassava</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawCassava</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_CassavaImmature</immatureGraphicPath>
+			<harvestYield>9</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.8</growDays>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_SweetPotato</defName>
+		<label>sweet potato plant</label>
+		<description>A plant with large, starchy, sweet-tasting (tasting similar to pumpkin), tuberous roots that are used as a root vegetable. The sweet potato is distantly related to the common potato.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sweet potatoes show a marked preference for rocky soils, flourishing on them. Rich soils are actually detrimental to them. They do not tolerate frost, growing best at an average temperature of 24 °C, and receinving penalties under 20ºC.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_PrefersRockyAndNoFrost</thingClass>
+		<statBases>
+			<MaxHitPoints>55</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_SweetPotato</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawSweetPotatoes</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_SweetPotatoImmature</immatureGraphicPath>
+			<harvestYield>10</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.5~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<maxMeshCount>4</maxMeshCount>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Radish</defName>
+		<label>radish plant</label>
+		<description>An edible root vegetable that is very easy to grow and quick to harvest. Radishes are often planted by novice gardeners.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified radish has a very short growth period (less than 2 days). This means it is an effective crop if you need small amounts of food FAST, and the sowing and harvesting work will be the most important factor.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Radish</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawRadish</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowWork>340</sowWork>
+			<sowMinSkill>6</sowMinSkill>
+			<maxMeshCount>4</maxMeshCount>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>1.55</growDays>
+			<visualSizeRange>0.3~0.9</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Buckwheat</defName>
+		<label>buckwheat plant</label>
+		<description>A pseudocereal cultivated for its grain-like seeds. Its white flowers are produced in terminal clusters and after pòllination turn into triangular-shaped seeds that are enclosed by a tough dark brown or gray rind.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Buckwheat is very resistant to fire, and this variety has been modified to be completely non-flammable.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.175</Nutrition>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Buckwheat</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BuckwheatImmature</immatureGraphicPath>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawBuckwheat</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5</growDays>
+			<visualSizeRange>0.5~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Peanut</defName>
+		<label>peanut plant</label>
+		<description>A plant that produces seeds with an oblong shape and a papery seed coat. Similar in taste and nutritional profile to tree nuts such as walnuts and almonds, but technically a legume.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified variety of peanuts is sown by throwing the seeds haphazardly on the growing zone, and as such the plants will automatically be planted in the adjacent tiles 75% of the time, reducing the total amount of sowing work needed. Useful!</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_SowsAdjacent</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Peanut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.50</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>9</maxMeshCount>
+			<harvestedThingDef>VCE_RawPeanut</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_PeanutImmature</immatureGraphicPath>
+			<harvestYield>12</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6.25</growDays>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_PeanutSecondary</defName>
+		<label>secondary peanut plant</label>
+		<description>A plant that produces seeds with an oblong shape and a papery seed coat. Similar in taste and nutritional profile to tree nuts such as walnuts and almonds, but technically a legume.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This genetically modified variety of peanuts is sown by throwing the seeds haphazardly on the growing zone, and as such the plants will automatically be planted in the adjacent tiles 75% of the time, reducing the total amount of sowing work needed. Useful!</description>
+		
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Peanut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.50</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>9</maxMeshCount>
+			<harvestedThingDef>VCE_RawPeanut</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_PeanutImmature</immatureGraphicPath>
+			<harvestYield>12</harvestYield>
+			<harvestWork>200</harvestWork>			
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6.25</growDays>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Sunflower</defName>
+		<label>sunflower plant</label>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_FasterInTropics</thingClass>
+		<description>A large crop used for its edible oil and edible fruits. The name sunflower may derive from the flower's head's shape, which resembles the sun.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sunflowers grow 30% faster in equatorial regions. The size of the equatorial region depends on the planet's overall temperature: below 15º for Normal, below 35º for Warm, below 65º for Hot and all the planet for Very Hot. Planets with below Normal temperature are considered to have no equator.</description>
+		<statBases>
+			<MaxHitPoints>35</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Sunflower</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>25</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>1.3</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawSunflower</harvestedThingDef>
+			<harvestYield>16</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>10.5</growDays>
+			<visualSizeRange>0.5~1.5</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Okra</defName>
+		<label>okra plant</label>
+		<description>A flowering plant in the mallow family valued for its edible green seed pods, which are famously known for their slimy or sticky texture when cut open. Okra is a powerhouse of valuable nutrients.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Okra is very, VERY resistant to damage. Okra plants will take less damage from prolonged lack of light, and will regenerate damage caused by any other means.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_Resistant</thingClass>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Okra</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawOkra</harvestedThingDef>
+			<harvestYield>14</harvestYield>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_OkraImmature</immatureGraphicPath>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>7.2</growDays>
+			<visualSizeRange>0.3~1.4</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Garlic</defName>
+		<label>garlic plant</label>
+		<description>A plant with long, flat grasslike leaves forming a stalk, which rises directly from the flower bulb, the part of the plant used as food and medicine. The bulb is made up of many smaller cloves covered with a papery skin.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Garlic has very little yield, but can grow in almost any terrain and takes an obscene time to rot, as dried garlic can be used to cook too.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_Resistant</thingClass>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Garlic</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>7</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawGarlic</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<maxMeshCount>4</maxMeshCount>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6</growDays>
+			<visualSizeRange>0.3~1.4</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Carrot</defName>
+		<label>carrot plant</label>
+		<description>A herbaceous plant of the Apiaceae family that produces an edible taproot. An erect rosette of doubly compound, finely divided leaves develops above ground, while the edible carrot and attached roots are below.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Companion planting: carrots will grow faster if green beans are cultivated in the same map (up to 30% faster if 100 are found).</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_GrowsInTandem</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Carrot</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawCarrot</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6</growDays>
+			<visualSizeRange>0.6~0.9</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Beans</defName>
+		<label>green bean plant</label>
+		<description>A herbaceous bush with a long history of cultivation. They are distinguished from the many other varieties of beans in that green beans are harvested and consumed with their enclosing pods, before the bean seeds inside have fully matured, similar to peas.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Companion planting: green beans will grow faster if carrots are cultivated in the same map (up to 30% faster if 100 are found).</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_GrowsInTandem</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Beans</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawBeans</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BeansImmature</immatureGraphicPath>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Chickpea</defName>
+		<label>chickpea plant</label>
+		<description>One of the earliest cultivated legumes, widely grown for its nutritious seeds. These are high in fibre and protein and are a good source of iron, phosphorus, and folic acid.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Chickpeas grow quite fast and have good yield, but they require a LOT of space to be stored (this may be negated by stack-increasing mods, you dirty cheater, but it's up to you to decide to mess up the game's balance).</description>
+		
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Chickpea</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawChickpeas</harvestedThingDef>
+			<harvestYield>40</harvestYield>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_ChickpeaImmature</immatureGraphicPath>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.7</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_BellPepper</defName>
+		<label>bell pepper plant</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; On average, 25% of bell peppers will mature into yellow peppers, while 75% will mature into red peppers. The former are more nutritive. If planted in large numbers this results in increased average yield.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_TransformOnMaturity</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.17</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_BellPepper</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestMinGrowth>0.9</harvestMinGrowth>
+			<harvestedThingDef>VCE_RawBellPeppers</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_BellPepperImmature</immatureGraphicPath>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.7</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_YellowBellPepper</defName>
+		<label>bell pepper plant</label>
+		<description>Also known as sweet peppers, bell peppers are technically nightshades and part of the capsicum family, but they are the only chili pepper that carries a recessive gene that stops any capsaicin from being made in the fruit, thus making them not spicy.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; On average, 25% of bell peppers will mature into yellow peppers, while 75% will mature into red peppers. The former are more nutritive. If planted in large numbers this results in increased average yield.</description>
+		<thingClass>VanillaPlantsExpandedMorePlants.Plant_TransformOnMaturity</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.17</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_YellowBellPepper</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.7</fertilityMin>			
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawYellowBellPeppers</harvestedThingDef>
+			<harvestYield>11</harvestYield>
+			<harvestMinGrowth>0.9</harvestMinGrowth>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.7</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Taro</defName>
+		<label>taro plant</label>
+		<description>A tropical plant grown primarily for its edible corm, a root vegetable. Taro is one of the few crops that can be grown under flooded conditions, with the base of the plant always under water. This is due to air spaces in the petiole, which permit underwater gaseous exchange with the atmosphere.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Taro is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Taro is the baseline aquatic plant.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Taro</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawTaro</harvestedThingDef>
+			<harvestYield>11</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Watercress</defName>
+		<label>watercress plant</label>
+		<description>Watercress is a rapidly growing, perennial plant. It is one of the oldest known leaf vegetables consumed by humans. Watercress and many of its relatives are noteworthy for their piquant flavors.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Watercress is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Watercress grows faster than taro but needs a lot of space, blocking sowing in adjacent spaces.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Watercress</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawWatercress</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>0.3~2.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Lotus</defName>
+		<label>lotus plant</label>
+		<description>Sometimes colloquially called a water lily, lotus plants are adapted to grow in the flood plains of slow-moving rivers and delta areas. Lotus rhizomes have a crunchy texture with sweet-tangy flavours and can be deep-fried, stir-fried, or stuffed with meats or preserved fruits.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Lotus is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Lotus takes a long time to grow.</description>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Lotus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawLotus</harvestedThingDef>
+			<harvestYield>35</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			
+			<sowWork>1000</sowWork>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_LotusImmature</immatureGraphicPath>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<growDays>18</growDays>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_WaterChestnut</defName>
+		<label>water chestnut plant</label>
+		<description>An aquatic vegetable that grows in marshes, under water, in the mud. It has stem-like, tubular green leaves, and small, rounded corms with a crisp, white flesh that may be eaten raw, slightly boiled, or grilled.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Water chestnut is only growable in aquatic growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Water chestnut grows 30% faster in the heat (37-60ºC).</description>
+		<thingClass>VanillaPlantsExpanded.Plant_HighTempAffected</thingClass>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_WaterChestnut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawWaterChestnut</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6</growDays>
+			<visualSizeRange>0.5~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Melon</defName>
+		<label>melon plant</label>
+		<description>A plant producing a sweet, edible, and fleshy fruit of considerable size. Melons are usually cultivated in warm regions.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Melons are only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Melons need a lot of space, blocking sowing in adjacent spaces, but harvesting them can't fail</description>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Melon</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawMelon</harvestedThingDef>
+			<harvestYield>19</harvestYield>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Sandy</li>
+
+			</sowTags>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<harvestFailable>false</harvestFailable>
+			<topWindExposure>0</topWindExposure>
+			<growDays>10.4</growDays>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_MelonImmature</immatureGraphicPath>
+			<visualSizeRange>1~2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Cucumber</defName>
+		<label>cucumber plant</label>
+		<description>A sprawling vine with large leaves and curling tendrils, triangular prickly hairy leaves and yellow flowers. Produces a fruit that is a long thin vegetable with hard green skin and wet transparent flesh. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Cucumbers are only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Cucumbers grow quite fast, providing little yield but in a short period. They can ber eaten raw.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Cucumber</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawCucumber</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_CucumberImmature</immatureGraphicPath>
+
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>0.3~1.05</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_ButternutSquash</defName>
+		<label>butternut squash plant</label>
+		<description>A vine plant that produces a vegetable with a sweet, nutty taste similar to that of a pumpkin. It has tan-yellow skin and orange fleshy pulp with a compartment of seeds in the blossom end.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Butternut squash is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Butternut squash takes a long time to grow.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_ButternutSquash</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawButternutSquash</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_ButternutSquashImmature</immatureGraphicPath>
+			<harvestYield>25</harvestYield>
+			<fertilityMin>0</fertilityMin>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>14</growDays>
+			<visualSizeRange>0.6~1.25</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_AloeVera</defName>
+		<label>aloe vera plant</label>
+		<description>A herb with succulent leaves that are arranged in a rosette. The leaves are grey to green and sometimes have white spots on their surfaces. They have sharp, pinkish spines along their edges and are the source of a colourless gel that is used in many medicinal products.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Aloe vera is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Aloe vera is a source of herbal medicine.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_AloeVera</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_AloeVeraImmature</immatureGraphicPath>
+			<harvestYield>1</harvestYield>
+			 <allowAutoCut>false</allowAutoCut>
+			<fertilityMin>0</fertilityMin>
+			<sowWork>2000</sowWork>
+			<sowMinSkill>10</sowMinSkill>
+			<harvestWork>2000</harvestWork>
+			<sowTags>
+				<li>VCE_Sandy</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>14</growDays>
+			<visualSizeRange>0.5~0.9</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Health</purpose>
+			
+		</plant>
+	</ThingDef>
+	
+</Defs>

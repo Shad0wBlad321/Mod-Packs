@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="HALO_UNSC_EliteMjolnirBase" ParentName="HALO_UNSC_PawnBase">
+    <combatPower>130</combatPower>
+    <maxGenerationAge>45</maxGenerationAge>
+    <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+    <gearHealthRange>1~1</gearHealthRange>
+    <apparelTags>
+      <li>HALO_UNSC_MjolnirHelmet</li>
+      <li>HALO_UNSC_MjolnirArmor</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+    <weaponMoney>2500~3500</weaponMoney>
+    <weaponTags>
+      <li>HALO_UNSC_Sniper</li>
+      <li>HALO_UNSC_LMG</li>
+      <li>HALO_UNSC_AR</li>
+      <li>HALO_UNSC_RL</li>
+      <li>HALO_UNSC_M247H_Warcasket</li>
+    </weaponTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <techHediffsMoney>1000~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsChance>0.35</techHediffsChance>
+    <combatEnhancingDrugsChance>0.80</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <biocodeWeaponChance>0.3</biocodeWeaponChance>
+    <initialWillRange>3~5</initialWillRange>
+    <apparelRequired>
+      <li>HALO_UNSC_MjolnirArmor</li>
+      <li>HALO_UNSC_MjolnirHelmet</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_EliteMjolnirBase" Name="HALO_UNSC_EliteTierMjolnirBase" Abstract="True">
+    <label>SPARTAN</label>
+    <labelPlural>SPARTANs</labelPlural>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_EliteTierMjolnirBase">
+    <defName>HALO_UNSC_MjolnirElite</defName>
+    <initialResistanceRange>15~23</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="HALO_UNSC_EliteTierMjolnirBase">
+    <defName>HALO_UNSC_MjolnirElite_Acidifier</defName>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>
+    <itemQuality>Good</itemQuality>
+    <initialResistanceRange>12~20</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

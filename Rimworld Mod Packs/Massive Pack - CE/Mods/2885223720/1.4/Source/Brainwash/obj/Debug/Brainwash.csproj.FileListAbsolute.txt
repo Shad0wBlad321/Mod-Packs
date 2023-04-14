@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\Brainwash\obj\Debug\Brainwash.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\Brainwash\obj\Debug\Brainwash.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Assemblies\Brainwash.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\Brainwash\obj\Debug\Brainwash.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Brainwash-Chair\1.4\Assemblies\Brainwash.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Brainwash-Chair\1.4\Source\Brainwash\obj\Debug\Brainwash.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Brainwash-Chair\1.4\Source\Brainwash\obj\Debug\Brainwash.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Brainwash-Chair\1.4\Source\Brainwash\obj\Debug\Brainwash.dll

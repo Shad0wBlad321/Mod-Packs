@@ -1,0 +1,189 @@
+<Defs>
+
+    <!-- ===================== PLANTS ===================== -->
+
+    <!-- Dark Berries -->
+    <ThingDef ParentName="BushBase">
+        <defName>TM_Bush_DarkBerries</defName>
+        <label>dark berry bush</label>
+        <description>A wild bush with shiny green leaves that produces small, round berries of a dark black color. Judging by their look, it seems like dark berries must be very delicious, however, they are bitter, pasty and bland. The bush itself isn't very impressive as well, so most civilizations just see this plant as yet another component in the natural wilderness. However, native tribespeople know of the impressive antibiotic properties that dark berries have, and they harvest them as an important ingredient for their medical beverages.</description>
+        <statBases>
+            <Nutrition>0.30</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/TM_DarkBerries</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.55, 0.2, 0.2)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+        </graphicData>
+        <neverMultiSelect>false</neverMultiSelect>
+        <plant>
+            <fertilityMin>0.5</fertilityMin>
+            <fertilitySensitivity>0.5</fertilitySensitivity>
+            <growDays>8.5</growDays>
+            <sowMinSkill>5</sowMinSkill>
+            <dieIfLeafless>true</dieIfLeafless>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <sowResearchPrerequisites>
+                <li>TM_AncientTribalMedicine</li>
+            </sowResearchPrerequisites>
+            <!-- <leaflessGraphicPath>Things/Plant/TM_DarkBerries_Immature</leaflessGraphicPath> -->
+            <immatureGraphicPath>Things/Plant/TM_DarkBerries_Immature</immatureGraphicPath>
+            <harvestYield>7</harvestYield>
+            <harvestWork>270</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <harvestedThingDef>TM_DarkBerries</harvestedThingDef>
+            <wildClusterRadius>3</wildClusterRadius>
+            <wildClusterWeight>6</wildClusterWeight>
+            <visualSizeRange>0.9~1.5</visualSizeRange>
+            <topWindExposure>0.3</topWindExposure>
+            <purpose>Misc</purpose>
+        </plant>
+    </ThingDef>
+
+    <!-- Red Petals -->
+    <ThingDef ParentName="PlantBase">
+        <defName>TM_Plant_RedPetals</defName>
+        <label>wild red petals</label>
+        <description>A small, bushy-looking flower with silky red petals that is native of temperate biomes. They aren't particularly attractive and they smell like bitter cucumber. While not useful for most modern settled civilizations, native tribespeople from the rimworlds highly appreciate them for their medical properties.</description>
+        <statBases>
+            <MaxHitPoints>40</MaxHitPoints>
+            <Nutrition>0.15</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/TM_RedPetals</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <hideAtSnowDepth>0.3</hideAtSnowDepth>
+        <ingestible />
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <plant>
+            <fertilityMin>0.2</fertilityMin>
+            <fertilitySensitivity>0.2</fertilitySensitivity>
+            <growDays>1.7</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <sowMinSkill>4</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <sowResearchPrerequisites>
+                <li>TM_AncientTribalMedicine</li>
+            </sowResearchPrerequisites>
+            <harvestYield>3</harvestYield>
+            <harvestWork>50</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>TM_RedPetals</harvestedThingDef>
+            <wildClusterRadius>6</wildClusterRadius>
+            <wildClusterWeight>850</wildClusterWeight>
+            <maxMeshCount>25</maxMeshCount>
+            <visualSizeRange>0.3~0.4</visualSizeRange>
+            <topWindExposure>0.3</topWindExposure>
+            <wildOrder>1</wildOrder>
+            <purpose>Misc</purpose>
+        </plant>
+    </ThingDef>
+
+    <!-- Broots -->
+    <ThingDef ParentName="PlantBase">
+        <defName>TM_Plant_Broots</defName>
+        <label>wild broots</label>
+        <description>A sturdy, root-like lichen that visually resembles coral. Broots are most found in humid regions, but their growth is overall slow. While extremely poisonous in their raw state, with a proper boiling process and combining it with the right herbs, their lethal effects can be nullified, leaving room for their other effects, which are very beneficial to the immune system.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Nutrition>0.1</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/TM_Broots</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <hideAtSnowDepth>0.3</hideAtSnowDepth>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_BrootPoisoning</hediffDef>
+                    <severity>0.66</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <plant>
+            <fertilityMin>0.03</fertilityMin>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>16</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <sowMinSkill>8</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <sowResearchPrerequisites>
+                <li>TM_AncientTribalMedicine</li>
+            </sowResearchPrerequisites>
+            <harvestYield>4</harvestYield>
+            <harvestWork>100</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>TM_Broots</harvestedThingDef>
+            <wildClusterRadius>5</wildClusterRadius>
+            <wildClusterWeight>270</wildClusterWeight>
+            <maxMeshCount>16</maxMeshCount>
+            <visualSizeRange>0.3~0.6</visualSizeRange>
+            <topWindExposure>0.05</topWindExposure>
+            <wildOrder>1</wildOrder>
+            <purpose>Misc</purpose>
+            <pollution>Any</pollution>
+        </plant>
+    </ThingDef>
+
+    <!-- Shrooms -->
+    <ThingDef ParentName="PlantBase">
+        <defName>TM_Plant_Shrooms</defName>
+        <label>wild shrooms</label>
+        <description>Small, puffy mushrooms with a very generic appearance. While modern civilizations are barely aware of their existence, native tribes have learned through the ages that their spores have a strong impact on the human nervous system, making them an essential ingredient for many ancient medical beverages.</description>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Nutrition>0.2</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/TM_Shrooms</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <hideAtSnowDepth>0.3</hideAtSnowDepth>
+        <ingestible />
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <plant>
+            <growMinGlow>0.1</growMinGlow>
+            <growOptimalGlow>0.35</growOptimalGlow>
+            <fertilityMin>0.05</fertilityMin>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>5.4</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <sowMinSkill>4</sowMinSkill>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <sowResearchPrerequisites>
+                <li>TM_AncientTribalMedicine</li>
+            </sowResearchPrerequisites>
+            <harvestYield>4</harvestYield>
+            <harvestWork>70</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>TM_Shrooms</harvestedThingDef>
+            <wildClusterRadius>5</wildClusterRadius>
+            <wildClusterWeight>3</wildClusterWeight>
+            <maxMeshCount>9</maxMeshCount>
+            <visualSizeRange>0.4~0.5</visualSizeRange>
+            <topWindExposure>0.1</topWindExposure>
+            <wildOrder>1</wildOrder>
+            <purpose>Misc</purpose>
+        </plant>
+    </ThingDef>
+
+
+</Defs>

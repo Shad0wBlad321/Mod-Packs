@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Brainwash_MessagePrisonerWillBroken>Prisoner {0_nameDef}'s will has been broken by brainwashing.</Brainwash_MessagePrisonerWillBroken>
+  <Brainwash_MessagePrisonerResistanceBroken>Prisoner {PRISONER_labelShort}'s resistance has been broken by brainwashing.</Brainwash_MessagePrisonerResistanceBroken>
+  
+  
+<Brainwash_ChangePersonality>Change personality</Brainwash_ChangePersonality>
+<Brainwash_SelectTrait>Add trait</Brainwash_SelectTrait>
+<Brainwash_StartBrainwash>Start brainwash</Brainwash_StartBrainwash>
+<Brainwash_PawnHavingBreakdown>{PAWN_nameDef} is having a catatonic breakdown after being brainwashed.</Brainwash_PawnHavingBreakdown>
+<Brainwash_Passions>Passions</Brainwash_Passions>
+<Brainwash_SelectBackstory>Select backstory</Brainwash_SelectBackstory>
+<Brainwash_Backstories>Backstories</Brainwash_Backstories>
+<Brainwash_Select>Select</Brainwash_Select>
+<Brainwash_Search>Search</Brainwash_Search>
+<Brainwash_AllowModifyingSkillsDuringBrainwashing>Allow modifying skill levels</Brainwash_AllowModifyingSkillsDuringBrainwashing>
+<Brainwash_AllowModifyingBackstoriesDuringBrainwashing>Allow modifying backstories</Brainwash_AllowModifyingBackstoriesDuringBrainwashing>
+<Brainwash_ChangeOwnPersonality>Change own personality</Brainwash_ChangeOwnPersonality>
+<Brainwash_TakeForBrainwashPersonality>Take for personality brainwash</Brainwash_TakeForBrainwashPersonality>
+</LanguageData>

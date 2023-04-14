@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="HALO_UNSC_FactionBase">
+        <defName>HALO_UNSC_Insurgents_Faction</defName>
+        <label>Insurrectionists</label>
+        <description>The Insurrectionists, also known as insurgents, and rebels, are groups of human individuals devoted to complete liberation from the influence of the Unified Earth Government and the United Nations Space Command.</description>
+        <pawnSingular>rebel</pawnSingular>
+        <pawnsPlural>rebels</pawnsPlural>
+        <leaderTitle>Insurgent leader</leaderTitle>
+        <fixedLeaderKinds>
+            <li>HALO_UNSC_InsurgentBoss</li>
+        </fixedLeaderKinds>
+        <factionIconPath>World/HALO_UNSC_Insurgents_ColonyIcon</factionIconPath>
+        <factionNameMaker>HALO_UNSC_Insurgents_NamerFaction</factionNameMaker>
+        <settlementNameMaker>HALO_UNSC_Insurgents_NamerFactionBases</settlementNameMaker>
+        <permanentEnemy>true</permanentEnemy>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+        </requiredMemes>
+        <colorSpectrum>
+            <li>(0.85, 0, 0)</li>
+            <li>(0.85, 0.7, 0.7)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>21</configurationListOrderPriority>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <HALO_UNSC_Insurgent_Scavenger>10</HALO_UNSC_Insurgent_Scavenger>
+                    <HALO_UNSC_Insurgent>10</HALO_UNSC_Insurgent>
+                    <HALO_UNSC_Insurgent_Grenadier_Destructive>2</HALO_UNSC_Insurgent_Grenadier_Destructive>
+                    <HALO_UNSC_Insurgent_Gunner>10</HALO_UNSC_Insurgent_Gunner>
+                    <HALO_UNSC_Insurgent_Heavy>6</HALO_UNSC_Insurgent_Heavy>
+                    <HALO_UNSC_Insurgent_Sniper>7</HALO_UNSC_Insurgent_Sniper>
+                    <HALO_UNSC_Insurgent_Elite>10</HALO_UNSC_Insurgent_Elite>
+                    <HALO_UNSC_InsurgentBoss>5</HALO_UNSC_InsurgentBoss>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, explosives with ranged mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>15</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                </disallowedStrategies>
+                <options>
+                    <HALO_UNSC_Insurgent_Grenadier_Destructive>10</HALO_UNSC_Insurgent_Grenadier_Destructive>
+                    <HALO_UNSC_Insurgent_Gunner>1</HALO_UNSC_Insurgent_Gunner>
+                    <HALO_UNSC_Insurgent_Heavy>10</HALO_UNSC_Insurgent_Heavy>
+                    <HALO_UNSC_Insurgent_Elite>1</HALO_UNSC_Insurgent_Elite>
+                    <HALO_UNSC_InsurgentBoss>1</HALO_UNSC_InsurgentBoss>
+                </options>
+            </li>
+            <li>
+                <!-- Base defense, mainly ranged -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <HALO_UNSC_Insurgent_Grenadier_Destructive>10</HALO_UNSC_Insurgent_Grenadier_Destructive>
+                    <HALO_UNSC_Insurgent_Gunner>1</HALO_UNSC_Insurgent_Gunner>
+                    <HALO_UNSC_Insurgent_Heavy>10</HALO_UNSC_Insurgent_Heavy>
+                    <HALO_UNSC_Insurgent_Elite>1</HALO_UNSC_Insurgent_Elite>
+                    <HALO_UNSC_InsurgentBoss>1</HALO_UNSC_InsurgentBoss>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+</Defs>

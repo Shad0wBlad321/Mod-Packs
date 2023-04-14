@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <UnSuspendBillTip>Resume</UnSuspendBillTip>
+  <N1.blockHeader_workTables>Work Tables</N1.blockHeader_workTables>
+  <N1.blockHeader_recipesManage>Recipes</N1.blockHeader_recipesManage>
+  <N1.blockHeader_queuesManage>Queues</N1.blockHeader_queuesManage>
+  <N1.blockHeader_bills>Bills</N1.blockHeader_bills>
+  <N1.blockTablesEmpty>There are no Worktables in your settlement!</N1.blockTablesEmpty>
+</LanguageData>

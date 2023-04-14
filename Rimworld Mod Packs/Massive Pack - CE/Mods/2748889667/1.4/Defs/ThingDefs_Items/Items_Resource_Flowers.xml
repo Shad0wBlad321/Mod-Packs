@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_RawCanola</defName>
+		<label>canola flowers</label>
+		<description>A bright-yellow flowering variety of the rapeseed, cultivated mainly for its oil-rich seed.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_CanolaFlowers</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		 <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
+</Defs>

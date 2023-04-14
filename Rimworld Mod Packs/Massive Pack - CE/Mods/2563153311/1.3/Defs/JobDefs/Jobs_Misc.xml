@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>CP_CasevacRescue</defName>
+    <labelShort>CASEVAC</labelShort>
+    <pawnLabel>CASEVAC</pawnLabel>
+    <gerundLabel>CASEVAC</gerundLabel>
+    <description>CASEVAC</description>
+    <verb>CASEVAC</verb>
+    <naturalPriority>1190</naturalPriority>
+    <alwaysStartActive>true</alwaysStartActive>
+  </WorkTypeDef>
+  
+  <WorkGiverDef>
+    <defName>CP_CasevacRescue</defName>
+    <label>CASEVAC</label>
+    <giverClass>Casevac.WorkGiver_Casevac</giverClass>
+    <workType>CP_CasevacRescue</workType>
+    <verb>CASEVAC</verb>
+    <gerund>CASEVAC</gerund>
+    <priorityInType>80</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <JobDef>
+    <defName>CP_CasevacRescue</defName>
+    <driverClass>Casevac.JobDriver_CasevacRescue</driverClass>
+    <reportString>rescuing TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+</Defs>

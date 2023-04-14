@@ -1,0 +1,7 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BetterInfoCard\Source\BetterInfoCard\bin\Debug\BetterInfoCard.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BetterInfoCard\Source\BetterInfoCard\bin\Debug\BetterInfoCard.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BetterInfoCard\1.4\Assemblies\BetterInfoCard.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BetterInfoCard\1.4\Assemblies\BetterInfoCard.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BetterInfoCard\Source\BetterInfoCard\obj\Debug\BetterInfoCard.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BetterInfoCard\Source\BetterInfoCard\obj\Debug\BetterInfoCard.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BetterInfoCard\Source\BetterInfoCard\obj\Debug\BetterInfoCard.pdb

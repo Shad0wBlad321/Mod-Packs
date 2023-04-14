@@ -1,0 +1,5 @@
+C:\Steam\steamapps\common\RimWorld\Mods\Tribal Medicine 2.0\1.3\Assemblies\TribalMedicineRevamped.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Tribal Medicine 2.0\Source\TribalMedicineRevamped\obj\Debug\TribalMedicineRevamped.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Tribal Medicine 2.0\Source\TribalMedicineRevamped\obj\Debug\TribalMedicineRevamped.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Tribal Medicine 2.0\Source\TribalMedicineRevamped\obj\Debug\TribalMedicineRevamped.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Tribal Medicine 2.0\1.4\Assemblies\TribalMedicineRevamped.dll

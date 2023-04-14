@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+
+	<WorkGiverDef>
+		<defName>VCE_DoBillsVegMilkExtractor</defName>
+		<label>extract vegetable milks</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>VCE_VegMilkExtractor</li>   
+		</fixedBillGiverDefs>
+		<verb>extract vegetable milk</verb>
+		<gerund>extracting vegetable milk at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	
+
+
+
+
+
+
+
+</Defs>

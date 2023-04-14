@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>RedHorse_LeadToBrainwashChair</defName>
+    <driverClass>Brainwash.JobDriver_LeadToBrainwashChair</driverClass>
+    <reportString>leading TargetA to TargetB.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>RedHorse_LeadToBrainwashChairForPersonalityChange</defName>
+    <driverClass>Brainwash.JobDriver_LeadToBrainwashChairForPersonalityChange</driverClass>
+    <reportString>leading TargetA to TargetB.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <JobDef>
+    <defName>RedHorse_WatchBrainwashTelevision</defName>
+    <driverClass>Brainwash.JobDriver_WatchBrainwashTelevision</driverClass>
+    <reportString>getting brainwashed by TargetA</reportString>
+    <joyMaxParticipants>8</joyMaxParticipants>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>RedHorse_StartBrainwashTelevision</defName>
+    <driverClass>Brainwash.JobDriver_StartBrainwashTelevision</driverClass>
+    <reportString>getting brainwashed by TargetA</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <joyMaxParticipants>8</joyMaxParticipants>
+  </JobDef>
+</Defs>

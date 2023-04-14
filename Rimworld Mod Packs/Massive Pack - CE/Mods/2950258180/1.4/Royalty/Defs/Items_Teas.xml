@@ -1,0 +1,74 @@
+<Defs>
+
+    <ThingDef ParentName="TM_TeaBase">
+        <defName>TM_AnimaTea</defName>
+        <label>psychic tea</label>
+        <description>A light, sweet-ish tea made by combining grounded psychite leaves and shrooms. This beverage enhances the psychic capacities of anyone that consumes it, turning it into a widely useful product for psycasters. The only downside is that by enhancing the sensitivity of neurons and nerves the user is also rendered extremely sensitive to physical pain and temperature.\n\n&lt;color=#c56bdb&gt;Flavor:&lt;/color&gt; Like water, sugar, cinnamon, cabbage, grass and a small addition of human tears.</description>
+        <graphicData>
+            <texPath>Things/Item/Teas/TM_Tea_Anima</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>240</MarketValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>TM_Effect_AnimaTea</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <TM_Shrooms>20</TM_Shrooms>
+            <PsychoidLeaves>10</PsychoidLeaves>
+        </costList>
+        <thingCategories>
+            <li>ItemsMisc</li> <!-- TODO: Category -->
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <!-- TODO: Ruined by temperature -->
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardCore</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <HediffDef ParentName="TM_TeaEffectBase">
+        <defName>TM_Effect_AnimaTea</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>psychic enhancement</label>
+        <description>text.todo</description>
+        <defaultLabelColor>(0.6,0.35,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.333</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <MeditationFocusGain>2.3</MeditationFocusGain>
+                    <PsychicEntropyMax>2.3</PsychicEntropyMax>
+                    <PsychicEntropyRecoveryRate>2.3</PsychicEntropyRecoveryRate>
+                    <PsychicSensitivity>2.3</PsychicSensitivity>
+                    <PainShockThreshold>2.5</PainShockThreshold>
+                </statFactors>
+                <statOffsets>
+                    <ComfyTemperatureMin>12</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>-10</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

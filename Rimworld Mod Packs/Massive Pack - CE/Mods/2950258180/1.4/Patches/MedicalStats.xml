@@ -1,0 +1,42 @@
+<Patch>
+
+    <!-- Patch medicine stats so that they are affected by item quality -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/StatDef [defName = "MedicalQualityMax"]</xpath>
+                <value>
+                    <parts>
+                        <li Class="StatPart_Quality">
+                          <factorAwful>0.4</factorAwful>
+                          <factorPoor>0.6</factorPoor>
+                          <factorNormal>1</factorNormal>
+                          <factorGood>1.2</factorGood>
+                          <factorExcellent>1.35</factorExcellent>
+                          <factorMasterwork>1.5</factorMasterwork>
+                          <factorLegendary>1.75</factorLegendary>
+                        </li>
+                      </parts>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/StatDef [defName = "MedicalPotency"]</xpath>
+                <value>
+                    <parts>
+                        <li Class="StatPart_Quality">
+                          <factorAwful>0.4</factorAwful>
+                          <factorPoor>0.6</factorPoor>
+                          <factorNormal>1</factorNormal>
+                          <factorGood>1.2</factorGood>
+                          <factorExcellent>1.35</factorExcellent>
+                          <factorMasterwork>1.5</factorMasterwork>
+                          <factorLegendary>1.75</factorLegendary>
+                        </li>
+                      </parts>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+</Patch>

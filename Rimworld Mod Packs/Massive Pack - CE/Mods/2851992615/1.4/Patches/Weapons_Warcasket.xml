@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Pirates</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+
+                        <ThingDef ParentName="VFEP_BaseWarcasketGun">
+                            <defName>HALO_UNSC_M247H_Warcasket</defName>
+                            <label>warcasket M247H</label>
+                            <description>The M247H is an air-cooled, gas-operated, electrically fired, linkless-fed weapon that fires 12.7mm High Velocity, Explosive rounds. It is generally used to provide suppressing fire, point-to-point cover fire, and, predominantly, direct fire in an anti-personnel role, though it is also capable of destroying light vehicles with relative ease.</description>
+                            <graphicData>
+                                <texPath>Things/Weapons/Warcasket/HALO_UNSC_M247H_Warcasket</texPath>
+                            </graphicData>
+                            <soundInteract>Interact_Rifle</soundInteract>
+                            <statBases>
+                                <MarketValue>1900</MarketValue>
+                                <WorkToMake>50000</WorkToMake>
+                                <Mass>35</Mass>
+                                <AccuracyTouch>0.55</AccuracyTouch>
+                                <AccuracyShort>0.64</AccuracyShort>
+                                <AccuracyMedium>0.55</AccuracyMedium>
+                                <AccuracyLong>0.45</AccuracyLong>
+                                <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+                            </statBases>
+                            <weaponTags>
+                                <li>HALO_UNSC_M247H_Warcasket</li>
+                            </weaponTags>
+                            <costList>
+                                <Steel>250</Steel>
+                                <Plasteel>30</Plasteel>
+                                <ComponentIndustrial>4</ComponentIndustrial>
+                            </costList>
+                            <equippedAngleOffset>45</equippedAngleOffset>
+                            <verbs>
+                                <li>
+                                    <verbClass>Verb_Shoot</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>HALO_UNSC_Bullet_M247H_Warcasket</defaultProjectile>
+                                    <warmupTime>1.2</warmupTime>
+                                    <range>33</range>
+                                    <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                                    <burstShotCount>6</burstShotCount>
+                                    <soundCast>HALO_UNSC_Shot_AIE486H</soundCast>
+                                    <soundCastTail>GunTail_Medium</soundCastTail>
+                                    <muzzleFlashScale>9</muzzleFlashScale>
+                                </li>
+                            </verbs>
+                            <tools>
+                                <li>
+                                    <label>stock</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>12</power>
+                                    <cooldownTime>4</cooldownTime>
+                                </li>
+                                <li>
+                                    <label>barrel</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                        <li>Poke</li>
+                                    </capacities>
+                                    <power>12</power>
+                                    <cooldownTime>4</cooldownTime>
+                                </li>
+                            </tools>
+                            <modExtensions>
+                                <li Class="VFECore.FloorGraphicExtension">
+                                    <graphicData>
+                                        <graphicClass>Graphic_Single</graphicClass>
+                                        <texPath>Things/Weapons/Warcasket/HALO_UNSC_M247H_Warcasket_OnFloor</texPath>
+                                        <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+                                        <drawSize>1</drawSize>
+                                    </graphicData>
+                                </li>
+                            </modExtensions>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="BaseBullet">
+                            <defName>HALO_UNSC_Bullet_M247H_Warcasket</defName>
+                            <label>warcasket M247H bullet</label>
+                            <graphicData>
+                                <texPath>Things/Projectile/Bullet_Big</texPath>
+                                <graphicClass>Graphic_Single</graphicClass>
+                            </graphicData>
+                            <projectile>
+                                <damageDef>Bullet</damageDef>
+                                <damageAmountBase>21</damageAmountBase>
+                                <stoppingPower>1.5</stoppingPower>
+                                <armorPenetrationBase>0.38</armorPenetrationBase>
+                                <speed>46</speed>
+                            </projectile>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="VFEP_WarcasketWeaponBoxBase">
+                            <defName>HALO_UNSC_M247H_Warcasket_OnFloor</defName>
+                            <label>warcasket M247H</label>
+                            <description>The M247H is an air-cooled, gas-operated, electrically fired, linkless-fed weapon that fires 12.7mm High Velocity, Explosive rounds. It is generally used to provide suppressing fire, point-to-point cover fire, and, predominantly, direct fire in an anti-personnel role, though it is also capable of destroying light vehicles with relative ease.</description>
+                            <graphicData>
+                                <texPath>Things/Weapons/Warcasket/HALO_UNSC_M247H_Warcasket_OnFloor</texPath>
+                            </graphicData>
+                            <costList>
+                                <Steel>250</Steel>
+                                <Plasteel>30</Plasteel>
+                                <ComponentIndustrial>4</ComponentIndustrial>
+                            </costList>
+                            <statBases>
+                                <MarketValue>1900</MarketValue>
+                                <Mass>35</Mass>
+                                <WorkToBuild>55000</WorkToBuild>
+                            </statBases>
+                            <comps>
+                                <li Class="VFEPirates.CompProperties_WeaponBox">
+                                    <weaponToEquip>HALO_UNSC_M247H_Warcasket</weaponToEquip>
+                                </li>
+                            </comps>
+                            <tradeTags Inherit="false">
+                                <li>HALO_UNSC_Weapon</li>
+                            </tradeTags>
+                            <researchPrerequisites>
+                                <li>HALO_Research_UNSC_HeavyFirearms</li>
+                            </researchPrerequisites>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtended">
+                    <xpath>/Defs/ThingDef[defName = "HALO_UNSC_M247H_Warcasket"]/tools
+                    </xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>35</power>
+                                <cooldownTime>2.44</cooldownTime>
+                                <armorPenetrationBlunt>16</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible" MayRequire="CETeam.CombatExtended">
+                    <defName>HALO_UNSC_M247H_Warcasket</defName>
+                    <statBases>
+                        <Bulk>25</Bulk>
+                        <SwayFactor>1.80</SwayFactor>
+                        <ShotSpread>0.10</ShotSpread>
+                        <SightsEfficiency>1</SightsEfficiency>
+                        <RangedWeapon_Cooldown>0.47</RangedWeapon_Cooldown>
+                    </statBases>
+                    <Properties>
+                        <recoilAmount>1.1</recoilAmount>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>True</hasStandardCommand>
+                        <defaultProjectile>Bullet_127x99mmUNSC_FMJ</defaultProjectile>
+                        <burstShotCount>8</burstShotCount>
+                        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                        <warmupTime>1.3</warmupTime>
+                        <range>50</range>
+                        <soundCast>HALO_UNSC_Shot_M46Vulcan</soundCast>
+                        <soundCastTail>GunTail_Medium</soundCastTail>
+                        <muzzleFlashScale>12</muzzleFlashScale>
+                    </Properties>
+                    <AmmoUser>
+                        <magazineSize>250</magazineSize>
+                        <reloadTime>8.5</reloadTime>
+                        <ammoSet>AmmoSet_127x99mmUNSC</ammoSet>
+                    </AmmoUser>
+                    <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
+                        <aiAimMode>SuppressFire</aiAimMode>
+                        <aimedBurstShotCount>4</aimedBurstShotCount>
+                    </FireModes>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
