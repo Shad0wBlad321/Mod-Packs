@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+	  <xpath>Defs/ThingDef[
+		  @Name = "LTS_OilLampBase" or
+		  @Name = "LTS_LanternBase" or
+		  @Name = "LTS_TableLanternBase" or
+		  @Name = "LTS_LanternpostBase"
+		]/comps/li[@Class="CompProperties_Refuelable"]
+	  </xpath>
+	</Operation>
+</Patch>
