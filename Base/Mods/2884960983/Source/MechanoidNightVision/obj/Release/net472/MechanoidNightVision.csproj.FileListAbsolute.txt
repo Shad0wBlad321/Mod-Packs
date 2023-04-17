@@ -1,0 +1,22 @@
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\bin\Release\net472\MechanoidNightVision.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\bin\Release\net472\MechanoidNightVision.pdb
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\bin\Release\net472\0Harmony.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.csproj.CopyComplete
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\MechanoidNightVision\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.pdb
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\bin\Release\net472\MechanoidNightVision.dll
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\bin\Release\net472\MechanoidNightVision.pdb
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\bin\Release\net472\0Harmony.dll
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.csproj.AssemblyReference.cache
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.AssemblyInfoInputs.cache
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.AssemblyInfo.cs
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.csproj.CoreCompileInputs.cache
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.csproj.CopyComplete
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.dll
+C:\Users\Winggar\Desktop\Source\MechanoidNightVision\obj\Release\net472\MechanoidNightVision.pdb
