@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>STALKER_SimpleMedkit</defName>
+        <label>simple Medkit</label>
+        <description>Medkits deliver medical compounds directly into the user's bloodstream, improving regeneration and reducing blood loss for a short time.\n\nSimple medkits are popular among novice stalkers as they are easy to obtain and inexpensive.</description>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>STALKER_Hediff_SimpleMedkit</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/StalkerMedkit/Basic</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>80</WorkToMake>
+
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <foodType>Processed, Fluid</foodType>
+            <baseIngestTicks>160</baseIngestTicks>
+            <ingestSound>AI2_Medkit</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.16,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Use {0}</ingestCommandString>
+            <ingestReportString>Using {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <nurseable>true</nurseable>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>STALKER_Hediff_SimpleMedkit</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>DrugProduction</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>10</Neutroamine>
+            <Chemfuel>2</Chemfuel>
+            <MedicineIndustrial>1</MedicineIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>200</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>STALKER_MilitaryMedkit</defName>
+        <label>military Medkit</label>
+        <description>Medkits deliver medical compounds directly into the user's bloodstream, improving regeneration and reducing blood loss for a short time.\n\nMilitary medkits constitute a part of a standard-issue soldier equipment for field operations in the Zone.</description>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>STALKER_Hediff_MilitaryMedkit</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/StalkerMedkit/Military</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>80</WorkToMake>
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <foodType>Processed, Fluid</foodType>
+            <baseIngestTicks>130</baseIngestTicks>
+            <ingestSound>AI2_Medkit</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.16,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Use {0}</ingestCommandString>
+            <ingestReportString>Using {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <nurseable>true</nurseable>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>STALKER_Hediff_MilitaryMedkit</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>MedicineProduction</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>15</Neutroamine>
+            <Chemfuel>2</Chemfuel>
+            <MedicineIndustrial>2</MedicineIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>200</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>STALKER_ScientificMedkit</defName>
+        <label>scientific Medkit</label>
+        <description>Medkits deliver medical compounds directly into the user's bloodstream, improving regeneration and reducing blood loss for a short time.\n\nScientific grade medkits were created by the same defense research institute in Kiev which developed the well-known SEVA suit, they are made with the best quality ingredients. The extremely high cost practically limits the target group of the drug to the most skillful and successful stalkers.</description>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>STALKER_Hediff_ScientificMedkit</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/StalkerMedkit/Scientific</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>80</WorkToMake>
+
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <foodType>Processed, Fluid</foodType>
+            <baseIngestTicks>100</baseIngestTicks>
+            <ingestSound>AI2_Medkit</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.16,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Use {0}</ingestCommandString>
+            <ingestReportString>Using {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <nurseable>true</nurseable>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>STALKER_Hediff_ScientificMedkit</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Fabrication</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>25</Neutroamine>
+            <Chemfuel>2</Chemfuel>
+            <MedicineIndustrial>2</MedicineIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>200</listOrder>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

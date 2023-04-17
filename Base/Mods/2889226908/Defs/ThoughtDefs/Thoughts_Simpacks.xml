@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <ThoughtDef>
+        <defName>STALKER_ThoughtDef_SimpleStimpack</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>STALKER_Hediff_SimpleStimpack</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>simple stimpacks side effect</label>
+                <description>simple stimpack side effect</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+            <li>
+                <label>simple stimpack</label>
+                <description>simple stimpack</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>STALKER_ThoughtDef_MilitaryStimpack</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>STALKER_Hediff_MilitaryStimpack</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>military stimpack side effect</label>
+                <description>military stimpack side effect</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+            <li>
+                <label>military stimpack</label>
+                <description>military stimpack</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>STALKER_ThoughtDef_ScientificStimpack</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>STALKER_Hediff_ScientificStimpack</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>scientific stimpack side effect</label>
+                <description>scientific stimpack side effect</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>scientific stimpack</label>
+                <description>scientific stimpack</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

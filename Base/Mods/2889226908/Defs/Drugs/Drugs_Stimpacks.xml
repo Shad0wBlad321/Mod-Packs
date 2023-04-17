@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>STALKER_SimpleStimpack</defName>
+        <label>simple stimpack</label>
+        <description>Stimpacks deliver medical compounds directly into the user's bloodstream, improving medical condition and combat capabilities.\n\nSimple or improvised stimpacks are popular among novice stalkers as they are easy to obtain and inexpensive. Produced in the zone from commonly available ingredients, without proper equipment and purification. This is the cause of many side effects.</description>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>STALKER_Hediff_SimpleStimpack</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/StalkerStimpack/Basic</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>80</WorkToMake>
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <ingestSound>injector</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.16,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <nurseable>true</nurseable>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>STALKER_Hediff_SimpleStimpack</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>DrugProduction</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>10</Neutroamine>
+            <Chemfuel>2</Chemfuel>
+            <MedicineIndustrial>1</MedicineIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>220</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>STALKER_MilitaryStimpack</defName>
+        <label>military stimpack</label>
+        <description>Stimpacks deliver medical compounds directly into the user's bloodstream, improving medical condition and combat capabilities.\n\nMilitary stims constitute a part of a standard-issue soldier equipment for field operations in the Zone... in theory. In practice, most grunts never see these stims. Meanwhile, they're available with suspicious ease on the black market and can be acquired by most stalkers for a moderate price. Popular among experienced Zoners. They are significantly more potent than their improvised counterparts, which makes them perfect for use in life-threatening situations. Produced from raw agents of high density which can take their toll on the body.</description>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>STALKER_Hediff_MilitaryStimpack</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/StalkerStimpack/Military</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>80</WorkToMake>
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <ingestSound>injector</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.16,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <nurseable>true</nurseable>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>STALKER_Hediff_MilitaryStimpack</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>MedicineProduction</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>15</Neutroamine>
+            <Chemfuel>2</Chemfuel>
+            <MedicineIndustrial>2</MedicineIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>220</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>STALKER_ScientificStimpack</defName>
+        <label>scientific stimpack</label>
+        <description>Stimpacks deliver medical compounds directly into the user's bloodstream, improving medical condition and combat capabilities.\n\nScientific grade stimpacks were created by the same defense research institute in Kiev which developed the well-known SEVA suit, this state-of-the-art solution constitutes the most potent health stabilizer available in the Zone. Best quality ingredients and perfected formula means that the side effects are minimized but the extremely high cost practically limits the target group of the drug to the most skillful and successful stalkers.</description>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>STALKER_Hediff_ScientificStimpack</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/StalkerStimpack/Scientific</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>80</WorkToMake>
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <ingestSound>injector</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.16,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <nurseable>true</nurseable>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>STALKER_Hediff_ScientificStimpack</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Fabrication</researchPrerequisite>            
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>25</Neutroamine>
+            <Chemfuel>2</Chemfuel>
+            <MedicineIndustrial>2</MedicineIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>220</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
