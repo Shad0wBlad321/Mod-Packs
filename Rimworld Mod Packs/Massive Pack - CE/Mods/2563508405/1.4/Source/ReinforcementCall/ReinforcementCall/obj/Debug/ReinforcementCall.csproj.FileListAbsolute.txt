@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\ReinforcementCall\ReinforcementCall\obj\Debug\ReinforcementCall.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\ReinforcementCall\ReinforcementCall\obj\Debug\ReinforcementCall.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Assemblies\ReinforcementCall.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\ReinforcementCall\ReinforcementCall\obj\Debug\ReinforcementCall.dll

@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <BDsKeyCardRequirmentStat.label>钥匙需求</BDsKeyCardRequirmentStat.label>
-  <BDsKeyCardRequirmentStat.description>用于触发该物品所需的钥匙，门禁卡等物品。</BDsKeyCardRequirmentStat.description>
-
-
-</LanguageData>

@@ -1,4 +1,0 @@
-//Medieval specific
-Koninkrijk
-Rijk
-Dynastie

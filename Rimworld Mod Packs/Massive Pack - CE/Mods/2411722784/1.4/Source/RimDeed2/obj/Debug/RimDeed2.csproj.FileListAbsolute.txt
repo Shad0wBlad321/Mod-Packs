@@ -1,7 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Rimdeed---Pawn-Recruitment\1.4\Source\RimDeed2\obj\Debug\RimDeed2.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Rimdeed---Pawn-Recruitment\1.4\Source\RimDeed2\obj\Debug\RimDeed2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Rimdeed---Pawn-Recruitment\1.4\Source\RimDeed2\obj\Debug\RimDeed2.AssemblyInfoInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Rimdeed---Pawn-Recruitment\1.4\Source\RimDeed2\obj\Debug\RimDeed2.AssemblyInfo.cs
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Rimdeed---Pawn-Recruitment\1.4\Source\RimDeed2\obj\Debug\RimDeed2.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Rimdeed---Pawn-Recruitment\1.4\Assemblies\RimDeed.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Rimdeed---Pawn-Recruitment\1.4\Source\RimDeed2\obj\Debug\RimDeed.dll

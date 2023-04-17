@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <UnSuspendBillTip>Возобновить</UnSuspendBillTip>
-  <N1.blockHeader_workTables>Рабочие столы</N1.blockHeader_workTables>
-  <N1.blockHeader_recipesManage>Список рецептов</N1.blockHeader_recipesManage>
-  <N1.blockHeader_queuesManage>Очередь рецептов</N1.blockHeader_queuesManage>
-  <N1.blockHeader_bills>Задачи</N1.blockHeader_bills>
-  <N1.blockTablesEmpty>В вашем поселении отсутствуют Рабочие столы!</N1.blockTablesEmpty>
-</LanguageData>

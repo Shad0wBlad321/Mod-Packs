@@ -1,8 +1,0 @@
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\Assemblies\GeneRipper.dll
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\Source\obj\Debug\GeneRipper.csproj.AssemblyReference.cache
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\Source\obj\Debug\GeneRipper.GeneratedMSBuildEditorConfig.editorconfig
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\Source\obj\Debug\GeneRipper.AssemblyInfoInputs.cache
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\Source\obj\Debug\GeneRipper.AssemblyInfo.cs
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\Source\obj\Debug\GeneRipper.csproj.CoreCompileInputs.cache
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\Source\obj\Debug\GeneRipper.dll
-D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRipper\1.4\Assemblies\GeneRipper.dll

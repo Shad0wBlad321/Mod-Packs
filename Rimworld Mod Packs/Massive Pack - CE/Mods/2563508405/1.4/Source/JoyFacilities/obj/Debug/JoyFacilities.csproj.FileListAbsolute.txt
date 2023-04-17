@@ -1,7 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Assemblies\JoyFacilities.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Assemblies\JoyFacilities.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\JoyFacilities\obj\Debug\JoyFacilities.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\JoyFacilities\obj\Debug\JoyFacilities.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\JoyFacilities\obj\Debug\JoyFacilities.csproj.CopyComplete
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\JoyFacilities\obj\Debug\JoyFacilities.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\JoyFacilities\obj\Debug\JoyFacilities.pdb

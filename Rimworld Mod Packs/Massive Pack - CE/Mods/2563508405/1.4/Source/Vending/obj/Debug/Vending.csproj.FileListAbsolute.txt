@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\Vending\obj\Debug\Vending.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\Vending\obj\Debug\Vending.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Assemblies\Vending.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-RH2-Uncle-Boris---Used-Furniture\1.4\Source\Vending\obj\Debug\Vending.dll
