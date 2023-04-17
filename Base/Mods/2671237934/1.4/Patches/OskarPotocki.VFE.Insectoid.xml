@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingSetMakerDef[defName = "Reward_ItemsStandard"]/root/options/li/thingSetMaker/options</xpath>
+					<value>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+							<filter>
+							  <thingDefs>
+								<li>VFEI_SonicInfestationRepeller</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								<li>VFEI_Artifacts_PsychicPacifier</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								<li>VFEI_Artifacts_PsychicAnimalTamer</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>1</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								<li>VFEI_Artifacts_ArchotechEraser</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>1</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								<li>VFEI_Artifacts_ArchotechTeleporter</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								<li>VFEI_Apparel_ArchotechShieldBelt</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFE_Gun_Plasmacutter</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFE_Gun_Plasmapiercer</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFE_Gun_PlasmabeamRifle</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFE_Gun_PlasmaScattergun</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFE_Plasmasaw</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

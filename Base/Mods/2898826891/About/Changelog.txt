@@ -1,0 +1,11 @@
+# Changelog for HarvestWhenButchering
+
+1.4.2 - Added setting for resources gained from wild animals.
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
+1.4.1 - Added a 1.3 version on request
+
+
+1.4.0 - First publish
+

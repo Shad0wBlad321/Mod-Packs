@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Cuter Biotech Cat/Dog Ear Replacer</name>
+  <author>Chris</author>
+  <modDependencies>
+	<li>
+		<packageId>Ludeon.RimWorld.Biotech</packageId>
+		<displayName>Biotech</displayName>
+	</li>
+  </modDependencies>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <packageId>chris.cutercatearreplacer</packageId>
+  <description>Replaces the Biotech Cat and Dog Ears with cuter ones.</description>
+  <loadAfter>
+    <li>Ludeon.RimWorld.Biotech</li>
+  </loadAfter>
+</ModMetaData>

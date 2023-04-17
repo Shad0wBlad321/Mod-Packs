@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 2241436044
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 77c31e1d2f366a0d4432953ad678cfb2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 10a6a558690295dadb3dd990eda0821a
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/CutoffCustom.mat
+Dependencies: []

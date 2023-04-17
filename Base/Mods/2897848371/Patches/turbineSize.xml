@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="WindTurbine"]/size</xpath>
+    <value>
+      <size>(4,2)</size>
+    </value>
+  </Operation>
+  
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="WindTurbine"]/graphicData/drawSize</xpath>
+    <value>
+      <drawSize>(4,2)</drawSize>
+    </value>
+  </Operation>  
+
+  
+</Patch>

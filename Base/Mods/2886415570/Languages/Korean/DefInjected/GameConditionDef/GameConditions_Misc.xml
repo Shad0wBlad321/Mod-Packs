@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Sinnamon_WindBlessing.label>바람의 축복</Sinnamon_WindBlessing.label>
+	<Sinnamon_WindBlessing.description>의식의 결과로 돌개바람이 불어옵니다.</Sinnamon_WindBlessing.description>
+	<Sinnamon_WindBlessing.endMessage>돌개바람이 멎습니다.</Sinnamon_WindBlessing.endMessage>
+	<Sinnamon_WindBlessing.letterText>선선한 돌개바람이 불어와 유독성 낙진과 폭염의 지속시간을 줄여주고, 풍력발전의 효율을 높여줍니다.\n\n하루동안 지속됩니다.</Sinnamon_WindBlessing.letterText>
+
+	<Sinnamon_WindBlessing.label>태양의 축복</Sinnamon_WindBlessing.label>
+	<Sinnamon_WindBlessing.description>의식의 결과로 태양이 빛을 냅니다.</Sinnamon_WindBlessing.description>
+	<Sinnamon_WindBlessing.endMessage>태양이 다시 돌아옵니다.</Sinnamon_WindBlessing.endMessage>
+	<Sinnamon_WindBlessing.letterText>태양이 따듯한 빛을 내뿜으며 한파와 화산겨울의 지속시간을 반감시키고, 비와 일식을 즉시 중단시킵니다.\n\n하루동안 지속됩니다.</Sinnamon_WindBlessing.letterText>
+
+</LanguageData>

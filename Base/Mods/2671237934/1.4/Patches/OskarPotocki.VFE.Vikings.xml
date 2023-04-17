@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Vikings</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingSetMakerDef[defName = "Reward_ItemsStandard"]/root/options/li/thingSetMaker/options</xpath>
+					<value>
+					  <li>
+						<weight>1</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_PlantGrowerArtifact</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>3</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_CryptoArmor</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>3</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_CryptoHeavyArmor</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>3</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_Apparel_CryptoLightHelmet</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>3</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_Apparel_CryptoHeavyHelmet</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_Shield_Crypto</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_CryptoHeavyAxe</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_CryptoLightAxe</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_CryptoPistol</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li>VFEV_CryptoRifle</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

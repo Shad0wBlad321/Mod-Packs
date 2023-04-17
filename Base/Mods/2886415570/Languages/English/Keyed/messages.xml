@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Sinnamon_MemeConflicts>Cannot be chosen with the following memes: </Sinnamon_MemeConflicts>
+  <Sinnamon_InsectNoExit>Insects could not find a place to surface.</Sinnamon_InsectNoExit>
+  <Sinnamon_AmbrosiaFailed>Ambrosia couldn't find a place to sprout.</Sinnamon_AmbrosiaFailed>
+  <WindBlessAffectedEvents>\nThe refreshing wind blew away some of {0}.</WindBlessAffectedEvents>
+  <RainBlessAffectedEvents>\nThe rain helped to settle the flying particles made by {0}.</RainBlessAffectedEvents>
+  <SunBlessAffectedEvents>\nSun's warmth has reduced the duration of {0}.</SunBlessAffectedEvents>
+  <WindBlessEndedEvents>\nThe whirling wind ended {0}.</WindBlessEndedEvents>
+  <RainBlessEndedEvents>\nThe rain stopped {0}.</RainBlessEndedEvents>
+  <SunBlessEndedEvents>\nThe Sun ended {0}.</SunBlessEndedEvents>
+  <Sinnamon_EclipseWithAurora>Sun cowers from your ritual, and leaves its trail as it runs.\nAurora has appeared for a brief moment.</Sinnamon_EclipseWithAurora>
+  <Sinnamon_VeneratedAnimalCalled>A venerated {0} wandered into your colony.</Sinnamon_VeneratedAnimalCalled>
+  <Sinnamon_VeneratedAnimalCalledPair>A pair of {0} wandered into your colony!</Sinnamon_VeneratedAnimalCalledPair>
+  <Sinnamon_VeneratedAnimalCalledBadWeather>A {0} wandered into your colony, despite the bad weather!</Sinnamon_VeneratedAnimalCalledBadWeather>
+  <Sinnamon_VeneratedAnimalFailTemperature>Although your ritual was {0}, no venerated animal would be able to survive current weather.</Sinnamon_VeneratedAnimalFailTemperature>
+  <Sinnamon_VeneratedAnimalFailEmptyList>Unfortunately, the ideologion does not have any venerated animal.</Sinnamon_VeneratedAnimalFailEmptyList>
+  <Sinnamon_VeneratedAnimalFailNoEntry>Venerated animal was intrigued, but couldn't find away to the map.</Sinnamon_VeneratedAnimalFailNoEntry>
+<Sinnamon_stripGood>Your Ritual disarmed some of your enemies' apparels.</Sinnamon_stripGood>
+<Sinnamon_stripGreat>Your Ritual disarmed many of your enemies' apparels.</Sinnamon_stripGreat>
+<Sinnamon_HarvestResult>{0} of your crops were grown!\nAffected crops includes: {1}</Sinnamon_HarvestResult>
+<Sinnamon_Random>Effect of {0} has been triggered by the ritual!\n</Sinnamon_Random>
+</LanguageData>

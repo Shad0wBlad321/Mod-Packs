@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GameConditionDef>
+    <defName>Sinnamon_WindBlessing</defName>
+    <conditionClass>GameCondition_ForceWeather</conditionClass>
+    <label>blessing of the Wind</label>
+    <description>Your ritual called in the whirling wind.</description>
+    <endMessage>The wind is settling.</endMessage>
+    <letterText>Your ritual seems to have called in gusts of refreshing wind. It will blow away excessive heat, reducing the duration of global warming and heat wave.\n\nIt should pass in about a day.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>Sinnamon_SunBlessing</defName>
+    <conditionClass>GameCondition_ForceWeather</conditionClass>
+    <label>blessing of the Sun</label>
+    <description>Your ritual brought the brilliance of the sun.</description>
+    <endMessage>The Sun's brilliance fades.</endMessage>
+    <letterText>The Sun has gained its brilliance. It immediately ends the eclipse and forces clear weather for some time. It will also </letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>Sinnamon_RainBlessing</defName>
+    <conditionClass>GameCondition_ForceWeather</conditionClass>
+    <label>blessing of the Rain</label>
+    <description>Your ritual brought the dark clouds.</description>
+    <endMessage>The clouds are dissipating.</endMessage>
+    <letterText>Your ritual seems to have spawned the dark clouds forming above you. It will start to rain and helps to settle toxic particles or volcanic dusts.\n\nIt should pass in about a day.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef>
+
+
+  <GameConditionDef>
+    <defName>Sinnamon_Aurora</defName>
+    <conditionClass>RitualRewards.Sinnamon_Ritual.Sinnamon_GameCondition_Aurora</conditionClass>
+    <label>dark aurora</label>
+    <description>An aurora is lighting up the sky. The breathtaking display will boost the mood of anyone outside to see it.</description>
+    <endMessage>The aurora is ending.</endMessage>
+    <letterText>A beautiful aurora is lighting up the sky.\n\nThe undulating colors will boost the mood of anyone outside to see them, and make the night brighter.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+</Defs>
