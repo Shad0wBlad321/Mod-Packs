@@ -1,0 +1,16 @@
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats 1.3\Assemblies\AlienMeatTest.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats 1.3\Assemblies\AlienMeatTest.pdb
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats 1.3\Source\AlienMeatTest\obj\Debug\AlienMeatTest.csproj.AssemblyReference.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats 1.3\Source\AlienMeatTest\obj\Debug\AlienMeatTest.csproj.CoreCompileInputs.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats 1.3\Source\AlienMeatTest\obj\Debug\AlienMeatTest.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats 1.3\Source\AlienMeatTest\obj\Debug\AlienMeatTest.pdb
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats C# Edition\Assemblies\AlienMeatTest.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats C# Edition\Assemblies\AlienMeatTest.pdb
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats C# Edition\Source\AlienMeatTest\obj\Debug\AlienMeatTest.csproj.AssemblyReference.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats C# Edition\Source\AlienMeatTest\obj\Debug\AlienMeatTest.csproj.CoreCompileInputs.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats C# Edition\Source\AlienMeatTest\obj\Debug\AlienMeatTest.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats C# Edition\Source\AlienMeatTest\obj\Debug\AlienMeatTest.pdb
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats - C# Edition 2542931556\Source\AlienMeatTest\obj\Debug\AlienMeatTest.csproj.AssemblyReference.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats - C# Edition 2542931556\Source\AlienMeatTest\obj\Debug\AlienMeatTest.csproj.CoreCompileInputs.cache
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats - C# Edition 2542931556\Source\AlienMeatTest\obj\Debug\AlienMeatTest.dll
+C:\Games\Steam\steamapps\common\RimWorld\Mods\Optimization Meats - C# Edition 2542931556\Source\AlienMeatTest\obj\Debug\AlienMeatTest.pdb
