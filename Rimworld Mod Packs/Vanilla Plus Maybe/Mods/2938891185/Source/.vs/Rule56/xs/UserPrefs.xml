@@ -1,0 +1,59 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rule56/Patches/PathFinder_Patch.cs">
+    <Files>
+      <File FileName="Rule56/Patches/PathFinder_Patch.cs" Line="1" Column="1" />
+      <File FileName="Rule56/Patches/Pawn_Patch.cs" />
+      <File FileName="Rule56/Patches/Pawn_PathFollower_Patch.cs" />
+      <File FileName="Rule56/Patches/MapPawns_Patch.cs" />
+      <File FileName="Rule56/Comps/CompProperties_Sighter.cs" />
+      <File FileName="Rule56/AvoidanceTracker.cs" />
+      <File FileName="Rule56/AsyncActions.cs" />
+      <File FileName="Rule56/ITByteGrid.cs" />
+      <File FileName="Rule56/PerformanceTracker.cs" />
+      <File FileName="Rule56/RunIf.cs" />
+      <File FileName="Rule56/PawnPathUtility.cs" />
+      <File FileName="Rule56/InterceptorTracker.cs" />
+      <File FileName="Rule56/Comps/ThingComp_CombatAI.cs" />
+      <File FileName="Rule56/Patches/LordToil_AssaultColony_Patch.cs" />
+      <File FileName="Rule56/Patches/Trigger_FractionColonyDamageTaken_Patch.cs" />
+      <File FileName="Rule56/CombatAI_Utility.cs" />
+      <File FileName="Rule56/Collections/Tuple.cs" />
+      <File FileName="Rule56/Gui/Core/GUIUtility.Text.cs" />
+      <File FileName="Rule56/ArmorReport.cs" />
+      <File FileName="Rule56/IBucketable.cs" />
+      <File FileName="Rule56/IBuckets.cs" />
+      <File FileName="Rule56/CellFlooder.cs" />
+      <File FileName="Rule56/Statistics/DataWriter_Path.cs" />
+      <File FileName="Rule56/PawnBodyModel.cs" />
+      <File FileName="Rule56/ValWatcher.cs" />
+      <File FileName="Rule56/CombatAIMod.cs" />
+      <File FileName="Rule56/ShadowCastingUtility.cs" />
+      <File FileName="Rule56/Settings.cs" />
+      <File FileName="../1.4/Languages/English/Keyed/Translations.xml" />
+      <File FileName="Rule56/SightTracker.cs" />
+      <File FileName="Rule56/SightGrid.cs" />
+      <File FileName="Rule56/SightUtility.cs" />
+      <File FileName="Rule56/Comps/ThingComp_Sighter.cs" />
+      <File FileName="Rule56/CombatAI.csproj" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Rule56" expanded="True">
+            <Node name="CombatAI" expanded="True">
+              <Node name="Patches" expanded="True">
+                <Node name="PathFinder_Patch.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

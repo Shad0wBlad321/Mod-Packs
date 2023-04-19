@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Throne requirement -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount" or defName="VFEE_Marquess" or @ParentName="DukeBase" or defName="VFEE_Archduke" or @ParentName="ConsulBase" or defName="VFEE_Magister" or defName="VFEE_Despot" or @ParentName="StellarchBase" or defName="VFEE_HighStellarch"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Brazier"]/things</xpath>
+					<value>
+						<li>HelixienGasBrazier</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">HelixienGasDarklightBrazier</li>
+					</value>
+				</li>
+				
+				<!-- Brazier must be lit -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount" or defName="VFEE_Marquess" or @ParentName="DukeBase" or defName="VFEE_Archduke" or @ParentName="ConsulBase" or defName="VFEE_Magister" or defName="VFEE_Despot" or @ParentName="StellarchBase" or defName="VFEE_HighStellarch"]/throneRoomRequirements/li[@Class="RoomRequirement_AllThingsAnyOfAreGlowing"][labelKey="RoomRequirementAllBraziersMustBeLit"]/things</xpath>
+					<value>
+						<li>HelixienGasBrazier</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">HelixienGasDarklightBrazier</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

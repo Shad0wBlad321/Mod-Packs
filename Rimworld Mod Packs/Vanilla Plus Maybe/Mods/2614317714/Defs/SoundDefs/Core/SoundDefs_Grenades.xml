@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- === Interact Grenade === -->
+  <SoundDef>
+    <defName>Interact_GSP_Grenade</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Core/Grenades/Grenade_PinOut</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- === Throw Grenade === -->
+  <SoundDef>
+    <defName>Throw_GSP_Grenade</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Core/Grenades/Grenade_Throw</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

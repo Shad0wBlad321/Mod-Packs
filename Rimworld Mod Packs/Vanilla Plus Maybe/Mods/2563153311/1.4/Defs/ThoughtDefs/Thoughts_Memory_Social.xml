@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>CP_RescuedMe</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<durationDays>3</durationDays>
+		<stages>
+			<li>
+				<label>rescued me</label>
+				<description>rescued me</description>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>CP_RescuedTogether</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<durationDays>3</durationDays>
+		<stages>
+			<li>
+				<label>Rescued together</label>
+				<description>This person and I worked together as a team to rescue someone.</description>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+
+</Defs>

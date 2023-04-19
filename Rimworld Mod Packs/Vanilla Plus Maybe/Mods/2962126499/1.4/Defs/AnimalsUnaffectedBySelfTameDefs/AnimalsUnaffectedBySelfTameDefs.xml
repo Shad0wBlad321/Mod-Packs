@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+		<defName>VAEWaste_AnimalsUnaffectedBySelfTameDef</defName>
+		<unaffectedBySelfTamePawns>							
+			<li>VAEWaste_Pestigator</li>	
+			<li>VAEWaste_Toxbear</li>			
+			
+		
+		</unaffectedBySelfTamePawns>							
+	</AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+
+
+
+
+
+
+
+</Defs>

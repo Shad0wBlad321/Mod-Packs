@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<!-- VPE Blueberry to Huckleberry -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Blueberry"]/label</xpath>
+					<value>
+						<label>huckleberry plant</label>		
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Blueberry"]/description</xpath>
+					<value>
+						<description>A shrub prized for its sweet edible fruits. Huckleberries are commonly eaten fresh as a dessert fruit and can be baked in a variety of pastries.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Huckleberries are pollinated by bees: they will receive a growth boost if an apiary is found in a radius of 6 tiles. To avoid lag this is only calculated once, when the plant is sown, so apiaries placed after sowing it will have no effect. If there are no apiaries it will behave as a slower strawberry plant.</description>		
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawBlueberries"]/label</xpath>
+					<value>
+						<label>huckleberries</label>		
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawBlueberries"]/description</xpath>
+					<value>
+						<description>A sweet, edible fruit. Huckleberries are commonly eaten fresh as a dessert fruit and can be baked in a variety of pastries.</description>
+					</value>
+				</li>
+				
+			
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

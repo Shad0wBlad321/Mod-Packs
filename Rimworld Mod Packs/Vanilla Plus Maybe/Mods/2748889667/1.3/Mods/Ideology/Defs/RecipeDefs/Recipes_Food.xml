@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>VCE_Make_Kibble_Moss</defName>
+    <label>make kibble from moss</label>
+    <description>Make animal kibble by combining raw meat and moss. This recipe is slightly more efficient than using hay.</description>
+    <jobString>Making kibble from moss.</jobString>
+    <workAmount>450</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          
+          <thingDefs>
+            <li>VCE_RawMoss</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Kibble>55</Kibble>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <thingDefs>
+        <li>VCE_RawMoss</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Foods</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>InsectJelly</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+ 
+
+</Defs>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=========================== Tunneller crops ==============================-->
+	<ThingDef ParentName="CavePlantBase">
+		<defName>VCE_Moss</defName>
+		<label>cave moss</label>
+		<description>A nutrient-rich moss that can be used to feed cave animals, but not humans. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Moss</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.3</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawMoss</harvestedThingDef>
+			<harvestYield>14</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<growDays>7</growDays>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<purpose>Food</purpose>
+			<maxMeshCount>9</maxMeshCount>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBaseNonEdible">
+		<defName>VCE_Tinctshroom</defName>
+		<label>tinctshroom</label>
+		<description>A genetically-engineered mushroom which secretes a self-altering dye. This dye can be coaxed into different colors and used to dye apparel. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Tinctshroom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<fertilityMin>0.3</fertilityMin>
+			<sowWork>540</sowWork>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>Dye</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<growDays>2.5</growDays>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<allowAutoCut>false</allowAutoCut>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<purpose>Misc</purpose>
+			<maxMeshCount>4</maxMeshCount>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_Healshroom</defName>
+		<label>healshroom</label>
+		<description>A slow-growing mushroom which yields herbal medicine when harvested. Sowing and harvesting healshroom are both very labor-intensive tasks because of its fragility. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Healshroom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<fertilityMin>0.3</fertilityMin>
+			<harvestWork>500</harvestWork>
+			<sowWork>1000</sowWork>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<sowMinSkill>9</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<growDays>10</growDays>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<allowAutoCut>false</allowAutoCut>
+			<cavePlantWeight>0</cavePlantWeight>
+			<visualSizeRange>0.3~0.65</visualSizeRange>
+			<purpose>Health</purpose>
+			<maxMeshCount>4</maxMeshCount>
+		</plant>
+	</ThingDef>
+</Defs>

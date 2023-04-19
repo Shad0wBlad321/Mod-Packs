@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <HediffDef>
+        <defName>IndustrialStimpackHediff</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>stimpack rush</label>
+        <description>Stimpack-induced "high" which lowers the overall pain tolerance, and increases the regeneration rate.</description>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-3.5</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>7500</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.85</painFactor>
+                <naturalHealingFactor>1.8</naturalHealingFactor>
+                <totalBleedFactor>0.5</totalBleedFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>HerbalPowderHediff</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>applied powder</label>
+        <description>Effects of applying herbal powder to a wound or injury, increases the healing rate.</description>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-3.5</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>5500</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.95</painFactor>
+                <naturalHealingFactor>1.2</naturalHealingFactor>
+            </li>
+        </stages>
+    </HediffDef>
+	
+	<HediffDef>
+        <defName>GlitterStimpackHediff</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>glitterworld stimpack high</label>
+        <description>Glitter stimpack-induced "high" which lowers the overall pain tolerance, increases the regeneration rate.</description>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-3.5</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>15500</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.5</painFactor>
+                <naturalHealingFactor>3</naturalHealingFactor>
+				<totalBleedFactor>0.25</totalBleedFactor>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

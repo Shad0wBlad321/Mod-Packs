@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- ========== 12.7x108mm Soviet ========== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>HRK_Bullet_127x108mmSoviet</defName>
+        <label>12.7x108mm Soviet bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_VeryBig</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>58</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>0.9</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- ========== 14.5x114mm Soviet ========== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>HRK_Bullet_145x114mmSoviet</defName>
+        <label>14.5x114mm Soviet bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_VeryBig</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>60</damageAmountBase>
+            <stoppingPower>2.8</stoppingPower>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- ========== .338 Lapua Magnum ========== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>HRK_Bullet_338LapuaMagnum</defName>
+        <label>.338 Lapua Magnum bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_VeryBig</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>49</damageAmountBase>
+            <stoppingPower>2.5</stoppingPower>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>

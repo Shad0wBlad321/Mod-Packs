@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- Toxiguana -->
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>VAEWaste_EggToxiguanaFertilized</defName>
+    <label>toxiguana egg (fert.)</label>
+    <description>A fertilized toxiguana egg. If all goes well, it should hatch into a baby toxiguana. It can be eaten raw, but it's much better cooked.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>25.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>VAEWaste_Toxiguana</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Hydra -->
+  
+  <ThingDef ParentName="EggFertBase">
+    <defName>VAEWaste_EggHydraFertilized</defName>
+    <label>hydra egg (fert.)</label>
+    <description>A fertilized hydra egg. If all goes well, it should hatch into a baby hydra. It can be eaten raw, but it's much better cooked.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>20.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+        <hatcherPawn>VAEWaste_Hydra</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+ 
+  
+</Defs>

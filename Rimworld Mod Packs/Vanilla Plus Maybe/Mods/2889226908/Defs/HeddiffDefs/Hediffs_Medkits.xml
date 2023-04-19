@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef>
+        <defName>STALKER_Hediff_SimpleMedkit</defName>
+        <label>simple medkit</label>
+        <labelNoun>simple medkit medical compounds</labelNoun>
+        <description>A dose of basic medicine compounds that improves regeneration and reduce blood loss for a short time. Has no side effects.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-12.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <InjuryHealingFactor>10</InjuryHealingFactor>
+                </statOffsets>
+                <totalBleedFactor>0.90</totalBleedFactor>
+                <naturalHealingFactor>600.0</naturalHealingFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>STALKER_Hediff_MilitaryMedkit</defName>
+        <label>military medkit</label>
+        <labelNoun>military medkit medical compounds</labelNoun>
+        <description>A dose of military medicine compounds that greatly improves regeneration and reduce blood loss for a short time. Has no side effects.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-12.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <InjuryHealingFactor>20</InjuryHealingFactor>
+                </statOffsets>
+                <totalBleedFactor>0.60</totalBleedFactor>
+                <naturalHealingFactor>1200.0</naturalHealingFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>STALKER_Hediff_ScientificMedkit</defName>
+        <label>scientific medkit</label>
+        <labelNoun>scientific medkit medical compounds</labelNoun>
+        <description>A dose of scientific medicine compounds that substantially improves regeneration and reduce blood loss for a short time. Has no side effects.</description>
+        <hediffClass>Hediff_High</hediffClass>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-12.0</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <InjuryHealingFactor>30</InjuryHealingFactor>
+                </statOffsets>
+                <makeImmuneTo>
+                    <li>WoundInfection</li>
+                </makeImmuneTo>
+                <totalBleedFactor>0.30</totalBleedFactor>
+                <naturalHealingFactor>1800.0</naturalHealingFactor>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

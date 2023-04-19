@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<!-- VPE Olive tree to seville manzanillo olive tree -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_TreeOlive"]/label</xpath>
+					<value>
+						<label>seville manzanillo olive tree</label>		
+					</value>
+				</li>
+				
+			
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawOlives"]/label</xpath>
+					<value>
+						<label>seville manzanillo olives</label>		
+					</value>
+				</li>
+				
+				<!-- VPE Pineapple to Abacaxi pineapple -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Pineapple"]/label</xpath>
+					<value>
+						<label>abacaxi pineapple plant</label>		
+					</value>
+				</li>
+				
+			
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawPineapple"]/label</xpath>
+					<value>
+						<label>abacaxi pineapples</label>		
+					</value>
+				</li>
+				
+				
+			
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

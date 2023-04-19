@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+   <VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef>
+      <defName>VCE_AquaticGrowZoneTerrains</defName>  	 
+      <allowedTerrains>      
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterMovingShallow</li>
+		 <li>Marsh</li>
+		 <li>AB_LiquidSlime</li>
+		 <li>GU_RedWaterShallow</li>
+      </allowedTerrains>      
+   </VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef>
+ 
+   
+  
+   
+ 
+   
+</Defs>

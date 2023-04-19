@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== HRK_Research_GunNut ========== -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.CORE</modId>
+        <key>GunNutResearchCost</key>
+        <defaultValue>1250</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ResearchProjectDef[defName="HRK_Research_GunNut"]/baseCost</xpath>
+                <value>
+                    <baseCost>{GunNutResearchCost}</baseCost>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+</Patch>

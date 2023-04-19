@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawAvocado</defName>
+		<label>avocados</label>
+		<description>A green or nearly black coloured fruit with a large seed or pit in the center. Avocados have a very mild, creamy texture. Hipsters love them.</description>
+		
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Avocados</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawMelon</defName>
+		<label>melons</label>
+		<description>A sweet, edible, and fleshy fruit of considerable size. Melons are usually cultivated in warm regions.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Melons</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawPineapple</defName>
+		<label>pineapples</label>
+		<description>A sweet tropical fruit with a tough leathery skin and spiky leaves on top. The word pineapple was first used to mean "pine cone," and the fruit was given this name because of its resemblance to a large pine cone.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Pineapples</texPath>
+
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Nutrition>0.2</Nutrition>
+			<Mass>0.7</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawCoconut</defName>
+		<label>coconuts</label>
+		<description>The edible fruit of the coconut palm. Coconut flesh is high in fat and can be dried or eaten fresh or processed into coconut milk or coconut oil. The liquid of the nut, known as coconut water, is used in beverages.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Coconuts</texPath>
+
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawAlmonds</defName>
+		<label>almonds</label>
+		<description>An oval shaped drupe often eaten on its own, raw or toasted, though it can also be used as a component of various dishes. A wide range of classic sweets feature almonds as a central ingredient.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Almonds</texPath>
+
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>    
+	</ThingDef>
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_Mangoes</defName>
+		<label>mangoes</label>
+		<description>An oval fruit, vividly coloured with shades of red and yellow. The single large seed is flattened, and the flesh that surrounds it is yellow to orange in colour, juicy, and of distinctive sweet-spicy flavour.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mangoes cannot be frozen or they get destroyed. The game won't be smart enough to detect this, so disable them from freezers.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Mangoes</texPath>
+
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		
+			<li Class="CompProperties_TemperatureDamaged">
+				<safeTemperatureRange>0~100</safeTemperatureRange>
+				<damagePerTickRare>5</damagePerTickRare>
+			</li>
+		
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>    
+	</ThingDef>
+
+
+
+
+</Defs>

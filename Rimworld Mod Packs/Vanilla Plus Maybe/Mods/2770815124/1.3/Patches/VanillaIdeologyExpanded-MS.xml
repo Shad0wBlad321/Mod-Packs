@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/VanillaMemesExpanded.FireSourcesForPreceptDefs/supportedFireSourcesForPrecept</xpath>
+			<value>
+				<li>HelixienGasBrazier</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

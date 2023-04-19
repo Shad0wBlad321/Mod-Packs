@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>VCE_RawOats</defName>
+		<label>oats</label>
+		<description>The grain of the oat plant. Oats have numerous uses in foods; most commonly, they are rolled or crushed into oatmeal. Oatmeal is chiefly eaten as porridge, but may also be used in a variety of baked goods. Oats are also used for production of milk substitutes.</description>
+		
+		<graphicData>
+
+			<texPath>Things/Items/Raw/VCE_Oats</texPath>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>    
+	</ThingDef>
+	
+	
+	
+
+
+
+</Defs>

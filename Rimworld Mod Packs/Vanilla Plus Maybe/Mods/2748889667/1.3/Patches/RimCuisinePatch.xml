@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimCuisine 2 Core (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+
+				<!-- VPE Carrots to danvers carrots -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Carrot"]/label</xpath>
+					<value>
+						<label>danvers carrot plant</label>		
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawCarrot"]/label</xpath>
+					<value>
+						<label>danvers carrots</label>		
+					</value>
+				</li>
+				
+				<!-- VPE Melons to honeydew melons -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Melon"]/label</xpath>
+					<value>
+						<label>honeydew melon plant</label>		
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawMelon"]/label</xpath>
+					<value>
+						<label>honeydew melons</label>		
+					</value>
+				</li>
+				
+				<!-- VPE Cucumbers to Bush Champion cucumbers -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Cucumber"]/label</xpath>
+					<value>
+						<label>bush champion cucumber plant</label>		
+					</value>
+				</li>
+				
+				
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawCucumber"]/label</xpath>
+					<value>
+						<label>bush champion cucumbers</label>		
+					</value>
+				</li>
+				
+				
+			
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

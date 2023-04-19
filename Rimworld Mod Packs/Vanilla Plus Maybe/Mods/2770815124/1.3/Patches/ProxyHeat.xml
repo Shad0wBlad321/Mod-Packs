@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ProxyHeat</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HelixienGasBrazier"]/comps</xpath>
+			<value>
+				<li Class="ProxyHeat.CompProperties_TemperatureSource">
+					<radius>1.5</radius>
+					<tempOutcome>9</tempOutcome>
+					<!--<dependsOnFuel>false</dependsOnFuel>-->
+					<dependsOnGas>true</dependsOnGas>
+					<maxTemperature>30</maxTemperature>
+					
+					<smeltSnowRadius>1</smeltSnowRadius>
+					<smeltSnowAtTemperature>6</smeltSnowAtTemperature>
+					<smeltSnowPower>0.001</smeltSnowPower>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThinkTreeDef>
+		<defName>VAEWaste_Wasteboar_Behaviour</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="VanillaAnimalsExpandedWaste.ThinkNode_Wasteboar">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>24</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="VanillaAnimalsExpandedWaste.JobGiver_AttackTree"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+	<ThinkTreeDef>
+		<defName>VAEWaste_Megatardi_Behaviour</defName>
+		<insertTag>Animal_PreMain</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="VanillaAnimalsExpandedWaste.ThinkNode_Megatardi">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>1</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="VanillaAnimalsExpandedWaste.JobGiver_EatWastepacks"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<!-- VPE Barley to Maris otter barley -->
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Barley"]/label</xpath>
+					<value>
+						<label>maris otter barley plant</label>		
+					</value>
+				</li>
+				
+			
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

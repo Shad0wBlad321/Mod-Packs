@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+
+	
+	<ThingDef ParentName="VCE_FruitFoodRawBase">
+		<defName>VCE_RawBlueberries</defName>
+		<label>blueberries</label>
+		<description>A sweet, edible fruit hailed as a "superfood", blueberries are commonly eaten fresh as a dessert fruit and can be baked in a variety of pastries.</description>
+		<graphicData>
+			<texPath>Things/Items/Raw/VCE_Blueberries</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>VCE_Fruit</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+
+
+</Defs>

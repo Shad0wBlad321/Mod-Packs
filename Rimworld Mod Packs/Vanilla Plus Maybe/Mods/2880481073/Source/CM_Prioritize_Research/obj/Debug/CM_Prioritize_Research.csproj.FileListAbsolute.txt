@@ -1,0 +1,4 @@
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\CM_Prioritize_Research\Source\CM_Prioritize_Research\obj\Debug\CM_Prioritize_Research.csproj.AssemblyReference.cache
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\CM_Prioritize_Research\Source\CM_Prioritize_Research\obj\Debug\CM_Prioritize_Research.csproj.CoreCompileInputs.cache
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\CM_Prioritize_Research\1.4\Assemblies\KB_Prioritize_Research.dll
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\CM_Prioritize_Research\Source\CM_Prioritize_Research\obj\Debug\KB_Prioritize_Research.dll

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+    <ThingCategoryDef>
+      <defName>VCE_Flowers</defName>
+      <label>flowers</label>
+      <parent>PlantMatter</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Items/Raw/VCE_CanolaFlowers</iconPath>
+    </ThingCategoryDef>
+	
+
+
+
+</Defs>

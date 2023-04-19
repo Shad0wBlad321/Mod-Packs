@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>VAEWaste_WasteAnimalsWanderIn</defName>
+    <label>waste animals wander in</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>VanillaAnimalsExpandedWaste.IncidentWorker_WasteAnimalsWanderIn</workerClass>
+    <baseChance>0.7</baseChance>
+    <minRefireDays>20</minRefireDays>
+  </IncidentDef>
+  
+
+</Defs>

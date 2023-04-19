@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <!-- ============= Growing ============= -->
+
+  <WorkGiverDef>
+    <defName>VCE_HarvestAquatic</defName>
+    <label>harvest aquatic crops</label>
+    <giverClass>VanillaPlantsExpandedMorePlants.WorkGiver_GrowerHarvestAquatic</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>100</priorityInType>
+    <verb>harvest aquatic</verb>
+    <gerund>harvesting aquatic</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>VCE_SowAquatic</defName>
+    <label>sow aquatic crops</label>
+    <giverClass>VanillaPlantsExpandedMorePlants.WorkGiver_GrowerSowAquatic</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>50</priorityInType>
+    <verb>sow aquatic</verb>
+    <gerund>sowing aquatic</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+   <WorkGiverDef>
+    <defName>VCE_HarvestSandy</defName>
+    <label>harvest sand crops</label>
+    <giverClass>VanillaPlantsExpandedMorePlants.WorkGiver_GrowerHarvestSandy</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>100</priorityInType>
+    <verb>harvest sand</verb>
+    <gerund>harvesting sand</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>VCE_SowSandy</defName>
+    <label>sow sand crops</label>
+    <giverClass>VanillaPlantsExpandedMorePlants.WorkGiver_GrowerSowSandy</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>50</priorityInType>
+    <verb>sow sand</verb>
+    <gerund>sowing sand</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  
+  
+ 
+
+</Defs>

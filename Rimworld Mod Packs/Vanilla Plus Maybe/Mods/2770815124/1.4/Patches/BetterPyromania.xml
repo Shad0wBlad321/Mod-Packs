@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Better Pyromania</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/JoyGiverDef[defName="Pyromaniac_WatchFlame"]/thingDefs</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Royalty">HelixienGasBrazier</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">HelixienGasDarklightBrazier</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

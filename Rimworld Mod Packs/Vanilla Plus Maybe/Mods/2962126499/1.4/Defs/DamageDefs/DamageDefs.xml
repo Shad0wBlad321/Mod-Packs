@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef>
+		<defName>VAEWaste_AcidBolt</defName>
+		<label>acid spit</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>VEF_AcidBurn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>VAEWaste_Sting</defName>
+		<label>toxic sting</label>
+		
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stung to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<workerClass>VanillaAnimalsExpandedWaste.DamageWorker_Carcinoma</workerClass>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.004</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+			</li>
+			
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>VAEWaste_FluBite</defName>
+		<label>toxflu bite</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been bitten to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>VAEWaste_Toxflu</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>VAEWaste_RippingBite</defName>
+		<label>ripping bite</label>
+		<workerClass>VanillaAnimalsExpandedWaste.DamageWorker_RipPart</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been bitten to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	<DamageDef ParentName="CutBase">
+		<defName>VAEWaste_FluClaws</defName>
+		<label>toxflu claws</label>
+		<additionalHediffs>
+			<li>
+				<hediff>VAEWaste_Toxflu</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	
+</Defs>

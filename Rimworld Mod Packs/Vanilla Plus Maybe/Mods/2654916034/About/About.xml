@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Consistent Deep Drill Stone</name>
+  <author>Evelyn</author>
+  <supportedVersions>
+    <li>1.3</li>
+    <li>1.4</li>
+  </supportedVersions>
+  <packageId>UdderlyEvelyn.ConsistentDeepDrillStone</packageId>
+  <description>
+This mod changes the way the deep drill selects what stone to yield - instead of being entirely random based on what types are on the map, it uses the Consistent Map Stone mod to determine it based on where you placed the drill.
+
+Need more marble? Place it on some marble. Need granite? Place it on some granite. In vanilla, it's as if all of the bedrock types are interwoven in some nonsense way, with Consistent Deep Drill Stone it is as it should be.
+
+Requires my Consistent Map Stone mod.
+  </description>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>UdderlyEvelyn.ConsistentMapStone</li>
+  </loadAfter>
+  <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        </li>
+	<li>
+            <packageId>udderlyevelyn.consistentmapstone</packageId>
+            <displayName>Consistent Map Stone</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2654086748</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>

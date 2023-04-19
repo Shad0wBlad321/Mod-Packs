@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Custom Glock 20</name>
+	<author>Harkon</author>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2412382876</url>
+	<packageId>Harkon.Other.Glock20</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+		<li>1.4</li>
+	</supportedVersions>
+	<description>
+	Custom Glock 20
+	</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>XeoNovaDan.ProperShotguns</li>
+		<li>swedishmask.ProperShotgunsPatch</li>
+		<li>CETeam.CombatExtended</li>
+		<li>VanillaExpanded.VWE</li>
+		<li>Harkon.GunNut.CORE</li>
+	</loadAfter>
+</ModMetaData>

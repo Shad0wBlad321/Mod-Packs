@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+		<ResearchProjectDef>
+		<defName>VCE_VegMilkExtraction</defName>
+		<label>vegetable milk</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<description>Vegetable milk extraction allows the colonists to extract milk from rice, oats, almonds, coconuts and soybeans.</description>
+		<baseCost>300</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	
+
+
+
+
+
+</Defs>

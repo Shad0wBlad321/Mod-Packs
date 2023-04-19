@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Harkon.GunNut.CORE</modId>
+    <key>replaceCoreWeaponSound</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+
+      <!-- === M1911 (Autopistol) -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Autopistol"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_M1911</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === Ruger Redhawk (Revolver) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_Revolver"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_Redhawk</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === MAC-10 (Light SMG) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_MachinePistol"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_MAC10</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === UMP45 (Heavy SMG) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_HeavySMG"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_UMP45</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === Mossberg 500 (Pump Shotgun) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_PumpShotgun"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_Mossberg500</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === Saiga 12K (Chain Shotgun) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_ChainShotgun"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_Saiga12K</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === Lee Enfield (Bolt Action Rifle) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_BoltActionRifle"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_LeeEnfield</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === M16A4 (Assault Rifle) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_AssaultRifle"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_M16A4</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === M24 (Sniper Rifle) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_SniperRifle"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_M24</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === Degtyarev DP (Light Machine Gun) === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_LMG"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>Shot_DegtyarevDP</soundCast>
+        </value>
+      </Operation>
+
+    </caseTrue>
+  </Operation>
+
+</Patch>

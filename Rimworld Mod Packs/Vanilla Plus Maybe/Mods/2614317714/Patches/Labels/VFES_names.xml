@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.GunNut.CORE</modId>
+        <key>toggleVFESNames</key>        
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Factions Expanded - Settlers</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VFES_Gun_DoubleActionRevolver"]/label</xpath>
+                            <value>
+                                <label>Colt SAA</label>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VFES_Gun_HuntingRifle"]/label</xpath>
+                            <value>
+                                <label>M1903 Springfield</label>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="VFES_Gun_DoubleBarreledShotgun"]/label</xpath>
+                            <value>
+                                <label>Winchester M21</label>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtended">
+                            <xpath>/Defs/ThingDef[defName="VFES_Gun_DoubleActionRevolver"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+                            <value>
+                                <ammoSet>AmmoSet_357Magnum</ammoSet>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtended">
+                            <xpath>/Defs/ThingDef[defName="VFES_Gun_DoubleActionRevolver"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+                            <value>
+                                <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtended">
+                            <xpath>/Defs/ThingDef[defName="VFES_Gun_HuntingRifle"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+                            <value>
+                                <ammoSet>AmmoSet_3006Springfield</ammoSet>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtended">
+                            <xpath>/Defs/ThingDef[defName="VFES_Gun_HuntingRifle"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+                            <value>
+                                <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationAdd" MayRequire="CETeam.CombatExtended">
+                            <xpath>/Defs/ScenarioDef[defName="VFES_Bandits"]/scenario/parts</xpath>
+
+                            <value>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>Ammo_357Magnum_FMJ</thingDef>
+                                    <count>60</count>
+                                </li>
+                            </value>
+                        </li>
+
+                    </operations>
+                </match>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

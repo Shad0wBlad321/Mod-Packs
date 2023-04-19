@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="STALKER_Hediff_SimpleStimpack"]/stages/li[2]/statOffsets</xpath>
+        <value>
+            <Suppressability>-0.1</Suppressability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="STALKER_Hediff_MilitaryStimpack"]/stages/li[2]/statOffsets</xpath>
+        <value>
+            <Suppressability>-0.3</Suppressability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="STALKER_Hediff_ScientificStimpack"]/stages/li[2]/statOffsets</xpath>
+        <value>
+            <Suppressability>-0.6</Suppressability>
+        </value>
+    </Operation>
+
+</Patch>

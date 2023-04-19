@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- ========== 40x53mm Grenade ========== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>HRK_Bullet_40x53mmGrenade</defName>
+        <label>40x53mm grenade</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>            
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>1.9</explosionRadius>
+            <preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
+            <preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+            <ai_IsIncendiary>false</ai_IsIncendiary>
+            <explosionDelay>1</explosionDelay>
+            <speed>40</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>

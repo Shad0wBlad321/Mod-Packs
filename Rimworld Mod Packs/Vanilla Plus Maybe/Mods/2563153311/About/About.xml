@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>[RH2] BCD: CASEVAC</name>
+<author>Chicken Plucker, Taranchuk</author>
+	<packageId>RH2.BCD.CASEVAC</packageId>
+	<modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+	<supportedVersions>
+	<li>1.2</li>
+	<li>1.3</li>
+	<li>1.4</li>
+	</supportedVersions>
+<description>Evacuate casualties out of contact faster with your pawns working as a team with this CASEVAC mod!
+
+CASEVAC allows rescuers to have up to 4 pawns help carry a casualty to the nearest hospital bed. This speeds up their movement with each added pawn, saving precious time to get the casualty further medical attention.
+
+The following mod adds:
+- New rescue type called "CASEVAC"
+- CASEVAC allows up to 4 pawns to help speed up the move speed of the rescuer for each added pawn
+- Can only CASEVAC your own colonists
+- Can be prioritized in skill menu
+
+What is BCD?
+Battlefield Casualty Drills, medical procedures in the event of a casualty in combat.
+
+What is CASEVAC?
+CASEVAC is short for "Casualty Evacuation" which can be done by land or by air. When casualties are evacuated, soldiers are trained multiple methods of carrying the casualty to speed up their evacuation.
+
+Combat Extended Compatible?
+Unknown.
+
+Credits:
+Taranchuk - C#</description>
+</ModMetaData>

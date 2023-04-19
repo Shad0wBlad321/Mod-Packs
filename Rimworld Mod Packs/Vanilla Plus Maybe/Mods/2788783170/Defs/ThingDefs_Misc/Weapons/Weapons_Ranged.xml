@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <!--===== Automatic Glock 20 =====-->
+    <ThingDef ParentName="BaseBullet">
+        <defName>HRK_Bullet_Glock20_Pistol_C</defName>
+        <label>Glock 20 (custom) bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <stoppingPower>0.1</stoppingPower>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>HRK_Glock20_Pistol_C</defName>
+        <label>Glock 20 (custom)</label>
+        <description>The Glock is a series of polymer-framed, short recoil-operated, locked-breech semi-automatic pistols designed and produced by Austrian manufacturer Glock Ges.m.b.H. The firearm entered Austrian military and police service by 1982 after it was the top performer in reliability and safety tests.</description>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_Glock20_Pistol_C</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>5000</WorkToMake>
+            <Mass>1</Mass>
+            <AccuracyTouch>0.73</AccuracyTouch>
+            <AccuracyShort>0.63</AccuracyShort>
+            <AccuracyMedium>0.38</AccuracyMedium>
+            <AccuracyLong>0.18</AccuracyLong>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>35</Steel>
+            <Chemfuel>10</Chemfuel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>HRK_Bullet_Glock20_Pistol_C</defaultProjectile>
+                <warmupTime>0.06</warmupTime>
+                <range>27</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <soundCast>HRK_Shot_Glock20_Pistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+    </ThingDef>
+
+</Defs>

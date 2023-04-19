@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <RecipeDef>
+    <defName>VCE_Make_ChemfuelFromCanola</defName>
+    <label>make chemfuel from canola</label>
+    <description>Make a batch of chemfuel by extracting biofuel from canola flowers.</description>
+    <jobString>Refining chemfuel from canola.</jobString>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>2000</workAmount>
+	<recipeUsers>
+				<li>BiofuelRefinery</li>	  
+		</recipeUsers>	
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VCE_RawCanola</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VCE_RawCanola</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+   
+    <products>
+      <Chemfuel>35</Chemfuel>
+    </products>
+  </RecipeDef>
+  
+ 
+
+</Defs>

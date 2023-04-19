@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Det's Battle Meds</name>
+	<author>DetVisor</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>det.battlemeds</packageId>
+	<description>This mod introduces 3 new medical items, Herbal Powder, made with herbal medicine, Industrial Stimpacks, which can be crafted at drug labs and Glitter Stimpacks which can be found from quests or can be bought.</description>
+</ModMetaData>

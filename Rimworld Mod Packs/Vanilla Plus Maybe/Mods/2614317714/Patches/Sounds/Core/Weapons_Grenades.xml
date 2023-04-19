@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Harkon.GunNut.CORE</modId>
+    <key>replaceCoreGrenadeSound</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+
+      <!-- === General === -->
+      <Operation Class="PatchOperationReplace">
+        <xpath> /Defs/ThingDef[defName="Weapon_GrenadeFrag" or defName="Weapon_GrenadeEMP"]/verbs/li/soundCast
+        </xpath>
+        <value>
+          <soundCast>Throw_GSP_Grenade</soundCast>
+        </value>
+      </Operation>
+
+      <!-- === Frag Grenade === -->
+      <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="BaseFragGrenadeProjectile"]/projectile</xpath>
+        <value>
+          <soundExplode>HRK_Explosion_GNFrag</soundExplode>
+        </value>
+      </Operation>
+
+      <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Weapon_GrenadeFrag"]/soundInteract</xpath>
+        <value>
+          <soundInteract>Interact_GSP_Grenade</soundInteract>
+        </value>
+      </Operation>
+
+    </caseTrue>
+  </Operation>
+
+</Patch>
