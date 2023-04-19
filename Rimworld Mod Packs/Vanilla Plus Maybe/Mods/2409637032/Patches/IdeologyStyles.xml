@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_BlackCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_KRISSVectorGenI</thingDef>
+                <styleDef>HRK_KRISSVectorGenI_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KRISSVectorGenII</thingDef>
+                <styleDef>HRK_KRISSVectorGenII_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KRISSVectorACP</thingDef>
+                <styleDef>HRK_KRISSVectorACP_BlackCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_TanCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_KRISSVectorGenI</thingDef>
+                <styleDef>HRK_KRISSVectorGenI_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KRISSVectorGenII</thingDef>
+                <styleDef>HRK_KRISSVectorGenII_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KRISSVectorACP</thingDef>
+                <styleDef>HRK_KRISSVectorACP_TanCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_WhiteCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_KRISSVectorGenI</thingDef>
+                <styleDef>HRK_KRISSVectorGenI_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KRISSVectorGenII</thingDef>
+                <styleDef>HRK_KRISSVectorGenII_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KRISSVectorACP</thingDef>
+                <styleDef>HRK_KRISSVectorACP_WhiteCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

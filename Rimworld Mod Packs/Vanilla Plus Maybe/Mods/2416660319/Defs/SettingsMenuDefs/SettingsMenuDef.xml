@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HRK_settings_GunNutKelTec</defName>
+        <modId>Harkon.GunNut.KelTec</modId>
+        <label>Gun Nut - Kel-Tec</label>
+        <settings>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Gun Nut - Kel-Tec Firearms</text>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+            </li>
+
+            <!-- ========== CAMO SETTINGS ========== -->
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>CAMO SETTINGS</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Select a camo per gun, most of the time is just a simple color swap but in some cases some details may change, refer to the mod page to preview the options. This setting only affects the base gun and does not affect ideology styles.</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.SplitColumn">
+                <gapSize>70</gapSize>
+                <leftCol>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Kel-Tec CP33</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>KelTecCP33P_Camo</key>
+                        <defaultValue>HRK_KelTecCP33P_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_KelTecCP33P_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecCP33P_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecCP33P_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Kel-Tec RFB</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>KelTecRFB_Camo</key>
+                        <defaultValue>HRK_KelTecRFB_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_KelTecRFB_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecRFB_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecRFB_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Kel-Tec KSG</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>KelTecKSG_Camo</key>
+                        <defaultValue>HRK_KelTecKSG_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_KelTecKSG_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecKSG_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecKSG_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Kel-Tec RDB</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>KelTecRDB_C_Camo</key>
+                        <defaultValue>HRK_KelTecRDB_C_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_KelTecRDB_C_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecRDB_C_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecRDB_C_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                </leftCol>
+                <rightCol>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Kel-Tec P50</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>KelTecP50P_Camo</key>
+                        <defaultValue>HRK_KelTecP50P_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_KelTecP50P_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecP50P_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecP50P_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Kel-Tec RFB Hunter</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>KelTecRFB_C_Camo</key>
+                        <defaultValue>HRK_KelTecRFB_C_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_KelTecRFB_C_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecRFB_C_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecRFB_C_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Kel-Tec KSG-25</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>KelTecKSG25S_Camo</key>
+                        <defaultValue>HRK_KelTecKSG25S_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_KelTecKSG25S_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecKSG25S_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_KelTecKSG25S_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                </rightCol>
+            </li>
+
+            <!-- ========== MISC SETTINGS ========== -->
+            <li Class="XmlExtensions.Setting.GapLine" MayRequire="CETeam.CombatExtended"/>
+            <li Class="XmlExtensions.Setting.Text" MayRequire="CETeam.CombatExtended">
+                <text>MISC SETTINGS</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap" MayRequire="CETeam.CombatExtended"/>
+
+            <li Class="XmlExtensions.Setting.Text" MayRequire="CETeam.CombatExtended">
+                <text>- BE CAREFUL CHANGING THIS SETTING MID SAVE, UNLOAD ANY KSG OR KSG-25 AND DROP THEM ON THE GROUND TO MINIMIZE POSSIBLE ERRORS!</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap" MayRequire="CETeam.CombatExtended"/>
+
+            <li Class="XmlExtensions.Setting.Checkbox" MayRequire="CETeam.CombatExtended">
+                <key>toggleKSGUBGLSystem</key>
+                <label>Use the attachment/UBGL system for the  KSG and the KSG-25</label>
+                <tooltip>Change the KSG and the KSG-25 to use the UBGL system. If active the two tubes will be able to be realoaded individualy with different 12g shells.</tooltip>
+                <defaultValue>false</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Remember any change of the settings needs a restart to take effect.</text>
+                <font>Tiny</font>
+            </li>
+            <li Class="XmlExtensions.Setting.Gap"/>
+            <li Class="XmlExtensions.Setting.ResetSettings"/>
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+
+</Defs>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_BlackCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_KelTecCP33P</thingDef>
+                <styleDef>HRK_KelTecCP33P_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecKSG</thingDef>
+                <styleDef>HRK_KelTecKSG_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecKSG25S</thingDef>
+                <styleDef>HRK_KelTecKSG25S_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRDB_C</thingDef>
+                <styleDef>HRK_KelTecRDB_C_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRFB</thingDef>
+                <styleDef>HRK_KelTecRFB_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRFB_C</thingDef>
+                <styleDef>HRK_KelTecRFB_C_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecP50P</thingDef>
+                <styleDef>HRK_KelTecP50P_BlackCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_TanCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_KelTecCP33P</thingDef>
+                <styleDef>HRK_KelTecCP33P_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecKSG</thingDef>
+                <styleDef>HRK_KelTecKSG_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecKSG25S</thingDef>
+                <styleDef>HRK_KelTecKSG25S_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRDB_C</thingDef>
+                <styleDef>HRK_KelTecRDB_C_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRFB</thingDef>
+                <styleDef>HRK_KelTecRFB_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRFB_C</thingDef>
+                <styleDef>HRK_KelTecRFB_C_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecP50P</thingDef>
+                <styleDef>HRK_KelTecP50P_TanCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_WhiteCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_KelTecCP33P</thingDef>
+                <styleDef>HRK_KelTecCP33P_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecKSG</thingDef>
+                <styleDef>HRK_KelTecKSG_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecKSG25S</thingDef>
+                <styleDef>HRK_KelTecKSG25S_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRDB_C</thingDef>
+                <styleDef>HRK_KelTecRDB_C_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRFB</thingDef>
+                <styleDef>HRK_KelTecRFB_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecRFB_C</thingDef>
+                <styleDef>HRK_KelTecRFB_C_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_KelTecP50P</thingDef>
+                <styleDef>HRK_KelTecP50P_WhiteCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

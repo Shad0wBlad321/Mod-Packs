@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_BlackCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_SIGM5SPEAR</thingDef>
+                <styleDef>HRK_SIGM5SPEAR_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM5SPEAR_C</thingDef>
+                <styleDef>HRK_SIGM5SPEAR_C_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM250SAW</thingDef>
+                <styleDef>HRK_SIGM250SAW_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM250SAW_C</thingDef>
+                <styleDef>HRK_SIGM250SAW_C_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIG338MG</thingDef>
+                <styleDef>HRK_SIG338MG_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIG338MG_C</thingDef>
+                <styleDef>HRK_SIG338MG_C_BlackCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_TanCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_SIGM5SPEAR</thingDef>
+                <styleDef>HRK_SIGM5SPEAR_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM5SPEAR_C</thingDef>
+                <styleDef>HRK_SIGM5SPEAR_C_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM250SAW</thingDef>
+                <styleDef>HRK_SIGM250SAW_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM250SAW_C</thingDef>
+                <styleDef>HRK_SIGM250SAW_C_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIG338MG</thingDef>
+                <styleDef>HRK_SIG338MG_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIG338MG_C</thingDef>
+                <styleDef>HRK_SIG338MG_C_TanCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_WhiteCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_SIGM5SPEAR</thingDef>
+                <styleDef>HRK_SIGM5SPEAR_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM5SPEAR_C</thingDef>
+                <styleDef>HRK_SIGM5SPEAR_C_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM250SAW</thingDef>
+                <styleDef>HRK_SIGM250SAW_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIGM250SAW_C</thingDef>
+                <styleDef>HRK_SIGM250SAW_C_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIG338MG</thingDef>
+                <styleDef>HRK_SIG338MG_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_SIG338MG_C</thingDef>
+                <styleDef>HRK_SIG338MG_C_WhiteCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

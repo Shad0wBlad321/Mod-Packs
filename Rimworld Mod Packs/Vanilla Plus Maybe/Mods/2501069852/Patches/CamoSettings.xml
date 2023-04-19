@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.FNSCAR</modId>
+        <key>FNSCARL_Camo</key>
+        <defaultValue>HRK_FNSCARL_Tan</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_SCARL"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_FNSCARL/{FNSCARL_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.FNSCAR</modId>
+        <key>FNSCARL_C_Camo</key>
+        <defaultValue>HRK_FNSCARL_C_Tan</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_SCARL_C"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_FNSCARL_C/{FNSCARL_C_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.FNSCAR</modId>
+        <key>FNSCARH_Camo</key>
+        <defaultValue>HRK_FNSCARH_Black</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_SCARH"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_FNSCARH/{FNSCARH_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.FNSCAR</modId>
+        <key>FNSCARH_C_Camo</key>
+        <defaultValue>HRK_FNSCARH_C_Black</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_SCARH_C"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_FNSCARH_C/{FNSCARH_C_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.FNSCAR</modId>
+        <key>FNSSR_Camo</key>
+        <defaultValue>HRK_FNSSR_Tan</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_SSR"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_FNSSR/{FNSSR_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+</Patch>

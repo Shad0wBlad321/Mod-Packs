@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HRK_settings_GunNutDesertTech</defName>
+        <modId>Harkon.GunNut.DesertTech</modId>
+        <label>Gun Nut - Desert Tech</label>
+        <settings>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Gun Nut - Desert Tech Firearms</text>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+            </li>
+
+            <!-- ========== CAMO SETTINGS ========== -->
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>CAMO SETTINGS</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Select a camo per gun, most of the time is just a simple color swap but in some cases some details may change, refer to the mod page to preview the options. This setting only affects the base gun and does not affect ideology styles.</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.SplitColumn">
+                <gapSize>70</gapSize>
+                <leftCol>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>DT MDRX</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>DTMDRX_Camo</key>
+                        <defaultValue>HRK_DTMDRX_Tan</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_DTMDRX_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTMDRX_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTMDRX_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>DT MDRX .308</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>DT308MDRX_Camo</key>
+                        <defaultValue>HRK_DT308MDRX_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_DT308MDRX_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_DT308MDRX_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_DT308MDRX_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>DT SRS</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>DTSRS_Camo</key>
+                        <defaultValue>HRK_DTSRS_Tan</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_DTSRS_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTSRS_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTSRS_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>DT HTI</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>DTHTI_Camo</key>
+                        <defaultValue>HRK_DTHTI_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_DTHTI_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTHTI_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTHTI_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                </leftCol>
+                <rightCol>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>DT MDRX SD</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>DTMDRX_C_Camo</key>
+                        <defaultValue>HRK_DTMDRX_C_Tan</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_DTMDRX_C_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTMDRX_C_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTMDRX_C_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>DT MDRX .308 SD</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>DT308MDRX_C_Camo</key>
+                        <defaultValue>HRK_DT308MDRX_C_Black</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_DT308MDRX_C_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_DT308MDRX_C_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_DT308MDRX_C_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>DT MICRON</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>DTMicron_Camo</key>
+                        <defaultValue>HRK_DTMicron_White</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>HRK_DTMicron_Black</value>
+                                <label>Black/Base</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTMicron_Tan</value>
+                                <label>Tan/Desert</label>
+                            </li>
+                            <li>
+                                <value>HRK_DTMicron_White</value>
+                                <label>Snow/White</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                </rightCol>
+            </li>
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Remember any change of the settings needs a restart to take effect.</text>
+                <font>Tiny</font>
+            </li>
+            <li Class="XmlExtensions.Setting.Gap"/>
+            <li Class="XmlExtensions.Setting.ResetSettings"/>
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+
+</Defs>

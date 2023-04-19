@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorGenI_BlackCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorGenI/HRK_KRISSVectorGenI_Black</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorGenI_TanCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorGenI/HRK_KRISSVectorGenI_Tan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorGenI_WhiteCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorGenI/HRK_KRISSVectorGenI_White</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorGenII_BlackCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorGenII/HRK_KRISSVectorGenII_Black</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorGenII_TanCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorGenII/HRK_KRISSVectorGenII_Tan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorGenII_WhiteCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorGenII/HRK_KRISSVectorGenII_White</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+
+
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorACP_BlackCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorACP/HRK_KRISSVectorACP_Black</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorACP_TanCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorACP/HRK_KRISSVectorACP_Tan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>
+    <ThingStyleDef>
+        <defName>HRK_KRISSVectorACP_WhiteCamo</defName>
+        <graphicData>
+            <texPath>Things/Weapons/HRK_KRISSVectorACP/HRK_KRISSVectorACP_White</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingStyleDef>    
+
+</Defs>

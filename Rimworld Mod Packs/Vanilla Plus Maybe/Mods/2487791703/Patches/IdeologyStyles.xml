@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_BlackCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_DTMDRX</thingDef>
+                <styleDef>HRK_DTMDRX_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTMDRX_C</thingDef>
+                <styleDef>HRK_DTMDRX_C_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DT308MDRX</thingDef>
+                <styleDef>HRK_DT308MDRX_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DT308MDRX_C</thingDef>
+                <styleDef>HRK_DT308MDRX_C_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTMicron</thingDef>
+                <styleDef>HRK_DTMicron_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTSRS</thingDef>
+                <styleDef>HRK_DTSRS_BlackCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTHTI</thingDef>
+                <styleDef>HRK_DTHTI_BlackCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_TanCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_DTMDRX</thingDef>
+                <styleDef>HRK_DTMDRX_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTMDRX_C</thingDef>
+                <styleDef>HRK_DTMDRX_C_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DT308MDRX</thingDef>
+                <styleDef>HRK_DT308MDRX_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DT308MDRX_C</thingDef>
+                <styleDef>HRK_DT308MDRX_C_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTMicron</thingDef>
+                <styleDef>HRK_DTMicron_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTSRS</thingDef>
+                <styleDef>HRK_DTSRS_TanCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTHTI</thingDef>
+                <styleDef>HRK_DTHTI_TanCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_WhiteCamo"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>HRK_DTMDRX</thingDef>
+                <styleDef>HRK_DTMDRX_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTMDRX_C</thingDef>
+                <styleDef>HRK_DTMDRX_C_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DT308MDRX</thingDef>
+                <styleDef>HRK_DT308MDRX_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DT308MDRX_C</thingDef>
+                <styleDef>HRK_DT308MDRX_C_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTMicron</thingDef>
+                <styleDef>HRK_DTMicron_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTSRS</thingDef>
+                <styleDef>HRK_DTSRS_WhiteCamo</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_DTHTI</thingDef>
+                <styleDef>HRK_DTHTI_WhiteCamo</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.KRISSVector</modId>
+        <key>KRISSVectorGenI_Camo</key>
+        <defaultValue>HRK_KRISSVectorGenI_Black</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_KRISSVectorGenI"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_KRISSVectorGenI/{KRISSVectorGenI_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.KRISSVector</modId>
+        <key>KRISSVectorGenII_Camo</key>
+        <defaultValue>HRK_KRISSVectorGenII_Black</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_KRISSVectorGenII"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_KRISSVectorGenII/{KRISSVectorGenII_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.GunNut.KRISSVector</modId>
+        <key>KRISSVectorACP_Camo</key>
+        <defaultValue>HRK_KRISSVectorACP_Black</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_KRISSVectorACP"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Weapons/HRK_KRISSVectorACP/{KRISSVectorACP_Camo}</texPath>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+
+</Patch>
