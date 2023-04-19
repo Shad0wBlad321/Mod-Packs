@@ -1,0 +1,41 @@
+<loadFolders>
+	<v1.4>
+		<li>/</li>
+		<li>1.4</li>
+		
+<!-- DLCs -->
+		<li IfModActive="ludeon.rimworld.royalty">1.4/forDLC/Royalty</li>
+		<li IfModActive="ludeon.rimworld.ideology">1.4/forDLC/Ideology</li>
+		<li IfModActive="ludeon.rimworld.biotech">1.4/forDLC/Biotech</li>
+
+<!-- Mods -->
+
+	<!-- Barely Better Spots -->
+		<li IfModActive="owlchemist.barelybetterspots">1.4/forMods/BBS</li>	
+		<li IfModActive="owlchemist.barelybetterspots, ludeon.rimworld.royalty">1.4/forMods/BBS/forDLC/Royalty</li>
+		<li IfModActive="owlchemist.barelybetterspots, ludeon.rimworld.ideology">1.4/forMods/BBS/forDLC/Ideology</li>
+		<li IfModActive="owlchemist.barelybetterspots, ludeon.rimworld.biotech">1.4/forMods/BBS/forDLC/Biotech</li>		
+		
+	<!-- [GMT] Trading Spot -->	
+		<li IfModActive="Grizzlemethis.TradingSpot.RW">1.4/forMods/TS</li>	
+		<li IfModActive="Grizzlemethis.TradingSpot.RW, owlchemist.barelybetterspots">1.4/forMods/BBS/forMods/TS</li>	
+	
+	<!-- Trading Control -->	
+		<li IfModActive="TradingControl.Tad.Rimworld.Core">1.4/forMods/TC</li>	
+		<li IfModActive="TradingControl.Tad.Rimworld.Core, owlchemist.barelybetterspots">1.4/forMods/BBS/forMods/TC</li>	
+		
+	<!-- Vanilla Expanded Framework -->			
+		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.4/forMods/VEF</li>
+		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core, owlchemist.barelybetterspots">1.4/forMods/BBS/forMods/VEF</li>
+		
+	<!-- Vanilla Storytellers Expanded - Winston Waves -->	
+		<li IfModActive="VanillaStorytellersExpanded.WinstonWave">1.4/forMods/VSEWW</li>
+		<li IfModActive="VanillaStorytellersExpanded.WinstonWave, owlchemist.barelybetterspots">1.4/forMods/BBS/forMods/VSEWW</li>
+		
+	<!-- Polyamory Beds (Vanilla Edition) -->	
+		<li IfModActive="Meltup.PolyamoryBeds.Vanilla">1.4/forMods/PBVE</li>
+		<li IfModActive="Meltup.PolyamoryBeds.Vanilla, owlchemist.barelybetterspots">1.4/forMods/BBS/forMods/PBVE</li>
+
+		
+	</v1.4>
+</loadFolders>

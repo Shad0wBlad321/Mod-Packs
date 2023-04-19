@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!-- ================ Biome Temperate Forest ================ -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildPlants</xpath>
+                    <value>
+                        <RG-TF_Plant_TreeCornish>0.8</RG-TF_Plant_TreeCornish>
+						<RG-TF_Plant_TemperateMoss>1.0</RG-TF_Plant_TemperateMoss>
+						<RG-TF_Plant_MountainDandelion>0.4</RG-TF_Plant_MountainDandelion>
+						<RG-TF_Plant_NordicDandelion>0.2</RG-TF_Plant_NordicDandelion>
+						<RG-TF_Plant_Cathedralis>0.4</RG-TF_Plant_Cathedralis>
+						<RG-TF_Cibarius>0.05</RG-TF_Cibarius>
+						<RG-TF_Plant_TemperateFern>1.0</RG-TF_Plant_TemperateFern>
+                    </value>
+                </li>
+
+				<!-- ================ Biome Temperate Swamp ================ -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildPlants</xpath>
+                    <value>
+                        <RG-TF_Plant_TreeCornish>1.0</RG-TF_Plant_TreeCornish>
+						<RG-TF_Plant_TemperateMoss>0.8</RG-TF_Plant_TemperateMoss>
+						<RG-TF_Plant_MountainDandelion>0.4</RG-TF_Plant_MountainDandelion>
+						<RG-TF_Cibarius>0.02</RG-TF_Cibarius>
+						<RG-TF_Plant_TemperateFern>0.4</RG-TF_Plant_TemperateFern>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

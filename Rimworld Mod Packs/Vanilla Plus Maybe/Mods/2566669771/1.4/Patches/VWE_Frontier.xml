@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded - Frontier</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Anything that herit from BaseMakeableGrenade already have Ranged class -->
+        <!-- Anything that herit from BaseMeleeWeapon_Blunt_Quality already have MeleeBlunt class -->
+        <!-- Anything that herit from BaseMeleeWeapon_Sharp_Quality already have MeleePiercer class -->
+        <!-- Anything that herit from BaseWeaponNeolithic already have Neolithic class -->
+
+        <!-- RangedLight -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEFT_Gun_FrontierPistol" or defName="VWEFT_Gun_VolcanicPistol" or defName="VWEFT_Gun_HeavyRevolver"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedLight</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <!-- ShortShots < 19.9 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEFT_Gun_RepeatingShotgun"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>ShortShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <!-- LongShots > 35 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEFT_Gun_RollingBlockRifle"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>LongShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Vanilla Weapons Expanded - Coilguns</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <!-- RangedLight -->
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VWEFT_Gun_GaussRevolver"]</xpath>
+                <value>
+                  <weaponClasses>
+                    <li>RangedLight</li>
+                  </weaponClasses>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Vanilla Weapons Expanded - Heavy Weapons</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <!-- RangedHeavy -->
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VWEFT_Gun_HandheldGatlingGun"]</xpath>
+                <value>
+                  <weaponClasses>
+                    <li>RangedHeavy</li>
+                  </weaponClasses>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Vanilla Weapons Expanded - Laser</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VWEFT_Gun_SalvagedLaserRevolver"]</xpath>
+                <value>
+                  <weaponClasses>
+                    <li>RangedLight</li>
+                    <li>Ultratech</li>
+                  </weaponClasses>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VWEFT_Gun_SalvagedLaserRepeater"]</xpath>
+                <value>
+                  <weaponClasses>
+                    <li>Ultratech</li>
+                  </weaponClasses>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VWEFT_Gun_SalvagedLaserHuntingRifle"]</xpath>
+                <value>
+                  <weaponClasses>
+                    <li>LongShots</li>
+                    <li>Ultratech</li>
+                  </weaponClasses>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Vanilla Weapons Expanded - Quickdraw</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VWEFT_Gun_Derringer"]</xpath>
+                <value>
+                  <weaponClasses>
+                    <li>RangedLight</li>
+                  </weaponClasses>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VWEFT_Gun_LeverActionShotgun"]</xpath>
+                <value>
+                  <weaponClasses>
+                    <li>ShortShots</li>
+                  </weaponClasses>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

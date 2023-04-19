@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "frPzeR3RAaYP6F3kEA7rjaAzY1aVyvBjTfE7ykzLpgaPNunrG3m8N6koBu6UDVe62lcLRHLT9H287Fqr6mo4tQ==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaFactionsExpanded_Settlers\\1.3\\Source\\VFE_Settlers\\VFE_Settlers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kylia\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3067\\krafs.rimworld.ref.1.3.3067.nupkg.sha512",
+    "C:\\Users\\kylia\\.nuget\\packages\\lib.harmony\\2.1.0\\lib.harmony.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

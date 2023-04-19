@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MBS Faux Rock Wall</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/VFECore.ExpandableProjectileDef[defName="VWE_Bullet_GaussRifle" or defName="Erin_FutonB" or defName="VWE_Bullet_GaussMagnum" or defName="VWE_Bullet_GaussLance"]/stopWhenHitAt</xpath>
+      <value>
+			  <li>FauxWall</li>
+			  <li>SmoothedFauxRockWall</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

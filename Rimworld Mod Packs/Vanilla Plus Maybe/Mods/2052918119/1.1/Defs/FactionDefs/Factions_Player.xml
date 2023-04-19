@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <FactionDef>
+    <defName>VFES_PlayerSettlement</defName>
+    <label>New Hideout</label>
+    <description>A small hideout of gang members and criminals.</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>bandit</pawnSingular>
+    <pawnsPlural>bandits</pawnsPlural>
+    <basicMemberKind>VFES_Bandit</basicMemberKind>
+    <techLevel>Industrial</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+      <li>Outlander</li>
+      </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionBandits</factionNameMaker>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <hairTags>
+      <li>Punk</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+</Defs>

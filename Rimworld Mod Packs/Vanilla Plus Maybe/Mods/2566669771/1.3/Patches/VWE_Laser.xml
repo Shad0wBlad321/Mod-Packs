@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded - Laser</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_LaserSword"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>Ultratech</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <!-- RangedLight -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_SalvagedLaserPistol" or defName="VWEL_Gun_LaserPistol"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedLight</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <!-- RangedHeavy -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_TeslaGun" or defName="VWEL_Gun_LaserMinigun"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedHeavy</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_LaserShotgun"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>RangedHeavy</li>
+              <li>ShortShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <!-- ShortShots < 19.9 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_SalvagedLaserShotgun"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>ShortShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+        <!-- LongShots > 35 range -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VWEL_Gun_SalvagedLaserSniperRifle" or defName="VWEL_Gun_LaserSniperRifle"]</xpath>
+          <value>
+            <weaponClasses>
+              <li>LongShots</li>
+            </weaponClasses>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

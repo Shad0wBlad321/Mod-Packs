@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Organ Destabilization ====================-->
+
+	<RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallHeartIrregulator</defName>
+    <label>install heart irregulator</label>
+    <description>Install a heart irregulator into a person's heart.  This torturous implant causes regular heart palpitations.  These will cause periodic chestpains every few days.  Unfortunately, these turn into heart attacks eventually.   Someone with one of these installed will suffer a heart attack if hit with an EMP charge.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing heart irregulator.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_HeartIrregulator</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveHeartIrregulator</defName>
+    <label>remove heart irregulator</label>
+    <description>Carefully remove the heart irregulator from the patient's heart.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing heart irregulator.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_HeartIrregulator</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s heart irregulator.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallStomachClamp</defName>
+    <label>install stomach clamp</label>
+    <description>Install a stomach clamp into a person's stomach.  This torturous implant periodically clamps, squeezes, and rumbles the stomach, causing regular vomiting and, despite the constant upset stomach, makes them hungry more.  EMP damage causes instant vomiting.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing stomach clamp.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_StomachClamp</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveStomachClamp</defName>
+    <label>remove stomach clamp</label>
+    <description>Carefully remove the stomach clamp from the patient's stomach.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing stomach clamp.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_StomachClamp</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s stomach clamp.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallHealingInhibitor</defName>
+    <label>install healing inhibitor</label>
+    <description>Install a healing inhibitor into a person's liver.  This torturous implant doesn't actually cause any pain or suffering, but greatly reduces their ability to heal from illness and injury and makes them more vulnerable to toxic materials.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing healing inhibitor.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_HealingInhibitor</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveHealingInhibitor</defName>
+    <label>remove stomach clamp</label>
+    <description>Carefully remove the healing inhibitor from the patient's liver.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing healing inhibitor.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_HealingInhibitor</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s healing inhibitor.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallCoagulantSuppressor</defName>
+    <label>install coagulant suppressor</label>
+    <description>Install a coagulant suppressor into a person's heart.  This torturous implant makes it more difficult for their blood to coagulate.  They bleed easier and even minor cuts can be deadly.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing coagulant suppressor.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_CoagulantSuppressor</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveCoagulantSuppressor</defName>
+    <label>remove coagulant suppressor</label>
+    <description>Carefully remove the coagulant suppressor from the patient's heart.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing coagulator suppressor.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_CoagulantSuppressor</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s healing inhibitor.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <!--=============== Advanced Torture ====================-->
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallSleepDeprivator</defName>
+    <label>install sleep deprivator</label>
+    <description>Install a sleep deprivator into a person's brain.  This torturous implant ensures the patient has a difficult time sleeping, keeping them in a constant, torturous state of insomnia.  EMP damage causes immediate lethargy.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing sleep deprivator.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_SleepDeprivator</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveSleepDeprivator</defName>
+    <label>remove sleep deprivator</label>
+    <description>Carefully remove the sleep deprivator from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing sleep deprivator.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_SleepDeprivator</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s sleep deprivator.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallPainAmplifier</defName>
+    <label>install pain amplifier</label>
+    <description>Install a pain amplifier into a patient. This torturous implant increases both the pain shock threshold of a person and amplifies the amount of pain they feel.  Masochists love it, but everyone else dreads it.  EMP Damage causes immediate, searing pain in every nerve.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing pain amplifier.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_PainAmplifier</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemovePainAmplifier</defName>
+    <label>remove pain amplifier</label>
+    <description>Carefully remove the pain amplifier from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing pain amplifier.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_PainAmplifier</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s sleep deprivator.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallAggressionAmplifier</defName>
+    <label>install aggression amplifier</label>
+    <description>Install an Aggression Amplifier into a patient.  This torturous implant causes greatly hightened aggression, causing social fights but also greatly improving the patient's melee combat skills.  Also causes constant tantrums and occasional fits of murderous or sadistic rage.  Eventually will cause the person to go berserk until subdued.  EMP damage causes instant berserking.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing aggression amplifier.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_AggressionAmplifier</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveAggressionAmplifier</defName>
+    <label>remove aggression amplifier</label>
+    <description>Carefully remove the aggression amplifier from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing aggression amplifier.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_AggressionAmplifier</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s aggression amplifier.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallPanicInducer</defName>
+    <label>install panic inducer</label>
+    <description>Install a Panic Inducer into a patient.  This torturous implant causes increased mental break threshold and periodic sad or psychotic wandering, eventually leading to giving up on their current settlement entirely if not 'gently' persuaded to stay with beatings.  EMP damage all but guarantees a psychotic break.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing panic inducer.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_PanicInducer</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemovePanicInducer</defName>
+    <label>remove panic inducer</label>
+    <description>Carefully remove the panic inducer from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing panic inducer.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_PanicInducer</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s panic inducer.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallEmotionDestabilizer</defName>
+    <label>install emotion destabilizer</label>
+    <description>Install an Emotion destabilizer into a patient.  This torturous implant makes the patient unable to keep control fo their emotions, causing great swings in opinions of others based on events and greatly increasing the chances of social fights.  They will periodically start going on insulting sprees, afterwhich they will apologize and probably cry a lot.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing emotion destabilizer.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_EmotionDestabilizer</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveEmotionDestabilizer</defName>
+    <label>remove emotion destabilizer</label>
+    <description>Carefully remove the emotion destabilizer from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing emotion destabilizer.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_EmotionDestabilizer</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s emotion destabilizer.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallMemoryExpulsor</defName>
+    <label>install memory expulsor</label>
+    <description>Install a Memory Expulsor into a patient.  This torturous implant causes frequent forgetfulness and reduces learning capacity.  Patients will periodically wander confused and will lose skills faster.  EMP Damage causes immediate and massive memory loss.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing memory expulsor.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_MemoryExpulsor</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveMemoryExpulsor</defName>
+    <label>remove memory expulsor</label>
+    <description>Carefully remove the memory expulsor from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing memory expulsor.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_MemoryExpulsor</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s memory expulsor.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallEMPRelay</defName>
+    <label>install EMP relay</label>
+    <description>Install an EMP relay into a patient's brain.  This torturous implant doesn't do anything.  Unless they're hit by EMP, at which point it puts them into shock, allowing easy rescue - or capture.  Great for prisoners and troublesome pawns who you need to subdue constantly! Warning: repeated shocking of the brain may cause brain damage.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing EMP relay.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_EMPRelay</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveEMPRelay</defName>
+    <label>remove EMP relay</label>
+    <description>Carefully remove the EMP relay from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing EMP relay.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_EMPRelay</removesHediff>
+	<surgerySuccessChanceFactor>.75</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s EMP relay.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallEMPKillswitch</defName>
+    <label>install EMP killswitch</label>
+    <description>Install an EMP killswitch into a patient's brain.  This torturous device does nothing until hit by EMP, at which point it fries their brain like a slab of bacon.  Very rarely do pawns survive it, but there have been cases of survivors with severe, permanent, and crippling brain damage.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing EMP killswitch.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.20</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>0.95</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_EMPKillswitch</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_OrganModificationKit</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_OrganModificationKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_AdvancedTorture</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_RemoveEMPKillswitch</defName>
+    <label>remove EMP kill switch</label>
+    <description>Carefully remove the EMP kill switch from the patient's brain.   Turns out trying to keep them alive while taking it this implant in is much harder than putting it in.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Removing EMP kill switch.</jobString>
+    <workAmount>2000</workAmount>
+    <removesHediff>WCE2_EMPRelay</removesHediff>
+	<surgerySuccessChanceFactor>.65</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+	<successfullyRemovedHediffMessage>{0} has successfully removed {1}'s EMP kill switch.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+	<anesthetize>true</anesthetize>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_OrganDestabilization</researchPrerequisite>
+  </RecipeDef>
+  
+  <!--=============== Neutroamine Incubation ====================-->
+
+	<RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallNeutroamineIncubator</defName>
+    <label>install neutroamine incubator</label>
+    <description>Install a Neutroamine Incubator into a patient's torso.  This torturous growth implanted into a person's chest cavity will periodically grow neutroamine sacs which can be harvested.  These sacs can grow on the limbs or torso.  This growth process greatly increases hunger and causes chemical damage to organs, with death occuring after roughly one year.  EMP damage causes cancer.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing neutroamine incubator.</jobString>
+    <workAmount>5000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_NeutroamineIncubator</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_NeutroamineIncubator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_NeutroamineIncubator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_NeutroamineIncubation</researchPrerequisite>
+  </RecipeDef>
+  
+	<RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_HarvestNeutroamine</defName>
+    <label>harvest neutroamine</label>
+    <description>Harvest neutroamine from a growth.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Harvesting neutroamine.</jobString>
+    <workAmount>1000</workAmount>
+    <removesHediff>WCE2_NeutroamineGrowth</removesHediff>
+	<surgerySuccessChanceFactor>10</surgerySuccessChanceFactor>
+	<anesthetize>false</anesthetize>
+	<successfullyRemovedHediffMessage>{0} has successfully harvested neutroamine from {1}</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>1</Medicine>
+    </skillRequirements>
+	<products>
+      <Neutroamine>8</Neutroamine>
+    </products>
+  </RecipeDef>
+  
+  <!--=============== Growth Stimulator ====================-->
+
+	<RecipeDef ParentName="WCE2_Surgery">
+    <defName>WCE2_InstallGrowthStimulator</defName>
+    <label>install growth stimulator</label>
+    <description>Install a Growth Stimulator. This torturous implant causes excessive, meaty growths throughout the body.  This improves a person's meat content when butchered, or the growths can be harvested early.  Death occures in about half a year.  Not a great source of food, as it greatly increases the patient's hunger, but great for those with.. certain.. tastes.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing growth stimulator.</jobString>
+    <workAmount>2000</workAmount>
+	<isViolation>true</isViolation>
+	<anesthetize>true</anesthetize>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	<surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+	<addsHediff>WCE2_GrowthStimulator</addsHediff>
+	<appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <skillRequirements>
+      <Medicine>4</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>WCE2_GrowthStimulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	  <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+		<li>WCE2_GrowthStimulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<researchPrerequisite>WCE2_QuestionableFoodProduction</researchPrerequisite>
+  </RecipeDef>
+  
+
+</Defs>

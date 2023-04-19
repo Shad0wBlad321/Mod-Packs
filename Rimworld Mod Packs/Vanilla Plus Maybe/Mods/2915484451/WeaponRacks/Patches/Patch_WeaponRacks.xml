@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="FFE_WeaponRackBase"]/researchPrerequisites</xpath>
+        <value>
+          <researchPrerequisites Inherit="false"/>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="FFE_WeaponRackBase"]/designationCategory</xpath>
+        <value>
+          <designationCategory Inherit="false" />
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="WeaponRack_BaseRack"]/researchPrerequisites</xpath>
+        <value>
+          <researchPrerequisites Inherit="false">
+            <li>FFE_ComplexStorages</li>
+          </researchPrerequisites>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

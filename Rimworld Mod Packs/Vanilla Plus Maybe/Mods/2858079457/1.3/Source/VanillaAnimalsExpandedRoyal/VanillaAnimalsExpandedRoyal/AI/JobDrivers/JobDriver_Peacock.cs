@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using Verse;
+using Verse.AI;
+using RimWorld;
+
+namespace VanillaAnimalsExpandedRoyal
+{
+    public class JobDriver_Peacock : JobDriver
+    {
+        private const int NuzzleDuration = 100;
+
+        public override bool TryMakePreToilReservations(bool errorOnFailed)
+        {
+            return true;
+        }
+
+        [DebuggerHidden]
+        protected override IEnumerable<Toil> MakeNewToils()
+        {
+            this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
+            this.FailOnNotCasualInterruptible(TargetIndex.A);
+            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
+            yield return Toils_Interpersonal.WaitToBeAbleToInteract(this.pawn);
+            Toil gotoTarget = Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
+            gotoTarget.socialMode = RandomSocialMode.Off;
+            Toil wait = Toils_General.WaitWith(TargetIndex.A, NuzzleDuration, false, true);
+            wait.socialMode = RandomSocialMode.Off;
+            yield return Toils_General.Do(delegate
+            {
+                Pawn recipient = (Pawn)this.pawn.CurJob.targetA.Thing;
+                this.pawn.interactions.TryInteractWith(recipient, InternalDefOf.VAERoy_PeacockInteraction);
+            });
+        }
+    }
+}

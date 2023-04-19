@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+    <defName>Chemshined</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Chemshined</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>chemshined</label>
+        <description>I feel energized, I'm on fire, witness me!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

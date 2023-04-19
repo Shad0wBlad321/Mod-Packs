@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+<!-- Trading Control -->	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="DropSpotTradeShip"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics/li[1]</xpath> 
+				<value>
+
+					<li>Things/Building/Mods/dspots_DropSpotMiscIcon</li>
+
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="TradingSpot"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics/li[1]</xpath> 
+				<value>
+
+					<li>Things/Building/Misc/dspots_PartySpot</li>
+
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>

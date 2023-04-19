@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Race to the Rim</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialRttR_GronckleIron</defName>
+							<thingDef>RttR_GronckleIron</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>	
+								<li>VCEF_BiomeAlienJungly</li>	
+								<li>VCEF_BiomeAlienHot</li>	
+								<li>VCEF_BiomeAlienCold</li>	
+									
+							</allowedBiomes>  	
+							<commonality>0.75</commonality>		
+							<baseFishingYield>15</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialRttR_WoodLog</defName>
+							<thingDef>RttR_WoodLog</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>	
+								<li>VCEF_BiomeAlienJungly</li>	
+								<li>VCEF_BiomeAlienHot</li>	
+								<li>VCEF_BiomeAlienCold</li>									
+							</allowedBiomes>  	
+							<commonality>0.75</commonality>		
+							<baseFishingYield>15</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialRttR_NightmareGel</defName>
+							<thingDef>RttR_NightmareGel</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>								
+								<li>Warm</li>
+								<li>VCEF_BiomeAlienHot</li>									
+							</allowedBiomes>  	
+							<commonality>0.5</commonality>		
+							<baseFishingYield>20</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_SpecialRttR_PatchedDragonScales</defName>
+							<thingDef>RttR_PatchedDragonScales</thingDef>    
+							<fishSizeCategory>Special</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>								
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>	
+								<li>VCEF_BiomeAlienJungly</li>	
+								<li>VCEF_BiomeAlienHot</li>	
+								<li>VCEF_BiomeAlienCold</li>									
+							</allowedBiomes>  	
+							<commonality>0.5</commonality>		
+							<baseFishingYield>100</baseFishingYield>		
+						</VCE_Fishing.FishDef>	
+						
+
+
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

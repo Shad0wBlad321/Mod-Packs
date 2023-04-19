@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="TableGatherSpotBase">
+    <defName>TableCircular</defName>
+    <label>Circular table</label>
+	<description>Simple, circular table that can be eaten off of.</description>
+    <graphicData>
+      <texPath>Things/Buildings/TableCircular/TableCircular</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.33,1.33)</drawSize>
+      <damageData>
+        <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+        <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+        <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+        <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>15</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costStuffCount>40</costStuffCount>
+    <rotatable>false</rotatable>
+  </ThingDef>
+  </Defs>

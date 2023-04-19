@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>BDM_ThrusterApproaching</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThrusterApproaching</clipPath>
+					</li>
+				</grains>
+				<volumeRange>70~70</volumeRange>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BDM_ThrusterLeaving</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThrusterLeaving</clipPath>
+					</li>
+				</grains>
+				<volumeRange>70~70</volumeRange>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

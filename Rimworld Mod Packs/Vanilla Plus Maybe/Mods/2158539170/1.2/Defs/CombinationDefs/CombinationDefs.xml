@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_SoybeansToSauce</defName>
+		<building>VCE_SoyFermenter</building>
+		<items>
+			<li>VCE_RawSoybean</li>
+		</items>	
+		<amount>
+			<li>30</li>
+		</amount>
+		<result>VCE_SoySauce</result>	
+		<yield>15</yield>
+		<useQualityIncreasing>true</useQualityIncreasing>
+		<awfulQualityAgeDaysThreshold>8</awfulQualityAgeDaysThreshold>
+		<poorQualityAgeDaysThreshold>12</poorQualityAgeDaysThreshold>
+		<normalQualityAgeDaysThreshold>23</normalQualityAgeDaysThreshold>
+		<goodQualityAgeDaysThreshold>30</goodQualityAgeDaysThreshold>
+		<excellentQualityAgeDaysThreshold>36</excellentQualityAgeDaysThreshold>
+		<masterworkQualityAgeDaysThreshold>40</masterworkQualityAgeDaysThreshold>
+		<legendaryQualityAgeDaysThreshold>68</legendaryQualityAgeDaysThreshold>
+	</ItemProcessor.CombinationDef>
+	
+
+
+
+
+
+
+
+
+</Defs>

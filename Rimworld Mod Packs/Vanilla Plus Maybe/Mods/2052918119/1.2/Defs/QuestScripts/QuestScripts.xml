@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>Settlers_Wanted</defName>
+    <rootSelectionWeight>1</rootSelectionWeight>
+    <rootMinPoints>400</rootMinPoints>
+    <autoAccept>true</autoAccept>
+    <canGiveRoyalFavor>false</canGiveRoyalFavor>
+    <questDescriptionAndNameRules>
+      <rulesStrings>
+        <li>questName->Bounty: [nameFull] [nickname]</li>
+        <li>questName->Wanted, Dead or Alive: [nickname]</li>
+        <li>questName->[nickname]'s brigands</li>
+        <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name] hails us. Apparently, the notorious [criminal_nameFull] of [siteFaction_name] is hiding out in our vicinity.
+\n[asker_nameDef] is asking us to bring [nickname] to one of their settlements for a grand sum of [bounty] silver, double if alive. They are hiding in a safe house and it's probably guarded.
+\nIf we clear out their camp, [allRewardsDescriptions]</li>
+      </rulesStrings>
+    </questDescriptionAndNameRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+          <parms>
+            <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+            <pointsFactorThreeStar>2</pointsFactorThreeStar>
+          </parms>
+        </li>
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+        <li Class="QuestNode_GetMap" />
+
+        <li Class="QuestNode_GetPawn">
+          <storeAs>asker</storeAs>
+          <mustBeFactionLeader>true</mustBeFactionLeader>
+          <mustBeNonHostileToPlayer>true</mustBeNonHostileToPlayer>
+        </li>
+
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <preferCloserTiles>true</preferCloserTiles>
+        </li>
+        <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+          <storeAs>sitePartDefs</storeAs>
+          <storeFactionAs>siteFaction</storeFactionAs>
+          <sitePartsTags>
+            <li>
+              <tag>WantedHideout</tag>
+            </li>
+          </sitePartsTags>
+          <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
+        </li>
+
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile>
+          <faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+        <li Class="QuestNode_GetSiteThreatPoints">
+          <storeAs>sitePoints</storeAs>
+          <sitePartsParams>$sitePartsParams</sitePartsParams>
+        </li>
+        <li Class="QuestNode_SubScript">
+          <def>Util_GetDefaultRewardValueFromPoints</def>
+          <parms>
+            <!-- Use the actual threat points generated (some site parts define a minimum threshold) -->
+            <points>$sitePoints</points>
+          </parms>
+        </li>
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateSite</def>
+        </li>
+        <li Class="QuestNode_SpawnWorldObjects">
+          <worldObjects>$site</worldObjects>
+        </li>
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject>
+          <isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>$(randInt(12,28)*60000)</delayTicks>
+          <inSignalDisable>site.MapGenerated</inSignalDisable>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label>Quest expired: [resolvedQuestName]</label>
+                <text>[criminal_nameFull] heard about their compromised position thus have decided to leave the area. The quest [resolvedQuestName] has expired.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+        <!-- If we enter and leave, the map is destroyed. Fail the quest. -->
+        <li Class="QuestNode_Signal">
+          <inSignal>site.Destroyed</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label>Quest failed: [resolvedQuestName]</label>
+                <text>The brigands has packed up and moved on.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+        <li Class="QuestNode_Signal">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <node Class="QuestNode_GiveRewards">
+            <customLetterLabel>Payment arrived</customLetterLabel>
+            <customLetterText>You have defeated [criminal_nameFull] and eliminated the camp!\n\nThe bonus reward from [asker_faction_name] has arrived.</customLetterText>
+          </node>
+        </li>
+        <li Class="QuestNode_End">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <outcome>Success</outcome>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <QuestScriptDef>
+    <defName>VFES_CaravanRaid</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>500</rootMinPoints>
+    <canGiveRoyalFavor>false</canGiveRoyalFavor>
+    <autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Caravan [raid]</li>
+        <li>questName->[asker_nameDef] and the Caravan [raid]</li>
+        <li>raid->Raid</li>
+        <li>raid->Attack</li>
+        <li>raid->Ambush</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. Apparently, [siteFaction_pawnsPlural] are resting with their beasts before continuing their journey.
+            \n[asker_nameDef] gave us their location, if we want to, we can go attack them.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+          <parms>
+            <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+            <pointsFactorThreeStar>2</pointsFactorThreeStar>
+          </parms>
+        </li>
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+        <li Class="QuestNode_GetMap" />
+
+        <li Class="QuestNode_GetPawn">
+          <storeAs>asker</storeAs>
+          <mustBeFactionLeader>true</mustBeFactionLeader>
+          <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
+        </li>
+
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <preferCloserTiles>true</preferCloserTiles>
+        </li>
+
+        <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+          <storeAs>sitePartDefs</storeAs>
+          <storeFactionAs>siteFaction</storeFactionAs>
+          <sitePartsTags>
+            <li><tag>CaravanRaid</tag></li>
+          </sitePartsTags>
+          <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
+        </li>
+
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile>
+          <faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+        
+        <li Class="QuestNode_GetSiteThreatPoints">
+          <storeAs>sitePoints</storeAs>
+          <sitePartsParams>$sitePartsParams</sitePartsParams>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateSite</def>
+        </li>
+        
+        <li Class="QuestNode_SpawnWorldObjects">
+          <worldObjects>$site</worldObjects>
+        </li>
+
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject>
+          <isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>$(randInt(12,28)*60000)</delayTicks>
+          <inSignalDisable>site.MapGenerated</inSignalDisable>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">The [siteFaction_pawnsPlural] packed up their stuff and moved on. The quest [resolvedQuestName] has expired.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <!-- If we enter and leave, the map is destroyed. Fail the quest. -->
+        <li Class="QuestNode_Signal">
+          <inSignal>site.Destroyed</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelQuestFailed">Quest failed: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestFailed">After being discovered, the [siteFaction_pawnsPlural] left. The quest [resolvedQuestName] has ended.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_End">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <outcome>Success</outcome>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+</Defs>

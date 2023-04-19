@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>TableFaro</defName>
+    <label>faro table</label>
+    <description>A soft-topped bound table for playing faro. Allows up to two players at a time.</description>
+    <graphicData>
+      <texPath>Things/Buildings/FaroTable/FaroTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <building>
+      <joyKind>Gaming_Cerebral</joyKind>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <JoyGainFactor>1.3</JoyGainFactor>
+    </statBases>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <canOverlapZones>false</canOverlapZones>
+    <!--<placeWorkers>
+      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+    </placeWorkers>-->
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+  </Defs>

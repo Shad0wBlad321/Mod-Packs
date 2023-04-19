@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>CosRim_MicroCommsConsole</defName>
+		<label>Micro Comms Console</label>
+		<description>A compact alternative to the standard comms console. Functionally identical.\n\nNote: Costs are higher tier to keep it balanced.</description>
+		<thingClass>Building_CommsConsole</thingClass>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/MicroCommsConsole</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<tickerType MayRequire="Ludeon.RimWorld.Biotech">Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2200</WorkToBuild>
+			<Flammability>0.3</Flammability>
+			<Mass>20</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<joyKind>Social</joyKind>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Summon diabolus threat</useLabel>
+				<useDuration>900</useDuration>
+				<floatMenuOptionPriority>SummonThreat</floatMenuOptionPriority>
+				<floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
+				<ignoreOtherReservations>true</ignoreOtherReservations>
+			</li>
+			<li Class="CompProperties_Useable_CallBossgroup" MayRequire="Ludeon.RimWorld.Biotech">
+				<bossgroupDef>Diabolus</bossgroupDef>
+				<spawnLetterLabelKey>LetterLabelCommsConsoleSpawned</spawnLetterLabelKey>
+				<spawnLetterTextKey>LetterCommsConsoleSpawned</spawnLetterTextKey>
+				<effecterDef>CommsConsoleBossgroupSummoned</effecterDef>
+				<delayTicks>120</delayTicks>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>

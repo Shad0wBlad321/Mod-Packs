@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7C50C77-7C05-45C0-9002-D45D3EFEEF79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VFE_Settlers</RootNamespace>
+    <AssemblyName>VFE_Settlers</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buildings\Building_Chemlamp.cs" />
+    <Compile Include="Buildings\Building_SaloonDoor.cs" />
+    <Compile Include="Comps\CompPowerPlantWindmill.cs" />
+    <Compile Include="Comps\DynamiteComp.cs" />
+    <Compile Include="Defs\HediffDefOf.cs" />
+    <Compile Include="Defs\PawnKindDefOf.cs" />
+    <Compile Include="Defs\RulePackDefOf.cs" />
+    <Compile Include="Defs\SettlerEffecterDefOf.cs" />
+    <Compile Include="Defs\SiteCoreDefOf.cs" />
+    <Compile Include="Defs\ThingDefOf.cs" />
+    <Compile Include="GenSteps\GenStep_CaravanRaid.cs" />
+    <Compile Include="GenSteps\GenStep_SpawnWanted.cs" />
+    <Compile Include="Harmony\Harmony.cs" />
+    <Compile Include="Hediffs\HediffComp_Wanted.cs" />
+    <Compile Include="Hediffs\Hediff_Chemshined.cs" />
+    <Compile Include="JobGivers\JobGiver_Chemshined.cs" />
+    <Compile Include="JobDrivers\JobDriver_PlayFiveFingerFillet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\ModSettings.cs" />
+    <Compile Include="SitePartWorkers\SitePartWorker_SpawnWanted.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_ConditionalChemshinedMuffalo.cs" />
+    <Compile Include="Utilities\UtilityAction.cs" />
+    <Compile Include="Utilities\UtilityBase.cs" />
+    <Compile Include="Utilities\UtilityEvent.cs" />
+    <Compile Include="Utilities\UtilityPawn.cs" />
+    <Compile Include="Utilities\UtilityThing.cs" />
+    <Compile Include="Workers\IncidentWorker_CaravanRaid.cs" />
+    <Compile Include="Workers\IncidentWorker_ProtectionFee.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.3.3067</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony" ExcludeAssets="runtime">
+      <Version>2.1.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

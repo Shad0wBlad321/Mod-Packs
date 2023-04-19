@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+  <LifeStageDef>
+    <defName>VAERoy_AnimalBaby</defName>
+    <label>baby</label>
+    <voxPitch>1.6</voxPitch>
+    <voxVolume>0.8</voxVolume>
+    <bodySizeFactor>0.2</bodySizeFactor>
+    <foodMaxFactor>3</foodMaxFactor>
+    <healthScaleFactor>0.25</healthScaleFactor>
+    <hungerRateFactor>0.4</hungerRateFactor>
+    <marketValueFactor>0.4</marketValueFactor>
+    <meleeDamageFactor>0.5</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.5</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+ 
+
+  <LifeStageDef>
+    <defName>VAERoy_AnimalJuvenile</defName>
+    <label>juvenile</label>
+    <voxPitch>1.2</voxPitch>
+	<reproductive>true</reproductive>
+    <bodySizeFactor>4</bodySizeFactor>
+    <healthScaleFactor>4</healthScaleFactor>
+    <hungerRateFactor>4</hungerRateFactor>
+    <marketValueFactor>2</marketValueFactor>
+    <meleeDamageFactor>3</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>1</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>VAERoy_AnimalAdult</defName>
+    <label>adult</label>
+    <bodySizeFactor>13</bodySizeFactor>
+    <healthScaleFactor>23</healthScaleFactor>
+	  <hungerRateFactor>10</hungerRateFactor>
+    <marketValueFactor>3</marketValueFactor>
+    <meleeDamageFactor>10</meleeDamageFactor>
+    <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
+    <caravanRideable>true</caravanRideable>
+  </LifeStageDef>
+  
+   <LifeStageDef>
+    <defName>VAERoy_AnimalAdultIntermediate</defName>
+    <label>mature</label>
+    <bodySizeFactor>15</bodySizeFactor>
+    <healthScaleFactor>26</healthScaleFactor>
+	  <hungerRateFactor>11</hungerRateFactor>
+    <marketValueFactor>4</marketValueFactor>
+    <meleeDamageFactor>12</meleeDamageFactor>
+    <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
+    <caravanRideable>true</caravanRideable>
+  </LifeStageDef>
+  
+    <LifeStageDef>
+    <defName>VAERoy_AnimalAdultMax</defName>
+    <label>colossal</label>
+    <bodySizeFactor>20</bodySizeFactor>
+    <healthScaleFactor>30</healthScaleFactor>
+	  <hungerRateFactor>12</hungerRateFactor>
+    <marketValueFactor>5</marketValueFactor>
+    <meleeDamageFactor>15</meleeDamageFactor>
+    <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
+    <caravanRideable>true</caravanRideable>
+  </LifeStageDef>
+  
+</Defs>

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>VRE_Antibiotics</defName>
+		<label>antibiotics</label>
+		<description>A drug for boosting the immune system after infections take hold. Helps against diseases, such as malaria and plague, as well as infections due to unclean wounds. Lasts 12 hours.\n\nThis drug doesn’t prevent new infections. It does cure existing infections - even those that are not yet discovered, however excessive usage of antibiotics can render a person temporarily resistant to the effect of them.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Items/Drugs/Antibiotics</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>18</MarketValue>
+			<Mass>0.005</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="VanillaRacesExpandedGenies.IngestionOutcomeDoer_GiveHediff_Discriminating">
+					<hediffDef>VRE_AntibioticsHigh</hediffDef>
+					<firstAlternateHediffDef>VRE_AntibioticsHigh_NoImmunity</firstAlternateHediffDef>
+					<secondAlternateHediffDef>VRE_AntibioticsHigh_VeryWeak</secondAlternateHediffDef>
+					<thirdAlternateHediffDef>VRE_AntibioticsHigh_Weak</thirdAlternateHediffDef>
+					<severity>1.0</severity>
+					<toleranceChemical>VRE_Antibiotics</toleranceChemical>
+				</li>
+				<li Class="VanillaRacesExpandedGenies.IngestionOutcomeDoer_GiveHediff_Weighted">
+					<hediffDef>VRE_AntibioticsTolerance</hediffDef>
+					<severity>0.1</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li> 
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>DrugProduction</researchPrerequisite>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<MedicineHerbal>1</MedicineHerbal>
+			<PsychoidLeaves>1</PsychoidLeaves>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VRE_Antibiotics</chemical>
+				<addictiveness>0.005</addictiveness>
+				<minToleranceToAddict>0.8</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	<HediffDef>
+		<defName>VRE_AntibioticsHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>antibiotics</label>
+		<description>A drug for boosting the immune system after infections take hold. Helps against diseases, such as malaria and plague, as well as infections due to unclean wounds. Lasts 12 hours. Effect is stronger depending on the severity of the immunity genes of the ingester (stronger for less immune subjects), and it is modified by the person's tolerance to the drug.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VRE_AntibioticsHigh_NoImmunity</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>antibiotics</label>
+		<description>A drug for boosting the immune system after infections take hold. Helps against diseases, such as malaria and plague, as well as infections due to unclean wounds. Lasts 12 hours. Effect is stronger depending on the severity of the immunity genes of the ingester (stronger for less immune subjects), and it is modified by the person's tolerance to the drug.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<ImmunityGainSpeed>11</ImmunityGainSpeed>					
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VRE_AntibioticsHigh_VeryWeak</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>antibiotics</label>
+		<description>A drug for boosting the immune system after infections take hold. Helps against diseases, such as malaria and plague, as well as infections due to unclean wounds. Lasts 12 hours. Effect is stronger depending on the severity of the immunity genes of the ingester (stronger for less immune subjects), and it is modified by the person's tolerance to the drug.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>0.45</ImmunityGainSpeed>
+					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>VRE_AntibioticsHigh_Weak</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>antibiotics</label>
+		<description>A drug for boosting the immune system after infections take hold. Helps against diseases, such as malaria and plague, as well as infections due to unclean wounds. Lasts 12 hours. Effect is stronger depending on the severity of the immunity genes of the ingester (stronger for less immune subjects), and it is modified by the person's tolerance to the drug.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>0.22</ImmunityGainSpeed>
+					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	<!-- Antibiotics Addiction -->
+
+	<ChemicalDef>
+		<defName>VRE_Antibiotics</defName>
+		<label>antibiotics</label>
+		<addictionHediff>VRE_AntibioticsAddiction</addictionHediff>
+		<toleranceHediff>VRE_AntibioticsTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>VRE_Chemical_Antibiotics</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>antibiotics</label>
+		<description>Because of an antibiotics addiction, this person needs to regularly consume antibiotics to avoid withdrawal symptoms.</description>
+		<listPriority>35</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>VRE_AntibioticsTolerance</defName>
+		<label>antibiotics tolerance</label>
+		<description>A built-up tolerance to antibiotics. The more severe this tolerance is, the more antibiotics it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.066</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>VRE_Antibiotics</chemical>
+			</li>
+		</comps>
+		
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>VRE_AntibioticsAddiction</defName>
+		<label>antibiotics addiction</label>
+		<description>A chemical addiction to antibiotics. Long-term presence of antibiotics has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of antibiotics, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>VRE_Chemical_Antibiotics</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.047</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+				<socialFightChanceFactor>5.0</socialFightChanceFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+
+
+				</capMods>
+				
+			</li>
+		</stages>
+	</HediffDef>
+
+	
+</Defs>

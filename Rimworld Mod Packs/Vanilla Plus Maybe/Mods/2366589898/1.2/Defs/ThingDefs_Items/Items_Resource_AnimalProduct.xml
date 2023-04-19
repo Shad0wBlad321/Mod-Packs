@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <!-- Moa Eggs -->
+ 
+  <ThingDef ParentName="EggFertBase">
+    <defName>AEXP_EggMoaFertilized</defName>
+    <label>moa egg (fert.)</label>
+    <description>A fertilized moa egg. If all goes well, it should hatch into a baby moa. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+       <texPath>Things/Item/VAE_EggHuge</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>	  
+    </graphicData>
+    <statBases>    
+	  <MarketValue>19</MarketValue>
+   	  <Nutrition>.4</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>AEXP_Moa</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <!-- Rockhopper Penguin Eggs --> 
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>AEXP_EggRockhopperPenguinFertilized</defName>
+    <label>rockhopper penguin egg (fert.)</label>
+    <description>A fertilized rockhopper penguin egg. If all goes well, it should hatch into a baby rockhopper penguin. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+      <color>(182,205,161)</color>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>15.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>AEXP_RockhopperPenguin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

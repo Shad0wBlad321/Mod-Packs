@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="VWE_LaserSwordBase" Abstract="True" ParentName="BaseWeapon">
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+	  <li>MeleePiercer</li>
+    </weaponClasses>
+    <relicChance>1</relicChance>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="VWE_LaserSwordBase">
+		<defName>VWEL_LaserSword</defName>
+		<label>laser sword</label>
+		<description>An ultratech device consisting of a handle and an extendable laser blade. A weapon of gentlemen.</description>
+		<thingClass>VFECore.ThingWithFloorGraphic</thingClass>
+		<graphicData>
+			<texPath>Things/WeaponMelee/LaserSwordOn</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<weaponTags Inherit="False">
+			<li>UltratechMelee</li>
+			<li>LaserGun</li>
+		</weaponTags>
+		<tradeTags>
+			<li>SpacerGun</li>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<Mass>1.4</Mass>
+		</statBases>
+		<equippedAngleOffset>-15</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>31</power>
+				<armorPenetration>1</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>31</power>
+				<armorPenetration>1</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.FloorGraphicExtension">
+				<graphicData>
+					<texPath>Things/WeaponMelee/LaserSwordOff</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>1.2</drawSize>
+				</graphicData>
+			</li>
+		</modExtensions>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<tradeability>All</tradeability>
+	</ThingDef>
+
+
+</Defs>

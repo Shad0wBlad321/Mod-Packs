@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<VRESaurids_FactionGreetingHostile>{0} screeches something only saurids could understand into the microphone and disconnects.</VRESaurids_FactionGreetingHostile>
+	<VRESaurids_FactionGreetingHostileAppreciative>Hissing and screeching angrily, {0} demands that you make a gesture of unity, like bringing gifts to one of {0_possessive} settlements or releasing {0_possessive} faction's prisoners unharmed. Until then, {0_pronoun} is unwilling to talk.\n\nHissing an insult, {0_pronoun} disconnects.</VRESaurids_FactionGreetingHostileAppreciative>
+	<VRESaurids_FactionGreetingWary>{0} hisses a greeting and asks what business you need done.</VRESaurids_FactionGreetingWary>
+	<VRESaurids_FactionGreetingWarm>Barks out enthusiastically, {0} greets {NEGOTIATOR_labelShort} and asks what {LEADER_pronoun} can do to help you.</VRESaurids_FactionGreetingWarm>
+	<VRESaurids_MilitaryAidSent>{0} agrees to send saurid fighters to help you.</VRESaurids_MilitaryAidSent>
+
+	<VRESaurids.EggLaidLabel>{0} laid an egg!</VRESaurids.EggLaidLabel>
+	<VRESaurids.EggLaidDesc>{0} has laid an egg due to being oviparous. Make sure to keep the egg in a safe environment, under the roof and between 0°C - 50°C. After some time the egg will hatch into a child. {0} will be unable to lay another egg until their body recovers from this process.</VRESaurids.EggLaidDesc>
+	<VRESaurids.EggHatchedLabel>{0}'s egg hatched!</VRESaurids.EggHatchedLabel>
+	<VRESaurids.EggHatchedDesc>{0}'s egg has hatched successfully, adding a new baby to the colony! Remember to take care of them and ensure they grow up healthy.</VRESaurids.EggHatchedDesc>
+	<VRESaurids.CannotOviparous>oviparous</VRESaurids.CannotOviparous>
+	<VRESaurids.ColdBloodedDanger>Cold-blooded Danger!</VRESaurids.ColdBloodedDanger>
+	<VRESaurids.ColdBloodedDangerExplanation>Cold-blooded pawns will fall to extreme temperatures much easier and faster than others, these pawns are currently at risk</VRESaurids.ColdBloodedDangerExplanation>
+
+</LanguageData>

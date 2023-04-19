@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_Vest</defName>
+		<description>A simple vest, providing a decent layer of insulation from both heat and cold. Greatly enhances social interactions.</description>
+		<label>vest</label>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/Vest/Vest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+       <generateCommonality>0.2</generateCommonality>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2700</WorkToMake>
+			<Mass>0.3</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Vest/Vest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Outlander</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_GreatDress</defName>
+		<description>A great dress, most often worn by ladies and suffragettes. Greatly enhances social interactions.</description>
+		<label>great dress</label>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GreatDress/GreatDress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.3</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.20</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+                <li>Legs</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GreatDress/GreatDress</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Outlander</li>
+				<li>IndustrialAdvanced</li>
+			</tags>
+		<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+</Defs>

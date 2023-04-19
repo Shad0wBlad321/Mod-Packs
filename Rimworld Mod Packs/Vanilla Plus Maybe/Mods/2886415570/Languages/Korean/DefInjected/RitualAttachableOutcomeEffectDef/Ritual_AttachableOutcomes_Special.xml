@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<Sinnamon_WindBlessing.label>돌개바람</Sinnamon_WindBlessing.label>
+	<Sinnamon_WindBlessing.effectDesc>폭염의 지속시간을 반감시키고, 풍력발전 효율을 높입니다.</Sinnamon_WindBlessing.effectDesc>
+	<Sinnamon_WindBlessing.letterInfoText>시원한 바람이 정착지를 휩씁니다.</Sinnamon_WindBlessing.letterInfoText>
+
+	<Sinnamon_SunBlessing.label>해바라기</Sinnamon_SunBlessing.label>
+	<Sinnamon_SunBlessing.effectDesc>날씨를 바꾸고 일식을 중단시키며, 한파의 지속시간을 반감시킵니다.</Sinnamon_SunBlessing.effectDesc>
+	<Sinnamon_SunBlessing.letterInfoText>태양이 당당한 자태를 드러냅니다.</Sinnamon_SunBlessing.letterInfoText>
+	
+	<Sinnamon_Raincalling.label>비바라기</Sinnamon_Raincalling.label>
+	<Sinnamon_Raincalling.effectDesc>날씨를 바꾸고 독성낙진과 화산겨울의 지속시간을 반감시킵니다.</Sinnamon_Raincalling.effectDesc>
+	<Sinnamon_Raincalling.letterInfoText>태양이 당당한 자태를 드러냅니다.</Sinnamon_Raincalling.letterInfoText>
+	
+	<Sinnamon_EclipseBlessing.label>검은 하늘</Sinnamon_EclipseBlessing.label>
+	<Sinnamon_EclipseBlessing.effectDesc>혹점 폭발을 즉시 중단시키고 일식을 일으킵니다.</Sinnamon_EclipseBlessing.effectDesc>
+	<Sinnamon_EclipseBlessing.letterInfoText>태양에 그림자가 드리웁니다.</Sinnamon_EclipseBlessing.letterInfoText>
+	
+	<Sinnamon_AmbrosiaBlessing.label>암브로시아 발아</Sinnamon_AmbrosiaBlessing.label>
+	<Sinnamon_AmbrosiaBlessing.effectDesc>가능한 위치에 소량의 암브로시아 싹이 틉니다.</Sinnamon_AmbrosiaBlessing.effectDesc>
+	<Sinnamon_AmbrosiaBlessing.letterInfoText>대지가 당신의 요청에 응했습니다.</Sinnamon_AmbrosiaBlessing.letterInfoText>
+	
+	<Sinnamon_RitualTaunt.label>도발</Sinnamon_RitualTaunt.label>
+	<Sinnamon_RitualTaunt.effectDesc>기지 가치에 비해 적은 양의 적들이 공격을 옵니다.</Sinnamon_RitualTaunt.effectDesc>
+	<Sinnamon_RitualTaunt.letterInfoText>당신의 적들 중 일부가 도발당했습니다.</Sinnamon_RitualTaunt.letterInfoText>
+	
+	<Sinnamon_RitualMeteor.label>운석 채굴</Sinnamon_RitualMeteor.label>
+	<Sinnamon_RitualMeteor.effectDesc>채굴 할 수 있는 유성이 떨어집니다.</Sinnamon_RitualMeteor.effectDesc>
+	<Sinnamon_RitualMeteor.letterInfoText>유성이 떨어집니다.</Sinnamon_RitualMeteor.letterInfoText>
+	
+	<Sinnamon_RitualSpaceshipChunk.label>우주선 조각 소환</Sinnamon_RitualSpaceshipChunk.label>
+	<Sinnamon_RitualSpaceshipChunk.effectDesc>우주선 조각이 떨어지게 합니다.</Sinnamon_RitualSpaceshipChunk.effectDesc>
+	<Sinnamon_RitualSpaceshipChunk.letterInfoText>우주선 조각이 궤도에서 이탈하여 추락했습니다.</Sinnamon_RitualSpaceshipChunk.letterInfoText>
+	
+	<Sinnamon_RitualTrader.label>상선 초대</Sinnamon_RitualTrader.label>
+	<Sinnamon_RitualTrader.effectDesc>근처를 지나는 상선의 주의를 끌어 통신콘솔로 거래를 할 수 있도록 합니다.</Sinnamon_RitualTrader.effectDesc>
+	<Sinnamon_RitualTrader.letterInfoText>근처를 지나던 상선이 당신들을 발견했습니다.</Sinnamon_RitualTrader.letterInfoText>
+	
+	<Sinnamon_SummonInsects.label>벌레 부르기</Sinnamon_SummonInsects.label>
+	<Sinnamon_SummonInsects.effectDesc>길들일 수 있는 야생의 곤충들을 소환합니다.</Sinnamon_SummonInsects.effectDesc>
+	<Sinnamon_SummonInsects.letterInfoText>당신의 의식에 관심을 보인 곤충들이 지상으로 기어 올라옵니다.</Sinnamon_SummonInsects.letterInfoText>
+	
+	<Sinnamon_DustToDust.label>먼지에서 먼지로</Sinnamon_DustToDust.label>
+	<Sinnamon_DustToDust.effectDesc>썩거나 백골화된 시체를 전부 제거합니다.</Sinnamon_DustToDust.effectDesc>
+	<Sinnamon_DustToDust.letterInfoText>재에서 재로, 먼지에서 먼지로</Sinnamon_DustToDust.letterInfoText>
+	
+	<Sinnamon_CallVenerated.label>신성한 동물 부르기</Sinnamon_CallVenerated.label>
+	<Sinnamon_CallVenerated.effectDesc>신성한 동물을 부릅니다.</Sinnamon_CallVenerated.effectDesc>
+	
+	<Sinnamon_RitualStrip.label>무장해제</Sinnamon_RitualStrip.label>
+	<Sinnamon_RitualStrip.effectDesc>적 일부가 옷을 벗습니다.</Sinnamon_RitualStrip.effectDesc>
+	
+	<Sinnamon_Aurora.label>오로라</Sinnamon_Aurora.label>
+	<Sinnamon_Aurora.effectDesc>오로라를 생성합니다.</Sinnamon_Aurora.effectDesc>
+	<Sinnamon_Aurora.letterInfoText>하늘에서 빛이 일렁입니다.</Sinnamon_Aurora.letterInfoText>
+	
+	
+</LanguageData>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Biotech Expansion - Mammalia</li>
+  </mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_BatEars"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_CervineEars"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_VulpineEars"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_RatEars"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_RabbitEarsLopped"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_RabbitEarsStraight"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_BovineEars"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/GeneDef[defName="BTEMa_SheepEars"]/graphicData/colorType</xpath>
+		  <value>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		  </value>
+		</li>
+	  </operations>
+	</match>
+</Operation>
+</Patch>

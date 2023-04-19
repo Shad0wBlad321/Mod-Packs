@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef>
+		<defName>VRE_AnimaSong</defName>
+		<label>anima song</label>
+		<description>Target an Anima tree to cause it to sing a beautiful psychic orchestra. Instantly triggers a psychic soothe, but can only be cast once a quadrum.</description>
+		<iconPath>UI/Abilities/AnimaSong</iconPath>
+		<cooldownTicksRange>900000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>15.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>PsychicInsanityLanceCast</soundCast>
+			<targetParams>
+				<canTargetPlants>true</canTargetPlants>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="VanillaRacesExpandedPhytokin.CompProperties_AnimaSong">
+				
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>

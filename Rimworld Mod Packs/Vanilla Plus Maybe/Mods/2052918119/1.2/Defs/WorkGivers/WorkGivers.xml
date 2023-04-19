@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<WorkGiverDef>
+    <defName>TakeChemshineOutOfChemshineBarrel</defName>
+    <label>take chemshine out of chemshine barrels</label>
+    <giverClass>VFE_Settlers.WorkGivers.WorkGiver_TakeChemshineOutOfChemshineBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>take chemshine</verb>
+    <gerund>taking chemshine from</gerund>
+    <priorityInType>18</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>FillChemshineBarrel</defName>
+    <label>fill chemshine barrels</label>
+    <giverClass>VFE_Settlers.WorkGivers.WorkGiver_FillChemshineBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>fill</verb>
+    <gerund>filling</gerund>
+    <priorityInType>17</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  </Defs>

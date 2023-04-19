@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+	<ResearchProjectDef>
+		<defName>VCE_StewCooking</defName>
+		<label>stew cooking</label>
+		<tab>VCE_Cooking</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Stew is a form of a very nourishing meal, cooked in bulk over fire. This research also gives access to the wood-fired pot necessary to cook stews.</description>
+		<baseCost>300</baseCost>
+		
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	
+
+
+
+
+</Defs>

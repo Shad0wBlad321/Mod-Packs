@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>FFE_FridgeBaseDropdownDef</defName>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef Name="FFE_FridgeBase" Abstract="True">
+    <thingClass>RimFridge.RimFridge_Building</thingClass>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <building>
+      <paintable>true</paintable>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings Inherit="false">
+        <filter>
+          <categories>
+            <li>Foods</li>
+            <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
+          </categories>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+            <li>Wort</li>
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
+            <li MayRequire="oskarpotocki.vfe.insectoid">VFEI_DroneGenome</li>
+            <li MayRequire="oskarpotocki.vfe.insectoid">VFEI_WarriorGenome</li>
+            <li MayRequire="oskarpotocki.vfe.insectoid">VFEI_RoyalGenome</li>
+            <li MayRequire="sarg.alphaanimals">AA_CactipineQuill</li>
+            <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
+          </thingDefs>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>
+          </specialFiltersToDisallow>
+          <disallowedThingDefs>
+            <li MayRequire="ludeon.rimworld.ideology">Dye</li>
+            <li>Hay</li>
+            <li>Kibble</li>
+            <li>MealSurvivalPack</li>
+          </disallowedThingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Foods</li>
+          </categories>
+          <thingDefs>
+            <li>Beer</li>
+            <li MayRequire="VanillaExpanded.VBrewE">VBE_Gin</li>
+            <li MayRequire="VanillaExpanded.VBrewE">VBE_Vodka</li>
+            <li MayRequire="VanillaExpanded.VBrewECandT">VBE_Lemonade</li>
+            <li MayRequire="VanillaExpanded.VBrewE">VBE_Soda</li>
+            <li MayRequire="VanillaExpanded.VBrewE">VBE_Cider</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="RimFridge.CompProperties_Refrigerator">
+        <drinksBestCold>
+          <li>Beer</li>
+          <li MayRequire="VanillaExpanded.VBrewE">VBE_Gin</li>
+          <li MayRequire="VanillaExpanded.VBrewE">VBE_Vodka</li>
+          <li MayRequire="VanillaExpanded.VBrewECandT">VBE_Lemonade</li>
+          <li MayRequire="VanillaExpanded.VBrewE">VBE_Soda</li>
+          <li MayRequire="VanillaExpanded.VBrewE">VBE_Cider</li>
+        </drinksBestCold>
+        <findAllRottableForFilters>true</findAllRottableForFilters>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li MayRequire="lwm.deepstorage">LWM.DeepStorage.ITab_DeepStorage_Inventory</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Temperature</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>AirConditioning</li>
+      <li MayRequire="LWM.DeepStorage">FFE_IndustrialFridges</li>
+    </researchPrerequisites>
+    <surfaceType>Item</surfaceType>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <pathCost>60</pathCost>
+    <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+
+  <ThingDef ParentName="FFE_FridgeBase">
+    <defName>FFE_KitchenFridge</defName>
+    <label>kitchen fridge</label>
+    <description>A powered, kitchen fridge which can be used to freeze and store perishable food.</description>
+    <designatorDropdown>FFE_FridgeBaseDropdownDef</designatorDropdown>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Fridge/Fridge</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Fridge/FridgeUI</uiIconPath>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>25</Mass>
+      <WorkToBuild>3500</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>80</basePowerConsumption>
+      </li>
+      <li MayRequire="lwm.deepstorage" Class="LWM.DeepStorage.Properties">
+        <minNumberStacks>3</minNumberStacks>
+        <maxNumberStacks>3</maxNumberStacks>
+        <timeStoringTakes>80</timeStoringTakes>
+        <maxMassOfStoredItem>100</maxMassOfStoredItem>
+        <additionalTimeEachStack>50</additionalTimeEachStack>
+        <showContents>false</showContents>
+        <overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="FFE_FridgeBase">
+    <defName>FFE_KitchenFridgeLarge</defName>
+    <label>industrial fridge</label>
+    <description>A powered, large industrial fridge which can be used to freeze and store perishable food.</description>
+    <designatorDropdown>FFE_FridgeBaseDropdownDef</designatorDropdown>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Fridge/FridgeLarge</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Fridge/FridgeLargeUI</uiIconPath>
+    <costList>
+      <Steel>110</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>35</Mass>
+      <WorkToBuild>5500</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(2,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>120</basePowerConsumption>
+      </li>
+      <li MayRequire="lwm.deepstorage" Class="LWM.DeepStorage.Properties">
+        <minNumberStacks>4</minNumberStacks>
+        <maxNumberStacks>4</maxNumberStacks>
+        <timeStoringTakes>80</timeStoringTakes>
+        <maxMassOfStoredItem>100</maxMassOfStoredItem>
+        <additionalTimeEachStack>50</additionalTimeEachStack>
+        <showContents>false</showContents>
+        <overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="FFE_FridgeBase" MayRequire="LWM.DeepStorage">
+    <defName>FFE_FridgeContainer</defName>
+    <label>fridge container</label>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <description>A powered, cargo container which can be used to freeze and store perishable food.</description>
+    <graphicData>
+      <texPath>Things/Building/Container/FridgeContainer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,4)</drawSize>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>55</Mass>
+      <WorkToBuild>10500</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <blockWind>true</blockWind>
+    <fillPercent>1.1</fillPercent>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <repairEffect>ConstructMetal</repairEffect>
+    <size>(2,4)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li MayRequire="lwm.deepstorage" Class="LWM.DeepStorage.Properties">
+        <maxNumberStacks>5</maxNumberStacks>
+        <minNumberStacks>5</minNumberStacks>
+        <timeStoringTakes>80</timeStoringTakes>
+        <additionalTimeEachStack>50</additionalTimeEachStack>
+        <showContents>false</showContents>
+        <overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

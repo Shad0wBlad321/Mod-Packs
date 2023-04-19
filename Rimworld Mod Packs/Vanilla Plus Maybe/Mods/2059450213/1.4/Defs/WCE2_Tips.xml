@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TipSetDef>
+    <defName>GameplayTips</defName>
+    <tips>
+      <!-- WCE2 -->
+      <li TKey="TortureMasochists">Masochists love being tortured!.</li>
+	  <li TKey="Torture">Most pawns and ideologies do not like torturing people or being tortured and dislike those who do it.</li>
+	  <li TKey="PracticeSurgery">Practicing surgery on prisoners - or masochists - is a great way to level up someone's medical skill.</li>
+	  <li TKey="Lobotomy">Lobotomies have a very high chance of failure and death, but if successful create useful slave pawns!</li>
+	  <li TKey="TraumaSavantwce">Trying to turn someone into a trauma savant on purpose often comes with large risks of failure and brain damage - just keep trying!</li>
+	  <li TKey="HackingLimbs">Don't forget to bandage someone up after hacking their limb off or they'll bleed to death.</li>
+	  <li TKey="Vivisection">Performing vivisection is even better than practicing surgery for training doctors, but it leaves the patient in a near-death state.. best suture them back up if you don't want to lose your test dummy..</li>
+
+      
+
+    </tips>
+  </TipSetDef>
+  
+</Defs>

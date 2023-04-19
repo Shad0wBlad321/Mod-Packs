@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>O21_GeothermalCooling</defName>
+		<label>geothermal cooling</label>
+		<description>Make geothermal coolers and freezers, which extract cold air from deep underground to cool the surrounding area.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+		<prerequisites>
+			<li>PassiveCooler</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

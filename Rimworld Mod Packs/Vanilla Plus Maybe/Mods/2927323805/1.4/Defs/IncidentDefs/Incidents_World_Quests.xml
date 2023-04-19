@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <IncidentDef ParentName="GiveQuestBase">
+    <defName>VRE_GiveQuest_Intro_Phytokin</defName>
+    <label>wandering phytokin</label>
+    <questScriptDef>VRE_Intro_Phytokin</questScriptDef>
+    <baseChance>0</baseChance> <!-- given by a special storyteller comp -->
+  </IncidentDef>
+
+
+</Defs>

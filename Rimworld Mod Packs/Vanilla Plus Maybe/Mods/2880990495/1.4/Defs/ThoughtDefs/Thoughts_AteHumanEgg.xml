@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<TaleDef>
+		<defName>VRESaurids_KilledEggChild</defName>
+		<label>human egg eaten</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Expirable</type>
+		<firstPawnSymbol>KILLER</firstPawnSymbol>
+		<secondPawnSymbol>CHILD</secondPawnSymbol>
+		<usableForArt>false</usableForArt>
+		<maxPerPawn>1</maxPerPawn>
+		<expireDays>50</expireDays>
+	</TaleDef>
+
+	<ThoughtDef>
+		<defName>VRESaurids_KilledEggChildThought</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackedEffectMultiplier>0.8</stackedEffectMultiplier>
+		<stackLimit>5</stackLimit>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>ate human egg</label>
+				<description>Killing one so young feels wrong, there's no situation where this feels right.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VRESaurids_KilledEggChild_Opinion</defName>
+		<thoughtClass>Thought_Tale</thoughtClass>
+		<workerClass>ThoughtWorker_Tale</workerClass>
+		<taleDef>VRESaurids_KilledEggChild</taleDef>
+		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>ate human egg</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+
+</Defs>

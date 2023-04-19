@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RitualOutcomeEffectDef[defName="AnimaTreeLinking"]/comps</xpath>
+		<value>
+			<li Class="VanillaRacesExpandedPhytokin.RitualOutcomeComp_GeneCount">
+				<label>participant with anima affinity gene count</label>
+				<gene>VRE_AnimaAffinity</gene>
+				<explanation>VRE_RitualPredictedOutcomeDescAffinityGeneCount</explanation>
+				<curve>
+					<points>
+						<li>(1, 0.1)</li>
+						<li>(2, 0.2)</li>
+						<li>(3, 0.3)</li>
+						<li>(4, 0.4)</li>
+						<li>(5, 0.5)</li>
+					</points>
+				</curve>
+			</li>
+		</value>
+	</Operation>
+</Patch>

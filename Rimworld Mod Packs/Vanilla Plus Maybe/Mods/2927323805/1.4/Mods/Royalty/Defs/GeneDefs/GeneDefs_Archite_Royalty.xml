@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef>
+		<defName>VRE_AnimaAffinity</defName>
+		<label>anima affinity</label>
+		<description>Carriers of this gene have a special connection to the anima tree, allowing them to act as an amplifier to the special properties of the tree. They can encourage anima trees to sing, giving everyone in large radius a psychic soothe, as well as help with connection and meditation to it.</description>
+		<iconPath>UI/Icons/Genes/Gene_AffinityAnima</iconPath>
+		<displayCategory>Archite</displayCategory>
+		<displayOrderInCategory>5000</displayOrderInCategory>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<biostatArc>1</biostatArc>
+		<exclusionTags>
+			<li>VRE_TreeAffinity</li>
+		</exclusionTags>
+		<customEffectDescriptions>
+			<li>Guarantees Natural Meditation focus on the pawn.</li>
+			<li>Pawns with this gene included in the anima tree linking ritual increase its success by 10% each, stacking up to 5 times.</li>
+		</customEffectDescriptions>
+		<statOffsets>
+			<MeditationPlantGrowthOffset>0.15</MeditationPlantGrowthOffset>		
+		</statOffsets>
+		<abilities>
+			<li>VRE_AnimaSong</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>VRE_AnimaSong</AbilityDef>
+		</descriptionHyperlinks>
+		<symbolPack>
+			
+			<prefixSymbols>
+				<li>
+					<symbol>anima</symbol>
+				</li>
+				<li>
+					<symbol>anim</symbol>
+				</li>
+			
+			</prefixSymbols>
+			
+		</symbolPack>
+	</GeneDef>
+</Defs>

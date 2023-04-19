@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<SitePartDef ParentName="Outpost">
+		<defName>WantedHideout</defName>
+		<label>safe house</label>
+		<description>A safe house for a wanted criminal.</description>
+		<workerClass>VFE_Settlers.SitePartWorkers.SitePartWorker_SpawnWanted</workerClass>
+		<siteTexture>World/WorldObjects/Sites/Wanted</siteTexture>
+		<expandingIconTexture>World/WorldObjects/Expanding/Sites/Wanted</expandingIconTexture>
+		<forceExitAndRemoveMapCountdownDurationDays>5</forceExitAndRemoveMapCountdownDurationDays>
+		<requiresFaction>true</requiresFaction>
+		<handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+		<tags Inherit="False">
+			<li>WantedHideout</li>
+		</tags>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>WantedOutpost</defName>
+		<linkWithSite>WantedHideout</linkWithSite>
+		<order>450</order>
+		<genStep Class="GenStep_Outpost"/>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>WantedOutpostPower</defName>
+		<linkWithSite>WantedHideout</linkWithSite>
+		<order>451</order>
+		<genStep Class="GenStep_Power"/>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>WantedSpawn</defName>
+		<linkWithSite>WantedHideout</linkWithSite>
+		<order>480</order>
+		<genStep Class="VFE_Settlers.GenSteps.GenStep_SpawnWanted">
+			<count>1</count>
+			<nearMapCenter>true</nearMapCenter>
+		</genStep>	
+	</GenStepDef>
+</Defs>

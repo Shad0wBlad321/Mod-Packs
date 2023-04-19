@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>VFES_Bandit</defName>
+        <label>bandit</label>
+        <race>Human</race>
+        <defaultFactionType>VFES_PlayerSettlement</defaultFactionType>
+        <backstoryCategories>
+            <li>Outlander</li>
+        </backstoryCategories>
+        <chemicalAddictionChance>0.1</chemicalAddictionChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+			<li>Outlander</li>
+        </apparelTags>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>0.6</max>
+		</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+        <apparelMoney>
+            <min>100</min>
+            <max>200</max>
+        </apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsMoney>
+            <min>0</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.06</techHediffsChance>
+    </PawnKindDef>
+
+</Defs>

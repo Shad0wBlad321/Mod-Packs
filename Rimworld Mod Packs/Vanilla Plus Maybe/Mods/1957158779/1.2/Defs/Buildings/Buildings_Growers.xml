@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VFE_PlanterBox</defName>
+		<label>planter box</label>
+		<description>Grows plants in a box of soil. Does not require power to work.</description>
+		<thingClass>VFEF.Building_PlantGrower_NoEmptyLines</thingClass>
+		<graphicData>
+		  <texPath>Things/Building/PlanterBox/PlanterBox</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawSize>(4,2)</drawSize>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<costStuffCount>30</costStuffCount> <!-- slightly less than 8*4, so that building these is slightly cheaper than the equivalent tiled version -->
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+		  <WorkToBuild>2000</WorkToBuild> <!-- 8 * 350 -->
+		  <MaxHitPoints>200</MaxHitPoints> <!-- 8 * 25 -->
+		  <Flammability>1</Flammability>
+		  <Cleanliness>-3</Cleanliness>
+		</statBases>
+		<size>(4,2)</size>
+		<fertility>0.95</fertility>
+		<building>
+		  <defaultPlantToGrow>Plant_Potato</defaultPlantToGrow> <!-- Rice would be an objectively bad choice -->
+		  <sowTag>Hydroponic</sowTag>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VFE_Ecosystem</defName>
+		<label>artificial ecosystem</label>
+		<description>Grows plants quickly in an artificial, sealed ecosystem. Requires a high amount of power to work; plants will die if power is cut.\n\nContains a built-in sun lamp to provide light for the plants.</description>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+		  <texPath>Things/Building/AdvancedHydroponics</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(2,2)</drawSize>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<statBases>
+		  <WorkToBuild>4200</WorkToBuild>
+		  <MaxHitPoints>360</MaxHitPoints>
+		  <Flammability>0.5</Flammability>
+		  <Cleanliness>0</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+		  <Steel>100</Steel>
+		  <Plasteel>20</Plasteel>
+		  <ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<fertility>3.5</fertility> <!-- not rediculous, it's more valuable as an optimizing concept for very rich colonies -->
+		<building>
+		  <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+		  <sowTag>Ground</sowTag>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>200</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Flickable"/>
+		  <li Class="CompProperties_Glower">
+			<overlightRadius>3.0</overlightRadius>
+			<glowRadius>3.0</glowRadius>
+			<glowColor>(370,370,370,0)</glowColor>
+		  </li>
+		</comps>
+		<researchPrerequisites>
+		  <li>VFE_Res_AdvancedHydroponics</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+	</ThingDef>
+</Defs>

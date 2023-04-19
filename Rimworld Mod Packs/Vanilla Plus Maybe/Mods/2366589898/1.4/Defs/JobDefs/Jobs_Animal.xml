@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>AEXP_IngestAnts</defName>
+		<driverClass>VanillaAnimalsExpandedEndangered.JobDriver_EatAnts</driverClass>
+		<reportString>devouring ants.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+
+	<JobDef>
+		<defName>AEXP_GotoTheWild</defName>
+		<driverClass>VanillaAnimalsExpandedEndangered.JobDriver_GotoTheWild</driverClass>
+		<reportString>going to the wild.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+</Defs>

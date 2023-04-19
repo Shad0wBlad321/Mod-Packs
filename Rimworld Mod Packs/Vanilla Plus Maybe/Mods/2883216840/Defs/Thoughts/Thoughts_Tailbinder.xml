@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  <ThoughtDef>
+    <defName>BTEMy_ReverenceGreed</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+	<workerClass>BTE_MY.ThoughtWorker_ReverenceGreed</workerClass>
+    <requiredGenes>
+      <li>BTEMy_ReverenceGreed</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>demand more reverence</label>
+        <description>I'm not being worshipped enough. I demand more!</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>BTEMy_ShrineWanted</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+	<workerClass>BTE_MY.ThoughtWorker_ShrineWanted</workerClass>
+    <requiredGenes>
+      <li>BTEMy_ReveredEmbodiment</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>wants a shrine</label>
+        <description>How am I supposed to receive worship without a revered totem?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

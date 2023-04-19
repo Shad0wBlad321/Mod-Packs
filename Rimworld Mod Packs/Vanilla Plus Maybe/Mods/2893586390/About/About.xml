@@ -1,0 +1,43 @@
+<ModMetaData>
+	<name>Vanilla Races Expanded - Hussar</name>
+	<author>Oskar Potocki, xrushha, Taranchuk, Sarg</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+		</li>
+	    <li>
+		    <packageId>Ludeon.RimWorld.Biotech</packageId>
+		    <displayName>Biotech</displayName>
+	    </li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
+	<packageId>vanillaracesexpanded.hussar</packageId>
+	<description>Vanilla Races Expanded is a brand new series of mods to enhance Biotech features, add to the storytelling and the world-building of RimWorld, and to introduce new, cool types ofxenohumans, complete with their own unique genes, behaviors, mechanics and items.
+
+This mod expands on a xenotype of Hussars with brand new genes that are aimed at making this xenotype feel more fleshed out, rather than just 'good combat pawns'. It also adds a brand new xenotype of Uhlans, rare and strong soldiers fueled with luciferium.
+
+Uhlans are a side-development from captured hussars, turned by certain elements to become a counter to the military-developed supersoldier programs. Their genetic dependence on luciferium is both a deterrent against capturing and an improvement to long-term usefulness.
+
+Appropriately named demons for their permanently flushed skin and intense bloodthirst, uhlans are incredibly resilient and specialized in certain styles of combat. Quite often they are decked out in heavy armor, in which they can charge full tilt at their intended target.
+
+Extremely specialized and on a permanent hair-trigger, there has been much speculation that their development was sponsored by megacorporations as part of the latest arms race. No substantial evidence has been presented to support these claims.</description>
+</ModMetaData>

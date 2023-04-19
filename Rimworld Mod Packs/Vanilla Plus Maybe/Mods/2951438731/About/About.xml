@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Micro Comms Console</name>
+	<author>Neronix17</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>Neronix17.CosmoRim.MicroCommsConsole</packageId>
+	<description>Standalone version of the 1x1 comms console from CosmoRim.</description>
+	<incompatibleWith>
+		<li>Neronix17.CosmoRim.Core</li>
+	</incompatibleWith>
+</ModMetaData>

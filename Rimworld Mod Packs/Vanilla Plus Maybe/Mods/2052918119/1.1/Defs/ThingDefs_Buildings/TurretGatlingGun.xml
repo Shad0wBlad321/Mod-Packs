@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_GatlingGun</defName>
+    <label>gatling gun</label>
+    <description>A simple automatic gun made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Buildings/TurretGatlingGun/TurretGatlingGun_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_GatlingGun</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>22.9</range>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>VFE_Shot_GattlingGun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_GatlingGun</defName>
+    <label>gattling bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_GatlingGun</defName>
+    <label>gatling gun turret</label>
+    <description>A portable, old time turret. Needs to be manned in order to be operated. Requires steel to refurbish its barrel after heavy use. Firing speed increases the longer this turret fires. May explode when damaged.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/TurretGatlingGun/TurretGatlingGun_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Buildings/TurretGatlingGun/TurretGatlingGun_MenuIcon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>true</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>14</Mass>
+      <Beauty>-10</Beauty>
+      <ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>160</wickTicks>
+        <explosiveRadius>4.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>150</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>2</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+      <li Class="VanillaFactionsExpandedSettlers.CompProperties_WarmUpReduction">
+        <WarmUpReductionPerShot>0.25</WarmUpReductionPerShot>
+        <UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+        <OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+        <OverheatMoteSize>0.5</OverheatMoteSize>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>120</costStuffCount>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <building>
+      <turretTopDrawSize>3</turretTopDrawSize>
+      <turretTopOffset>(0, 0.1)</turretTopOffset>
+      <combatPower>40</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_GatlingGun</turretGunDef>
+      <turretBurstCooldownTime>3</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Gunsmithing</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VCE_StewPot</defName>
+		<label>stew pot</label>
+		<description>A wood-fired stove with a top side perfectly indented for a large pot. The lack of need for electricity means this cooking apparatus is perfect for the rugged outdoorsman or medieval peasant alike. Stews are heartier and easier to cook than proper soups. Stews often meld into a singular flavor over long periods of time, perfect for gamey or “less enticing” meat products.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VCE_StewPot</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+			
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VCE_StewCooking</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VCE_StewPotFull</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VCE_InsertStewDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VCE_ResetStew</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VCE_EmptyStewPotIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VCE_StartStewInsertion</bringIngredientsText>
+				<bringIngredientsDesc>VCE_StartStewInsertionDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VCE_InsertStew</bringIngredientsIcon >
+
+				<cancelIngredientsText>VCE_CancelBringingStew</cancelIngredientsText> 
+				<cancelIngredientsDesc>VCE_CancelBringingStewDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VCE_CancelStew</cancelIngredientsIcon> 
+				
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>10</rareTicksToDestroy>
+				<noPowerDestroysMessage>VCE_StewFailurePower</noPowerDestroysMessage>
+				<noPowerDestroysInitialWarning>VCE_StewFailurePowerWarning</noPowerDestroysInitialWarning>
+
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10.0</fuelConsumptionRate>
+				<fuelCapacity>25.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+
+			</li>
+			
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>6</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(244, 112, 42,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+
+
+
+
+</Defs>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="Wall">
+		<defName>O21_Embrasure_Letterbox</defName>
+		<label>embrasure (letterbox)</label>
+		<description>An impassable embrasure. Capable of holding up a roof, weapons can be fired through.</description>
+		<graphicData Inherit="False">
+			<texPath>Things/Building/Linked/Wall</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    	<fillPercent>0.80</fillPercent>
+		<comps>
+			<li Class="O21Embrasures.CompProperties_EmbrasureOverlay">
+				<embrasureGraphics>
+					<texPath>SeamlessEmbrasures/Overlay/Embrasure</texPath>
+					<graphicClass>Graphic_Appearances</graphicClass>
+					<linkType>CornerFiller</linkType>
+					<linkFlags>
+						<li>Wall</li>
+						<li>Rock</li>
+					</linkFlags>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+						<edgeTop>Damage/Edge</edgeTop>
+						<edgeBot>Damage/Edge</edgeBot>
+						<edgeLeft>Damage/Edge</edgeLeft>
+						<edgeRight>Damage/Edge</edgeRight>
+					</damageData>
+				</embrasureGraphics>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Wall">
+		<defName>O21_Embrasure_Hole</defName>
+		<label>embrasure (hole)</label>
+		<description>An impassable embrasure. Capable of holding up a roof, weapons can be fired through.</description>
+		<graphicData Inherit="False">
+			<texPath>Things/Building/Linked/Wall</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    	<fillPercent>0.80</fillPercent>
+		<comps>
+			<li Class="O21Embrasures.CompProperties_EmbrasureOverlay">
+				<embrasureGraphics>
+					<texPath>SeamlessEmbrasures/Overlay/Holes</texPath>
+					<graphicClass>Graphic_Appearances</graphicClass>
+					<linkType>CornerFiller</linkType>
+					<linkFlags>
+						<li>Wall</li>
+						<li>Rock</li>
+					</linkFlags>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+						<edgeTop>Damage/Edge</edgeTop>
+						<edgeBot>Damage/Edge</edgeBot>
+						<edgeLeft>Damage/Edge</edgeLeft>
+						<edgeRight>Damage/Edge</edgeRight>
+					</damageData>
+				</embrasureGraphics>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

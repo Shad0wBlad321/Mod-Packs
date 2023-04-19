@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="AG_ArmourMinor"]/label</xpath>
+					<value>
+						<label>wooden skin</label>
+					</value>
+				</li>	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="AG_ArmourMinor"]/description</xpath>
+					<value>
+						<description>Hard, wood-like skin. This confers a small amount of natural armour.</description>
+					</value>
+				</li>	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="AG_ArmourMinor"]/label</xpath>
+					<value>
+						<label>wooden skin</label>
+					</value>
+				</li>	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="AG_ArmourMinor"]/description</xpath>
+					<value>
+						<description>Hard, wood-like skin. This confers a small amount of natural armour.</description>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[@Name="VRE_BodyBase"]/displayCategory</xpath>
+					<value>
+						<displayCategory>AG_Cosmetic_Bodies</displayCategory>
+					</value>
+				</li>	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="VRE_SapBlood"]/displayCategory</xpath>
+					<value>
+						<displayCategory>AG_BloodType</displayCategory>
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/GeneDef[defName="VRE_Female"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+					<value>
+						<hideGene>true</hideGene>
+					</value>
+				</li>		
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/XenotypeDef[defName="VRE_Poluxkin"]/genes/li[@Name="AlphaGenesSwap"]</xpath>
+					<value>
+						<li Name="AlphaGenesSwap">AG_Female</li>
+					</value>
+				</li>					
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	
+</Patch>

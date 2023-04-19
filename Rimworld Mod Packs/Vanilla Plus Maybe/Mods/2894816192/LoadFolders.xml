@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LoadFolders>
+  <v1.3>
+    <li>/</li>
+    <li>1.3</li>
+    <li IfModActive="LWM.DeepStorage">Mods/1.3/DeepStorage</li>
+    <li IfModActive="VanillaExpanded.VMemesE">Mods/1.3/VMemesE</li>
+  </v1.3>
+  <v1.4>
+    <li>/</li>
+    <li>1.4</li>
+    <li IfModActive="LWM.DeepStorage">Mods/1.4/DeepStorage</li>
+    <li IfModActive="VanillaExpanded.VMemesE">Mods/1.4/VMemesE</li>
+  </v1.4>
+</LoadFolders>

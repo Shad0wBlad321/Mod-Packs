@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>VCE_HumanSurimi</defName>
+		<label>human "surimi"</label>
+		<description>A nondistinct paste mimicking the texture of lobster, crab, or other shellfish. Only, this one... is made with human meat. A delicacy for cannibalistic Rim tribes, and a profoundly disgusting and taboo culinary experience for anyone else.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_HumanSurimi</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Beauty>-4</Beauty>
+			<DeteriorationRate>6</DeteriorationRate>
+			<MarketValue>2.0</MarketValue>
+			<Mass>0.03</Mass>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>RawBad</preferability>
+			<sourceDef>Human</sourceDef>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCEF_RawFishCategory</li>
+		</thingCategories>
+	</ThingDef>
+
+
+
+
+</Defs>

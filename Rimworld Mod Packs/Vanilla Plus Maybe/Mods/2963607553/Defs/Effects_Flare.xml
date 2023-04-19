@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>BDsWhiteSmoke</defName>
+		<graphicData>
+			<texPath>Things/Mote/AirPuff</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<growthRate>3.5</growthRate>
+			<fadeInTime>0.03</fadeInTime>
+			<solidTime>0.1</solidTime>
+			<fadeOutTime>3</fadeOutTime>
+			<collide>true</collide>
+		</mote>
+	</ThingDef>
+
+	<!--Colored Flecks-->
+
+	<FleckDef ParentName="FleckBase_Thrown" Name="BDMEtest_FlareFleckBase">
+		<defName>BDMEtest_FlareWhite</defName>
+		<graphicData>
+			<texPath>Things/Mote/WhiteGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.75</fadeInTime>
+		<solidTime>1.08</solidTime>
+		<fadeOutTime>0.8</fadeOutTime>
+	</FleckDef>
+
+	<FleckDef ParentName="BDMEtest_FlareFleckBase">
+		<defName>BDMEtest_FlareBlue</defName>
+		<graphicData>
+			<color>(0,192,255)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="BDMEtest_FlareFleckBase">
+		<defName>BDMEtest_FlareOrange</defName>
+		<graphicData>
+			<color>(247,147,30)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="BDMEtest_FlareFleckBase">
+		<defName>BDMEtest_FlareRed</defName>
+		<graphicData>
+			<color>(200,30,30)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="BDMEtest_FlareFleckBase">
+		<defName>BDMEtest_FlareGreen</defName>
+		<graphicData>
+			<color>(0,200,0)</color>
+		</graphicData>
+	</FleckDef>
+
+	<!--Effecters-->
+
+	<EffecterDef  Name="BDMEtest_FlareEffecterBase" Abstract="true">
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>SmokeGrowing</fleckDef>
+				<chancePerTick>0.05</chancePerTick>
+				<scale>1.1~1.5</scale>
+				<rotationRate>15~30</rotationRate>
+				<speed>0.6~1.8</speed>
+				<angle>32~40</angle>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+				<soundDef>BurningPowerCell_Start</soundDef>
+				<spawnLocType>OnTarget</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>BurningPowerCell_Loop</soundDef>
+				<spawnLocType>OnTarget</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<EffecterDef  ParentName="BDMEtest_FlareEffecterBase">
+		<defName>BDMEtest_FlareBurningBlue</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<positionRadius>0</positionRadius>
+				<fleckDef>BDMEtest_FlareBlue</fleckDef>
+				<ticksBetweenMotes>15</ticksBetweenMotes>
+				<scale>4~5</scale>
+				<angle>15</angle>
+				<rotation>0~360</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<EffecterDef  ParentName="BDMEtest_FlareEffecterBase">
+		<defName>BDMEtest_FlareBurningOrange</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<positionRadius>0</positionRadius>
+				<fleckDef>BDMEtest_FlareOrange</fleckDef>
+				<ticksBetweenMotes>15</ticksBetweenMotes>
+				<scale>4~5</scale>
+				<angle>15</angle>
+				<rotation>0~360</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<EffecterDef  ParentName="BDMEtest_FlareEffecterBase">
+		<defName>BDMEtest_FlareBurningRed</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<positionRadius>0</positionRadius>
+				<fleckDef>BDMEtest_FlareRed</fleckDef>
+				<ticksBetweenMotes>15</ticksBetweenMotes>
+				<scale>4~5</scale>
+				<angle>15</angle>
+				<rotation>0~360</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<EffecterDef  ParentName="BDMEtest_FlareEffecterBase">
+		<defName>BDMEtest_FlareBurningGreen</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<positionRadius>0</positionRadius>
+				<fleckDef>BDMEtest_FlareGreen</fleckDef>
+				<ticksBetweenMotes>15</ticksBetweenMotes>
+				<scale>4~5</scale>
+				<angle>15</angle>
+				<rotation>0~360</rotation>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

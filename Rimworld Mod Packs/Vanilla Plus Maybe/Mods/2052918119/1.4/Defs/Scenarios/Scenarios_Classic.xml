@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>VFES_Bandits</defName>
+        <label>Bandits</label>
+        <description>After the last job, which was meant to be the last, you and other members of your gang were forced to run without looking back. The only thing you have with you, are the things you managed to steal, extort or find along the way. Your savage ways have granted you a bad reputation, and mending relations with other factions will take a long time.\n\nNote: Since you start without any supplies and with every other faction hostile, this is a difficult scenario.</description>
+	<scenario>
+		<name>Bandits</name>
+		<summary>A group of bandits trying to make a name for themselves. Very Difficult.</summary>
+		<description>After the last job, which was meant to be the last, you and other members of your gang were forced to run without looking back. The only thing you have with you, are the things you managed to steal, extort or find along the way. Your savage ways have granted you a bad reputation, and mending relations with other factions will take a long time.
+
+Note: Since you start with high wealth every other faction hostile, this is a very difficult scenario.</description>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>VFES_PlayerSettlement</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>4</pawnCount>
+				<pawnChoiceCount>5</pawnChoiceCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_SetNeedLevel">
+				<def>SetNeedLevel</def>
+				<chance>1</chance>
+				<context>PlayerStarter</context>
+				<need>Food</need>
+				<levelRange>0.4962963~0.8037037</levelRange>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>After the last job, which was meant to be the last, you and other members of your gang were forced to run without looking back. The only thing you have with you, are the things you managed to steal, extort or find along the way. Your savage ways have granted you a bad reputation, and mending relations with other factions will take a long time.</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<affectStartingGoodwill>True</affectStartingGoodwill>
+				<startingGoodwillRange>-100~-80</startingGoodwillRange>
+				<affectNaturalGoodwill>True</affectNaturalGoodwill>
+				<naturalGoodwillRange>-40~0</naturalGoodwillRange>
+				<def>VFEC_ForcedFactionGoodwill</def>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>1700</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_Revolver</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFES_Gun_DoubleActionRevolver</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFES_Gun_DoubleBarreledShotgun</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFES_Weapon_GrenadeDynamite</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Chemshine</thingDef>
+				<count>12</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>SculptureLarge</thingDef>
+				<stuff>Gold</stuff>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>SculptureSmall</thingDef>
+				<stuff>Steel</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFES_Headgear_Bandana</thingDef>
+				<stuff>Cloth</stuff>
+				<count>4</count>
+			</li>
+		</parts>
+	</scenario>
+    </ScenarioDef>
+
+</Defs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_Chemroot</defName>
+    <label>chemroot</label>
+    <description>This highly volatile root is farmed for its chemfuel. It's difficult to harvest and only grows in extremely fertile soil. Despite the risk of a large, chain explosion, these plants are frequently farmed by desperate ranchers and imperial agro-companies alike.</description>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Chemroot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>33</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>1.2</fertilityMin>
+      <fertilitySensitivity>1.0</fertilitySensitivity>
+      <growDays>25</growDays>
+      <sowWork>500</sowWork>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Chemfuel</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <neverBlightable>false</neverBlightable>
+      <immatureGraphicPath>Things/Plants/ChemrootImmature</immatureGraphicPath>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>10</sowMinSkill>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <harvestFailable>true</harvestFailable>
+    </plant>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(255,255,50,0)</glowColor>
+		</li>
+	</comps>
+  </ThingDef>
+</Defs>

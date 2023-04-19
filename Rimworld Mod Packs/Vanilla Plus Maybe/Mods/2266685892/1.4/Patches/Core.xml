@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
+				<value>
+					<RG_WoollyMammoth>0.5</RG_WoollyMammoth>
+					<RG_WoollyRhinoceros>0.2</RG_WoollyRhinoceros>
+					<RG_ArcticDrak>0.2</RG_ArcticDrak>
+					<RG_WoollyStegosaurus>0.4</RG_WoollyStegosaurus>
+					<RG_SabertoothSquirrel>0.8</RG_SabertoothSquirrel>
+					<RG_Velociraptor>0.3</RG_Velociraptor>
+				</value>
+			</li>
+			<li MayRequire="ReGrowth.BOTR.AspenForest" Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="RG_AspenForest"]/wildAnimals</xpath>
+				<value>
+					<RG_WoollyMammoth>0.5</RG_WoollyMammoth>
+					<RG_WoollyRhinoceros>0.2</RG_WoollyRhinoceros>
+					<RG_ArcticDrak>0.2</RG_ArcticDrak>
+					<RG_WoollyStegosaurus>0.4</RG_WoollyStegosaurus>
+					<RG_SabertoothSquirrel>0.8</RG_SabertoothSquirrel>
+					<RG_Velociraptor>0.3</RG_Velociraptor>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
+				<value>
+					<RG_WoollyMammoth>0.5</RG_WoollyMammoth>
+					<RG_WoollyRhinoceros>0.5</RG_WoollyRhinoceros>
+					<RG_ArcticDrak>0.3</RG_ArcticDrak>
+					<RG_SabertoothSquirrel>1.2</RG_SabertoothSquirrel>
+					<RG_Velociraptor>0.4</RG_Velociraptor>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ColdBog"]/wildAnimals</xpath>
+				<value>
+					<RG_WoollyMammoth>0.3</RG_WoollyMammoth>
+					<RG_SabertoothSquirrel>1.0</RG_SabertoothSquirrel>
+					<RG_Velociraptor>0.1</RG_Velociraptor>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="IceSheet"]/wildAnimals</xpath>
+				<value>
+					<RG_WoollyRhinoceros>0.1</RG_WoollyRhinoceros>
+					<RG_ArcticDrak>0.1</RG_ArcticDrak>
+					<RG_SabertoothSquirrel>0.1</RG_SabertoothSquirrel>
+					<RG_WoollyStegosaurus>0.05</RG_WoollyStegosaurus>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="SeaIce"]/wildAnimals</xpath>
+				<value>
+					<RG_ArcticDrak>0.1</RG_ArcticDrak>
+					<RG_SabertoothSquirrel>0.1</RG_SabertoothSquirrel>
+					<RG_WoollyStegosaurus>0.05</RG_WoollyStegosaurus>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildAnimals</xpath>
+				<value>
+					<RG_Dodo>0.05</RG_Dodo>
+					<RG_TerrorBird>0.3</RG_TerrorBird>
+					<RG_Synthetion>0.2</RG_Synthetion>
+					<RG_Megalenhydris>0.5</RG_Megalenhydris>
+					<RG_Thrinaxodon>0.8</RG_Thrinaxodon>
+					<RG_Velociraptor>0.2</RG_Velociraptor>
+				</value>
+			</li>
+			<li MayRequire="ReGrowth.BOTR.Core" Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]/wildAnimals</xpath>
+				<value>
+					<RG_Dodo>0.02</RG_Dodo>
+					<RG_TerrorBird>0.4</RG_TerrorBird>
+					<RG_Synthetion>0.2</RG_Synthetion>
+					<RG_Megalenhydris>0.2</RG_Megalenhydris>
+					<RG_Thrinaxodon>0.2</RG_Thrinaxodon>
+					<RG_Velociraptor>0.4</RG_Velociraptor>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildAnimals</xpath>
+				<value>
+					<RG_TerrorBird>0.1</RG_TerrorBird>
+					<RG_Thrinaxodon>0.4</RG_Thrinaxodon>
+					<RG_Megalenhydris>0.5</RG_Megalenhydris>
+					<RG_Velociraptor>0.1</RG_Velociraptor>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/wildAnimals</xpath>
+				<value>
+					<RG_Dodo>0.5</RG_Dodo>
+					<RG_TerrorBird>0.4</RG_TerrorBird>
+					<RG_Thrinaxodon>0.2</RG_Thrinaxodon>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/wildAnimals</xpath>
+				<value>
+					<RG_TerrorBird>0.2</RG_TerrorBird>
+					<RG_Thrinaxodon>0.1</RG_Thrinaxodon>
+					<RG_Megalenhydris>0.2</RG_Megalenhydris>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
+				<value>
+					<RG_Dodo>0.5</RG_Dodo>
+					<RG_Synthetion>0.2</RG_Synthetion>
+					<RG_TerrorBird>0.4</RG_TerrorBird>
+					<RG_Thrinaxodon>0.2</RG_Thrinaxodon>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

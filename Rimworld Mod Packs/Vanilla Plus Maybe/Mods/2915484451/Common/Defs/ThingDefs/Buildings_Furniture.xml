@@ -1,0 +1,559 @@
+<Defs>
+
+  <ThingDef Name="FFE_FurnitureWithQualityBase" ParentName="FurnitureWithQualityBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>true</canOverlapZones>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <building>
+      <paintable>true</paintable>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <clearBuildingArea>true</clearBuildingArea>
+  </ThingDef>
+
+
+  <!-- Sofa -->
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>FFE_Sofa</defName>
+    <label>sofa</label>
+    <description>A large, soft, comfy seat. Great for relaxation. Can be used at tables, work stations, and elsewhere.</description>
+    <size>(2,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Sofa/Sofa</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rectN>(0,0,2,1)</rectN>
+        <rectS>(0,0,2,1)</rectS>
+        <rectE>(0,0,1,2)</rectE>
+        <rectW>(0,0,1,2)</rectW>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Sofa/SofaUI</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>28000</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+      <Comfort>0.8</Comfort>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <costStuffCount>200</costStuffCount>
+    <pathCost>30</pathCost>
+    <fillPercent>0.40</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
+    <building>
+      <paintable>true</paintable>
+      <isSittable>true</isSittable>
+      <multiSittable>true</multiSittable>
+      <destroySound>BuildingDestroyed_Soft_Small</destroySound>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li MayRequire="VanillaExpanded.VTEXVariations" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+        <randomGraphics>
+          <li>Things/Building/Sofa/Sofa</li>
+          <li>Things/Building/Sofa/SofaA</li>
+          <li>Things/Building/Sofa/SofaB</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Royal Sofa -->
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>FFE_RoyalSofa</defName>
+    <label>royal sofa</label>
+    <description>A large, soft, luxurious seat. Fitted inside a golden frame for only the wealthiest elites. Can be used at tables, work stations, and elsewhere.</description>
+    <size>(2,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Sofa/RoyalSofa</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.8,2.8)</drawSize>
+      <damageData>
+        <rectN>(0,0,2,1)</rectN>
+        <rectS>(0,0,2,1)</rectS>
+        <rectE>(0,0,1,2)</rectE>
+        <rectW>(0,0,1,2)</rectW>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>32000</WorkToBuild>
+      <Mass>70</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>100</Beauty>
+      <Comfort>0.95</Comfort>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>280</costStuffCount>
+    <costList>
+      <Gold>100</Gold>
+    </costList>
+    <pathCost>30</pathCost>
+    <fillPercent>0.40</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <paintable>true</paintable>
+      <isSittable>true</isSittable>
+      <multiSittable>true</multiSittable>
+      <destroySound>BuildingDestroyed_Soft_Small</destroySound>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li MayRequire="VanillaExpanded.VFECore">MF_RoyalFurniture</li>
+    </researchPrerequisites>
+    <designationCategory MayRequire="VanillaExpanded.VFECore">AOMorefurniture</designationCategory>
+  </ThingDef>
+
+  <!-- Mirror -->
+  <ThingDef ParentName="FFE_FurnitureWithQualityBase">
+    <defName>FFE_Mirror</defName>
+    <label>mirror</label>
+    <description>A standing mirror. Must be placed near the bed. Placing more than one mirror near the same bed has no effect.</description>
+    <surfaceType>Item</surfaceType>
+    <size>(1,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Mirror/Mirror</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconScale>0.6</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Mass>6</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <costList>
+      <Silver>50</Silver>
+    </costList>
+    <pathCost>30</pathCost>
+    <passability>PassThroughOnly</passability>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.05</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+      <li MayRequire="VanillaExpanded.VTEXVariations" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+        <randomGraphics>
+          <li>Things/Building/Mirror/Mirror</li>
+          <li>Things/Building/Mirror/MirrorA</li>
+          <li>Things/Building/Mirror/MirrorB</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Divider -->
+  <ThingDef ParentName="FFE_FurnitureWithQualityBase">
+    <defName>FFE_Divider</defName>
+    <label>divider</label>
+    <description>A tall, impassable room divider. Must be placed near the bed. Placing more than one divider near the same bed has no effect.</description>
+    <surfaceType>Item</surfaceType>
+    <uiIconScale>1.1</uiIconScale>
+    <size>(2,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Divider/Divider</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <WorkToBuild>1750</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>7</Beauty>
+    </statBases>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.05</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>5</maxDistance>
+      </li>
+      <li MayRequire="VanillaExpanded.VTEXVariations" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+        <randomGraphics>
+          <li>Things/Building/Divider/Divider</li>
+          <li>Things/Building/Divider/DividerA</li>
+          <li>Things/Building/Divider/DividerB</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Small Cupboard -->
+  <ThingDef ParentName="FFE_FurnitureWithQualityBase">
+    <defName>FFE_CupboardSmall</defName>
+    <label>small cupboard</label>
+    <description>A simple small cupboard for room decorating. Increases the attractiveness of the room.</description>
+    <graphicData>
+      <texPath>Things/Building/CupboardSmall/Cupboard</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.55,3.45)</drawSize>
+      <shadowData>
+        <volume>(0.30, 0.30, 0.40)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <castEdgeShadows>true</castEdgeShadows>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <WorkToBuild>1750</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>5.5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <uiIconScale>0.5</uiIconScale>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li MayRequire="VanillaExpanded.VTEXVariations" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+        <randomGraphics>
+          <li>Things/Building/CupboardSmall/Cupboard</li>
+          <li>Things/Building/CupboardSmall/CupboardA</li>
+          <li>Things/Building/CupboardSmall/CupboardB</li>
+          <li>Things/Building/CupboardSmall/CupboardC</li>
+          <li>Things/Building/CupboardSmall/CupboardD</li>
+          <li>Things/Building/CupboardSmall/CupboardE</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Large Cupboard -->
+  <ThingDef ParentName="FFE_FurnitureWithQualityBase">
+    <defName>FFE_CupboardLarge</defName>
+    <label>large cupboard</label>
+    <description>A simple large cupboard for room decorating. Increases the attractiveness of the room.</description>
+    <graphicData>
+      <texPath>Things/Building/CupboardLarge/Cupboard</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.55,3.45)</drawSize>
+      <shadowData>
+        <volume>(0.30, 0.30, 0.40)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <castEdgeShadows>true</castEdgeShadows>
+    <blockWind>true</blockWind>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>20</Mass>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <uiIconScale>1</uiIconScale>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>90</costStuffCount>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li MayRequire="VanillaExpanded.VTEXVariations" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+        <randomGraphics>
+          <li>Things/Building/CupboardLarge/Cupboard</li>
+          <li>Things/Building/CupboardLarge/CupboardA</li>
+          <li>Things/Building/CupboardLarge/CupboardB</li>
+          <li>Things/Building/CupboardLarge/CupboardC</li>
+          <li>Things/Building/CupboardLarge/CupboardD</li>
+          <li>Things/Building/CupboardLarge/CupboardE</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="FFE_FurnitureWithQualityBase">
+    <defName>FFE_Banner</defName>
+    <label>banner</label>
+    <description>A decorative banner hanging from a vertical wooden frame.</description>
+    <designationCategory>Furniture</designationCategory>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.40</fillPercent>
+    <ritualFocus MayRequire="Ludeon.RimWorld.Ideology">
+      <spectateDistance>2~3</spectateDistance>
+      <allowedSpectateSides>All</allowedSpectateSides>
+    </ritualFocus>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+      <MeditationFocusStrength>0.05</MeditationFocusStrength>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>5.5</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>
+    <costList>
+      <WoodLog>25</WoodLog>
+    </costList>
+    <canOverlapZones>true</canOverlapZones>
+    <pathCost>14</pathCost>
+    <rotatable>true</rotatable>
+    <size>(1,1)</size>
+    <uiIconOffset>(0, 0.15)</uiIconOffset>
+    <uiIconScale>0.8</uiIconScale>
+    <filthLeaving>Filth_Trash</filthLeaving>
+    <building>
+      <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+      <destroyShakeAmount>0</destroyShakeAmount>
+      <buildingTags>
+        <li>RitualFocus</li>
+      </buildingTags>
+    </building>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+      <texPath>Things/Building/Banner/Banner</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(0.6,0.5,0.3)</volume>
+        <offset>(0,0,-0.2</offset>
+      </shadowData>
+      <damageData>
+        <rectN>(0.1, 0.1, 1.8, 1.5)</rectN>
+        <rectS>(0.1, 0.1, 1.8, 1.5)</rectS>
+        <rectE>(0.25, 0.5, 0.5, 1.5)</rectE>
+        <rectW>(0.25, 0.5, 0.5, 1.5)</rectW>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+      <li MayRequire="VanillaExpanded.VTEXVariations" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+        <randomGraphics>
+          <li>Things/Building/Banner/Banner</li>
+          <li>Things/Building/Banner/BannerA</li>
+          <li>Things/Building/Banner/BannerB</li>
+          <li>Things/Building/Banner/BannerC</li>
+          <li>Things/Building/Banner/BannerD</li>
+        </randomGraphics>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Artistic</li>
+        </focusTypes>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>FFE_AnimalShack</defName>
+    <thingClass>Building_Bed</thingClass>
+    <label>animal shack</label>
+    <description>A shack with a soft bed for animals to sleep on. Fits medium animals like a dogs or big cats.</description>
+    <fillPercent>0.15</fillPercent>
+    <pathCost>40</pathCost>
+    <passability>PassThroughOnly</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <graphicData>
+      <texPath>Things/Building/AnimalShack/AnimalShack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <uiIconScale>0.80</uiIconScale>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <building>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_maxBodySize>1.1</bed_maxBodySize>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_healPerDay>5</bed_healPerDay>
+      <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>8</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.85</Comfort>
+      <ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>true</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Bed</compClass>
+      </li>
+    </comps>
+  </ThingDef> -->
+
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>FFE_AnimalMedTable</defName>
+    <thingClass>Building_Bed</thingClass>
+    <label>animal hospital bed</label>
+    <description>A bed specially designed for animals surgery and recovery. It improves medical outcomes over normal beds.</description>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <passability>PassThroughOnly</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <graphicData>
+      <texPath>Things/Building/AnimalShack/AnimalHospital</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawRotated>false</drawRotated>
+      <drawSize>1.1</drawSize>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <uiIconScale>0.8</uiIconScale>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <paintable>true</paintable>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>10</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.9</Flammability>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>10</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.35</Comfort>
+      <ImmunityGainSpeedFactor>1.20</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.15</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.3</SurgerySuccessChanceFactor>
+    </statBases>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li MayRequire="VanillaExpanded.VFEMedical">Facility_VitalsCentre</li>
+          <li MayRequire="VanillaExpanded.VFEMedical">Facility_IVDrip</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>true</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Bed</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

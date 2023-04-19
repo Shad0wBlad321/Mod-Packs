@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<FFE_ShippingContainer.label>вантажний контейнер</FFE_ShippingContainer.label>
+	<FFE_ShippingContainer.description>Великий вантажий контейнер для зберігання різних речей. Завдяки компактному розташуванню поличок всередені, здатен компактно зберігати до 40 предметів.</FFE_ShippingContainer.description>
+
+	<FFE_PalletSmall.label>палета (1x1)</FFE_PalletSmall.label>
+	<FFE_PalletSmall.description>Проста пакувальна палета для компактного розміщення речей. Не захищає речі від погодних умов.</FFE_PalletSmall.description>
+
+	<FFE_PalletMedium.label>палета (2x1)</FFE_PalletMedium.label>
+	<FFE_PalletMedium.description>Проста пакувальна палета для компактного розміщення речей. Не захищає речі від погодних умов.</FFE_PalletMedium.description>
+
+	<FFE_PalletLarge.label>палета (2x2)</FFE_PalletLarge.label>
+	<FFE_PalletLarge.description>Проста пакувальна палета для компактного розміщення речей. Не захищає речі від погодних умов.</FFE_PalletLarge.description>
+
+	<FFE_PalletBoxesSmall.label>палета з ящиками (1x1)</FFE_PalletBoxesSmall.label>
+	<FFE_PalletBoxesSmall.description>Пакувальна палета з дерев'яними ящиками для компактного розміщення речей. Захищає речі від погодних умов.</FFE_PalletBoxesSmall.description>
+
+	<FFE_PalletBoxesMedium.label>палета з ящиками (2x1)</FFE_PalletBoxesMedium.label>
+	<FFE_PalletBoxesMedium.description>Пакувальна палета з дерев'яними ящиками для компактного розміщення речей. Захищає речі від погодних умов.</FFE_PalletBoxesMedium.description>
+
+	<FFE_PalletBoxesLarge.label>палета з ящиками (2x2)</FFE_PalletBoxesLarge.label>
+	<FFE_PalletBoxesLarge.description>Пакувальна палета з дерев'яними ящиками для компактного розміщення речей. Захищає речі від погодних умов.</FFE_PalletBoxesLarge.description>
+
+	<FFE_AnimalFeeder.label>кормушка для тварин</FFE_AnimalFeeder.label>
+	<FFE_AnimalFeeder.description>Маленька тарілка для корму, з якої домашні тварини можуть їсти. Не красива і не жахлива, тому можна розмістити в будь-якій кімнаті.</FFE_AnimalFeeder.description>
+
+	<FFE_AnimalTrough.label>корито для тварин</FFE_AnimalTrough.label>
+	<FFE_AnimalTrough.description>Велике корито для зберігання сіна, корму та сирих овочів та фруктів для зручного годування ваших тварин. Чудово підходить для ферм та ранчо.</FFE_AnimalTrough.description>
+
+	<FFE_Meat_Hook.label>гаки для м'яса</FFE_Meat_Hook.label>
+	<FFE_Meat_Hook.description>Міцна стійка з металивими гаками для зберігання туш тварин перед обробкою.</FFE_Meat_Hook.description>
+
+	<FFE_FoodBags.label>мішки для продуктів</FFE_FoodBags.label>
+	<FFE_FoodBags.description>Нібір простих мішків для зберігяння сирих продуктів рослинного походження.</FFE_FoodBags.description>
+
+	<FFE_FoodBarell.label>бочка для продуктів</FFE_FoodBarell.label>
+	<FFE_FoodBarell.description>Проста бочка для зберігання сирих продуктів.</FFE_FoodBarell.description>
+
+	<FFE_WoodenBox.label>ящик</FFE_WoodenBox.label>
+	<FFE_WoodenBox.description>Проста ящик для зберігання різних речей.</FFE_WoodenBox.description>
+
+	<FFE_Minibar.label>мінібар</FFE_Minibar.label>
+	<FFE_Minibar.description>Тумби з декількома ящиками чудово підходять для зберігання алкоголю та тутюну для розслаблення ваших колоністів.</FFE_Minibar.description>
+
+	<FFE_Medical_Cabinet.label>мед-шафа</FFE_Medical_Cabinet.label>
+	<FFE_Medical_Cabinet.description>Високий стелаж зі скляними дверцятами для зберігання медикаментів та препаратів.</FFE_Medical_Cabinet.description>
+
+	<FFE_WeaponsLocker.label>шафа для зброї</FFE_WeaponsLocker.label>
+	<FFE_WeaponsLocker.description>Міцна та містка металева шафа для зберігання великої кількості зброї. Може вміщувати до 30 предметів одночасно та має обможення за вагою.</FFE_WeaponsLocker.description>
+
+	<FFE_PersonalLockers.label>шафа для броні</FFE_PersonalLockers.label>
+	<FFE_PersonalLockers.description>Міцна та містка металева шафа для зберігання різноманітних предметів одягу та броні. Може вміщувати до 30 предметів одночасно та має обможення за вагою.</FFE_PersonalLockers.description>
+
+	<FFE_WeaponRackMelee.label>стійка для зброї</FFE_WeaponRackMelee.label>
+	<FFE_WeaponRackMelee.description>Проста стійка для ближньобійної зброї у сернедньовічному стилі. Може вміщувати до 30 предметів одночасно та має обможення за вагою.</FFE_WeaponRackMelee.description>
+
+	<FFE_WeaponRackBows.label>стійка для луків</FFE_WeaponRackBows.label>
+	<FFE_WeaponRackBows.description>Проста стійка для луків та іншої примітивної стрілецької зброї у сернедньовічному стилі. Може вміщувати до 30 предметів одночасно та має обможення за вагою.</FFE_WeaponRackBows.description>
+
+	<FFE_WeaponRackShields.label>стійка для щитів</FFE_WeaponRackShields.label>
+	<FFE_WeaponRackShields.description>Проста стійка для щитів у сернедньовічному стилі. Може вміщувати до 30 предметів одночасно та має обможення за вагою.</FFE_WeaponRackShields.description>
+
+	<FFE_WallMealRack.label>вбудована полиця для страв</FFE_WallMealRack.label>
+	<FFE_WallMealRack.description>Висока стійка для зберігання готових страв, яка може бути вмонтована в стіну для передачі страв між приміщеннями. Може бути використана як стіна, що розділяє приміщення.</FFE_WallMealRack.description>
+
+	<FFE_SpacerContainer.label>герметичний контейнер</FFE_SpacerContainer.label>
+	<FFE_SpacerContainer.description>Комплексний контейнер космічного рівня з автоматичною системою сортування, дозволяє компактно зберігати багато предметів і легко їх діставати.</FFE_SpacerContainer.description>
+
+	<FFE_VanometricStorage.label>ванометричне сховище</FFE_VanometricStorage.label>
+	<FFE_VanometricStorage.description>Дивний контейнер, який дозволяє зберігати величезну кількість предметів. Парадоксально, але його місткість значно більша за його зовнішній вигляд, що зазвичай описують як «більший всередині ніж зовні». Цю технологію розробили архотехи, і вона перевершує навіть більшість утопічних суспільств.</FFE_VanometricStorage.description>
+
+
+</LanguageData>

@@ -1,0 +1,3 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaFactionsExpanded_Settlers\1.3\Assemblies\VFE_Settlers.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaFactionsExpanded_Settlers\1.3\Source\VFE_Settlers\obj\Debug\VFE_Settlers.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaFactionsExpanded_Settlers\1.3\Source\VFE_Settlers\obj\Debug\VFE_Settlers.dll

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VRE_SaplingchildTree</defName>
+		<label>saplingchild</label>
+		<description>A small, cabbage-like plant created in the first trimester of the pregnancy by a sapling-mother. After 30 days, saplingchild will hatch and a child will emerge from it.\n\nMust be kept between -15 and 60ºC. If the plant is destroyed it will be treated as a stillbirth for the mother who planted it.</description>
+		<thingClass>VanillaRacesExpandedPhytokin.Building_SaplingChild</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/SaplingChild_Immature</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>false</rotatable>
+		
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>2.0</Flammability>
+			<MarketValue>50</MarketValue>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<destroyable>true</destroyable>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(1,1)</size>
+
+		<blockPlants>true</blockPlants>
+		<comps>
+
+			<li Class="VanillaRacesExpandedPhytokin.CompProperties_TempRuinableAndDestroy">
+				<minSafeTemperature>-15</minSafeTemperature>
+				<maxSafeTemperature>60</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+			
+		</comps>
+
+	</ThingDef>
+
+	
+
+
+
+
+
+</Defs>

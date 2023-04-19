@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ====================================================== -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>VAECaves_AncientGiantSpider</defName>
+		<label>ancient giant spider</label>
+		<description>A type of arthropod, Giant Spiders are in fact nowhere near the size of the common house spiders humans are used to. However, similar rules apply - they lay eggs in spider lairs, sting their prey with venomous stinger and wrap it in cocoons for when the time is right to feast. They regenerate their wounds fast and are very susceptible to fire.\n\nAn incredibly rare and even more dangerous life stage of a giant spider, ancient spiders have lived for hundreds of years and mastered their killing tools. They are capable of a ranged web splash attack that will cover the area in dense spiderwebs. If left not taken care of, an ancient giant spider can quickly turn even bigger settlements into giant husks of spiderweb and eggs.\n\nSpecial mechanics: If attacked, all other giant spiders nearby, in any life stage, will enrage and assault the colony. Its melee attacks will cause infections.</description>
+		<statBases>
+			<MoveSpeed>3.6</MoveSpeed>
+			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<MarketValue>4200</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+		</statBases>
+		<receivesSignals>true</receivesSignals>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_FixedGender">
+				<gender>Female</gender>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_ChangeDefIfNotUnique">
+				<defToChangeTo>VAECaves_GiantSpider</defToChangeTo>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_EnrageOtherPawns">
+				<pawnkinddefsToAffect>
+					<li>VAECaves_GiantSpider</li>
+					<li>VAECaves_GiantSpiderHatchling</li>
+				</pawnkinddefsToAffect>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Infecter">
+				<infectionChance>95</infectionChance>
+				<worsenExistingInfection>true</worsenExistingInfection>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>60</rateInTicks>
+
+			</li>
+			<li Class="VAECaves.CompProperties_BuildSpiderLair">
+				<checkingTime>2000</checkingTime>
+				<checkingTimeForEggs>180000</checkingTimeForEggs>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
+
+				<customThingToEat>
+
+					<li>InsectJelly</li>					
+
+				</customThingToEat>
+				<ignoreUseHitPoints>true</ignoreUseHitPoints>
+				<nutrition>2</nutrition>				
+				<fullyDestroyThing>false</fullyDestroyThing>
+				<percentageOfDestruction>0.2</percentageOfDestruction>
+				<needsWater>false</needsWater>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				
+			</li>
+			<li Class="VAECaves.CompProperties_RemoveLegs">
+			</li>
+
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>VAECaves_RangedSilk</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<forcedMissRadius>2</forcedMissRadius>
+				<minRange>2</minRange>
+				<range>25</range>
+				<soundCast>VAE_Throw</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>ranged silk</label>
+				<commonality>.8</commonality>
+			</li>
+
+
+		</verbs>
+		<tools>
+
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>VAE_CocoonBite</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>VAE_InfectedMandibles</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<wildBiomes>
+				<ColdBog>0.0025</ColdBog>
+				<BorealForest>0.0025</BorealForest>
+				<Tundra>0.0025</Tundra>				
+				<IceSheet>0.0025</IceSheet>
+				<SeaIce>0.0025</SeaIce>
+				<TemperateSwamp>0.0025</TemperateSwamp>
+				<TemperateForest>0.0025</TemperateForest>		
+				<TropicalSwamp>0.0025</TropicalSwamp>					
+				<TropicalRainforest>0.0025</TropicalRainforest>
+				<AridShrubland>0.0025</AridShrubland>
+				<Desert>0.0025</Desert>
+				<ExtremeDesert>0.0025</ExtremeDesert>					
+			</wildBiomes>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<foodType>OmnivoreAnimal</foodType>
+			<predator>false</predator>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<body>VAE_Arachnid</body>
+			<baseBodySize>4</baseBodySize>
+			<baseHungerRate>2</baseHungerRate>
+			<baseHealthScale>20</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>100</lifeExpectancy>
+			<wildness>1</wildness>
+			<trainability>Intermediate</trainability>
+			<thinkTreeMain>VEF_AnimalWeirdEater</thinkTreeMain>
+			<lifeStageAges>
+
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<tradeTags>
+			<li>AnimalAlpha</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>VAECaves_AncientGiantSpider</defName>
+		<label>ancient giant spider</label>
+		<race>VAECaves_AncientGiantSpider</race>
+		<combatPower>600</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpiderAncient/VAE_GiantSpiderAncient</texPath>
+					<drawSize>4.5</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpiderAncient/VAE_Dessicated_GiantSpiderAncient</texPath>
+					<drawSize>4.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

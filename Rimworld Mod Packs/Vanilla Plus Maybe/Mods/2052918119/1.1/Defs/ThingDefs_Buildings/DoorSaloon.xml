@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="DoorBase">
+    <defName>DoorSaloon</defName>
+    <label>saloon door</label>
+    <thingClass>VFE_Settlers.Buildings.Building_SaloonDoor</thingClass>
+    <description>A saloon door for your country needs. Whilst it doesn't provide much protection, it swings open nearly instantaneously.</description>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <DoorOpenSpeed>1.8</DoorOpenSpeed>
+    </statBases>
+    <blockLight>false</blockLight>
+    <holdsRoof>false</holdsRoof>
+    <graphicData>
+      <texPath>Things/Buildings/SaloonDoor/SaloonDoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Buildings/SaloonDoor/SaloonDoor_MenuIcon</uiIconPath>
+    <costStuffCount>15</costStuffCount>
+    <!--<building>
+      <blueprintGraphicData>
+        <texPath>Things/Buildings/SaloonDoor/SaloonDoor_Mover</texPath>
+      </blueprintGraphicData>
+    </building>-->
+  </ThingDef>
+
+</Defs>

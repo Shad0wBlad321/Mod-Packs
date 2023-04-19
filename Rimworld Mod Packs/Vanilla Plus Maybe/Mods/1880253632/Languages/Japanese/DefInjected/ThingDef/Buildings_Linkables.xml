@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Drug Cabinet -->
+
+  <VFE_DrugCabinet.label>薬品棚</VFE_DrugCabinet.label>
+  <VFE_DrugCabinet.description>ドラッグラボの近くに配置すると作業速度が向上します。1台のドラッグラボに2つの薬品棚がリンクします。</VFE_DrugCabinet.description>
+  <Blueprint_VFE_DrugCabinet.label>薬品棚(設計)</Blueprint_VFE_DrugCabinet.label>
+  <Blueprint_Install_VFE_DrugCabinet.label>薬品棚(移動先)</Blueprint_Install_VFE_DrugCabinet.label>
+  <Frame_VFE_DrugCabinet.label>薬品棚(施行)</Frame_VFE_DrugCabinet.label>
+  <Frame_VFE_DrugCabinet.description>ドラッグラボの近くに配置すると作業速度が向上します。1台のドラッグラボに2つの薬品棚がリンクします。</Frame_VFE_DrugCabinet.description>
+
+
+  <!-- Machining Cabinet -->
+
+  <VFE_MachiningCabinet.label>機械工具棚</VFE_MachiningCabinet.label>
+  <VFE_MachiningCabinet.description>精密工作機械の近くに配置すると作業速度が向上します。1台の精密工作機械に2つの機械工具棚がリンクします。</VFE_MachiningCabinet.description>
+  <Blueprint_VFE_MachiningCabinet.label>機械工具棚(設計)</Blueprint_VFE_MachiningCabinet.label>
+  <Blueprint_Install_VFE_MachiningCabinet.label>機械工具棚(移動先)</Blueprint_Install_VFE_MachiningCabinet.label>
+  <Frame_VFE_MachiningCabinet.label>機械工具棚(施行)</Frame_VFE_MachiningCabinet.label>
+  <Frame_VFE_MachiningCabinet.description>精密工作機械の近くに配置すると作業速度が向上します。1台の精密工作機械に2つの機械工具棚がリンクします。</Frame_VFE_MachiningCabinet.description>
+
+
+  <!-- Smithy Cabinet -->
+
+  <VFE_SmithyCabinet.label>鍛冶道具棚</VFE_SmithyCabinet.label>
+  <VFE_SmithyCabinet.description>工作台の近くに配置すると作業速度が向上します。1台の工作台に2つの鍛冶道具棚がリンクします。</VFE_SmithyCabinet.description>
+  <Blueprint_VFE_SmithyCabinet.label>鍛冶道具棚(設計)</Blueprint_VFE_SmithyCabinet.label>
+  <Blueprint_Install_VFE_SmithyCabinet.label>鍛冶道具棚(移動先)</Blueprint_Install_VFE_SmithyCabinet.label>
+  <Frame_VFE_SmithyCabinet.label>鍛冶道具棚(施行)</Frame_VFE_SmithyCabinet.label>
+  <Frame_VFE_SmithyCabinet.description>工作台の近くに配置すると作業速度が向上します。1台の工作台に2つの鍛冶道具棚がリンクします。</Frame_VFE_SmithyCabinet.description>
+
+
+  <!-- Kitchen Sink Cabinet -->
+
+  <VFE_KitchenSinkCabinet.label>台所流し台</VFE_KitchenSinkCabinet.label>
+  <VFE_KitchenSinkCabinet.description>カマドや電気コンロの近くに配置すると調理速度が向上します。</VFE_KitchenSinkCabinet.description>
+  <Blueprint_VFE_KitchenSinkCabinet.label>台所流し台(設計)</Blueprint_VFE_KitchenSinkCabinet.label>
+  <Blueprint_Install_VFE_KitchenSinkCabinet.label>台所流し台(移動先)</Blueprint_Install_VFE_KitchenSinkCabinet.label>
+  <Frame_VFE_KitchenSinkCabinet.label>台所流し台(施行)</Frame_VFE_KitchenSinkCabinet.label>
+  <Frame_VFE_KitchenSinkCabinet.description>カマドや電気コンロの近くに配置すると調理速度が向上します。</Frame_VFE_KitchenSinkCabinet.description>
+
+
+  <!-- Tailor Cabinet -->
+
+  <VFE_TailorCabinet.label>裁縫道具棚</VFE_TailorCabinet.label>
+  <VFE_TailorCabinet.description>ミシン台の近くに配置すると作業速度が向上します。1台のミシン台に2つの裁縫道具棚がリンクします。</VFE_TailorCabinet.description>
+  <Blueprint_VFE_TailorCabinet.label>裁縫道具棚(設計)</Blueprint_VFE_TailorCabinet.label>
+  <Blueprint_Install_VFE_TailorCabinet.label>裁縫道具棚(移動先)</Blueprint_Install_VFE_TailorCabinet.label>
+  <Frame_VFE_TailorCabinet.label>裁縫道具棚(施行)</Frame_VFE_TailorCabinet.label>
+  <Frame_VFE_TailorCabinet.description>ミシン台の近くに配置すると作業速度が向上します。1台のミシン台に2つの裁縫道具棚がリンクします。</Frame_VFE_TailorCabinet.description>
+
+
+  <!-- Fabrication Cabinet -->
+
+  <VFE_FabricationCabinet.label>組立工具棚</VFE_FabricationCabinet.label>
+  <VFE_FabricationCabinet.description>コンポーネント工作台の近くに配置すると作業速度が向上します。1台のコンポーネント工作台に2つの組立工具棚がリンクします。</VFE_FabricationCabinet.description>
+  <Blueprint_VFE_FabricationCabinet.label>組立工具棚(設計)</Blueprint_VFE_FabricationCabinet.label>
+  <Blueprint_Install_VFE_FabricationCabinet.label>組立工具棚(移動先)</Blueprint_Install_VFE_FabricationCabinet.label>
+  <Frame_VFE_FabricationCabinet.label>組立工具棚(施行)</Frame_VFE_FabricationCabinet.label>
+  <Frame_VFE_FabricationCabinet.description>コンポーネント工作台の近くに配置すると作業速度が向上します。1台のコンポーネント工作台に2つの組立工具棚がリンクします。</Frame_VFE_FabricationCabinet.description>
+
+</LanguageData>

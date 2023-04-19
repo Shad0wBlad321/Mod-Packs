@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneHealingRateBase">
+		<defName>VRE_WoundHealing_VerySlow</defName>
+		<label>very slow wound healing</label>
+		<labelShortAdj>slowest-heal</labelShortAdj>
+		<description>Carriers of this gene take a very long time to heal from even the most basic wounds.</description>
+		<iconPath>UI/Icons/Genes/VRE_Gene_WoundHealingRateSlowest</iconPath>
+		<displayOrderInCategory>29.9</displayOrderInCategory>
+		<statFactors>
+			<InjuryHealingFactor>0.1</InjuryHealingFactor>
+		</statFactors>
+		<biostatMet>4</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>squishy</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneImmunityBase">
+		<defName>VRE_Immunity_VeryWeak</defName>
+		<label>no immunity</label>
+		<labelShortAdj>vulnerable</labelShortAdj>
+		<description>Carriers of this gene lack any sort of immune system, and will gain almost no immunity to any diseases or infections through natural ways. They will die from even the smallest infection or disease.
+		</description>
+		<iconPath>UI/Icons/Genes/Gene_NoImmunity</iconPath>
+		<displayOrderInCategory>-10</displayOrderInCategory>
+		<statFactors>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+		</statFactors>
+		<biostatMet>4</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>sickly</symbol>
+
+				</li>
+				<li>
+					<symbol>hindered</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>VRE_Slow_Diseases</defName>
+		<label>slow diseases</label>
+		<displayOrderInCategory>-11</displayOrderInCategory>
+		<description>Carriers of this gene create special anti-bodies in their blood that slow down progress of any infection and disease, giving them more time to obtain medical care.
+		</description>
+		<iconPath>UI/Icons/Genes/Gene_SlowDiseases</iconPath>
+		
+		<displayCategory>Healing</displayCategory>
+		
+		<biostatMet>-2</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+
+				<diseaseProgressionFactor>0.5</diseaseProgressionFactor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

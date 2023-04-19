@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>VCE_SucculentSowing</defName>
+    <label>succulent sowing</label>
+    <description>Sow the beautiful, long lasting succulents.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Neolithic</techLevel>
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>2.05</researchViewY>
+	<tab>VanillaExpanded</tab>
+    <tags>
+      <li>TribalStart</li>
+    </tags>
+  </ResearchProjectDef>
+
+
+
+</Defs>
+

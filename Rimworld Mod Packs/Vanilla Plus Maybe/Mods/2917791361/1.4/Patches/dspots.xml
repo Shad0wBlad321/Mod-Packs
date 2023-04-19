@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!-- VANILLA -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="AnimalSleepingSpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Misc/AnimalBed/dspots_AnimalSleepSpot</texPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ButcherSpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Production/dspots_ButcherSpot</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="CaravanPackingSpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Misc/dspots_CaravanPackingSpot</texPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="CraftingSpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Production/dspots_CraftingSpot</texPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="MarriageSpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Misc/dspots_MarriageSpot</texPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="PartySpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Misc/dspots_PartySpot</texPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="SleepingSpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Furniture/Bed/SleepSpot/dspots_SleepSpot</texPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="DoubleSleepingSpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Furniture/Bed/DoubleSleepSpot/dspots_DoubleSleepSpot</texPath>
+		</value>
+	</Operation>
+
+</Patch>

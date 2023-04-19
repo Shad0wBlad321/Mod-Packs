@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<HediffDef>
+		<defName>VRE_Hemophiliac</defName>
+		<label>hemophiliac</label>
+		<description>A bleeding disorder that stops coagulating factors in blood, resulting in much faster bleed out rate when wounded.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<totalBleedFactor>2</totalBleedFactor>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+</Defs>

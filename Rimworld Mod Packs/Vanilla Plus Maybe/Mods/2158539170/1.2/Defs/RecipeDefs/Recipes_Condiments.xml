@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>VCE_WasabiPaste</defName>
+		<label>make wasabi paste</label>
+		<description>Create wasabi paste from raw wasabi. It is used as a pungent condiment for sushi and other foods. It is similar in taste to hot mustard rather than chili peppers in that it stimulates the nose more than the tongue. It loses its flavour and deteriorates extremely fast.</description>
+		<jobString>Making wasabi paste.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawWasabi</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VCE_RawWasabi</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_WasabiPaste>5</VCE_WasabiPaste>
+		</products>
+		<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+	</RecipeDef>
+
+	
+
+
+
+</Defs>

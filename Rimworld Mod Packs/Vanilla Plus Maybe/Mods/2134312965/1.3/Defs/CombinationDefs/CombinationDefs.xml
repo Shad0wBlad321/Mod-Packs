@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_SimpleStewRecipe</defName>
+		<building>VCE_StewPot</building>
+		<items>
+			<li>VCE_UncookedStewSimple</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedStewSimple</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+		<finishedProductMessage>VCE_FinishedSimpleStew</finishedProductMessage>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_FineStewRecipe</defName>
+		<building>VCE_StewPot</building>
+		<items>
+			<li>VCE_UncookedStewFine</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedStewFine</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+				<finishedProductMessage>VCE_FinishedFineStew</finishedProductMessage>
+
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_LavishStewRecipe</defName>
+		<building>VCE_StewPot</building>
+		<items>
+			<li>VCE_UncookedStewLavish</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedStewLavish</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+						<finishedProductMessage>VCE_FinishedLavishStew</finishedProductMessage>
+
+	</ItemProcessor.CombinationDef>
+	
+
+
+
+
+
+
+
+
+
+</Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef Name="VRE_BodyBase" Abstract="True">
+		<displayCategory>Cosmetic</displayCategory>
+		<exclusionTags>
+			<li>AG_Bodies</li>
+			<li>Bodies</li>
+			<li>Body</li>
+			<li>Fur</li>
+		</exclusionTags>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<graphicData>
+			<drawLoc>Tailbone</drawLoc>
+		</graphicData>
+	</GeneDef>
+	<GeneDef ParentName="VRE_BodyBase">
+		<defName>VRE_BarkSkin</defName>
+		<label>barkskin</label>
+			<labelShortAdj>barkskinned</labelShortAdj>
+		<description>Carriers of this gene have their skin resembling tree bark. This allows them to withstand blunt trauma that would normally knock people unconscious.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<graphicData>
+			<fur>VRE_BarkSkin</fur>
+			<tattoosVisible>false</tattoosVisible>
+		</graphicData>
+		
+		<iconPath>UI/Icons/Genes/Gene_Barkskin</iconPath>
+		<forcedHeadTypes>
+			<li>VRE_BarkAverage</li>
+			<li>VRE_BarkNarrow</li>
+			<li>VRE_BarkGaunt</li>
+			<li>VRE_BarkHeavy</li>
+			<li>VRE_BarkAverage_Female</li>
+			<li>VRE_BarkNarrow_Female</li>
+			<li>VRE_BarkGaunt_Female</li>
+			<li>VRE_BarkHeavy_Female</li>
+		</forcedHeadTypes>
+		<statOffsets>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

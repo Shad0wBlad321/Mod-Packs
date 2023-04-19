@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanilla Helixien Gas Expanded</name>
+  <author>Oskar Potocki, Kikohi</author>
+  <description>Vanilla Helixien Gas Expanded is a brand new mod for the release of RimWorld 1.4. With this update, we've decided that it's best we split Vanilla Furniture Expanded - Power and the Helixien gas, as not only it gives us more control over it, but it's also the only logical choice, as the helixien gas is very complex and occupies a big portion of VFE-Power.
+  
+  When you update your Vanilla Furniture Expanded - Power to 1.4, you will no longer have Helixien gas in it. If you'd still like it: you need to download this mod as well. Previous Helixien gas system was coded by Fluffy, but because he is no longer around as often, we decided to move the system to the one written by Kikohi which we already used in Vanilla Chemfuel Expanded.
+  
+  With this mod you will be able to drill for Helixien gas and install a pump that gives you access to cheap, combustible and nearly infinite fuel supply. You can construct numerous appliances that rely on gas and are solar flare immune. From gas stoves and smithys to lamps and heaters, you can now bring the gas power to your colony.</description>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <packageId>VanillaExpanded.HelixienGas</packageId>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+  </loadAfter>
+</ModMetaData>

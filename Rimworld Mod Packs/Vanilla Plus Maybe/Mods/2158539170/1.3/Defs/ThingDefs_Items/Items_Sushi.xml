@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Simple sushi: chirashizushi and norimaki -->
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Chirashizushi</defName>
+		<label>chirashizushi bowl (simple)</label>
+		<description>A simple chirashizushi bowl made from a few ingredients. In Chirashizushi rice is served in a bowl and topped with a variety of raw fish and vegetable garnishes. It is commonly eaten because it is filling, fast and easy to make.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Chirashizushi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>VCE_AteSimpleSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>		
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Norimaki</defName>
+		<label>norimaki (simple)</label>
+		<description>Simple norimaki sushi made from a few ingredients. Norimaki are a type of sushi wrapped with seaweed.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Norimaki</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>VCE_AteSimpleSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>		
+	</ThingDef>	
+	
+	<!-- Fine sushi: uramaki and nigiri -->	
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Uramaki</defName>
+		<label>uramaki (fine)</label>
+		<description>Complex uramaki sushi assembled with care from a wide selection of ingredients. Uramaki is a medium-sized cylindrical piece with two or more fillings, and it differs from other maki because the rice is on the outside and the nori seaweed inside.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Uramaki</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>VCE_AteFineSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Nigiri</defName>
+		<label>nigiri (fine)</label>
+		<description>Complex nigiri sushi assembled with care from a wide selection of ingredients. Nigirizushi consists of an oblong mound of sushi rice that the chef presses between the palms of the hands to form an oval-shaped ball, and a topping (the neta) draped over the ball.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Nigiri</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>VCE_AteFineSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		
+	</ThingDef>
+	
+	<!-- Lavish sushi: temaki and futomaki -->
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Temaki</defName>
+		<label>temaki (lavish)</label>
+		<description>A masterpiece of the culinary arts, this sushi nourishes the body, mind, and soul. Temaki is a large cone-shaped piece of nori on the outside and the ingredients spilling out the wide end. A typical temaki is about 10 centimetres long, and is eaten with fingers because it is too awkward to pick it up with chopsticks.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Temaki</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<WorkToMake>800</WorkToMake>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealLavish</preferability>			
+			<tasteThought>VCE_AteLavishSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>		
+	</ThingDef>
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Futomaki</defName>
+		<label>futomaki (lavish)</label>
+		<description>A masterpiece of the culinary arts, this sushi nourishes the body, mind, and soul. Futomaki is a large cylindrical piece, usually with nori on the outside. A typical futomaki is five to six centimetres in diameter. They are often made with two, three, or more fillings that are chosen for their complementary tastes and colors.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Futomaki</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<WorkToMake>800</WorkToMake>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealLavish</preferability>			
+			<tasteThought>VCE_AteLavishSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>		
+	</ThingDef>
+
+	<!-- Lavish sushi: gunkanmaki and oshizushi -->
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Gunkanmaki</defName>
+		<label>gunkanmaki (gourmet)</label>
+		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity sushi. Gunkanmaki is a special type of nigirizushi: an oval, hand-formed clump of sushi rice that has a strip of nori wrapped around its perimeter to form a vessel that is filled with some soft, loose or fine-chopped ingredient that requires the confinement of nori such as roe.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Gunkanmaki</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<WorkToMake>1500</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<tasteThought>VCE_AteGourmetSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_Oshizushi</defName>
+		<label>oshizushi (gourmet)</label>
+		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity sushi. In oshizushi, a block-shaped piece is formed using a wooden mold. The chef lines the bottom of the mold with the toppings, covers them with sushi rice, and then presses the lid of the mold down to create a compact, rectilinear block. The block is removed from the mold and then cut into bite-sized pieces.</description>
+		<graphicData>
+			<texPath>Things/Meals/VCE_Oshizushi</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<WorkToMake>1500</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<tasteThought>VCE_AteGourmetSushi</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+
+
+</Defs>

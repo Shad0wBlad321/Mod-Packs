@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AbilityDef>
+	<defName>VRE_SummonCompanionDryads</defName>
+		<label>summon companion dryads</label>
+		<cooldownTicksRange>900000</cooldownTicksRange>
+		<description>Summons two companion dryads under the control of the caster. These dryads are permanent colony animals, and can haul, clean, caravan, and be drafted. Two new dryads can be summoned if the previous ones are killed. The ability has a cooldown of 1 quadrum.</description>
+		<iconPath>Things/Pawn/Animal/Companiondryad/Companiondryad_east</iconPath>
+		
+	
+		<aiCanUse>false</aiCanUse>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>3.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>PsychicInsanityLanceCast</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="VanillaRacesExpandedPhytokin.CompProperties_SummonCompanionDryads">
+				
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+
+
+	
+	
+	
+</Defs>

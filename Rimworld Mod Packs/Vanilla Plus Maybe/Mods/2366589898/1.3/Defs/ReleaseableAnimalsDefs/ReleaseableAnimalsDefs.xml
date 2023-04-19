@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaAnimalsExpandedEndangered.ReleaseableAnimalsDef>
+		<defName>AEXP_ReleaseableAnimals</defName>
+		<releaseablePawns>			
+			<li>AEXP_BlackFootedFerret</li>
+			<li>AEXP_BlackRhino</li>
+			<li>AEXP_Bonobo</li>
+			<li>AEXP_Moa</li>
+			<li>AEXP_Panda</li>
+			<li>AEXP_Quagga</li>
+			<li>AEXP_RockhopperPenguin</li>
+			<li>AEXP_TasmanianDevil</li>
+			<li>AEXP_Thylacine</li>
+			<li>AEXP_AfricanWildDog</li>
+			<li>AEXP_Pangolin</li>
+		</releaseablePawns>							
+	</VanillaAnimalsExpandedEndangered.ReleaseableAnimalsDef>
+
+
+
+
+
+
+
+</Defs>

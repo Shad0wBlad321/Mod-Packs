@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <RulePackDef>
+    <defName>VRE_NamePhytokin</defName>
+    <rulePack>
+      <rulesStrings Inherit="false">
+        <li>r_name->[firstName] [lastName]</li>
+		
+
+       <li>firstName->[namePhytokin]</li>
+       <li>lastName->[namePhytokin]</li>
+	 
+
+      </rulesStrings>
+      <rulesFiles>
+        <li>namePhytokin->WordParts/Names_Phytokin</li>
+      
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+
+
+</Defs>

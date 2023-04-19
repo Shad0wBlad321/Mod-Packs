@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Aptitudes -->
+
+
+
+  <GeneTemplateDef ParentName="GeneAptitudeBase">
+    <defName>VRE_AptitudePhenomenal</defName>
+    <label>phenomenal {0}</label>
+    <description>The carrier's aptitude in {0} is increased by 12. Aptitude acts like an offset on skill level. Additionally, a passion level is added to {0}.</description>
+    <iconPath>UI/Icons/Genes/Skills/{0}/Phenomenal</iconPath>
+    <aptitudeOffset>12</aptitudeOffset>
+    <passionModType>AddOneLevel</passionModType>
+    <displayOrderOffset>40</displayOrderOffset>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-5</biostatMet>
+  </GeneTemplateDef>
+
+ 
+
+</Defs>

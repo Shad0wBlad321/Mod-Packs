@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>VRESaurids_Oviparous</defName>
+		<label>oviparous</label>
+		<description>Carriers of this gene lay eggs instead of giving live birth. Eggs need time and correct conditions to hatch.
+		</description>
+		<iconPath>UI/GeneIcons/Gene_Oviparous</iconPath>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<exclusionTags>
+			<li>Egglaying</li>
+		</exclusionTags>
+		<customEffectDescriptions>
+			<li>Lays eggs instead of pregnancy and live birth.</li>
+			<li>Laying eggs makes the pawn temporarily infertile.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>egglayer</symbol>
+				</li>
+				<li>
+					<symbol>oviparous</symbol>
+				</li>
+				<li>
+					<symbol>egger</symbol>
+				</li>
+				<li>
+					<symbol>hatcher</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>egg</symbol>
+				</li>
+				<li>
+					<symbol>bud</symbol>
+				</li>
+				<li>
+					<symbol>roe</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>layer</symbol>
+				</li>
+				<li>
+					<symbol>parous</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>VRESaurids_ColdBlooded</defName>
+		<label>cold-blooded</label>
+		<description>Carriers of this gene need to maintain a steady body temperature. Being too hot or too cold will result in loss of motor functions, and if unchecked too long - death.</description>
+		<iconPath>UI/GeneIcons/Gene_ColdBlooded</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>6</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>5</ComfyTemperatureMin>
+		</statOffsets>
+		<customEffectDescriptions>
+			<li>Suffers from a much more drastic version of hypothermia/hyperthermia where capacities quickly decrease till death.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>cold-blooded</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>thermo</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>lizard</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>VRESaurids_Pheromones</defName>
+		<label>pheromones</label>
+		<description>Carriers of this gene excrete special pheromones that attract members of the same xenotype.</description>
+		<iconPath>UI/GeneIcons/Gene_Pheromones</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Improved relations with any pawn of the same xenotype.</li>
+		</customEffectDescriptions>
+	</GeneDef>
+
+</Defs>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Average -->
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>VRESaurids_ScaleSkin_Average</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Average_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>VRESaurids_ScaleSkin</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Narrow -->
+
+	<HeadTypeDef ParentName="NarrowBase">
+		<defName>VRESaurids_ScaleSkin_Narrow</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Narrow_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>VRESaurids_ScaleSkin</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Gaunt -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>VRESaurids_ScaleSkin_Gaunt</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Gaunt_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<selectionWeight>99999</selectionWeight>
+		<requiredGenes>
+			<li>VRESaurids_ScaleSkin</li>
+			<li>Head_Gaunt</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Heavy -->
+
+	<HeadTypeDef ParentName="HeavyJawBase">
+		<defName>VRESaurids_ScaleSkin_Heavy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Wide_Normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<selectionWeight>99999</selectionWeight>
+		<requiredGenes>
+			<li>VRESaurids_ScaleSkin</li>
+			<li>Jaw_Heavy</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

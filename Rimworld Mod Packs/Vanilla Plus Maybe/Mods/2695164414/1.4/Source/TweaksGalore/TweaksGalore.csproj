@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D99C9396-DEB9-4C00-8AA2-3FC496543021}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TweaksGalore</RootNamespace>
+    <AssemblyName>TweaksGalore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>false</Deterministic>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp_public_1.4">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp_public_1.4.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\RoyalPermitSettings.cs" />
+    <Compile Include="Harmony\Patch_ThoughtWorker_Expectations_CurrentStateInternal.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Anima.cs" />
+    <Compile Include="Harmony\Patch_CanParticipateInSlaveRebellion.cs" />
+    <Compile Include="Harmony\Patch_PowerNetGraphics_PrintWirePieceConnecting.cs" />
+    <Compile Include="Data\RoyalTitleSettings.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Biotech.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Defaults.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Gauranlen.cs" />
+    <Compile Include="SettingsPages\SettingsPage_GenePacks.cs" />
+    <Compile Include="SettingsPages\SettingsPage_General.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Ideology.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Mechanoids.cs" />
+    <Compile Include="SettingsPages\SettingsPage_PennedAnimals.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Polux.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Power.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Raids.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Resources.cs" />
+    <Compile Include="SettingsPages\SettingsPage_Royalty.cs" />
+    <Compile Include="SettingsPages\SettingsPage_RoyaltyPermits.cs" />
+    <Compile Include="SettingsPages\SettingsPage_RoyaltyTitles.cs" />
+    <Compile Include="Utilities\SlaveryUtil.cs" />
+    <Compile Include="Utilities\DefaultUtil.cs" />
+    <Compile Include="DefOfs\TGHediffDefOf.cs" />
+    <Compile Include="DefOfs\TGThingDefOf.cs" />
+    <Compile Include="Harmony\Patch_Pawn_MechanitorTracker.cs" />
+    <Compile Include="Harmony\Patch_ITab_Genes_Hidden.cs" />
+    <Compile Include="Harmony\Patch_Hediff_BandNode_CurStage.cs" />
+    <Compile Include="Harmony\Patch_CompProjectileInterceptor_Notify_LordDestroyed.cs" />
+    <Compile Include="DefOfs\TGThoughtDefOf.cs" />
+    <Compile Include="Utilities\SettingsUtil.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Utilities\LogUtil.cs" />
+    <Compile Include="PatchOperation\PatchOperation_SettingActive.cs" />
+    <Compile Include="Harmony\Patch_PawnGenerator_GenerateBodyType.cs" />
+    <Compile Include="Harmony\Patch_InfestationCellFinder_GetScoreAt.cs" />
+    <Compile Include="Harmony\Patch_GetRewardStackElementsForThings.cs" />
+    <Compile Include="Harmony\Patch_IdeoFoundation_InitPrecepts.cs" />
+    <Compile Include="Harmony\Patch_PawnGenerator_GenerateTraits.cs" />
+    <Compile Include="Harmony\Patch_Settlement_GetInspectString.cs" />
+    <Compile Include="Harmony\Patch_InitiateSlaveRebellionMtbDays.cs" />
+    <Compile Include="Harmony\Patch_Building_Door_PawnCanOpen.cs" />
+    <Compile Include="Harmony\Patch_SkillRecord_Learn.cs" />
+    <Compile Include="Harmony\Patch_StunHandler_EMPAdaptationTicksDuration.cs" />
+    <Compile Include="Harmony\Patch_TraitSet_GainTrait.cs" />
+    <Compile Include="Harmony\Patch_WorkGiver_HunterHunt_HasHuntingWeapon.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatParts\StatPart_FasterSmoothing.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Person.cs" />
+    <Compile Include="TweaksGaloreMod.cs" />
+    <Compile Include="TweaksGaloreSettings.cs" />
+    <Compile Include="TweaksGaloreStartup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>BDsInstantNoodleSteamPuff</defName>
+    <graphicData>
+      <texPath>Things/Mote/AirPuff</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.04</fadeInTime>
+    <solidTime>3</solidTime>
+    <fadeOutTime>2</fadeOutTime>
+  </FleckDef>
+	
+	<EffecterDef>
+		<defName>EatBDsInstantNoodle</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<scale>0.5~0.7</scale>
+				<ticksBetweenMotes>20</ticksBetweenMotes>
+				<positionLerpFactor>0.35</positionLerpFactor>
+				<moteDef>Mote_FoodBitVegetarian</moteDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<fleckDef>BDsInstantNoodleSteamPuff</fleckDef>
+				<ticksBetweenMotes>250</ticksBetweenMotes>
+				<scale>1.2~1.5</scale>
+				<speed>0.5</speed>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

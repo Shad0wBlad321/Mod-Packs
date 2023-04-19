@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="ChatComms"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="ChatComms"]/thingDefs</xpath>
+			<value>
+				<li>CosRim_MicroCommsConsole</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

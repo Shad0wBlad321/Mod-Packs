@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Psychic Implants</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingSetMakerDef[defName = "Reward_ItemsStandard"]/root/options/li/thingSetMaker/options</xpath>
+					<value>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								  <li>PsychicAmplifierMkI</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								  <li>PsychicAmplifierMkII</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								  <li>PsychicAmplifierMkIII</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								  <li>CortexDrive</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								  <li>NeuralHeatDissipationCoil</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>4</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<filter>
+							  <thingDefs>
+								  <li>ConcentrationTuner</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

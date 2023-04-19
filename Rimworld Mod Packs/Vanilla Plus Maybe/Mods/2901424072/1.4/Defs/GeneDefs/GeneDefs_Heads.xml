@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef  ParentName="GeneJawBase">
+		<defName>VRE_ElongatedHead</defName>
+		<label>elongated head</label>
+
+		<description>Carriers of this gene have an elongated, almost alien appearance in their face and head.</description>
+		<biostatCpx>1</biostatCpx>		
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>401</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/Gene_ElongatedHead</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>VRE_Elongated_Male_Average</li>
+			<li>VRE_Elongated_Female_Average</li>
+			<li>VRE_Elongated_Fur</li>
+
+		</forcedHeadTypes>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>alien</symbol>
+				</li>
+				<li>
+					<symbol>brain</symbol>
+				</li>
+				<li>
+					<symbol>long</symbol>
+				</li>
+			</prefixSymbols>
+
+		</symbolPack>
+
+	</GeneDef>
+
+</Defs>

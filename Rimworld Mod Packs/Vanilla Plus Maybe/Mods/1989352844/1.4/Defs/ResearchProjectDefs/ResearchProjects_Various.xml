@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   <ResearchProjectDef>
+      <defName>VWE_LaserWeapons</defName>
+      <label>salvaged laser weapons</label>
+      <description>Learn to break down and salvage advanced components into unstable, experimental laser weaponry.</description>
+      <baseCost>6000</baseCost>
+      <tab>VanillaExpanded</tab>
+      <techLevel>Spacer</techLevel>
+      <prerequisites>
+         <li>ChargedShot</li>
+      </prerequisites>
+      <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+      <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+      <researchViewX>8.00</researchViewX>
+      <researchViewY>0.80</researchViewY>
+   </ResearchProjectDef>
+</Defs>

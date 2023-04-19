@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!-- Vanilla Expanded Framework -->
+
+	<Operation Class="PatchOperationReplace" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+		<xpath>/Defs/ThingDef[defName="VEF_OutpostDeliverySpot"]/graphicData/texPath</xpath> 
+		<value>
+			<texPath>Things/Building/Mods/dspots_OutpostDropOffSpot</texPath>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="TreeBase">
+    <defName>VRE_PoluxBush</defName>
+    <label>polux bush</label>
+    <description>A bush that has evolved to metabolize pollutants. By drawing pollutants from the ground through wide root networks, they slowly clean polluted terrain in their vicinity. However, they cannot do this if buildings are constructed over their roots.\n\nUnlike most methods of cleaning polluted terrain, polux bushes do not create toxic wastepacks.</description>
+    <graphicData>
+      <texPath>Things/Plant/PoluxBush</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.35, 0.3, 0.35)</volume>
+        <offset>(0,0,0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <minifiedDef IsNull="True" />
+    <statBases>
+      <Beauty>6</Beauty>
+      <BeautyOutdoors>6</BeautyOutdoors>
+      <Flammability>1</Flammability>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <ingestible />
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+    <canScatterOver>false</canScatterOver>
+    <plant>
+      <pollution>Any</pollution>
+      <growDays>10</growDays>
+      <visualSizeRange>0.75~1.7</visualSizeRange>
+      <sowMinSkill>0</sowMinSkill>
+      <sowTags Inherit="False"/>
+      <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+      <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+      <wildClusterWeight>0</wildClusterWeight>
+      <sowWork>400</sowWork>
+      <harvestYield>30</harvestYield>
+      <treeCategory>Super</treeCategory>
+      <dieIfNoSunlight>false</dieIfNoSunlight>
+      <growMinGlow>0</growMinGlow>
+      <sowResearchPrerequisites Inherit="False" />
+      <dieFromToxicFallout>False</dieFromToxicFallout>
+      <minSpacingBetweenSamePlant>4.9</minSpacingBetweenSamePlant>
+      <warnIfMarkedForCut>true</warnIfMarkedForCut>
+      <harvestWork>1000</harvestWork>
+      
+    </plant>
+    <comps>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>2000</ticksPerHeal> <!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+      </li>
+      <li Class="VanillaRacesExpandedPhytokin.CompProperties_VariablePollutionPump">
+        <radius>1.9</radius>
+        <pumpsPerWastepack>0</pumpsPerWastepack>
+        <intervalTicks>25000</intervalTicks>
+        <disabledByArtificialBuildings>true</disabledByArtificialBuildings>
+        <pumpEffecterDef>PollutionExtractedPoluxTree</pumpEffecterDef>
+      </li>
+    </comps>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <placeWorkers>
+      <li>VanillaRacesExpandedPhytokin.PlaceWorker_VariablePollutionPumpArtificialBuildings</li>
+    </placeWorkers>
+  </ThingDef>
+  
+ 
+</Defs>

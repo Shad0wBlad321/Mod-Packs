@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>BDsFlares</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>0~2</countRange>
+				<price>Expensive</price>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>BDsFlares</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>0~3</countRange>
+				<price>Expensive</price>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_Exotic" or defName="Orbital_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>BDsFlares</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>0~2</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Visitor_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>BDsFlares</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>0~1</countRange>
+			</li>
+		</value>
+	</Operation>
+</Patch>

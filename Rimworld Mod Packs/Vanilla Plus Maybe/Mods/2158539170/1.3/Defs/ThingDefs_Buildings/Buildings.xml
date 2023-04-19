@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VCE_SushiPrepTable</defName>
+		<label>sushi prep table</label>
+		<description>A working table to cut, slice and prepare all kinds of sushi.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VCE_SushiPrepTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<WoodLog>80</WoodLog>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>1</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>10</Mass>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<size>(3,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<!--<researchPrerequisites>
+			<li>VCE_CondimentsResearch</li>
+		</researchPrerequisites>-->
+		<comps>
+
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VCE_SoyFermenter</defName>
+		<label>soy sauce fermenter</label>
+		<description>A soy fermenter is a cilindrical, metallic drum where soybeans are pressed, mixed with aspergillus bacteria and grain, and aged for long time periods. The result is soy sauce of increasing quality, which can be used as a food condiment.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+			<texPath>Things/Buildings/VCE_SoyFermenter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+		</graphicData>
+		<neverMultiSelect>true</neverMultiSelect>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<building>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<size>(2,2)</size>
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>VCE_SoyFermentation</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<buildingOnGraphic>Things/Buildings/VCE_SoyFermenter</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<qualitySelector>true</qualitySelector>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VCE_InsertSoybeansDesc</InsertFirstItemDesc>
+
+				<chooseIngredientsIcon>Things/Items/Raw/VCE_RawSoybean</chooseIngredientsIcon>
+
+				<bringIngredientsText>VCE_StartSoybeanInsertion</bringIngredientsText>
+				<bringIngredientsDesc>VCE_StartSoybeanInsertionDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VCE_InsertSoybeans</bringIngredientsIcon>
+				<resetSemiautomaticIcon>UI/VCE_SoybeansReset</resetSemiautomaticIcon>
+
+
+				<cancelIngredientsText>VCE_CancelBringingSoybeans</cancelIngredientsText> 
+				<cancelIngredientsDesc>VCE_CancelBringingSoybeansDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VCE_CancelSoybeans</cancelIngredientsIcon> 
+
+				<noPowerDestroysProgress>false</noPowerDestroysProgress>
+
+				<removeProductText>VCE_RemoveSoySauce</removeProductText>
+				<removeProductDesc>VCE_RemoveSoySauceDesc</removeProductDesc>
+				<removeProductIcon>UI/VCE_RemoveSoySauce</removeProductIcon>
+
+				<destroyIngredientsAtStartOfProcess>false</destroyIngredientsAtStartOfProcess>
+				<destroyIngredientsAtAwfulQuality>true</destroyIngredientsAtAwfulQuality>
+
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+
+
+
+
+
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Totemic -->
+
+  <ThingStyleDef>
+    <defName>Totemic_Shelf</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Totemic/TotemicShelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Totemic_ShelfSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Totemic/TotemicShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Totemic_ShelfLarge</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Totemic/TotemicShelfLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Totemic_ShelfTall</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Totemic/TotemicShelfTall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <!-- Techist -->
+
+  <ThingStyleDef>
+    <defName>Techist_Shelf</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Techist/Shelf/TechistShelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Techist_ShelfSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Techist/ShelfSmall/TechistShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Techist_ShelfLarge</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Techist/Shelf/TechistShelfLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Techist_ShelfTall</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Techist/Shelf/TechistShelfTall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+
+
+</Defs>

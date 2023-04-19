@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+   <!-- Adds weapons to ancient danger sites -->
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+                <value>
+					<li>
+						<!-- Normal fights, ranged only with lasers -->
+						<kindDef>Combat</kindDef>
+						<commonality>10</commonality>
+						<options>
+							<Mercenary_Marine>5</Mercenary_Marine>
+						</options>
+					</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

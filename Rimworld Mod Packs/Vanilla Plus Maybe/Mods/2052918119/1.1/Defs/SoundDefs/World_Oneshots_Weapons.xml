@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>VFE_Shot_DoubleactionRevolver</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/dblactionrevolver_a</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>35</min>        
+          <max>35</max>
+        </volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>VFE_Shot_GattlingGun</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/gattlinggunshot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15</min>        
+          <max>20</max>
+        </volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

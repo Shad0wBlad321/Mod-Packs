@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <BodyPartGroupDef>
+    <defName>VAE_AttackTail</defName>
+    <label>stinging tail</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>VAE_Arms</defName>
+    <label>claws</label>
+    <listOrder>90</listOrder>
+  </BodyPartGroupDef>
+  
+  
+
+</Defs>

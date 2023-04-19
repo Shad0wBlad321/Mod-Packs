@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>VRESaurids_ScaleSkin</defName>
+		<label>scaleskin</label>
+		<labelShortAdj>scaleskinned</labelShortAdj>
+		<description>Carriers of this gene grow scales all over their body, which protect them from sharp damage of any kind.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>400</displayOrderInCategory>
+		<iconPath>UI/GeneIcons/Gene_ScaleSkin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>VRESaurids_ScaleSkin_Average</li>
+			<li>VRESaurids_ScaleSkin_Narrow</li>
+			<li>VRESaurids_ScaleSkin_Heavy</li>
+			<li>VRESaurids_ScaleSkin_Gaunt</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>Skin</li>
+			<li>Fur</li>
+		</exclusionTags>
+		<statOffsets>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+		</statOffsets>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+		<graphicData>
+			<fur>VRESaurids_ScaleSkin</fur>
+			<tattoosVisible>true</tattoosVisible>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>True</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

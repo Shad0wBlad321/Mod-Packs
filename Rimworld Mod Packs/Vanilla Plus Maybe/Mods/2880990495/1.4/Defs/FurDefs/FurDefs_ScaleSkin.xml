@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FurDef>
+		<defName>VRESaurids_ScaleSkin</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Pawn/ScalySkin/ScalySkin_Male</Male>
+			<Female>Pawn/ScalySkin/ScalySkin_Female</Female>
+			<Hulk>Pawn/ScalySkin/ScalySkin_Hulk</Hulk>
+			<Fat>Pawn/ScalySkin/ScalySkin_Fat</Fat>
+			<Thin>Pawn/ScalySkin/ScalySkin_Thin</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/Naked_Child</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/Naked_Child</Baby> <!-- Always covered by swaddled graphic -->
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+</Defs>

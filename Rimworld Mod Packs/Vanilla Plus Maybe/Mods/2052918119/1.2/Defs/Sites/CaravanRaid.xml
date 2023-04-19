@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>CaravanRaid</defName>
+    <label>caravan stop</label>
+    <description>An unknowing caravan.</description>
+    <siteTexture>World/WorldObjects/Sites/CaravanRaid</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/CaravanRaid</expandingIconTexture>
+    <tags>
+      <li>CaravanRaid</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>CaravanRaid</defName>
+    <linkWithSite>CaravanRaid</linkWithSite>
+    <order>480</order>
+    <genStep Class="VFE_Settlers.GenSteps.GenStep_CaravanRaid">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+</Defs>

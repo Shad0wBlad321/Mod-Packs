@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>VRE_Intro_Phytokin</defName>
+    <defaultChallengeRating>1</defaultChallengeRating>
+    <expireDaysRange>15</expireDaysRange>
+    <isRootSpecial>true</isRootSpecial>
+    <defaultCharity>true</defaultCharity>
+    <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_HospitalityRefugees</successHistoryEvent>
+    <failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_HospitalityRefugees</failedOrExpiredHistoryEvent>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->the [adjAny] Phytokin</li>
+
+        <!-- Pieces -->
+        <li>adjAny->hunted</li>
+        <li>adjAny->fleeing</li>
+        <li>adjAny->solitary</li>
+        <li>adjAny->ambushed</li>
+
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+     
+      <rulesStrings>
+        <li>questDescription->[asker_nameFull], a powerful phytokin, is calling from nearby. She was cast out by [enemyFaction_name] for giving them wrong advice, and is now being hunted by a search party. The search party of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]\n\n[asker_nameFull] wants you to keep her safe at [map_definite]. If you accept, she will arrive immediately, but she will be followed by the search party that you will need to defeat.\n\nPhytokins are plant-based humanoids with an emphasis on symmetry and symbiosis. Their ability to subsist only on sunlight and affinity with any and all plantlife make them especially suited to aiding newly established colonies or underperforming industrial farms.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+
+      <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_GetWalkInSpot" />
+
+        <li Class="QuestNode_Set">
+          <name>raidPoints</name>
+          <value>$points</value>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+        
+        <!-- Get asker -->
+        <li Class="VanillaRacesExpandedPhytokin.QuestNode_GeneratePhytokin">
+          <kindDef>Colonist</kindDef>
+          <storeAs>asker</storeAs>        
+ 
+        </li>
+        
+       <!-- Get raider faction -->
+        <li Class="QuestNode_GetFaction">
+          <allowEnemy>true</allowEnemy>
+          <mustBePermanentEnemy>true</mustBePermanentEnemy>
+          <storeAs>enemyFaction</storeAs>
+        </li>
+        
+        <!-- Spawn joiner -->
+        <li Class="QuestNode_PawnsArrive">
+          <pawns>$asker</pawns>
+          <walkInSpot>$walkInSpot</walkInSpot>
+          <joinPlayer>true</joinPlayer>
+          <customLetterText TKey="LetterLabelAskerBecameHostile">{BASETEXT}\n\nBecause you accepted [asker_nameDef], the band of pirates pursuing her will arrive soon.</customLetterText>
+          <isSingleReward>true</isSingleReward>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
+        </li>
+        
+        <!-- Raid -->
+        <li Class="QuestNode_Set">
+          <name>raidDelayTicks</name>
+          <value>$(roundToTicksRough(randInt(1800, 2400)))</value>
+        </li>
+        <li Class="QuestNode_Delay">
+          <delayTicks>$raidDelayTicks</delayTicks>
+          <node Class="QuestNode_SubScript">
+            <def>Util_Raid</def>
+            <prefix>raid</prefix>
+            <parms>
+              <inSignal>$inSignal</inSignal>
+              <map>$map</map>
+              <enemyFaction>$enemyFaction</enemyFaction>
+              <points>$raidPoints</points>
+              <walkInSpot>$walkInSpot</walkInSpot>
+              <customLetterLabel TKey="LetterLabelLoyaltySquad">{BASELABEL}: Pursuing pirates</customLetterLabel>
+              <customLetterText TKey="LetterTextLoyaltySquad">{BASETEXT}\n\nThese are the pirates that were hunting [../asker_nameFull].
+              </customLetterText>
+            </parms>
+          </node>
+        </li>
+		
+		<!-- End a few seconds after raid arrives -->
+        <li Class="QuestNode_Delay">
+          <delayTicks>$($raidDelayTicks+600)</delayTicks>
+          <node Class="QuestNode_End" />
+        </li>
+
+      
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>

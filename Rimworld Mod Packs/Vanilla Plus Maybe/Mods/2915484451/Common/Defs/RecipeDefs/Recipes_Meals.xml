@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="FFE_CookVegMealBase" Abstract="True">
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+  <RecipeDef ParentName="FFE_CookVegMealBase">
+    <defName>FFE_CookMealSimple_Veg</defName>
+    <label>cook vegetarian simple meal</label>
+    <description>Cook a straightforward meal from one vegetarian ingredient.</description>
+    <jobString>Cooking simple meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <MealSimple>1</MealSimple>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="FFE_CookVegMealBase">
+    <defName>FFE_CookMealSimpleBulk_Veg</defName>
+    <label>cook vegetarian simple meal x4</label>
+    <description>Cook 4 straightforward meals from one vegetarian ingredient.</description>
+    <jobString>Cooking 4 simple meals.</jobString>
+    <workAmount>1200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <MealSimple>4</MealSimple>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>FFE_MakeChoppedMeat</defName>
+    <label>make chopped meat</label>
+    <description>Make portion of chopped meat from raw meat ingredients.</description>
+    <jobString>Making chopped meat.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Meat_Megaspider</li>
+        <li>FFE_ChoppedMeat</li>
+        <li MayRequire="OskarPotocki.VFE.Mechanoid">VFEM_ProcessedMeat</li>
+        <li MayRequire="VanillaExpanded.VCookE">VCE_CannedMeat</li>
+        <li MayRequire="VanillaExpanded.VCookE">VCE_CannedFish</li>
+
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>2.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <FFE_ChoppedMeat>50</FFE_ChoppedMeat>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+
+
+</Defs>

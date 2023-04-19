@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_ProgressiveAttunement</defName>
+		<label>progressive attunement</label>
+		<labelShortAdj>psychic</labelShortAdj>
+		<displayCategory>Psychic</displayCategory>
+		<description>Carriers of this gene become more psychically attuned as they age, greatly increasing their psychic sensitivity.</description>
+		<iconPath>UI/Icons/Genes/Gene_PsychicAttunement</iconPath>
+		
+		<biostatMet>-2</biostatMet>
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>psychic</symbol>
+				</li>
+				<li>
+					<symbol>psy</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

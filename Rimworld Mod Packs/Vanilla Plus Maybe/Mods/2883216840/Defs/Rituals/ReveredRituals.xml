@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualAttachableOutcomeEffectDef MayRequire="ludeon.rimworld.ideology">
+    <defName>BTEMy_RechargeReverence</defName>
+    <label>recharge reverence</label>
+    <effectDesc>all revered participants will have their Reverence maxed out.</effectDesc>
+    <letterInfoText>Reverence of all revered pawns have been maxed out.</letterInfoText>
+    <workerClass>BTE_MY.RitualAttachableOutcomeEffectWorker_ReverenceRegen</workerClass>
+  </RitualAttachableOutcomeEffectDef>
+
+</Defs>

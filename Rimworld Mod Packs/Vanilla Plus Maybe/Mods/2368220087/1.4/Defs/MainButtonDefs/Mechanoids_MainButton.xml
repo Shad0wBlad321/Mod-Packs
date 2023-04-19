@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MainButtonDef>
+    <defName>VFEMT_Mechanoids</defName>
+    <label>drones</label>
+    <description>Tracking and configuring colony's drones.</description>
+    <tabWindowClass>VFEMT.MainTabWindow_Mechanoids</tabWindowClass>
+    <order>41</order>
+  </MainButtonDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="DeathrestCasket"]/comps/li[@Class="CompProperties_DeathrestBindable"]/deathrestEffectivenessFactor</xpath>
+        <value>
+            <deathrestEffectivenessFactor>1.2</deathrestEffectivenessFactor>
+        </value>
+    </Operation>
+</Patch>

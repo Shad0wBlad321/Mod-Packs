@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FFE_KitchenFridge.label>кухонний холодильник</FFE_KitchenFridge.label>
+  <FFE_KitchenFridge.description>Звичайний кухонний холодильник, що використовується для тривалого зберігання продуктів та готових страв.</FFE_KitchenFridge.description>
+
+  <FFE_KitchenFridgeLarge.label>промисловий холодильник</FFE_KitchenFridgeLarge.label>
+  <FFE_KitchenFridgeLarge.description>Великий кухонний холодильник, що використовується для тривалого зберігання продуктів та готових страв.</FFE_KitchenFridgeLarge.description>
+
+  <FFE_FridgeContainer.label>морозильний контейнер</FFE_FridgeContainer.label>
+  <FFE_FridgeContainer.description>Великий вантажний контейнер, що використовується для тривалого зберігання продуктів та готових страв.</FFE_FridgeContainer.description>
+
+</LanguageData>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_SoySauce</defName>
+		<label>soy sauce</label>
+		<description>A fermented paste of soybeans, roasted grain, brine, and Aspergillus bacteria. Soy sauce can be added directly to food, and is used as a dip or salt flavor in cooking, as well as providing a rich umami taste.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_SoySauce</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li>
+                <compClass>CompQuality</compClass>
+            </li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedSoySauce</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>VCE_WasabiPaste</defName>
+		<label>wasabi paste</label>
+		<description>A paste made from ground wasabi rhizomes and used as a pungent condiment for sushi and other foods. It is similar in taste to hot mustard rather than chili peppers in that it stimulates the nose more than the tongue. It loses its flavour and deteriorates extremely fast.</description>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_WasabiPaste</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>1</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>VCE_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<specialThoughtAsIngredient>VCE_ConsumedWasabi</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+
+	
+
+
+
+
+
+
+
+
+</Defs>

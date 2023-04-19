@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_Chemroot</defName>
+    <label>chemroot</label>
+    <description>This highly volatile root is farmed for its chemfuel. It's difficult to harvest and only grows in extremely fertile soil. Despite the risk of a large, chain explosion, these plants are frequently farmed by desperate ranchers and imperial agro-companies alike.</description>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Chemroot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>33</pathCost>
+    <ingestible />
+	<tickerType>Normal</tickerType>
+    <plant>
+      <fertilitySensitivity>1.0</fertilitySensitivity>
+      <growDays>12</growDays>
+      <sowWork>500</sowWork>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Chemfuel</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <neverBlightable>false</neverBlightable>
+      <immatureGraphicPath>Things/Plants/ChemrootImmature</immatureGraphicPath>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>10</sowMinSkill>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <harvestFailable>true</harvestFailable>
+    </plant>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(255,255,50,0)</glowColor>
+		</li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.1</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+        <startWickOnDamageTaken>
+          <li>Flame</li>
+        </startWickOnDamageTaken>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>70~150</wickTicks>
+      </li>
+	</comps>
+  </ThingDef>
+</Defs>

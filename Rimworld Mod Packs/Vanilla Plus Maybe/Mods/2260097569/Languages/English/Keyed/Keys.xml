@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RG.SpawnAutumnLeaves>Enable autumn leaf filth spawning.</RG.SpawnAutumnLeaves>
+	<RG.SpawnLeaves>Enable aspen leaf spawning.</RG.SpawnLeaves>
+	<RG.ColdFog>Cold fog</RG.ColdFog>
+	<RG.IceLayer>Ice layer</RG.IceLayer>
+	<RG.RainWaterPuddles>Rain water puddles</RG.RainWaterPuddles>
+	<RG.RainCleanWaterPuddles>Clean water puddles</RG.RainCleanWaterPuddles>
+	<RG.FogVelocity>Fog velocity</RG.FogVelocity>
+	<RG.FogTemp>Fog temperature</RG.FogTemp>
+	<RG.PuddleChance>Puddle spawn chance</RG.PuddleChance>
+	<RG.SpawnFogOnHotSprings>Spawn fogs on hot springs</RG.SpawnFogOnHotSprings>
+	<RG.SandDevilLeftTheMap>The dust devil has left the map.</RG.SandDevilLeftTheMap>
+	<RG.SandDevilDissipated>The dust devil has dissipated.</RG.SandDevilDissipated>
+	<RG.DisableHailDamage>Disable hail damage</RG.DisableHailDamage>
+	<RG.BatheZone>Bathing zone</RG.BatheZone>
+	<RG.DesignatorBatheZoneDesc>Create a zone where your colonists are allowed to bathe in water.</RG.DesignatorBatheZoneDesc>
+	<RG.StoppedBathingMessage>{PAWN_nameDef} stopped bathing. Reason: {1}.</RG.StoppedBathingMessage>
+	<RG.TooCold>Temperature too low.</RG.TooCold>
+	<RG.TooHot>Temperature too high.</RG.TooHot>
+	<RG.BathingIsNotPossible>Bathing is not possible: {0}</RG.BathingIsNotPossible>
+	<RG.BathingSeasonIsHere>Bathing season is here!</RG.BathingSeasonIsHere>
+	<RG.BathingZoneRemoved>Bathing zone is removed.</RG.BathingZoneRemoved>
+	<RG.BathingPeriod>Bathing period: {0}/{1} days ({2} - {3})</RG.BathingPeriod>
+</LanguageData>

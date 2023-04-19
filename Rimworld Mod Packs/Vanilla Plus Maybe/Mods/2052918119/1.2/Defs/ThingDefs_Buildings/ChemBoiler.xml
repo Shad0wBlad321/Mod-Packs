@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>ChemBoiler</defName>
+		<label>chemboiler</label>
+		<description>A device that converts chemfuel into heat. Simple machinery doesn't allow the temperature to be adjusted.</description>
+		<thingClass>Building_Heater</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/Chemboiler/Chemboiler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<thingCategories>
+			<li>BuildingsTemperature</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>6</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>100</Steel>
+			<Chemfuel>75</Chemfuel>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10</fuelConsumptionRate>
+				<fuelCapacity>75.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>40</heatPerSecond>
+				<heatPushMaxTemperature>60</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(255,50,25,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>5.0</explosiveRadius>
+				<explosiveDamageType>Burn</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>
+					<min>60</min>
+					<max>120</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>  
+</Defs>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Dynamite -->
+  <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>VFES_Weapon_GrenadeDynamite</defName>
+    <label>dynamite</label>
+    <description>A makeshift explosive stick of chemfuel. They can be thrown a short distance, where it will explode after a random amount of time.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Grenades/Dynamite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>    <!-- Needs sound -->
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Cloth>20</Cloth>
+      <Chemfuel>140</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw dynamite</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>VFES_Proj_Dynamite</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <onlyManualCast>true</onlyManualCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.5</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>VFES_Proj_Dynamite</defName>
+    <label>frag grenade</label>
+    <thingClass>VFE_Settlers.Comps.DynamiteComp</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/DynamiteThrown</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>3.5</explosionRadius>
+      <damageDef>Bomb</damageDef>
+    </projectile>
+  </ThingDef>
+</Defs>

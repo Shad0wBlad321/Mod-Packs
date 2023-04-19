@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<TG.GroupInfoTooltip>{0}
+Left click:		Expand Pawn Icons
+2x Left click:	Select All Colonists
+Right click:	Group Menu</TG.GroupInfoTooltip>
+	<TG.Rally>RALLY</TG.Rally>
+	<TG.Work>Work</TG.Work>
+	<TG.Orders>Orders</TG.Orders>
+	<TG.Manage>Manage</TG.Manage>
+	<TG.Group>Group</TG.Group>
+	<TG.Colony>Colony</TG.Colony>
+	<TG.TaskForce>Task Force</TG.TaskForce>
+	<TG.Caravan>Caravan</TG.Caravan>
+	<TG.Diplomacy>Diplomacy</TG.Diplomacy>
+
+	<TG.GetToWork>Get to Work</TG.GetToWork>
+	<TG.TakeABreak>Take a Break</TG.TakeABreak>
+	<TG.ChowHall>Chow Hall</TG.ChowHall>
+	<TG.SocialRelax>Social Relax</TG.SocialRelax>
+	<TG.HaveSomeFun>Have Some Fun</TG.HaveSomeFun>
+	<TG.Clean>Clean</TG.Clean>
+	<TG.Haul>Haul</TG.Haul>
+	<TG.VisitMedical>Visit Medical</TG.VisitMedical>
+
+	<TG.Rename>Rename</TG.Rename>
+	<TG.Icon>Icon</TG.Icon>
+	<TG.SortGroup>Sort Group</TG.SortGroup>
+
+	<TG.Disband>Disband</TG.Disband>
+	<TG.DisbandPawn>Pawn</TG.DisbandPawn>
+	<TG.DisbandGroup>Group</TG.DisbandGroup>
+
+	<TG.LookBusy>Look Busy</TG.LookBusy>
+
+	<TG.ShowAllColonists>Show All Colonists</TG.ShowAllColonists>
+	<TG.DisplayFood>Display Food</TG.DisplayFood>
+	<TG.DisplayRest>Display Rest</TG.DisplayRest>
+	<TG.DisplayHealth>Display Health</TG.DisplayHealth>
+	<TG.DisplayWeapons>Display Weapons</TG.DisplayWeapons>
+	<TG.DisplayColorBars>Color Mood Bars</TG.DisplayColorBars>
+	<TG.DisplayBreakRiskOverlay>Break Risk Overlay</TG.DisplayBreakRiskOverlay>
+	<TG.HidePawnsWhenOffMap>Hide Pawns Off Map</TG.HidePawnsWhenOffMap>
+	<TG.HideGroups>Hide Groups</TG.HideGroups>
+	<TG.HideCreateGroup>Hide Create Group</TG.HideCreateGroup>
+	<TG.HideCreateGroupDesc>Create Group &amp; Options menu can be found in Assign Menu / Mod Settings.</TG.HideCreateGroupDesc>
+	<TG.ColonistBarPositionY>Colonist Bar Position (Y)</TG.ColonistBarPositionY>
+	<TG.ColonistBarPositionX>Colonist Bar Position (X)</TG.ColonistBarPositionX>
+	<TG.ColonistBarSpacingX>Colonist Bar Spacing (X)</TG.ColonistBarSpacingX>
+	<TG.ColonistBarSpacingY>Colonist Bar Spacing (Y)</TG.ColonistBarSpacingY>
+	<TG.GroupRowCount>Group Row Count</TG.GroupRowCount>
+	<TG.OverallPawnDisplayScale>Overall Pawn Display Scale: </TG.OverallPawnDisplayScale>
+	<TG.ColonyGroupScale>Colony Group Scale</TG.ColonyGroupScale>
+	<TG.GroupScale>Group Scale</TG.GroupScale>
+	<TG.PawnNeedsSize>Pawn Needs Size</TG.PawnNeedsSize>
+	<TG.WeaponOverlayPlacement>Weapon Overlay Placement</TG.WeaponOverlayPlacement>
+	<TG.ColorBarModeLabel>Color mood bar preset:</TG.ColorBarModeLabel>
+	<TG.ColorBarModeDefault>Default</TG.ColorBarModeDefault>
+	<TG.ColorBarModeExtended>Extended</TG.ColorBarModeExtended>
+	<TG.DisableLabelBackground>Disable Label Background (for performance)</TG.DisableLabelBackground>
+
+	<TG.Attack>Attack</TG.Attack>
+	<TG.Regroup>Regroup</TG.Regroup>
+	<TG.BattleStations>Battle Stations</TG.BattleStations>
+	<TG.Set>Set</TG.Set>
+	<TG.Clear>Clear</TG.Clear>
+	<TG.Send>Send</TG.Send>
+	<TG.Unload>Unload</TG.Unload>
+	
+	<TG.Formation>Formation</TG.Formation>
+	<TG.Medical>Medical</TG.Medical>
+	<TG.FireAtWill>Fire At Will</TG.FireAtWill>
+	<TG.Strongest>Strongest</TG.Strongest>
+	<TG.Weakest>Weakest</TG.Weakest>
+	<TG.PursueFleeing>Pursue Fleeing</TG.PursueFleeing>
+
+	<TG.Management>Management</TG.Management>
+	<TG.Okay>Okay</TG.Okay>
+	<TG.Sad>Sad</TG.Sad>
+	<TG.Happy>Happy</TG.Happy>
+	
+	<TG.ReportToMedical>Report to Medical</TG.ReportToMedical>
+	<TG.RescueFallen>Rescue Fallen</TG.RescueFallen>
+	<TG.TendWounded>Tend Wounded</TG.TendWounded>
+	<TG.TakeFive>Take Five</TG.TakeFive>
+	
+	<TG.CreateGroupTooltip>Form group with selected colonists</TG.CreateGroupTooltip>
+	<TG.OptionsGearTooltip>Open the options menu</TG.OptionsGearTooltip>
+	<TG.LookBusyTooltip>Tell group to work any task</TG.LookBusyTooltip>
+
+
+	<TG.WorkTaskTooltipConstruction>Build</TG.WorkTaskTooltipConstruction>
+	<TG.WorkTaskTooltipCraft>Craft</TG.WorkTaskTooltipCraft>
+	<TG.WorkTaskTooltipHaul>Haul</TG.WorkTaskTooltipHaul>
+	<TG.WorkTaskTooltipClean>Clean</TG.WorkTaskTooltipClean>
+	<TG.WorkTaskTooltipHunt>Hunt</TG.WorkTaskTooltipHunt>
+	<TG.WorkTaskTooltipCook>Cook</TG.WorkTaskTooltipCook>
+	<TG.WorkTaskTooltipMine>Mine</TG.WorkTaskTooltipMine>
+	<TG.WorkTaskTooltipChopWood>Chop Wood</TG.WorkTaskTooltipChopWood>
+	<TG.WorkTaskTooltipFarm>Farm</TG.WorkTaskTooltipFarm>
+	<TG.WorkTaskTooltipClearSnow>Clear Snow</TG.WorkTaskTooltipClearSnow>
+	<TG.WorkTaskTooltipWarden>Warden Prisoners</TG.WorkTaskTooltipWarden>
+	<TG.WorkTaskTooltipArt>Art</TG.WorkTaskTooltipArt>
+	<TG.WorkTaskTooltipTailor>Tailor</TG.WorkTaskTooltipTailor>
+	<TG.WorkTaskTooltipSmith>Smith</TG.WorkTaskTooltipSmith>
+	<TG.WorkTaskTooltipHandle>Handle</TG.WorkTaskTooltipHandle>
+	<TG.WorkTaskTooltipFireExtinguish>Fire Extinguish</TG.WorkTaskTooltipFireExtinguish>
+	<TG.WorkTaskTooltipResearch>Research</TG.WorkTaskTooltipResearch>
+	<TG.WorkTaskTooltipResearchMenu>Research Menu</TG.WorkTaskTooltipResearchMenu>
+	
+	
+	<TG.ForcedLaborTooltip>
+Right Click to Prioritize
+-Right Click x2 = Slave Labor</TG.ForcedLaborTooltip>
+
+	<TG.TakeFiveTooltip>Take a Break
+	
+-Tell group to take a break from working</TG.TakeFiveTooltip>
+	
+	
+	<TG.ChowHallToolTip>Chow Time
+	
+Tell group to go eat</TG.ChowHallToolTip>
+
+
+	<TG.SleepTooltip>Lights Out
+	
+Tell group to go to sleep</TG.SleepTooltip>
+
+
+
+	
+
+
+
+
+
+	<TG.RallyToolTip>Rally
+	
+Select and Draft entire group</TG.RallyToolTip>
+	<TG.ShootersToolTip>Number of shooters in group
+	-Click to select</TG.ShootersToolTip>
+	<TG.MeleeToolTip>Number of Melee in group
+	-Click to select</TG.MeleeToolTip>
+	<TG.ShowTooltip>Show pawns in group from the top bar</TG.ShowTooltip>
+	<TG.HideTooltip>Hide pawns in group from the top bar</TG.HideTooltip>
+	
+	<TG.AddColonistTooltip>Add selected colonists to group</TG.AddColonistTooltip>
+	<TG.RegroupTooltip>Regroup on Leader's potition.
+Squad leader is first pawn in group</TG.RegroupTooltip>
+	<TG.BattleStationsTooltip>Send group to battle positions</TG.BattleStationsTooltip>
+	<TG.BattleStationsSetTooltip>Set battle positions</TG.BattleStationsSetTooltip>
+	<TG.BattleStationsClearTooltip>Clear battle positions</TG.BattleStationsClearTooltip>
+	<TG.FireAtWillTooltip>Default combat mode</TG.FireAtWillTooltip>
+	<TG.StrongestTooltip>Target strongest enemy</TG.StrongestTooltip>
+	<TG.WeakestTooltip>Target weakest enemy</TG.WeakestTooltip>
+	<TG.PursueFleeingTooltip>Pursue fleeing enemies</TG.PursueFleeingTooltip>
+	<TG.ReportToMedicalTooltip>Send wounded to Rest until Healed</TG.ReportToMedicalTooltip>
+	<TG.RescueDownedTooltip>Rescue downed colonists</TG.RescueDownedTooltip>
+	<TG.TendWoundedTooltip>Tend wounded colonists</TG.TendWoundedTooltip>
+	<TG.ArmorTooltip>Average group armor rating</TG.ArmorTooltip>
+	<TG.DPSTooltip>Average group DPS</TG.DPSTooltip>
+
+
+	<TG.MiddlePawnCountToolTip>Number of combat-ready pawns</TG.MiddlePawnCountToolTip>
+	<TG.RankTooltip>Group average combat rank</TG.RankTooltip>
+	<TG.UpgradeWeaponTooltip>Tell group to upgrade weapons if any are available
+	
+-Pawns will only upgrade to their current weapon type; Ranged / Melee</TG.UpgradeWeaponTooltip>
+	<TG.UpgradeArmorTooltip>Tell group to upgrade armor if any is available</TG.UpgradeArmorTooltip>
+	<TG.TakeBuffTooltip>Tell group to take combat drugs in inventory</TG.TakeBuffTooltip>
+	
+	<TG.MoodIconTooltip>Overall Mood</TG.MoodIconTooltip>
+	<TG.HealthIconTooltip>Overall Health</TG.HealthIconTooltip>
+	<TG.RestIconTooltip>Overall Rest</TG.RestIconTooltip>
+	<TG.HungerIconTooltip>Overall Hunger</TG.HungerIconTooltip>
+	
+	<TG.GroupHideOptionsTooltip>Hide Colony Group until mouse over</TG.GroupHideOptionsTooltip>
+	<TG.HideGroupPawnDotsOptionsTooltip>Hide group pawn dots display</TG.HideGroupPawnDotsOptionsTooltip>
+	<TG.HideGroupHealthAlertOverlayOptionsTooltip>Hide group health alert overlay</TG.HideGroupHealthAlertOverlayOptionsTooltip>
+	<TG.HideWeaponOverlayOptionsTooltip>Hide group weapon overlay</TG.HideWeaponOverlayOptionsTooltip>
+	<TG.BanishPawnTooltip>Banish selected pawn(s) from group</TG.BanishPawnTooltip>
+	<TG.HidePawnGroupOptionsTooltip>Move group to subgroups</TG.HidePawnGroupOptionsTooltip>
+	<TG.WeaponModeShowDrafted>Drafted</TG.WeaponModeShowDrafted>
+	<TG.WeaponModeShowAlways>Always</TG.WeaponModeShowAlways>
+	
+	<TG.GroupAreaTooltip>Area Policy will also apply to new Pawns
+-You must select a new policy AFTER checking this box	</TG.GroupAreaTooltip>
+	<TG.GroupOutfitTooltip>Outfit Policy will also apply to new Pawns
+-You must select a new policy AFTER checking this box</TG.GroupOutfitTooltip>
+	<TG.GroupDrugsTooltip>Drug Policy will also apply to new Pawns
+-You must select a new policy AFTER checking this box</TG.GroupDrugsTooltip>
+	<TG.GroupFoodTooltip>Food Policy will also apply to new Pawns
+-You must select a new policy AFTER checking this box</TG.GroupFoodTooltip>
+	<TG.PresetMenuOverlayOptionsTooltip>Open Preset menu</TG.PresetMenuOverlayOptionsTooltip>
+	<TG.PresetLabel>Preset</TG.PresetLabel>
+	<TG.GroupsLabel>Presets</TG.GroupsLabel>
+	<TG.CreateNew>Create New</TG.CreateNew>
+	<TG.CreateNewTooltip>Create New Preset
+-Presets will only save upon saving the current game session.</TG.CreateNewTooltip>
+	<TG.TrashCanTooltip>Delete Preset</TG.TrashCanTooltip>
+	<TG.SavePresetTooltip>Overwrite Preset</TG.SavePresetTooltip>
+	<TG.ActivatePresetTooltip>Activate Preset
+-Multiple Presets can be active at the same time.</TG.ActivatePresetTooltip>
+	<TG.DisactivatePresetTooltip>Deactivate Preset</TG.DisactivatePresetTooltip>
+	<TG.CreateNewPreset>Create</TG.CreateNewPreset>
+	<TG.RemovePreset>Remove preset</TG.RemovePreset>
+	<TG.SavePreset>Save preset</TG.SavePreset>
+	
+	<TG.PresetWorkPrioritiesTooltip>Work priorities:</TG.PresetWorkPrioritiesTooltip>
+	<TG.PresetActiveWorkStatesTooltip>Forced work states:</TG.PresetActiveWorkStatesTooltip>
+	<TG.PresetAreaTooltip>Group area: </TG.PresetAreaTooltip>
+	<TG.PresetDrugPolicyTooltip>Drug policy: </TG.PresetDrugPolicyTooltip>
+	<TG.PresetFoodPolicyTooltip>Food policy: </TG.PresetFoodPolicyTooltip>
+	<TG.PresetOutfitPolicyTooltip>Outfit policy: </TG.PresetOutfitPolicyTooltip>
+	<TG.Inactive>Inactive</TG.Inactive>
+	<TG.Active>Active</TG.Active>
+	<TG.ForcedLabor>Forced labor</TG.ForcedLabor>
+	<TG.Temporary>Temporary</TG.Temporary>
+	
+	<TG.Apply>Apply</TG.Apply>
+	<TG.ResetGroupTitle>Reset Group</TG.ResetGroupTitle>
+	<TG.ResetGroupTooltip>Reset Group</TG.ResetGroupTooltip>
+	
+	<TG.TravelSupplies>Travel supplies</TG.TravelSupplies>
+	<TG.Bedrolls>Bedrolls</TG.Bedrolls>
+	
+	<TG.CaptureTooltip>Capture all downed enemies</TG.CaptureTooltip>
+	<TG.ExecuteTooltip>Execute all downed enemies</TG.ExecuteTooltip>
+	<TG.Name>Name</TG.Name>
+	
+	<TG.PrisonerMenuTooltip>Prisoner Menu</TG.PrisonerMenuTooltip>
+	<TG.AnimalMenuTooltip>Animal Menu</TG.AnimalMenuTooltip>
+	<TG.GuestMenuTooltip>Guest Menu</TG.GuestMenuTooltip>
+	<TG.SlaveMenuTooltip>Slave Menu
+	Ctrl-S to open in game</TG.SlaveMenuTooltip>
+	<TG.Prisoners>Prisoners</TG.Prisoners>
+	<TG.Animals>Animals</TG.Animals>
+	<TG.Guests>Guests</TG.Guests>
+	<TG.Slaves>Slaves</TG.Slaves>
+	
+	<TG.ColorBarModeDefaultTooltip>3 Layer Color Mood Bar</TG.ColorBarModeDefaultTooltip>
+	<TG.ColorBarModeExtendedTooltip>5 Layer Color Mood Bar</TG.ColorBarModeExtendedTooltip>
+	
+	<TG.Pawn>Pawn</TG.Pawn>
+	<TG.Box>Box</TG.Box>
+	
+	<TG.ResetToDefault>Reset to Default</TG.ResetToDefault>
+	<TG.ResetPawnView>Reset Pawn View</TG.ResetPawnView>
+
+	<TG.WorkTypeLeftClickToApply>Left Click to Apply</TG.WorkTypeLeftClickToApply>
+	<TG.WorkTypeForcedLabor>Forced Labor</TG.WorkTypeForcedLabor>
+	<TG.WorkTypeSlaveLabor>Slave Labor</TG.WorkTypeSlaveLabor>
+	<TG.GroupWorkPrioritiesReset>Reset Work Priorities
+Green box = Group Override
+Middle Mouse on Green Box to Reset
+	</TG.GroupWorkPrioritiesReset>
+	
+	<TG.GroupColorTooltip>Assign group apparel color for pawns. They will go to styling stations and recolor their apparels accordingly.</TG.GroupColorTooltip>
+	<TG.SetIdeologyColor>Set ideology color</TG.SetIdeologyColor>
+	<TG.SetPawnFavoritesColor>Set pawn favorites color</TG.SetPawnFavoritesColor>
+	<TG.ClearGroupColor>Clear group color</TG.ClearGroupColor>
+	
+	<TG.All>All</TG.All>
+	<TG.Torso>Torso</TG.Torso>
+	<TG.Legs>Legs</TG.Legs>
+	<TG.Hands>Hands</TG.Hands>
+	<TG.Head>Head</TG.Head>
+	<TG.Feet>Feet</TG.Feet>
+	<TG.Hair>Hair</TG.Hair>
+	<TG.HealthBarWidth>Health bar size</TG.HealthBarWidth>
+	<TG.AutoDisbandTooltip>Auto Disband
+If selected, a group will not 
+auto disband when there are
+no more pawns in the group.
+</TG.AutoDisbandTooltip>
+	<TG.WeaponSizeScale>Weapon size</TG.WeaponSizeScale>
+	<TG.ModSettingsText>Options for Colony Groups can be found in-game using the Gear icon located beneath the Create Group button</TG.ModSettingsText>
+	<TG.PawnRowCount>Pawn Row Count: </TG.PawnRowCount>
+	
+	<TG.GroupSlavesSection>{0} (slaves)</TG.GroupSlavesSection>
+	<TG.UngroupedColonistsSection>Ungrouped colonists</TG.UngroupedColonistsSection>
+	<TG.UngroupedSlavesSection>Ungrouped slaves</TG.UngroupedSlavesSection>
+	
+	<TG.AnyPawnOfGroup>Any pawn of {0}</TG.AnyPawnOfGroup>
+	<TG.DisbandSelectedPawns>Click to disband selected pawns from this group</TG.DisbandSelectedPawns>
+	<TG.ColonistBarWidthOffset>Colonist bar width offset</TG.ColonistBarWidthOffset>
+</LanguageData>

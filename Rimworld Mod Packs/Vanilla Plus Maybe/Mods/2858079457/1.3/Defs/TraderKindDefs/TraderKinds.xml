@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <TraderKindDef>
+    <defName>VAERoy_Empire_Caravan_ImperialAnimalTrader</defName>
+    <label>imperial animal trader</label>
+    <commonality>0.5</commonality>
+    <faction>Empire</faction>
+    <permitRequiredForTrading>TradeCaravan</permitRequiredForTrading>
+    <stockGenerators>
+
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>750~1200</countRange>
+      </li>
+      
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Hay</thingDef>
+        <countRange>250~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Kibble</thingDef>
+        <countRange>100~350</countRange>
+      </li>
+      
+
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <maxWildness>0.99</maxWildness>
+        <tradeTagsSell>
+         
+          <li>AnimalImperial</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+		  <li>AnimalImperial</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~2</kindCountRange>
+        <countRange>4~5</countRange>
+        <createMatingPair>
+          <li>AnimalImperial</li>
+        </createMatingPair>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  </Defs>

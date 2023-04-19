@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Mass drivers ============-->
+
+  <ResearchProjectDef>
+    <defName>VWE_MassDrivers</defName>
+    <label>mass drivers</label>
+    <description>Assemble weapons which utilize electromagnets to catapult sabots up to hypervelocity, penetrating thick armor and piercing through targets alike. Note that these also require advanced components.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Fabrication</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>PrecisionRifling</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>6.20</researchViewY>
+		<tab>VanillaExpanded</tab>
+  </ResearchProjectDef>
+
+</Defs>

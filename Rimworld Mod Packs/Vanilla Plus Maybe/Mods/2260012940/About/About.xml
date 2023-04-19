@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanilla Expanded - Royalty Patches</name>
+  <author>Oskar Potocki, Kikohi</author>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
+    <li>1.4</li>
+  </supportedVersions>
+  <packageId>OskarPotocki.VanillaExpanded.RoyaltyPatches</packageId>
+  <description>Vanilla Expanded Royalty patches is a large collection of patches for all of our Vanilla Expanded mods, bringing key functionality to complement Royalty DLC mechanics. This patch collection will be constantly updated as time goes on with new Vanilla Expanded mods.
+
+You do not need all the Vanilla Expanded mods for this to work - the patches trigger only if their respective mods are found.
+    
+This mod requires Royalty to work, obviously.</description>
+  <loadAfter>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <loadBefore>
+    <li>Mlie.MoreFurniture</li>
+  </loadBefore>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Royalty</packageId>
+      <displayName>Royalty</displayName>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+   <DryMeats.label>вяленое мясо</DryMeats.label>
+   <DryMeats.description>просто высушите мясо</DryMeats.description>
+   <DryMeats.jobString>вяление мяса</DryMeats.jobString>
+
+   <Dry5Meats.label>вяленое мясо х4</Dry5Meats.label>
+   <Dry5Meats.description>просто высушите мясо х4</Dry5Meats.description>
+   <Dry5Meats.jobString>вяление мяса</Dry5Meats.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Average -->
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>VRE_Elongated_Male_Average</defName>
+		<graphicPath>Pawn/ElongatedHead/Male_ElongatedHead</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>VRE_ElongatedHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>VRE_Elongated_Female_Average</defName>
+		<graphicPath>Pawn/ElongatedHead/Female_ElongatedHead</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>VRE_ElongatedHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Fur -->
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>VRE_Elongated_Fur</defName>
+		<graphicPath>Pawn/ElongatedHead/Furskin_ElongatedHead</graphicPath>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<selectionWeight>99999</selectionWeight>
+		<requiredGenes>
+			<li>VRE_ElongatedHead</li>
+			<li>Furskin</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	
+
+</Defs>

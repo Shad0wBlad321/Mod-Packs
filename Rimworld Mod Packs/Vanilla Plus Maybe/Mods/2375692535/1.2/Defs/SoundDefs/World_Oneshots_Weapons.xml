@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--========== Gauss rifle ============-->
+
+  <SoundDef>
+    <defName>VWE_Interact_GaussRifle</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/WeaponHandling/HandleWeapon_GaussA</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>VWE_Shot_GaussRifle</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ShotGaussRifle_1</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--========== Gauss magnum ============-->
+
+  <SoundDef>
+    <defName>VWE_Interact_GaussMagnum</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/WeaponHandling/HandleWeapon_GaussB</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>VWE_Shot_GaussMagnum</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ShotGaussMagnum_1</clipFolderPath>
+          </li>
+        </grains>
+        <!-- Finetuning required -->
+        <pitchRange>0.8376015~0.9169372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--========== Gauss lance ============-->
+
+  <SoundDef>
+    <defName>VWE_Shot_GaussLance</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/GaussLance</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.7976015~0.8669372</pitchRange>
+        <volumeRange>69.70588~69.70588</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

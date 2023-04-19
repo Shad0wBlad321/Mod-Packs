@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=====================================================================-->
+  <!--=============================== Eggs ================================-->
+  <!--=====================================================================-->
+
+	<ThingDef Abstract="True" Name="VAECaves_EggBase" ParentName="OrganicProductBase" >
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<Mass>0.15</Mass>
+			<MaxHitPoints>20</MaxHitPoints>
+			<DeteriorationRate>0.1</DeteriorationRate>
+			<Flammability>0.7</Flammability>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="VAECaves_EggFertBaseNonResistant" ParentName="VAECaves_EggBase" >
+		<tickerType>Normal</tickerType>
+
+		<thingCategories>
+			<li>EggsFertilized</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>5</minSafeTemperature>
+				<maxSafeTemperature>25</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+		</comps>
+	</ThingDef>
+	
+  <!-- Salamander -->
+
+  <ThingDef ParentName="VAECaves_EggFertBaseNonResistant">
+    <defName>VAECaves_EggSalamanderFertilized</defName>
+    <label>blind salamander egg (fert.)</label>
+    <description>A fertilized blind salamander egg. If all goes well, it should hatch into a blind salamander. It can be eaten raw, but it's much better cooked.\n\nSpecial mechanics: blind salamander eggs are very fragile, and will be ruined if kept outside a narrow temperature range (5 to 25 ºC).</description>
+    <graphicData>
+      <color>(211,237,209)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>24.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>VAECaves_BlindSalamander</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Cave Crawler Egg -->
+  
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>VAECaves_CaveCrawlerEggFertilized</defName>
+		<label>cave crawler egg (fert.)</label>
+		<description>Fertilized cave crawler egg. It can be eaten raw, but it's much, much better cooked. Actually, it's an insect egg, it is disgusting either way... If all goes well, it should hatch into a cave crawler.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Resource/VAE_EggBeetle</texPath>
+			<color>(183,95,71)</color>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>VAECaves_CaveCrawler</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

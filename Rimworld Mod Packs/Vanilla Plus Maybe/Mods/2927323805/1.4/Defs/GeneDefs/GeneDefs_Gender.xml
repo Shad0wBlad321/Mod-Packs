@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<GeneDef>
+		<defName>VRE_Female</defName>
+		<label>female-only</label>
+		<labelShortAdj>feminine</labelShortAdj>
+		<description>Carriers of this gene are guaranteed to be female when born.</description>
+		<iconPath>UI/Icons/Genes/Gene_WomanOnly</iconPath>
+		<exclusionTags>
+			<li>AG_Gender</li>
+			<li>Gender</li>
+			
+		</exclusionTags>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">				
+				<forceFemale>true</forceFemale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

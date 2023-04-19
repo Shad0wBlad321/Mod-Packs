@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ultima EXOTICS!</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingSetMakerDef[defName = "Reward_ItemsStandard"]/root/options/li/thingSetMaker/options</xpath>
+					<value>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_LightningWhip</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_FiredoomStaff</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_DeathScythe</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_HoeofDestruction</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_PoisonDagger</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MageBane</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicSword</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_SwordofDefense</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_FireSword</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_GlassSword</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_ErinonsAxe</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_JuggernautHammer</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_GreatDagger</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicSling</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicBoomerang</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicAxe</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_Magic_Bow</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_InfinityBow</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_StormCloak</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicGauntlets</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicGreaves</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicBoots</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicArmor</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_MagicHelm</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_Wand_Fire</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_Wand_Magic</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					  <li>
+						<weight>2</weight>
+						<thingSetMaker Class="ThingSetMaker_MarketValue">
+						  <fixedParams>
+							<qualityGenerator>Super</qualityGenerator>
+							<filter>
+							  <thingDefs>
+								  <li >Ultima_Wand_Lightning</li>
+							  </thingDefs>
+							</filter>
+						  </fixedParams>
+						</thingSetMaker>
+					  </li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Double-Action Revolver -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VFES_Gun_DoubleActionRevolver</defName>
+    <label>double-action revolver</label>
+    <description>An ancient pattern double-action revolver. It's not very accurate, but has a decent firing speed for a pistol and is quick on the draw.</description> <!-- Vanilla -->
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DoubleActionRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown> <!-- 1.6 -->
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+    </weaponTags>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <warmupTime>0.1</warmupTime> <!-- 0.3 -->
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <range>20.9</range>
+        <soundCast>VFE_Shot_DoubleactionRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- Double-Barreled Shotgun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VFES_Gun_DoubleBarreledShotgun</defName>
+    <label>double-barreled shotgun</label>
+    <description>An ancient design of shotgun with two individually loaded barrels, that emits a tight-packed spray of pellets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DoubleBarreledShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.8</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.44</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Shotgun</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+        <range>15.9</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- Hunting Rifle -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VFES_Gun_HuntingRifle</defName>
+    <label>hunting rifle</label>
+    <description>An ancient pattern bolt-action rifle with a scope. With its exceptional range, and low fire rate, it is unlikely to drive animals to revenge, which makes it an excellent choice for hunting.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HuntingRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>12800</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.84</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BoltActionRifle</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>41.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <!-- Gatling Gun -->
+  <!--ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VFES_Gun_Gatling</defName>
+    <label>gatling gun</label>
+    <description>A heavy gatling gun, older tech but it checks out. Highly inacurate and a long cooling time. Used to suppress and scare tribals.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/GatlingGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_GatlingGun</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>22</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>16</burstShotCount>
+        <soundCast>VFE_Shot_GattlingGun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef-->
+
+
+</Defs>

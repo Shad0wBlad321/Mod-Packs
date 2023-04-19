@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Post</defName>
+		<label>post</label>
+		<description>An old-styled post to hold down a roof.</description>
+		<designationCategory>Structure</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<graphicData>
+			<drawSize>(1.5,1.5)</drawSize>
+			<drawOffset>(0,0.2,0.2)</drawOffset>
+			<drawRotated>false</drawRotated>
+			<texPath>Things/Buildings/Post/Post</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<uiIconPath>Things/Buildings/Post/Post_north</uiIconPath>
+	</ThingDef>
+
+</Defs>

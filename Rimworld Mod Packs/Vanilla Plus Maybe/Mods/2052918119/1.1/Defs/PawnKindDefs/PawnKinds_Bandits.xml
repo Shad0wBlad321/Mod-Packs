@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>Bandit</defName>
+		<label>bandit</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.3</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>GrenadeDestructive</li>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<apparelTags>
+			<li>Outlander</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>150</min>
+			<max>250</max>
+		</weaponMoney>
+		<apparelMoney>
+			<min>200</min>
+			<max>400</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>VFES_Headgear_Bandana</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>BountyHunter</defName>
+		<label>bounty hunter</label>
+		<combatPower>66</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>1</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>Outlander</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>400</min>
+			<max>600</max>
+		</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>300</min>
+			<max>600</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>VFES_Headgear_Sombrero</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>Outlaw</defName>
+		<label>outlaw</label>
+		<combatPower>50</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.6</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialMilitaryBasic</li>
+			<li>Outlander</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>400</min>
+			<max>600</max>
+		</apparelMoney>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>200</min>
+			<max>500</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>VFES_Headgear_Bandana</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>Gunslinger</defName>
+		<label>gunslinger</label>
+		<trader>true</trader>
+		<combatPower>60</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>1</min>
+			<max>1</max>
+		</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<weaponTags>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>200</min>
+			<max>300</max>
+		</weaponMoney>
+		<apparelMoney>
+			<min>300</min>
+			<max>600</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>Outlander</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>VFES_Headgear_Sombrero</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>BanditLeader</defName>
+		<label>bandit leader</label>
+		<labelPlural>bandit leaders</labelPlural>
+		<combatPower>75</combatPower>
+		<factionLeader>true</factionLeader>
+		<minGenerationAge>30</minGenerationAge>
+		<isFighter>false</isFighter>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponMoney>200~600</weaponMoney>
+		<weaponTags>
+			<li>Revolver</li>
+		</weaponTags>
+		<apparelMoney>700~1200</apparelMoney>
+		<apparelTags>
+			<li>IndustrialMilitaryBasic</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+	</PawnKindDef>
+</Defs>

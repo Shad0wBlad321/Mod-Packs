@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<!-- Scaly -->
+						<HeadTypeDef ParentName="AverageBase">
+							<defName>VRE_Elongated_Female_Scaly</defName>
+							<graphicPath>Pawn/ElongatedHead/ScaleskinFemale_ElongatedHead</graphicPath>
+							<randomChosen>false</randomChosen>
+							<gender>Female</gender>
+							<selectionWeight>99999</selectionWeight>
+							<requiredGenes>
+								<li>VRE_ElongatedHead</li>
+								<li>VRESaurids_ScaleSkin</li>
+							</requiredGenes>
+						</HeadTypeDef>
+						<HeadTypeDef ParentName="AverageBase">
+							<defName>VRE_Elongated_Male_Scaly</defName>
+							<graphicPath>Pawn/ElongatedHead/ScaleskinMale_ElongatedHead</graphicPath>
+							<randomChosen>false</randomChosen>
+							<gender>Male</gender>
+							<selectionWeight>99999</selectionWeight>
+							<requiredGenes>
+								<li>VRE_ElongatedHead</li>
+								<li>VRESaurids_ScaleSkin</li>
+							</requiredGenes>
+						</HeadTypeDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/GeneDef[defName="VRE_ElongatedHead"]/forcedHeadTypes</xpath>
+					<value>
+						<li>VRE_Elongated_Female_Scaly</li>
+						<li>VRE_Elongated_Male_Scaly</li>
+					</value>
+				</li>						
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+	<JobDef>
+		<defName>VAERoy_PeacockNuzzle</defName>
+		<driverClass>VanillaAnimalsExpandedRoyal.JobDriver_Peacock</driverClass>
+		<reportString>nuzzling TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>VAERoy_OrangutanTalk</defName>
+		<driverClass>VanillaAnimalsExpandedRoyal.JobDriver_Talk</driverClass>
+		<reportString>talking with TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	
+
+
+
+</Defs>

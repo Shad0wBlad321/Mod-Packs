@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Settlers -->
+	<RulePackDef>
+		<defName>NamerFactionSettler</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] [TerrainFeature] Settlement</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>    
+
+	<!-- Bandits -->
+	<RulePackDef>
+		<defName>NamerFactionBandits</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] [TerrainFeature] Bandits</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

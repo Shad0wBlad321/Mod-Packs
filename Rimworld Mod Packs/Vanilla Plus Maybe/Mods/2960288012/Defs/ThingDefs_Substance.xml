@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==============================================
+  ================== Potion Base ===================
+  ===============================================-->
+
+  <ThingDef Name="SubstanceAbuseBase" ParentName="DrugBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>12</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tableDesired>false</tableDesired>
+    </ingestible>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Brewery</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.010</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.01</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+  </ThingDef>
+
+  <!--============== Absynth ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Absynth</defName>
+    <label>Absynth</label>
+    <description>Absinthe is traditionally made by distiling natural herbs into a fine spirt. Absynth has absolutely nothing to do with that, other than the color.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Absynth_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Absynth</texPath>
+    </graphicData>
+    <costList>
+      <PsychoidLeaves>3</PsychoidLeaves>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Absynth_Hediff</hediffDef>
+          <severity>0.30</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+      
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Absynth_Hediff</defName>
+    <label>Absynth Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>calming effects and can induce feelings of relaxation and drowsiness. can have a warming and invigorating effect on the body, helping to ease digestive discomfort and promote alertness..</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(59,245,250)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+			  <statOffsets>
+				  <MeleeHitChance>+10</MeleeHitChance>
+          <MeleeArmorPenetration>+10</MeleeArmorPenetration>
+          <MeleeDPS>+10</MeleeDPS>
+			  </statOffsets>
+		  </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Askonia Sunshine ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Askonia_Sunshine</defName>
+    <label>Askonia Sunshine</label>
+    <description>Underwater grapes are fermented into a shining azure wine with an extremely refined taste. The Wineries on Volturn were established by the first Domain settlers and have a long tradition.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Askonia_Sunshine_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Askonia_Sunshine</texPath>
+    </graphicData>
+    <costList>
+      <RawBerries>3</RawBerries>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Askonia_Sunshine_Hediff</hediffDef>
+          <severity>0.50</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+      
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Askonia_Sunshine_Hediff</defName>
+    <label>Askonia Sunshine Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>evoke a range of feelings depending on the individual and the specific wine being consumed. Wine is often associated with relaxation, sophistication, and enjoyment. The aromas and flavors of the wine can be complex and interesting, and the act of sipping on a glass of wine can be a mindful and pleasurable experience.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(149,250,59)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="HediffCompProperties_SelfHeal">
+        <healAmount>0.05</healAmount>
+      </li>
+    </comps>
+    <stages>
+      <li>
+			  <statOffsets>
+				  <MeleeHitChance>+5</MeleeHitChance>
+          <MeleeArmorPenetration>+15</MeleeArmorPenetration>
+          <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+			  </statOffsets>
+		  </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Hangover Cure ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Hangover_Cure</defName>
+    <label>Hangover Cure</label>
+    <description>Tastes like water with an extremely supicious aftertaste. Usually locally produced and sold under many differnet names, they all share a common recipe.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Hangover_Cure_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Hangover_Cure</texPath>
+    </graphicData>
+    <costList>
+      <MedicineHerbal>3</MedicineHerbal>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Hangover_Cure_Hediff</hediffDef>
+          <severity>0.90</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Hangover_Cure_Hediff</defName>
+    <label>Hangover Cure Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>Drinking water with a suspicious aftertaste can evoke a feeling of discomfort or concern. The aftertaste may make the water taste unpleasant or unappetizing, leading to a sense of dissatisfaction or frustration. Additionally, the suspicion about the aftertaste may cause worry about the quality or safety of the water, leading to feelings of anxiety or uncertainty.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(255,227,8)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="HediffCompProperties_SelfHeal">
+        <healAmount>0.05</healAmount>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+				  <ToxicResistance>1</ToxicResistance>
+          <ImmunityGainSpeed>+100</ImmunityGainSpeed>
+			  </statOffsets>
+		  </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== King Favour ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_King_Favour</defName>
+    <label>King Favour</label>
+    <description>Mixed and matched, this liquour contains contributions from every singel plant in the league. Exessively sweet to cover up the bitter plants submitted by poorer members.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_King_Favour_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/King_Favour</texPath>
+    </graphicData>
+    <costList>
+      <RawCorn>3</RawCorn>
+      <RawHops>2</RawHops>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_King_Favour_Hediff</hediffDef>
+          <severity>1.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+      
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_King_Favour_Hediff</defName>
+    <label>Restore Potion Effect</label>
+    <labelNoun>Potion Effect</labelNoun>
+    <description>The sweetness of the liqueur can provide a sense of comfort and pleasure, and the flavors can be complex and interesting.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(197,74,71)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="HediffCompProperties_HealPermanentWounds" />
+      <li Class="HediffCompProperties_SelfHeal">
+          <healAmount>0.10</healAmount>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+				  <MoveSpeed>0.15</MoveSpeed>
+          <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+          <ShootingAccuracyPawn>0.50</ShootingAccuracyPawn>
+			  </statOffsets>
+        <painFactor>0.8</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.05</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.70</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.15</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>0.20</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Phaged Dargeeling ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Phaged_Dargeeling</defName>
+    <label>Phaged Dargeeling</label>
+    <description>Phaes-aged black tea with a mild aroma, predominantly consumed on planets with tight cultural bonds to the old Domain. The hallucinations.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Phaged_Dargeeling_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Phaged_Dargeeling</texPath>
+    </graphicData>
+    <costList>
+      <PsychoidLeaves>2</PsychoidLeaves>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Phaged_Dargeeling_Hediff</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+  
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Phaged_Dargeeling_Hediff</defName>
+    <label>Phaged Dargeeling Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>sense of calmness and relaxation for many people. The warmth of the tea and the aroma of the herbs or leaves can be soothing and comforting, and the act of sipping on a hot beverage can be a mindful and meditative experience.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(59,112,127)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>+5</MoveSpeed>
+          <PainShockThreshold>0.10</PainShockThreshold>
+          <PsychicSensitivity>-0.90</PsychicSensitivity>
+          <GlobalLearningFactor>0.25</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Phoenix Stout ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Phoenix_Stout</defName>
+    <label>Phoenix Stout</label>
+    <description>A Famous brew, exclusively produced from jangalayan barley and hops for a heavy, yet zesty flavour. Widely conumed and available in Hegemony establishments.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Phoenix_Stout_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Phoenix_Stout</texPath>
+    </graphicData>
+    <costList>
+      <RawHops>1</RawHops>
+      <RawBerries>2</RawBerries>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Phoenix_Stout_Hediff</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Phoenix_Stout_Hediff</defName>
+    <label>Phoenix Stout Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>the aroma and taste of a warm cup of brew can provide a comforting and soothing feeling, while for others it may stimulate and energize. The act of brewing a drink itself can also be satisfying and calming, as the process requires patience and attention to detail.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(43,175,48)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeHitChance>+25</MeleeHitChance>
+          <MeleeArmorPenetration>+30</MeleeArmorPenetration>
+          <MeleeDPS>+10</MeleeDPS>
+          <PainShockThreshold>+30</PainShockThreshold>
+          <MeleeDodgeChance>+10</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Prometheus Gift ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Prometheus_Gift</defName>
+    <label>Prometheus Gift</label>
+    <description>Only true radicals would be able to make booze from AM-Fuel. Necessity really is the mother of invention.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Prometheus_Gift_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prometheus_Gift</texPath>
+    </graphicData>
+    <costList>
+      <Chemfuel>3</Chemfuel>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Prometheus_Gift_Hediff</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+    
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Prometheus_Gift_Hediff</defName>
+    <label>Prometheus Gift Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>everages typically contain caffeine and other stimulants that can provide a temporary boost in energy and alertness. The feeling associated with consuming an energy drink can include increased heart rate, improved focus, and heightened awareness. However, excessive consumption of energy drinks can lead to negative side effects such as jitters, anxiety, and difficulty sleeping.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(114,237,118)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+				  <MoveSpeed>+15</MoveSpeed>
+          <PainShockThreshold>+15</PainShockThreshold>
+          <MeleeDodgeChance>+10</MeleeDodgeChance>
+			  </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Reapers Blood ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Reapers_Blood</defName>
+    <label>Reapers Blood</label>
+    <description>Priate spirit in a barrel, in the truest senes of the phrase. Unsurprisingly, there is no fixed recipe when distilling whatever druge they have lying around.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Reapers_Blood_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Reapers_Blood</texPath>
+    </graphicData>
+    <costList>
+      <Chemfuel>3</Chemfuel>
+      <PsychoidLeaves>1</PsychoidLeaves>
+      <SmokeleafLeaves>1</SmokeleafLeaves>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Reapers_Blood_Hediff</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+      
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Reapers_Blood_Hediff</defName>
+    <label>Ranging Potion Effect</label>
+    <labelNoun>Potion Effect</labelNoun>
+    <description>combination of different substances can also lead to adverse physical and mental effects, such as nausea, dizziness, paranoia, and hallucinations.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(59,182,224)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>+20</ShootingAccuracyPawn>
+          <RangedWeapon_Cooldown>-10</RangedWeapon_Cooldown>
+          <AimingDelayFactor>-0.10</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Sweet Freedom ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Sweet_Freedom</defName>
+    <label>Sweet Freedom</label>
+    <description>Neo-Cane, mashed, distilled, then aged in synthwood for a very drinkable, and suprisingly complex Rum. Non-Independent companies attempting imitations tend to suddenly go bankrupt.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Sweet_Freedom_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Sweet_Freedom</texPath>
+    </graphicData>
+    <costList>
+      <RawCorn>2</RawCorn>
+      <RawPotatoes>1</RawPotatoes>
+      <RawHops>1</RawHops>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Sweet_Freedom_Hediff</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+      
+    </researchPrerequisites>
+    <tradeTags>
+      <li>Substance_Abuse</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Sweet_Freedom_Hediff</defName>
+    <label>Sweet Freedom Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>variety of sensations and feelings to the drinker, depending on the specific ingredients and flavors used. Rum itself is a spirit that is often associated with tropical flavors and a warm, rich taste. A complex rum drink may contain additional ingredients such as fruit juices, spices, and syrups that add depth and complexity to the flavor profile.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(206,0,140)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <IncomingDamageFactor>-30</IncomingDamageFactor>
+          <MeleeDodgeChance>+20</MeleeDodgeChance>
+          <PainShockThreshold>+40</PainShockThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!--============== Tears Of Ludd ==================-->
+
+  <ThingDef ParentName="SubstanceAbuseBase">
+    <defName>Substance_Abuse_Tears_Of_Ludd</defName>
+    <label>Tears Of Ludd</label>
+    <description>Sensitive, race herbs are infused and carefully distilled to produce this holy spirit. This is probably the only real, traditional alcohol produced anywhere in the persean sector.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Substance_Abuse_Tears_Of_Ludd_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Tears_Of_Ludd</texPath>
+    </graphicData>
+    <costList>
+      <RawAgave>3</RawAgave>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Substance_Abuse_Tears_Of_Ludd_Hediff</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+      
+    </researchPrerequisites>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Substance_Abuse_Tears_Of_Ludd_Hediff</defName>
+    <label>Tears Of Ludd Effect</label>
+    <labelNoun>Substance Effect</labelNoun>
+    <description>sense of spiritual or divine connection, heightened awareness or senses, and enhanced physical or mental abilities. The feeling associated with such a drink may be described as transcendent or otherworldly, with a sense of wonder and awe.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(182,141,85)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeHitChance>+30</MeleeHitChance>
+          <MeleeArmorPenetration>+10</MeleeArmorPenetration>
+          <MeleeDPS>+05</MeleeDPS>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

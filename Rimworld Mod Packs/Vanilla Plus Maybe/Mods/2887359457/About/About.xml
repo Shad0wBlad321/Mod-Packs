@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Van's Retexture : Deep storage MeathookHampers</name>
+	<author>Sir Van, Linkovich</author>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+	<packageId>sirvan.deepstorageretextured</packageId>
+	<description>Want more vanilla textures for LWM's Deep storage Meathook and Hampers ? well it's oddly specific but you're at the right place !</description>
+</ModMetaData>

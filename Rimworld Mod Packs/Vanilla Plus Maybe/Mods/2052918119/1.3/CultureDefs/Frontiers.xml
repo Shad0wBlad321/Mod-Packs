@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <CultureDef>
+    <defName>VFES_Frontier</defName>
+    <label>frontier</label>
+    <description>A hardy industrial culture common among rimworld settlers.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Rustican</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginSpacer</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/Expanding/Town</iconPath>
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Rustic</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>0.25</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+</Defs>

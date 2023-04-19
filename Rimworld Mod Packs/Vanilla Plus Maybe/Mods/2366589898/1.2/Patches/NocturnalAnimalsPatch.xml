@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	 <!-- Black-footed ferret -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]</xpath>
+        <value>
+            <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+            </li>
+        </value>
+    </Operation>
+	
+	 <!-- Panda -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="AEXP_Panda"]</xpath>
+        <value>
+            <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+            </li>
+        </value>
+    </Operation>
+	
+	 <!-- Thylacine -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="AEXP_Thylacine"]</xpath>
+        <value>
+            <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+            </li>
+        </value>
+    </Operation>
+	
+	 <!-- Pangolin -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]</xpath>
+        <value>
+            <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+            </li>
+        </value>
+    </Operation>
+	
+	
+	
+	
+
+</Patch>

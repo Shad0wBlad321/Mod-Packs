@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ================== faro table ==================-->
+    <JobDef>
+        <defName>Play_Faro</defName>
+        <driverClass>JobDriver_PlayPoker</driverClass>
+        <reportString>playing faro.</reportString>
+        <joyDuration>4000</joyDuration>
+        <joyMaxParticipants>2</joyMaxParticipants>
+        <joySkill>Intellectual</joySkill>
+        <joyXpPerTick>0.004</joyXpPerTick>
+        <joyKind>Gaming_Cerebral</joyKind>
+        <taleOnCompletion>PlayedGame</taleOnCompletion>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JoyGiverDef>
+        <defName>Play_Faro</defName>
+        <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+        <baseChance>4</baseChance>
+        <thingDefs>
+            <li>TableFaro</li>
+        </thingDefs>
+        <jobDef>Play_Faro</jobDef>
+        <joyKind>Gaming_Cerebral</joyKind>
+        <requiredCapacities>
+            <li>Sight</li>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </JoyGiverDef>
+
+    <!-- ================== five finger fillet table ==================-->
+    <JobDef>
+        <defName>Play_FiveFingerFillet</defName>
+        <driverClass>VFE_Settlers.JobGivers.JobDriver_PlayFiveFingerFillet</driverClass>
+        <reportString>playing five finger fillet.</reportString>
+        <joyDuration>4000</joyDuration>
+        <joyMaxParticipants>2</joyMaxParticipants>
+        <joySkill>Intellectual</joySkill>
+        <joyXpPerTick>0.008</joyXpPerTick>
+        <joyKind>Gaming_Dexterity</joyKind>
+        <taleOnCompletion>PlayedGame</taleOnCompletion>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JoyGiverDef>
+        <defName>Play_FiveFingerFillet</defName>
+        <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+        <baseChance>4</baseChance>
+        <thingDefs>
+            <li>TableFiveFingerFilet</li>
+        </thingDefs>
+        <jobDef>Play_FiveFingerFillet</jobDef>
+        <joyKind>Gaming_Dexterity</joyKind>
+        <requiredCapacities>
+            <li>Sight</li>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </JoyGiverDef>
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>Muffalo_PreMain</defName>
+		<insertTag>Animal_PreMain</insertTag>
+		<insertPriority>5</insertPriority>
+		<thinkRoot Class="VFE_Settlers.ThinkNodes.ThinkNode_ConditionalChemshinedMuffalo">
+			<subNodes>		
+				<li Class="ThinkNode_Priority">
+					<subNodes>						
+						<li Class="VFE_Settlers.JobGivers.JobGiver_Chemshined"/>
+					</subNodes>
+				</li>
+			</subNodes>	
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>ChemlampPost</defName>
+		<label>chemlamp post</label>
+		<description>A post with a pre-industrial chemfuel lamp. Can be safely placed outside.</description>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/ChemlampPost/ChemlampPostOff</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+				<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Buildings/ChemlampPost/ChemlampPost_east</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<rotatable>true</rotatable>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0</fillPercent>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>1</Mass>
+			<Beauty>5</Beauty>
+		</statBases>
+		<selectable>true</selectable>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>		
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Chemfuel>10</Chemfuel>
+		</costList>
+		<building>
+			<isEdifice>true</isEdifice>   
+			<fullGraveGraphicData>
+				<texPath>Things/Buildings/ChemlampPost/ChemlampPost</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>(3,3)</drawSize>
+				<damageData>
+					<rect>(0.35,0.35,0.3,0.3)</rect>
+				</damageData>
+			</fullGraveGraphicData>
+		</building>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.0</explosiveRadius>
+				<explosiveDamageType>Burn</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<wickTicks>
+					<min>60</min>
+					<max>120</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<designationCategory>Furniture</designationCategory>
+		<destroyable>true</destroyable>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<tradeability>None</tradeability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<minifiedDef>MinifiedThing</minifiedDef>		
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

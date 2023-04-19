@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="sixdd_BasketSingle"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>FFE_BasicStorages</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="sixdd_BasketSingle"]/graphicData/drawSize</xpath>
+				<value>
+					<drawSize>(2,2)</drawSize>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="sixdd_BasketSingle"]</xpath>
+				<value>
+					<uiIconPath>6dd/BasketSingle/BasketSingle</uiIconPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="sixdd_TrayRackSingle"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>FFE_BasicStorages</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="sixdd_TrayRackSingle"]/graphicData/drawSize</xpath>
+				<value>
+					<drawSize>(2,2)</drawSize>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="sixdd_FabricHamperSingle"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>FFE_BasicStorages</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="sixdd_FabricHamperSingle"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>6dd/FabricHamperSingle/FabricHamperSingle</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<drawRotated>false</drawRotated>
+						<shaderType>CutoutComplex</shaderType>
+						<drawSize>(2,2)</drawSize>
+						<shadowData>
+							<volume>(0.30, 0.30, 0.40)</volume>
+						</shadowData>
+					</graphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="sixdd_FabricHamperSingle"]</xpath>
+				<value>
+					<uiIconPath>6dd/FabricHamperSingle/FabricHamperSingle</uiIconPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="sixdd_DeepShelfSingle"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>FFE_BasicStorages</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="sixdd_DeepShelfSingle"]/graphicData/drawSize</xpath>
+				<value>
+					<drawSize>(2,2)</drawSize>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+
+</Patch>

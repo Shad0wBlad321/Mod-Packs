@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="MineableComponentsIndustrial"]/building/mineableYield</xpath>
+            <value>
+                <mineableYield>6</mineableYield>
+            </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="MineableSteel"]/building/mineableYield</xpath>
+            <value>
+                <mineableYield>120</mineableYield>
+            </value>
+        </li>
+    </operations>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Windmill</defName>
+		<thingClass>Building</thingClass>
+		<label>windmill</label>
+		<description>A wind-powered electrical generator of older make. Requires a large clear space in front and behind for optimal air flow.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Windmill/Windmill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.6, 1.0, 1.6)</volume>
+				<offset>(-0.1,0,-0.08)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(2,0.15,1,1.4)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Buildings/Windmill/Windmill_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.8</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,2)</size>
+		<selectable>true</selectable>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<designationCategory>Power</designationCategory>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<allowAutoroof>false</allowAutoroof>
+		</building>
+		<costList>
+			<Steel>50</Steel>
+			<WoodLog>75</WoodLog>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<placeWorkers>
+			<li>PlaceWorker_WindTurbine</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>VFE_Settlers.Comps.CompPowerPlantWindmill</compClass>
+				<basePowerConsumption>-800</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+</Defs>

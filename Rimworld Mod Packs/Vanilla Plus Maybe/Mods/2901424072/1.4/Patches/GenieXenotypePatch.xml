@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+
+		<xpath>/Defs/XenotypeDef[defName="Genie"]/genes</xpath>
+		<value>
+			<li>VRE_WoundHealing_VerySlow</li>
+			<li>VRE_Hemophiliac</li>
+			<li>VRE_BlueBlood</li>
+			<li>VRE_Immunity_VeryWeak</li>
+			<li>VRE_Slow_Diseases</li>
+			<li>VRE_AptitudePhenomenal_Crafting</li>
+			<li>VRE_ElongatedHead</li>
+			<li>VRE_Curiosity_Intellectual</li>
+			<li>AddictionResistant_VRE_Antibiotics</li>
+		</value>
+
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>/Defs/XenotypeDef[defName="Genie"]/genes/li[text()="AptitudeRemarkable_Crafting"]</xpath>
+		
+
+	</Operation>
+
+
+</Patch>

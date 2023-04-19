@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookStewSimple</defName>
+		<label>prepare simple stew</label>
+		<description>Prepare a simple uncooked stew quickly made from a few ingredients.</description>
+		<jobString>Preparing simple stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>Campfire</li>	
+			<li>FueledStove</li>
+
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_UncookedStewSimple>1</VCE_UncookedStewSimple>
+		</products>
+		<researchPrerequisite>
+			<li>VCE_StewCooking</li>
+		</researchPrerequisite>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookStewFine</defName>
+		<label>prepare fine stew</label>
+		<description>Prepare a fine uncooked stew assembled with care from a wide selection of ingredients.</description>
+		<jobString>Preparing fine stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>Campfire</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedStewFine>1</VCE_UncookedStewFine>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_StewCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookStewLavish</defName>
+		<label>prepare lavish stew</label>
+		<description>Prepare a lavish uncooked stew. A masterpiece of the culinary arts, this stew nourishes the body, mind, and soul.</description>
+		<jobString>Preparing lavish Stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>Campfire</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedStewLavish>1</VCE_UncookedStewLavish>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_StewCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+
+
+
+
+
+</Defs>

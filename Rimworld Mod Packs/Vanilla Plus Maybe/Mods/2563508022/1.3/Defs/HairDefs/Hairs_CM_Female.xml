@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Female hairs-->
+  
+  <!-- Tomb Raider -->
+
+  <HairDef>
+    <defName>RH2_Hair_Lara</defName>
+    <label>Lara</label>
+    <styleGender>Female</styleGender>
+	<category>Rural</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Lara/Lara</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Soldier</li>
+			<li>RH_Lara</li>
+		</hairTags>
+  </HairDef>  
+  
+  <!-- Red Alert 2 -->
+
+  <HairDef>
+    <defName>RH2_Hair_Tanya</defName>
+    <label>Tanya</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Tanya/Tanya</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>RH_Tanya</li>
+		</hairTags>
+  </HairDef>
+  
+  <!-- Call of duty -->
+  
+  <HairDef>
+    <defName>RH2_Hair_Maxis</defName>
+    <label>Maxis</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Maxis/Maxis</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Maxis</li>
+		</hairTags>
+  </HairDef>      
+  
+  <HairDef>
+    <defName>RH2_Hair_Rivas</defName>
+    <label>Rivas</label>
+    <styleGender>Female</styleGender>
+	<category>Tribal</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Rivas/Rivas</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Rivas</li>
+		</hairTags>
+  </HairDef>     
+  
+  <HairDef>
+    <defName>RH2_Hair_Park</defName>
+    <label>Park</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Park/Park</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Park</li>
+		</hairTags>
+  </HairDef>   
+  
+  <HairDef>
+    <defName>RH2_Hair_Farah</defName>
+    <label>Farah</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Farah/Farah</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Farah</li>
+		</hairTags>
+  </HairDef>    
+  
+  <HairDef>
+    <defName>RH2_Hair_Iskra</defName>
+    <label>Iskra</label>
+    <styleGender>FemaleUsually</styleGender>
+	<category>Punk</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Iskra/Iskra</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Punk</li>
+			<li>Soldier</li>
+			<li>RH_Iskra</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Charly</defName>
+    <label>Charly</label>
+    <styleGender>FemaleUsually</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Charly/Charly</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Charly</li>
+		</hairTags>
+  </HairDef>   
+  
+  <HairDef>
+    <defName>RH2_Hair_Domino</defName>
+    <label>Domino</label>
+    <styleGender>Female</styleGender>
+	<category>Soldier</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Domino/Domino</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Domino</li>
+		</hairTags>
+  </HairDef> 
+  
+  <HairDef>
+    <defName>RH2_Hair_Mara</defName>
+    <label>Mara</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Mara/Mara</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Mara</li>
+		</hairTags>
+  </HairDef>   
+  
+  <HairDef>
+    <defName>RH2_Hair_Karma</defName>
+    <label>Karma</label>
+    <styleGender>FemaleUsually</styleGender>
+	<category>Punk</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Karma/Karma</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Punk</li>
+			<li>Tribal</li>
+			<li>RH_Karma</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Portnova</defName>
+    <label>Portnova</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Portnova/Portnova</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Soldier</li>
+			<li>RH_Portnova</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_FreyaHelvig</defName>
+    <label>Wraith</label>
+    <styleGender>Female</styleGender>
+	<category>Tribal</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Wraith/Wraith</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Wraith</li>
+		</hairTags>
+  </HairDef>
+  
+    <!-- The Last of Us -->
+  
+  <HairDef>
+    <defName>RH2_Hair_Ellie</defName>
+    <label>Ellie</label>
+    <styleGender>Female</styleGender>
+	<category>Rural</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Ellie/Ellie</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Ellie</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Ellie_II</defName>
+    <label>Ellie 2</label>
+    <styleGender>Female</styleGender>
+	<category>Rural</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Ellie_2/Ellie_2</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Ellie_2</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Dina</defName>
+    <label>Dina</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Dina/Dina</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Dina</li>
+		</hairTags>
+  </HairDef>
+  
+    <!-- Uncharted -->
+  
+  <HairDef>
+    <defName>RH2_Hair_Nadine</defName>
+    <label>Nadine</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Nadine/Nadine</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Nadine</li>
+		</hairTags>
+  </HairDef>   
+    
+	
+  <HairDef>
+    <defName>RH2_Hair_Chloe</defName>
+    <label>Chloe</label>
+    <styleGender>Female</styleGender>
+	<category>Rural</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Chloe/Chloe</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Chloe</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Elena</defName>
+    <label>Elena</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Elena/Elena</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>RH_Elena</li>
+		</hairTags>
+  </HairDef>
+  
+  <!-- Marvel -->
+  
+  <HairDef>
+    <defName>RH2_Hair_BlackWidow</defName>
+    <label>Scarlett</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Scarlett/Scarlett</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Scarlett</li>
+		</hairTags>
+  </HairDef>    
+  
+  <HairDef>
+    <defName>RH2_Hair_May</defName>
+    <label>May</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/May/May</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_May</li>
+		</hairTags>
+  </HairDef>  
+  
+  <!-- Portal -->
+  
+ <HairDef>
+    <defName>RH2_Hair_Chell</defName>
+    <label>Chell</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Chell/Chell</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Chell</li>
+		</hairTags>
+  </HairDef>
+  
+  <!-- Bioshock -->
+  
+  <HairDef>
+    <defName>RH2_Hair_Elizabeth</defName>
+    <label>Elizabeth</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Elizabeth/Elizabeth</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Elizabeth</li>
+		</hairTags>
+  </HairDef>  
+  
+  <!-- Mirror's Edge -->
+  
+  <HairDef>
+    <defName>RH2_Hair_Faith</defName>
+    <label>Faith</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Faith/Faith</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>RH_Faith</li>
+		</hairTags>
+  </HairDef>    
+  
+  <!-- Celebrity -->
+  
+  <HairDef>
+    <defName>RH2_Hair_Mia</defName>
+    <label>Mia</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Mia/Mia</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>HairLong</li>
+			<li>RH_Mia</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_HalleBerry</defName>
+    <label>H Berry</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/H_Berry/H_Berry</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_H_Berry</li>
+		</hairTags>
+  </HairDef>
+  
+ <HairDef>
+    <defName>RH2_Hair_PrincessDiana</defName>
+    <label>Diana</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Diana/Diana</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>RH_Diana</li>
+		</hairTags>
+  </HairDef> 
+  
+  <HairDef>
+    <defName>RH2_Hair_Hepburn</defName>
+    <label>Hepburn</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Hepburn/Hepburn</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Hepburn</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Monroe</defName>
+    <label>Monroe</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Monroe/Monroe</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>RH_Monroe</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_OrinJulie</defName>
+    <label>Orin Julie</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Orin/Orin</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>HairLong</li>
+			<li>RH_Orin</li>
+		</hairTags>
+  </HairDef>    
+  
+  <HairDef>
+    <defName>RH2_Hair_N_Fakhri</defName>
+    <label>N Fakhri</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/N_Fakhri/N_Fakhri</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_N_Fakhri</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Rihanna</defName>
+    <label>Rihanna</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Rihanna/Rihanna</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Rihanna</li>
+		</hairTags>
+  </HairDef>
+  
+  <HairDef>
+    <defName>RH2_Hair_T_Swift</defName>
+    <label>T Swift</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/T_Swift/T_Swift</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_T_Swift</li>
+		</hairTags>
+  </HairDef>
+  
+  
+  <!-- Resident Evil -->
+  
+  <HairDef>
+    <defName>RH2_Hair_Ada</defName>
+    <label>Ada</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Ada/Ada</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_Ada</li>
+		</hairTags>
+  </HairDef>    
+  
+  <HairDef>
+    <defName>RH2_Hair_Claire</defName>
+    <label>Claire</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Claire/Claire</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_Claire</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Sheva</defName>
+    <label>Sheva</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Sheva/Sheva</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Sheva</li>
+		</hairTags>
+  </HairDef>    
+  
+  <HairDef>
+    <defName>RH2_Hair_Jill</defName>
+    <label>Jill</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Jill/Jill</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_Jill</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Jill_Remake</defName>
+    <label>Jill 2</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Jill_2/Jill_Remake</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_Jill</li>
+		</hairTags>
+  </HairDef>
+  
+    <HairDef>
+    <defName>RH2_Hair_Helena</defName>
+    <label>Helena</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Helena/Helena</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Helena</li>
+		</hairTags>
+  </HairDef>    
+  
+    <HairDef>
+    <defName>RH2_Hair_Sherry</defName>
+    <label>Sherry</label>
+    <styleGender>Any</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Sherry/Sherry</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Sherry</li>
+		</hairTags>
+  </HairDef>    
+  
+  <!-- Rainbow Six -->
+  
+ <HairDef>
+    <defName>RH2_Hair_Caveira</defName>
+    <label>Caveira</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Caveira/Caveira</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>RH_Caveira</li>
+		</hairTags>
+  </HairDef> 
+  
+  <HairDef>
+    <defName>RH2_Hair_Dokaebbi</defName>
+    <label>Dokaebbi</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Dokaebbi/Dokaebbi</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Dokaebbi</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Ela</defName>
+    <label>Ela</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Ela/Ela</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_Ela</li>
+		</hairTags>
+  </HairDef>
+  
+  <!-- Evil Within -->
+  
+    <HairDef>
+    <defName>RH2_Hair_Juli</defName>
+    <label>Juli</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Juli/Juli</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_Juli</li>
+		</hairTags>
+  </HairDef>      
+  
+  <HairDef>
+    <defName>RH2_Hair_Kidman</defName>
+    <label>Kidman</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Kidman/Kidman</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<!--<li>Tribal</li>-->
+			<li>RH_Kidman</li>
+		</hairTags>
+  </HairDef>  
+  
+  <!-- Far Cry -->
+  
+    <HairDef>
+    <defName>RH2_Hair_JoeyHudson</defName>
+    <label>Hudson</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Joey_Hudson/Joey_Hudson</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Soldier</li>
+			<li>RH_Joey_Hudson</li>
+		</hairTags>
+  </HairDef>  
+  
+  <!-- Fortnite -->
+  
+    <HairDef>
+    <defName>RH2_Hair_Ramirez</defName>
+    <label>Ramirez</label>
+    <styleGender>Female</styleGender>
+	<category>Soldier</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Ramirez/Ramirez</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Soldier</li>
+			<li>RH_Ramirez</li>
+		</hairTags>
+  </HairDef>  
+  
+    <!-- Injustice 2 -->
+  
+    <HairDef>
+    <defName>RH2_Hair_Kara</defName>
+    <label>Kara</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Kara/Kara</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>RH_Kara</li>
+		</hairTags>
+  </HairDef>  
+  
+  
+  <HairDef>
+    <defName>RH2_Hair_PowerGirl</defName>
+    <label>Power Girl</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/PowerGirl/PowerGirl</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Soldier</li>
+			<li>RH_PowerGirl</li>
+		</hairTags>
+  </HairDef>  
+  
+  
+    <!-- Mortal Kombat 11 -->
+  
+    <HairDef>
+    <defName>RH2_Hair_Cassie</defName>
+    <label>Cassie</label>
+    <styleGender>Female</styleGender>
+	<category>Soldier</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Cassie/Cassie</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Soldier</li>
+			<li>RH_Cassie</li>
+		</hairTags>
+  </HairDef>
+  
+  <!-- Metal Gear Solid -->
+  
+    <HairDef>
+    <defName>RH2_Hair_CryingWolf</defName>
+    <label>Wolf</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/CryingWolf/CryingWolf</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_CryingWolf</li>
+		</hairTags>
+  </HairDef>    
+  
+  <HairDef>
+    <defName>RH2_Hair_LaughingOctopus</defName>
+    <label>Octopus</label>
+    <styleGender>Any</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/LaughingOctopus/LaughingOctopus</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>RH_LaughingOctopus</li>
+		</hairTags>
+  </HairDef> 
+
+  <HairDef>
+    <defName>RH2_Hair_RagingRaven</defName>
+    <label>Raven</label>
+    <styleGender>Any</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/RagingRaven/RagingRaven</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_RagingRaven</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_ScreamingMantis</defName>
+    <label>Mantis</label>
+    <styleGender>Any</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/ScreamingMantis/ScreamingMantis</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_ScreamingMantis</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Paz</defName>
+    <label>Paz</label>
+    <styleGender>Female</styleGender>
+	<category>Urban</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Paz/Paz</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>RH_Paz</li>
+		</hairTags>
+  </HairDef>  
+  
+  <HairDef>
+    <defName>RH2_Hair_Quiet</defName>
+    <label>Quiet</label>
+    <styleGender>Female</styleGender>
+	<category>Soldier</category>
+    <texPath>Things/Pawn/Humanlike/Hair/Quiet/Quiet</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+			<li>Soldier</li>
+			<li>RH_Quiet</li>
+		</hairTags>
+  </HairDef>
+  
+  
+
+</Defs>

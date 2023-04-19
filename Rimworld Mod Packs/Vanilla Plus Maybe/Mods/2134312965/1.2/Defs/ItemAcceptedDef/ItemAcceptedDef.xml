@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_StewPotFirstItem</defName>
+		<building>VCE_StewPot</building>
+		<slot>1</slot>
+		<items>			
+			<li>VCE_UncookedStewSimple</li>			
+			<li>VCE_UncookedStewFine</li>	
+			<li>VCE_UncookedStewLavish</li>	
+						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+
+	
+	
+</Defs>

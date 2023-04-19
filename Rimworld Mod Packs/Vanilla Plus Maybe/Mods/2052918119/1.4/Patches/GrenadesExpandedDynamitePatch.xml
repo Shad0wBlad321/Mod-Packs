@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Mod Support for Grenades Expanded -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Grenades Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <!-- Rename Dynamite -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VFES_Weapon_GrenadeDynamite"]/label</xpath>
+          <value>
+            <label>dynamite stick</label>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

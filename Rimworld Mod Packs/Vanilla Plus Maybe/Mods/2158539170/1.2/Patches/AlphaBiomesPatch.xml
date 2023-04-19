@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookSushiMealBase"]/fixedIngredientFilter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookSushiMealBase"]/defaultIngredientFilter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookFineSushiMealBase"]/fixedIngredientFilter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookFineSushiMealBase"]/defaultIngredientFilter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookGourmetSushiMealBase"]/fixedIngredientFilter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VCE_CookGourmetSushiMealBase"]/defaultIngredientFilter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				
+				
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookChirashizushiSimple"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookChirashizushiSimpleBulk"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNorimakiSimple"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNorimakiSimpleBulk"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookUramakiFine"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookUramakiFineBulk"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNigiriFine"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookNigiriFineBulk"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookTemakiLavish"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookTemakiLavishBulk"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookFutomakiLavish"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookFutomakiLavishBulk"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookGunkanmakiGourmet"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_CookOshizushiiGourmet"]/ingredients/li/filter/categories</xpath>
+					<value>
+
+						<li>AB_RawFishCategory</li>
+
+					</value>
+				</li>
+				
+				
+				
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VAERoy_SwanNest</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>swan nest</label>
+		<description>A beautiful nest of a swan.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>14</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Building/SwanNest</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>2</drawSize>
+
+
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_maxBodySize>0.6</bed_maxBodySize>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Beauty>150</Beauty>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>180</WorkToBuild>
+			<Mass>3</Mass>
+			<BedRestEffectiveness>0.93</BedRestEffectiveness>
+			<Comfort>0.60</Comfort>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+		</comps>
+
+	</ThingDef>
+
+
+
+</Defs>
