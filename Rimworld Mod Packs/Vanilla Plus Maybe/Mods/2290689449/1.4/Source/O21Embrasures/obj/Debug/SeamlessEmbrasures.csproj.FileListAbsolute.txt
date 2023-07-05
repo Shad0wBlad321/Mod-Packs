@@ -1,4 +1,0 @@
-C:\RWModCategories\Neronix17\_SmallMods\Seamless Embrasures\1.4\Source\O21Embrasures\obj\Debug\SeamlessEmbrasures.csproj.AssemblyReference.cache
-C:\RWModCategories\Neronix17\_SmallMods\Seamless Embrasures\1.4\Source\O21Embrasures\obj\Debug\SeamlessEmbrasures.csproj.CoreCompileInputs.cache
-C:\RWModCategories\Neronix17\_SmallMods\Seamless Embrasures\1.4\Assemblies\SeamlessEmbrasures.dll
-C:\RWModCategories\Neronix17\_SmallMods\Seamless Embrasures\1.4\Source\O21Embrasures\obj\Debug\SeamlessEmbrasures.dll

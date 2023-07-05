@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Seamless Embrasures\1.2\Assemblies\O21Embrasures.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Seamless Embrasures\1.2\Source\O21Embrasures\obj\Debug\O21Embrasures.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Seamless Embrasures\1.2\Source\O21Embrasures\obj\Debug\O21Embrasures.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Seamless Embrasures\1.2\Source\O21Embrasures\obj\Debug\O21Embrasures.dll

@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-	<VPEAutoPlow.ModName>Vanilla Plants Expanded - Auto Plow</VPEAutoPlow.ModName>
-	<VPEAutoPlow.CompatLabel>Disable compatibility patcher</VPEAutoPlow.CompatLabel>
-	<VPEAutoPlow.CompatTooltip>If you saved your game with mod version below 1.1, disable this setting to let the patcher do its work. Switch it on if you want to deactivate it.</VPEAutoPlow.CompatTooltip>
-	<VPEAutoPlow.allowAutoPlow>Allow Auto Plow</VPEAutoPlow.allowAutoPlow>
-	<VPEAutoPlow.allowAutoPlowDesc>Allow Auto Plowing after harvest</VPEAutoPlow.allowAutoPlowDesc>
-</LanguageData>
