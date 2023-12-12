@@ -1,0 +1,21 @@
+{
+  "settings": [
+    {
+      "ID": "FFBMult",
+      "Value": "1"
+    },
+    {
+      "ID": "mirrorSlider",
+      "Value": 40
+    },
+    {
+      "ID": "steeringRotation",
+      "Value": false
+    },
+    {
+      "ID": "lightShadow",
+      "Value": false
+    }
+  ],
+  "isDisabled": false
+}

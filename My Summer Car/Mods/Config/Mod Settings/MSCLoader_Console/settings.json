@@ -1,0 +1,13 @@
+{
+  "settings": [
+    {
+      "ID": "MSCLoader_ConsoleTyping",
+      "Value": false
+    },
+    {
+      "ID": "MSCLoader_ConsoleFontSize",
+      "Value": 12
+    }
+  ],
+  "isDisabled": false
+}

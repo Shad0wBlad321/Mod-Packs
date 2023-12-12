@@ -1,0 +1,5 @@
+1. Open the "template.png" in any photo editing software
+2. Make desired changes
+3. Save as "car.png"
+4. Preview skin at game main menu by pressing F5
+5. If you want skin to show in-game, you need to purchase "Custom paint made by artist" from Car Repair Shop

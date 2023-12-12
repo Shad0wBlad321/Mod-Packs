@@ -1,0 +1,11 @@
+min_ver:2.10
+ignore:YARD ElectricityBills
+ignore:YARD PerajarviMap
+ignore:YARD Rally
+ignore:YARD TV
+ignore:YARD TVScreen
+ignore:YARD SmokeHomeTV
+ignore:YARD Fridge
+ignore:tv%20remote%20control(itemx)
+ignore:COMPUTER fullignore
+ignore:ax(itemx)

@@ -1,0 +1,77 @@
+{
+  "settings": [
+    {
+      "ID": "activateDistanceNew",
+      "Value": 2
+    },
+    {
+      "ID": "modePerformance",
+      "Value": false
+    },
+    {
+      "ID": "modeBalanced",
+      "Value": true
+    },
+    {
+      "ID": "modeQuality",
+      "Value": false
+    },
+    {
+      "ID": "modeSafe",
+      "Value": false
+    },
+    {
+      "ID": "limitFramerate",
+      "Value": false
+    },
+    {
+      "ID": "framerateLimiterUpdated",
+      "Value": 60
+    },
+    {
+      "ID": "shadowDistance",
+      "Value": 200
+    },
+    {
+      "ID": "keepRunningInBackground",
+      "Value": true
+    },
+    {
+      "ID": "dynamicDrawDistance",
+      "Value": true
+    },
+    {
+      "ID": "",
+      "Value": 21
+    },
+    {
+      "ID": "rulesAutoUpdate",
+      "Value": true
+    },
+    {
+      "ID": "ruleAutoUpdateFrequendy",
+      "Value": 2
+    },
+    {
+      "ID": "verifyRuleFiles",
+      "Value": true
+    },
+    {
+      "ID": "deleteUnusedRules",
+      "Value": false
+    },
+    {
+      "ID": "destroyEmptyBottles",
+      "Value": false
+    },
+    {
+      "ID": "disableEmptyItems",
+      "Value": false
+    },
+    {
+      "ID": "alwaysDisableSkidmarks",
+      "Value": false
+    }
+  ],
+  "isDisabled": false
+}

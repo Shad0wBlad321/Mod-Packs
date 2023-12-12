@@ -1,0 +1,13 @@
+{
+  "settings": [
+    {
+      "ID": "RealClocksAdjustFast",
+      "Value": 500.0
+    },
+    {
+      "ID": "RealClocksAdjustFine",
+      "Value": 50.0
+    }
+  ],
+  "isDisabled": false
+}

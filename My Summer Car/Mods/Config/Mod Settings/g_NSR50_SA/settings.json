@@ -1,0 +1,45 @@
+{
+  "settings": [
+    {
+      "ID": "cowl_U",
+      "Value": true
+    },
+    {
+      "ID": "cowl_L",
+      "Value": true
+    },
+    {
+      "ID": "mirror_R",
+      "Value": true
+    },
+    {
+      "ID": "mirror_L",
+      "Value": true
+    },
+    {
+      "ID": "Dirty",
+      "Value": true
+    },
+    {
+      "ID": "EngineStall",
+      "Value": true
+    },
+    {
+      "ID": "EasyHandling",
+      "Value": false
+    },
+    {
+      "ID": "tankbagOpenClose",
+      "Value": true
+    },
+    {
+      "ID": "BeeDeath",
+      "Value": true
+    },
+    {
+      "ID": "DiscoloredMirrorFix",
+      "Value": false
+    }
+  ],
+  "isDisabled": false
+}

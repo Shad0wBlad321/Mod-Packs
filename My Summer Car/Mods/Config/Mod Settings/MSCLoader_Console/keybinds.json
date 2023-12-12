@@ -1,0 +1,9 @@
+{
+  "keybinds": [
+    {
+      "ID": "Open",
+      "Key": 96,
+      "Modifier": 0
+    }
+  ]
+}

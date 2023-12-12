@@ -1,0 +1,41 @@
+{
+  "settings": [
+    {
+      "ID": "MSCLoader_expWarning",
+      "Value": true
+    },
+    {
+      "ID": "MSCLoader_modPath",
+      "Value": true
+    },
+    {
+      "ID": "MSCLoader_forceMenuVsync",
+      "Value": true
+    },
+    {
+      "ID": "MSCLoader_openLinksOverlay",
+      "Value": true
+    },
+    {
+      "ID": "MSCLoader_skipGameIntro",
+      "Value": false
+    },
+    {
+      "ID": "MSCLoader_skipConfigScreen",
+      "Value": false
+    },
+    {
+      "ID": "MSCLoader_checkOnLaunch",
+      "Value": true
+    },
+    {
+      "ID": "MSCLoader_checkEveryDay",
+      "Value": false
+    },
+    {
+      "ID": "MSCLoader_checkEveryWeek",
+      "Value": false
+    }
+  ],
+  "isDisabled": false
+}
