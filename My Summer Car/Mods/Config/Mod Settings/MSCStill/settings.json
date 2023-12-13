@@ -1,0 +1,45 @@
+{
+  "settings": [
+    {
+      "ID": "normalMode",
+      "Value": true
+    },
+    {
+      "ID": "dockBoat",
+      "Value": false
+    },
+    {
+      "ID": "legacy",
+      "Value": false
+    },
+    {
+      "ID": "moneyFactor",
+      "Value": 1.0
+    },
+    {
+      "ID": "bottleSize",
+      "Value": 12.0
+    },
+    {
+      "ID": "dropDownList",
+      "Value": 0
+    },
+    {
+      "ID": "debug",
+      "Value": false
+    },
+    {
+      "ID": "customStillLocation",
+      "Value": false
+    },
+    {
+      "ID": "customStillPos",
+      "Value": ""
+    },
+    {
+      "ID": "customStillRot",
+      "Value": ""
+    }
+  ],
+  "isDisabled": false
+}

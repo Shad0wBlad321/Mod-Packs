@@ -22,7 +22,7 @@
     },
     {
       "ID": "limitFramerate",
-      "Value": false
+      "Value": true
     },
     {
       "ID": "framerateLimiterUpdated",
@@ -30,11 +30,11 @@
     },
     {
       "ID": "shadowDistance",
-      "Value": 200
+      "Value": 148
     },
     {
       "ID": "keepRunningInBackground",
-      "Value": true
+      "Value": false
     },
     {
       "ID": "dynamicDrawDistance",

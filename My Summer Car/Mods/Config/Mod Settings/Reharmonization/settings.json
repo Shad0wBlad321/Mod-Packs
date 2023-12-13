@@ -1,0 +1,37 @@
+{
+  "settings": [
+    {
+      "ID": "optimizeMousePick",
+      "Value": true
+    },
+    {
+      "ID": "optimizeSetRotation",
+      "Value": true
+    },
+    {
+      "ID": "optimizeSetPosition",
+      "Value": true
+    },
+    {
+      "ID": "optimizeSetGameVolume",
+      "Value": true
+    },
+    {
+      "ID": "timeSliceMousePick",
+      "Value": 2
+    },
+    {
+      "ID": "timeSliceSetProperty",
+      "Value": 3
+    },
+    {
+      "ID": "timeSliceMoveTowards",
+      "Value": 3
+    },
+    {
+      "ID": "timeSliceGetDistance",
+      "Value": 3
+    }
+  ],
+  "isDisabled": false
+}
