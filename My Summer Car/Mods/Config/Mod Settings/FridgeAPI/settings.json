@@ -1,0 +1,17 @@
+{
+  "settings": [
+    {
+      "ID": "gsr",
+      "Value": 0.034
+    },
+    {
+      "ID": "gsr",
+      "Value": 0.0005
+    },
+    {
+      "ID": "gsr",
+      "Value": 0.0001
+    }
+  ],
+  "isDisabled": false
+}
